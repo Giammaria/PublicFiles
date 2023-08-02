@@ -1,0 +1,150 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "params": [
+    {"name": "maroon_rgb", "value": "rgb(199,57,106)"},
+    {"name": "orange_rgb", "value": "rgb(250,145,113)"},
+    {"name": "green_rgb", "value": "rgb(137,165,56)"}
+  ],
+  "width": 800,
+  "height": 500,
+  "data": {
+    "name": "dataset",
+    "url": "https://raw.githubusercontent.com/Giammaria/PublicFiles/master/pbi/pbi_community_help/20230308_custom_y_axis_line/data/data.json"
+  },
+  "layer": [
+    {
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "temporal",
+          "timeUnit": {"unit": "utcyearmonthdatehoursminutes"},
+          "axis": {"labelAngle": 315, "grid": false, "title": null}
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative",
+          "scale": {"domain": [0, 26]},
+          "axis": {
+            "tickMinStep": 5,
+            "title": null,
+            "gridDash": [4, 2],
+            "gridWidth": 1.5,
+            "gridColor": {
+              "expr": "indexof([5,20], datum['value']) !== -1 ? maroon_rgb : indexof([10,15], datum['value']) !== -1 ? orange_rgb : rgb(230,225,226)"
+            }
+          }
+        }
+      },
+      "layer": [
+        {
+          "name": "y-axis_color_segments",
+          "transform": [
+            {
+              "window": [{"op": "row_number", "as": "rn"}],
+              "frame": [null, null]
+            },
+            {"filter": "datum['rn']===1"},
+            {"calculate": "0", "as": "x"},
+            {"calculate": "3", "as": "x2"}
+          ],
+          "encoding": {
+            "x": {"field": "x", "type": "quantitative", "scale": null},
+            "x2": {"field": "x2"},
+            "y": {
+              "field": "y",
+              "type": "quantitative",
+              "scale": {
+                "domain": [0, 26],
+                "rangeMin": {"expr": "height"},
+                "rangeMax": 0
+              }
+            },
+            "y2": {"field": "y2"}
+          },
+          "layer": [
+            {
+              "transform": [
+                {"calculate": "25", "as": "y"},
+                {"calculate": "0", "as": "y2"}
+              ],
+              "mark": {"type": "rect", "color": {"expr": "maroon_rgb"}}
+            },
+            {
+              "transform": [
+                {"calculate": "20", "as": "y"},
+                {"calculate": "5", "as": "y2"}
+              ],
+              "mark": {"type": "rect", "color": {"expr": "orange_rgb"}}
+            },
+            {
+              "transform": [
+                {"calculate": "15", "as": "y"},
+                {"calculate": "10", "as": "y2"}
+              ],
+              "mark": {"type": "rect", "color": {"expr": "green_rgb"}}
+            }
+          ]
+        },
+        {
+          "name": "y-axis_rects",
+          "transform": [
+            {
+              "window": [{"op": "row_number", "as": "rn"}],
+              "frame": [null, null]
+            },
+            {"filter": "datum['rn']===1"},
+            {"calculate": "0", "as": "x"},
+            {"calculate": "width", "as": "x2"}
+          ],
+          "encoding": {
+            "x": {"field": "x", "type": "quantitative", "scale": null},
+            "x2": {"field": "x2"},
+            "y": {
+              "field": "y",
+              "type": "quantitative",
+              "scale": {
+                "domain": [0, 26],
+                "rangeMin": {"expr": "height"},
+                "rangeMax": 0
+              }
+            },
+            "y2": {"field": "y2"},
+            "opacity": {"value": 0.15}
+          },
+          "layer": [
+            {
+              "transform": [
+                {"calculate": "25", "as": "y"},
+                {"calculate": "20", "as": "y2"}
+              ],
+              "mark": {"type": "rect", "color": {"expr": "maroon_rgb"}}
+            },
+            {
+              "transform": [
+                {"calculate": "5", "as": "y"},
+                {"calculate": "0", "as": "y2"}
+              ],
+              "mark": {"type": "rect", "color": {"expr": "maroon_rgb"}}
+            }
+          ]
+        },
+        {
+          "mark": {"type": "line", "interpolate": "monotone"},
+          "encoding": {
+            "color": {
+              "field": "category",
+              "legend": {
+                "title": "Category",
+                "orient": "none",
+                "direction": "horizontal",
+                "symbolType": "stroke",
+                "legendY": -30,
+                "legendX": {"expr": "width-150"}
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

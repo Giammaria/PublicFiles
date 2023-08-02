@@ -1,0 +1,174 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "params": [{"name": "observation", "expr": "toString(brush['Observation'])"}],
+  "data": {
+    "name": "dataset",
+    "url": "https://raw.githubusercontent.com/Giammaria/PublicFiles/master/pbi/pbi_community_help/20230309_trellis_scatter/data/mtcars_unpivoted.tsv",
+    "format": {"parse": {"Index": "number", "Value": "number"}}
+  },
+  "transform": [
+    {"joinaggregate": [{"op": "count", "as": "total_observation_count"}]},
+    {
+      "calculate": "sequence(1,datum['total_observation_count']+1,1)",
+      "as": "index_2"
+    },
+    {
+      "calculate": "split(replace(replace(join(datum['index_2'], ','), toString(datum['Index']), ''), ',,', ','), ',')",
+      "as": "index_2"
+    },
+    {"flatten": ["index_2"], "as": ["index_2"]},
+    {"filter": "datum['index_2']"},
+    {"calculate": "+datum['index_2']", "as": "index_2"},
+    {
+      "lookup": "index_2",
+      "from": {
+        "data": {"name": "dataset"},
+        "key": "index",
+        "fields": ["Attribute", "Value"]
+      },
+      "as": ["attribute_2", "value_2"]
+    },
+    {
+      "calculate": "data('dataset')[datum['index_2']-1]",
+      "as": "row_to_compare"
+    },
+    {"filter": "datum['Observation']===datum['row_to_compare']['Observation']"},
+    {"calculate": "datum['row_to_compare']['Attribute']", "as": "attribute_2"},
+    {"calculate": "datum['row_to_compare']['Value']", "as": "value_2"},
+    {
+      "calculate": "[datum['Attribute'], datum['attribute_2']]",
+      "as": "variables"
+    },
+    {
+      "window": [{"op": "distinct", "field": "variables", "as": "facet_count"}],
+      "frame": [null, null],
+      "sort": [{"field": "facet_index", "order": "ascending"}]
+    },
+    {
+      "window": [
+        {"op": "dense_rank", "field": "variables", "as": "facet_index"}
+      ],
+      "sort": [{"field": "variables", "order": "ascending"}],
+      "frame": [null, null]
+    },
+    {"calculate": "floor(sqrt(datum['facet_count']))", "as": "row_count"},
+    {
+      "calculate": "ceil(datum['facet_count']/datum['row_count'])",
+      "as": "column_count"
+    },
+    {
+      "calculate": "datum['facet_index']%datum['column_count'] === 0 ? datum['column_count'] : datum['facet_index']%datum['column_count']",
+      "as": "column"
+    },
+    {
+      "window": [{"op": "dense_rank", "as": "row"}],
+      "groupby": ["column"],
+      "frame": [null, 1],
+      "sort": [{"field": "facet_index", "order": "ascending"}]
+    },
+    {
+      "window": [{"op": "row_number", "as": "facet_data_index"}],
+      "groupby": ["facet_index"],
+      "frame": [null, null]
+    },
+    {
+      "calculate": "datum['Attribute']+': '+toString(datum['Value'])",
+      "as": "tooltipX"
+    },
+    {
+      "calculate": "datum['attribute_2']+': '+toString(datum['value_2'])",
+      "as": "tooltipY"
+    }
+  ],
+  "facet": {
+    "row": {"field": "row", "title": null, "header": null, "type": "ordinal"},
+    "column": {
+      "field": "column",
+      "type": "ordinal",
+      "title": null,
+      "header": null
+    }
+  },
+  "spec": {
+    "width": 150,
+    "height": 150,
+    "layer": [
+      {
+        "name": "splom",
+        "params": [
+          {
+            "name": "brush",
+            "select": {
+              "type": "point",
+              "on": "mouseover",
+              "encodings": ["color"],
+              "nearest": true,
+              "clear": {
+                "type": "mouseout"
+              }
+            }
+          }
+        ],
+        "mark": {"type": "point", "filled": true},
+        "encoding": {
+          "x": {
+            "field": "Value",
+            "type": "quantitative",
+            "axis": {"title": null}
+          },
+          "y": {"field": "value_2", "type": "quantitative", "title": null},
+          "color": {
+            "condition": {
+              "test": "observation===datum['Observation']",
+              "field": "Observation",
+              "type": "nominal",
+              "legend": null
+            },
+            "value": "steelblue"
+          },
+          "size": {
+            "condition": {
+              "test": "observation===datum['Observation']",
+              "value": 400
+            },
+            "value": 40
+          },
+          "tooltip": [
+            {"title": "Observation", "field": "Observation"},
+            {"title": "x", "field": "tooltipX"},
+            {"title": "y", "field": "tooltipY"}
+          ]
+        }
+      },
+      {
+        "name": "x-title",
+        "transform": [{"filter": "datum['facet_data_index']===1"}],
+        "mark": {
+          "type": "text",
+          "y": {"expr": "child_height"},
+          "yOffset": 25,
+          "fontSize": 14
+        },
+        "encoding": {"text": {"field": "Attribute"}}
+      },
+      {
+        "name": "y-title",
+        "transform": [{"filter": "datum['facet_data_index']===1"}],
+        "mark": {
+          "type": "text",
+          "align": "center",
+          "angle": 270,
+          "x": {"expr": "0"},
+          "xOffset": -30,
+          "fontSize": 14
+        },
+        "encoding": {"text": {"field": "attribute_2"}}
+      }
+    ]
+  },
+  "resolve": {
+    "axis": {"x": "independent", "y": "independent"},
+    "scale": {"x": "independent", "y": "independent"}
+  },
+  "config": {"range": {"category": ["orange"]}}
+}

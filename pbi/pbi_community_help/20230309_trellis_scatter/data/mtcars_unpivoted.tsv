@@ -1,0 +1,353 @@
+Index	Observation	Attribute	Value
+1	Mazda RX4	mpg	21
+2	Mazda RX4	cyl	6
+3	Mazda RX4	disp	160
+4	Mazda RX4	hp	110
+5	Mazda RX4	drat	3.9
+6	Mazda RX4	wt	2.62
+7	Mazda RX4	qsec	16.46
+8	Mazda RX4	vs	0
+9	Mazda RX4	am	1
+10	Mazda RX4	gear	4
+11	Mazda RX4	carb	4
+12	Mazda RX4 Wag	mpg	21
+13	Mazda RX4 Wag	cyl	6
+14	Mazda RX4 Wag	disp	160
+15	Mazda RX4 Wag	hp	110
+16	Mazda RX4 Wag	drat	3.9
+17	Mazda RX4 Wag	wt	2.875
+18	Mazda RX4 Wag	qsec	17.02
+19	Mazda RX4 Wag	vs	0
+20	Mazda RX4 Wag	am	1
+21	Mazda RX4 Wag	gear	4
+22	Mazda RX4 Wag	carb	4
+23	Datsun 710	mpg	22.8
+24	Datsun 710	cyl	4
+25	Datsun 710	disp	108
+26	Datsun 710	hp	93
+27	Datsun 710	drat	3.85
+28	Datsun 710	wt	2.32
+29	Datsun 710	qsec	18.61
+30	Datsun 710	vs	1
+31	Datsun 710	am	1
+32	Datsun 710	gear	4
+33	Datsun 710	carb	1
+34	Hornet 4 Drive	mpg	21.4
+35	Hornet 4 Drive	cyl	6
+36	Hornet 4 Drive	disp	258
+37	Hornet 4 Drive	hp	110
+38	Hornet 4 Drive	drat	3.08
+39	Hornet 4 Drive	wt	3.215
+40	Hornet 4 Drive	qsec	19.44
+41	Hornet 4 Drive	vs	1
+42	Hornet 4 Drive	am	0
+43	Hornet 4 Drive	gear	3
+44	Hornet 4 Drive	carb	1
+45	Hornet Sportabout	mpg	18.7
+46	Hornet Sportabout	cyl	8
+47	Hornet Sportabout	disp	360
+48	Hornet Sportabout	hp	175
+49	Hornet Sportabout	drat	3.15
+50	Hornet Sportabout	wt	3.44
+51	Hornet Sportabout	qsec	17.02
+52	Hornet Sportabout	vs	0
+53	Hornet Sportabout	am	0
+54	Hornet Sportabout	gear	3
+55	Hornet Sportabout	carb	2
+56	Valiant	mpg	18.1
+57	Valiant	cyl	6
+58	Valiant	disp	225
+59	Valiant	hp	105
+60	Valiant	drat	2.76
+61	Valiant	wt	3.46
+62	Valiant	qsec	20.22
+63	Valiant	vs	1
+64	Valiant	am	0
+65	Valiant	gear	3
+66	Valiant	carb	1
+67	Duster 360	mpg	14.3
+68	Duster 360	cyl	8
+69	Duster 360	disp	360
+70	Duster 360	hp	245
+71	Duster 360	drat	3.21
+72	Duster 360	wt	3.57
+73	Duster 360	qsec	15.84
+74	Duster 360	vs	0
+75	Duster 360	am	0
+76	Duster 360	gear	3
+77	Duster 360	carb	4
+78	Merc 240D	mpg	24.4
+79	Merc 240D	cyl	4
+80	Merc 240D	disp	146.7
+81	Merc 240D	hp	62
+82	Merc 240D	drat	3.69
+83	Merc 240D	wt	3.19
+84	Merc 240D	qsec	20
+85	Merc 240D	vs	1
+86	Merc 240D	am	0
+87	Merc 240D	gear	4
+88	Merc 240D	carb	2
+89	Merc 230	mpg	22.8
+90	Merc 230	cyl	4
+91	Merc 230	disp	140.8
+92	Merc 230	hp	95
+93	Merc 230	drat	3.92
+94	Merc 230	wt	3.15
+95	Merc 230	qsec	22.9
+96	Merc 230	vs	1
+97	Merc 230	am	0
+98	Merc 230	gear	4
+99	Merc 230	carb	2
+100	Merc 280	mpg	19.2
+101	Merc 280	cyl	6
+102	Merc 280	disp	167.6
+103	Merc 280	hp	123
+104	Merc 280	drat	3.92
+105	Merc 280	wt	3.44
+106	Merc 280	qsec	18.3
+107	Merc 280	vs	1
+108	Merc 280	am	0
+109	Merc 280	gear	4
+110	Merc 280	carb	4
+111	Merc 280C	mpg	17.8
+112	Merc 280C	cyl	6
+113	Merc 280C	disp	167.6
+114	Merc 280C	hp	123
+115	Merc 280C	drat	3.92
+116	Merc 280C	wt	3.44
+117	Merc 280C	qsec	18.9
+118	Merc 280C	vs	1
+119	Merc 280C	am	0
+120	Merc 280C	gear	4
+121	Merc 280C	carb	4
+122	Merc 450SE	mpg	16.4
+123	Merc 450SE	cyl	8
+124	Merc 450SE	disp	275.8
+125	Merc 450SE	hp	180
+126	Merc 450SE	drat	3.07
+127	Merc 450SE	wt	4.07
+128	Merc 450SE	qsec	17.4
+129	Merc 450SE	vs	0
+130	Merc 450SE	am	0
+131	Merc 450SE	gear	3
+132	Merc 450SE	carb	3
+133	Merc 450SL	mpg	17.3
+134	Merc 450SL	cyl	8
+135	Merc 450SL	disp	275.8
+136	Merc 450SL	hp	180
+137	Merc 450SL	drat	3.07
+138	Merc 450SL	wt	3.73
+139	Merc 450SL	qsec	17.6
+140	Merc 450SL	vs	0
+141	Merc 450SL	am	0
+142	Merc 450SL	gear	3
+143	Merc 450SL	carb	3
+144	Merc 450SLC	mpg	15.2
+145	Merc 450SLC	cyl	8
+146	Merc 450SLC	disp	275.8
+147	Merc 450SLC	hp	180
+148	Merc 450SLC	drat	3.07
+149	Merc 450SLC	wt	3.78
+150	Merc 450SLC	qsec	18
+151	Merc 450SLC	vs	0
+152	Merc 450SLC	am	0
+153	Merc 450SLC	gear	3
+154	Merc 450SLC	carb	3
+155	Cadillac Fleetwood	mpg	10.4
+156	Cadillac Fleetwood	cyl	8
+157	Cadillac Fleetwood	disp	472
+158	Cadillac Fleetwood	hp	205
+159	Cadillac Fleetwood	drat	2.93
+160	Cadillac Fleetwood	wt	5.25
+161	Cadillac Fleetwood	qsec	17.98
+162	Cadillac Fleetwood	vs	0
+163	Cadillac Fleetwood	am	0
+164	Cadillac Fleetwood	gear	3
+165	Cadillac Fleetwood	carb	4
+166	Lincoln Continental	mpg	10.4
+167	Lincoln Continental	cyl	8
+168	Lincoln Continental	disp	460
+169	Lincoln Continental	hp	215
+170	Lincoln Continental	drat	3
+171	Lincoln Continental	wt	5.424
+172	Lincoln Continental	qsec	17.82
+173	Lincoln Continental	vs	0
+174	Lincoln Continental	am	0
+175	Lincoln Continental	gear	3
+176	Lincoln Continental	carb	4
+177	Chrysler Imperial	mpg	14.7
+178	Chrysler Imperial	cyl	8
+179	Chrysler Imperial	disp	440
+180	Chrysler Imperial	hp	230
+181	Chrysler Imperial	drat	3.23
+182	Chrysler Imperial	wt	5.345
+183	Chrysler Imperial	qsec	17.42
+184	Chrysler Imperial	vs	0
+185	Chrysler Imperial	am	0
+186	Chrysler Imperial	gear	3
+187	Chrysler Imperial	carb	4
+188	Fiat 128	mpg	32.4
+189	Fiat 128	cyl	4
+190	Fiat 128	disp	78.7
+191	Fiat 128	hp	66
+192	Fiat 128	drat	4.08
+193	Fiat 128	wt	2.2
+194	Fiat 128	qsec	19.47
+195	Fiat 128	vs	1
+196	Fiat 128	am	1
+197	Fiat 128	gear	4
+198	Fiat 128	carb	1
+199	Honda Civic	mpg	30.4
+200	Honda Civic	cyl	4
+201	Honda Civic	disp	75.7
+202	Honda Civic	hp	52
+203	Honda Civic	drat	4.93
+204	Honda Civic	wt	1.615
+205	Honda Civic	qsec	18.52
+206	Honda Civic	vs	1
+207	Honda Civic	am	1
+208	Honda Civic	gear	4
+209	Honda Civic	carb	2
+210	Toyota Corolla	mpg	33.9
+211	Toyota Corolla	cyl	4
+212	Toyota Corolla	disp	71.1
+213	Toyota Corolla	hp	65
+214	Toyota Corolla	drat	4.22
+215	Toyota Corolla	wt	1.835
+216	Toyota Corolla	qsec	19.9
+217	Toyota Corolla	vs	1
+218	Toyota Corolla	am	1
+219	Toyota Corolla	gear	4
+220	Toyota Corolla	carb	1
+221	Toyota Corona	mpg	21.5
+222	Toyota Corona	cyl	4
+223	Toyota Corona	disp	120.1
+224	Toyota Corona	hp	97
+225	Toyota Corona	drat	3.7
+226	Toyota Corona	wt	2.465
+227	Toyota Corona	qsec	20.01
+228	Toyota Corona	vs	1
+229	Toyota Corona	am	0
+230	Toyota Corona	gear	3
+231	Toyota Corona	carb	1
+232	Dodge Challenger	mpg	15.5
+233	Dodge Challenger	cyl	8
+234	Dodge Challenger	disp	318
+235	Dodge Challenger	hp	150
+236	Dodge Challenger	drat	2.76
+237	Dodge Challenger	wt	3.52
+238	Dodge Challenger	qsec	16.87
+239	Dodge Challenger	vs	0
+240	Dodge Challenger	am	0
+241	Dodge Challenger	gear	3
+242	Dodge Challenger	carb	2
+243	AMC Javelin	mpg	15.2
+244	AMC Javelin	cyl	8
+245	AMC Javelin	disp	304
+246	AMC Javelin	hp	150
+247	AMC Javelin	drat	3.15
+248	AMC Javelin	wt	3.435
+249	AMC Javelin	qsec	17.3
+250	AMC Javelin	vs	0
+251	AMC Javelin	am	0
+252	AMC Javelin	gear	3
+253	AMC Javelin	carb	2
+254	Camaro Z28	mpg	13.3
+255	Camaro Z28	cyl	8
+256	Camaro Z28	disp	350
+257	Camaro Z28	hp	245
+258	Camaro Z28	drat	3.73
+259	Camaro Z28	wt	3.84
+260	Camaro Z28	qsec	15.41
+261	Camaro Z28	vs	0
+262	Camaro Z28	am	0
+263	Camaro Z28	gear	3
+264	Camaro Z28	carb	4
+265	Pontiac Firebird	mpg	19.2
+266	Pontiac Firebird	cyl	8
+267	Pontiac Firebird	disp	400
+268	Pontiac Firebird	hp	175
+269	Pontiac Firebird	drat	3.08
+270	Pontiac Firebird	wt	3.845
+271	Pontiac Firebird	qsec	17.05
+272	Pontiac Firebird	vs	0
+273	Pontiac Firebird	am	0
+274	Pontiac Firebird	gear	3
+275	Pontiac Firebird	carb	2
+276	Fiat X1-9	mpg	27.3
+277	Fiat X1-9	cyl	4
+278	Fiat X1-9	disp	79
+279	Fiat X1-9	hp	66
+280	Fiat X1-9	drat	4.08
+281	Fiat X1-9	wt	1.935
+282	Fiat X1-9	qsec	18.9
+283	Fiat X1-9	vs	1
+284	Fiat X1-9	am	1
+285	Fiat X1-9	gear	4
+286	Fiat X1-9	carb	1
+287	Porsche 914-2	mpg	26
+288	Porsche 914-2	cyl	4
+289	Porsche 914-2	disp	120.3
+290	Porsche 914-2	hp	91
+291	Porsche 914-2	drat	4.43
+292	Porsche 914-2	wt	2.14
+293	Porsche 914-2	qsec	16.7
+294	Porsche 914-2	vs	0
+295	Porsche 914-2	am	1
+296	Porsche 914-2	gear	5
+297	Porsche 914-2	carb	2
+298	Lotus Europa	mpg	30.4
+299	Lotus Europa	cyl	4
+300	Lotus Europa	disp	95.1
+301	Lotus Europa	hp	113
+302	Lotus Europa	drat	3.77
+303	Lotus Europa	wt	1.513
+304	Lotus Europa	qsec	16.9
+305	Lotus Europa	vs	1
+306	Lotus Europa	am	1
+307	Lotus Europa	gear	5
+308	Lotus Europa	carb	2
+309	Ford Pantera L	mpg	15.8
+310	Ford Pantera L	cyl	8
+311	Ford Pantera L	disp	351
+312	Ford Pantera L	hp	264
+313	Ford Pantera L	drat	4.22
+314	Ford Pantera L	wt	3.17
+315	Ford Pantera L	qsec	14.5
+316	Ford Pantera L	vs	0
+317	Ford Pantera L	am	1
+318	Ford Pantera L	gear	5
+319	Ford Pantera L	carb	4
+320	Ferrari Dino	mpg	19.7
+321	Ferrari Dino	cyl	6
+322	Ferrari Dino	disp	145
+323	Ferrari Dino	hp	175
+324	Ferrari Dino	drat	3.62
+325	Ferrari Dino	wt	2.77
+326	Ferrari Dino	qsec	15.5
+327	Ferrari Dino	vs	0
+328	Ferrari Dino	am	1
+329	Ferrari Dino	gear	5
+330	Ferrari Dino	carb	6
+331	Maserati Bora	mpg	15
+332	Maserati Bora	cyl	8
+333	Maserati Bora	disp	301
+334	Maserati Bora	hp	335
+335	Maserati Bora	drat	3.54
+336	Maserati Bora	wt	3.57
+337	Maserati Bora	qsec	14.6
+338	Maserati Bora	vs	0
+339	Maserati Bora	am	1
+340	Maserati Bora	gear	5
+341	Maserati Bora	carb	8
+342	Volvo 142E	mpg	21.4
+343	Volvo 142E	cyl	4
+344	Volvo 142E	disp	121
+345	Volvo 142E	hp	109
+346	Volvo 142E	drat	4.11
+347	Volvo 142E	wt	2.78
+348	Volvo 142E	qsec	18.6
+349	Volvo 142E	vs	1
+350	Volvo 142E	am	1
+351	Volvo 142E	gear	4
+352	Volvo 142E	carb	2

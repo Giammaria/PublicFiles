@@ -1,0 +1,117 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "params": [
+    {"name": "pie_outer_radius", "expr": "0.53*min(child_width,child_height)"},
+    {"name": "pie_label_radius", "expr": "0.63*min(child_width,child_height)"}
+  ],
+  "data": {
+    "name": "dataset",
+    "url": "https://raw.githubusercontent.com/Giammaria/PublicFiles/master/pbi/pbi_community_help/trellis_pie/data/data.tsv",
+    "format": {"parse": {"Result": "number"}}
+  },
+  "transform": [
+    {
+      "window": [{"op": "dense_rank", "as": "type_dr"}],
+      "frame": [null, null],
+      "sort": [{"field": "Type", "order": "ascending"}]
+    },
+    {
+      "joinaggregate": [{"op": "distinct", "field": "Type", "as": "type_count"}]
+    },
+    {
+      "joinaggregate": [{"op": "sum", "field": "Result", "as": "result_total"}],
+      "groupby": ["Type"]
+    },
+    {
+      "calculate": "toString(datum['Result'])+' out of '+toString(datum['result_total'])",
+      "as": "result_out_of"
+    },
+    {
+      "calculate": "format(datum['Result']/datum['result_total'],'.0%')",
+      "as": "percentage"
+    },
+    {"calculate": "floor(sqrt(datum['type_count']))", "as": "row_count"},
+    {
+      "calculate": "ceil(datum['type_count']/datum['row_count'])",
+      "as": "column_count"
+    },
+    {
+      "calculate": "datum['type_dr']%datum['column_count'] === 0 ? datum['column_count'] : datum['type_dr']%datum['column_count']",
+      "as": "column"
+    },
+    {
+      "window": [{"op": "dense_rank", "as": "row"}],
+      "groupby": ["column"],
+      "frame": [null, 1],
+      "sort": [{"field": "type_dr", "order": "ascending"}]
+    }
+  ],
+  "facet": {
+    "row": {"field": "row", "title": null, "header": null, "type": "ordinal"},
+    "column": {
+      "field": "column",
+      "type": "ordinal",
+      "title": null,
+      "header": null
+    }
+  },
+  "spec": {
+    "width": 150,
+    "height": 150,
+    "layer": [
+            {
+        "name": "type_text",
+        "mark": {"type": "text", "fontSize": 16, "y": -35},
+        "encoding": {"text": {"field": "Type"}}
+      },
+      {
+        "encoding": {
+          "theta": {"field": "Result", "type": "quantitative", "stack": true},
+          "color": {"field": "Voice", "type": "nominal"}
+        },
+        "layer": [
+          {
+            "name": "pie",
+            "mark": {
+              "type": "arc",
+              "outerRadius": {"expr": "pie_outer_radius"}
+            },
+            "encoding": {
+              "tooltip": [
+                {"title": "Type", "field": "Type"},
+                {"title": "Voice", "field": "Voice"},
+                {"title": "Result", "field": "result_out_of"},
+                {"title": "Result %", "field": "percentage"}
+              ]
+            }
+          },
+          {
+            "name": "pie_label",
+            "mark": {
+              "type": "text",
+              "radius": {"expr": "pie_label_radius"},
+              "align": "center",
+              "baseline": "top"
+            },
+            "encoding": {"text": {"field": "percentage", "type": "nominal"}}
+          }
+        ]
+      }
+    ]
+  },
+  "config": {
+    "view": {"stroke": "transparent"},
+    "range": {
+      "category": [
+        "#118DFF",
+        "#12239E",
+        "#E66C37",
+        "#6B007B",
+        "#E044A7",
+        "#744EC2",
+        "#D9B300",
+        "#D64550"
+      ]
+    }
+  }
+}

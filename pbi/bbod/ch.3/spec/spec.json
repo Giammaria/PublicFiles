@@ -1,0 +1,255 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "rgb(247,247,247)",
+  "padding": 10,
+  "params": [
+    {"name": "n", "expr": "data('dataset')[0]['speaker_count']"},
+    {"name": "lower_quantile", "expr": "(n+1)*0.25"}
+  ],
+  "data": {
+    "name": "dataset",
+    "url": "https://raw.githubusercontent.com/Giammaria/PublicFiles/master/pbi/bbod/ch.3/data/speakers.json"
+  },
+  "transform": [
+    {"calculate": "10", "as": "selected_id"},
+    {
+      "window": [{"op": "row_number", "field": "rating", "as": "rank"}],
+      "groupby": ["category"],
+      "sort": [{"field": "rating", "order": "descending"}]
+    },
+    {"calculate": "datum['id']%57", "as": "x"},
+    {
+      "joinaggregate": [
+        {"op": "min", "field": "rating", "as": "min_rating"},
+        {"op": "max", "field": "rating", "as": "max_rating"},
+        {"op": "average", "field": "rating", "as": "average"},
+        {"op": "count", "as": "speaker_count"}
+      ],
+      "groupby": ["category"]
+    },
+    {
+      "calculate": "format((datum['speaker_count']-datum['rank'])/datum['speaker_count'], '.0%')",
+      "as": "percentile"
+    },
+    {
+      "calculate": "toString(datum['rank']) + ' out of '+ toString(datum['speaker_count'])",
+      "as": "rank_label"
+    },
+    {
+      "calculate": "datum['max_rating']-datum['min_rating']",
+      "as": "rating_range"
+    },
+    {
+      "calculate": "datum['rating_range']/2+datum['min_rating']",
+      "as": "median"
+    },
+    {"calculate": "(datum['rating_range']/4)", "as": "quantile_size"},
+    {
+      "calculate": "(datum['rating_range']/4)+ (datum['min_rating'])",
+      "as": "quantile_1"
+    },
+    {
+      "calculate": "3*(datum['rating_range']/4)+ (datum['min_rating'])",
+      "as": "quantile_2"
+    },
+    {
+      "calculate": "4*(datum['rating_range']/4)+ (datum['min_rating'])",
+      "as": "quantile_3"
+    },
+    {
+      "calculate": "datum['rating']<=datum['quantile_1'] ? 'Q1' : datum['rating']<=datum['quantile_2']?'Q2':'Q3'",
+      "as": "quantile"
+    }
+  ],
+  "spacing": -50,
+  "facet": {
+    "column": {
+      "field": "category",
+      "title": null,
+      "header": {"labelFontSize": 18, "labelColor": "rgb(131,131,131)"},
+      "sort": {"field": "category_sort", "order": "ascending"}
+    }
+  },
+  "spec": {
+    "view": {"fill": "#fff"},
+    "width": 240,
+    "height": 700,
+    "encoding": {
+      "y": {
+        "field": "rating",
+        "type": "quantitative",
+        "scale": {"domain": [1.97, 5.15]},
+        "axis": {
+          "tickMinStep": {"expr": "0.5"},
+          "title": null,
+          "ticks": false,
+          "domain": false,
+          "grid": false,
+          "labelColor": "rgb(131,131,131)",
+          "labelPadding": 7.5,
+          "labelFontSize": 12
+        }
+      }
+    },
+    "layer": [
+      {
+        "mark": {"type": "rect", "color": "rgb(241, 251, 255)"},
+        "transform": [
+          {"filter": "datum['id'] === datum['selected_id']"},
+          {
+            "fold": ["quantile_1", "quantile_2", "quantile_3"],
+            "as": ["quantile", "value"]
+          },
+          {
+            "window": [{"op": "lag", "field": "value", "as": "y2"}],
+            "groupby": ["category"]
+          },
+          {
+            "calculate": "datum['y2']?datum['y2']:datum['min_rating']",
+            "as": "y2"
+          },
+          {"filter": "datum['quantile']==='quantile_2'"}
+        ],
+        "encoding": {
+          "y": {"type": "quantitative", "field": "value"},
+          "y2": {"field": "y2"}
+        }
+      },
+      {
+        "mark": {
+          "type": "rule",
+          "strokeDash": [8, 4],
+          "opacity": 0.25,
+          "strokeWidth": 2
+        },
+        "transform": [
+          {"aggregate": [{"op": "average", "field": "median", "as": "median"}]}
+        ],
+        "encoding": {"y": {"field": "median"}}
+      },
+      {
+        "transform": [{"filter": "datum['id'] !== datum['selected_id']"}],
+        "layer": [
+          {
+            "mark": {
+              "type": "circle",
+              "size": {"expr": "300"},
+              "stroke": "#000",
+              "strokeOpacity": 0.5,
+              "filled": true,
+              "color": "rgb(224,220,218)"
+            },
+            "encoding": {
+              "x": {
+                "type": "ordinal",
+                "field": "x",
+                "axis": null,
+                "scale": {
+                  "rangeMax": {"expr": "50"},
+                  "rangeMin": {"expr": "150"}
+                }
+              },
+              "tooltip": [
+                {"title": "Speaker:", "field": "id"},
+                {
+                  "title": "Average Score:",
+                  "field": "average",
+                  "format": ".2f"
+                },
+                {"title": "Rank:", "field": "rank_label"},
+                {"title": "Percentile:", "field": "percentile"},
+                {"title": "Responses:", "field": "session_count"}
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "transform": [{"filter": "datum['id'] === datum['selected_id']"}],
+        "layer": [
+          {
+            "encoding": {"y": {"scale": null}},
+            "layer": [
+              {
+                "mark": {
+                  "type": "rect",
+                  "y": {"expr": "580"},
+                  "y2": {"expr": "700"},
+                  "color": "rgb(247,247,247)"
+                }
+              },
+              {
+                "mark": {
+                  "type": "text",
+                  "y": {"expr": "640"},
+                  "fontSize": 16,
+                  "align": "left",
+                  "x": 0,
+                  "xOffset": 65,
+                  "color": "rgb(131,131,131)",
+                  "fontWeight": 200
+                },
+                "transform": [
+                  {
+                    "calculate": "[toString(datum['rank']) + ' of ' + toString(datum['speaker_count']), 'Percentile: '+datum['percentile']]",
+                    "as": "footer_details"
+                  }
+                ],
+                "encoding": {"text": {"field": "footer_details"}}
+              }
+            ]
+          },
+          {
+            "encoding": {
+              "tooltip": [
+                {"title": "Speaker:", "field": "id"},
+                {
+                  "title": "Average Score:",
+                  "field": "average",
+                  "format": ".2f"
+                },
+                {"title": "Rank:", "field": "rank_label"},
+                {"title": "Percentile:", "field": "percentile"},
+                {"title": "Responses:", "field": "session_count"}
+              ]
+            },
+            "layer": [
+              {
+                "mark": {
+                  "type": "circle",
+                  "size": {"expr": "4000"},
+                  "stroke": "#000",
+                  "strokeOpacity": 0.5
+                },
+                "encoding": {
+                  "x": {
+                    "datum": 0.5,
+                    "type": "quantitative",
+                    "scale": {"domain": [0, 1]},
+                    "axis": null
+                  }
+                }
+              },
+              {
+                "mark": {
+                  "type": "text",
+                  "align": "center",
+                  "fontWeight": 600,
+                  "fontSize": 16
+                },
+                "encoding": {
+                  "text": {
+                    "field": "rating",
+                    "type": "quantitative",
+                    "format": ".2f"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "config": {"view": {"stroke": "transparent"}}
+}

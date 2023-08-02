@@ -1,0 +1,117 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 700,
+  "height": 400,
+  "data": {
+    "name": "dataset",
+    "values": [
+      {"Loc": "A", "Executed": "1.193", "Estimated": null, "Proforma": "900"},
+      {"Loc": "A", "Executed": "3.894", "Estimated": "400", "Proforma": "0"},
+      {"Loc": "A", "Executed": "1.255", "Estimated": null, "Proforma": "0"},
+      {"Loc": "A", "Executed": "3.044", "Estimated": null, "Proforma": "0"},
+      {"Loc": "A", "Executed": "3.310", "Estimated": null, "Proforma": "0"},
+      {"Loc": "A", "Executed": "342", "Estimated": null, "Proforma": "0"},
+      {"Loc": "A", "Executed": "1.366", "Estimated": null, "Proforma": "0"},
+      {"Loc": "A", "Executed": "805", "Estimated": null, "Proforma": "0"},
+      {"Loc": "A", "Executed": "277", "Estimated": null, "Proforma": "0"},
+      {"Loc": "A", "Executed": "873", "Estimated": null, "Proforma": "0"},
+      {"Loc": "B", "Executed": "1.051", "Estimated": "537", "Proforma": "0"},
+      {"Loc": "B", "Executed": "2", "Estimated": "403", "Proforma": "0"},
+      {"Loc": "B", "Executed": "442", "Estimated": "444", "Proforma": "0"},
+      {"Loc": "B", "Executed": "898", "Estimated": "901", "Proforma": "0"},
+      {"Loc": "B", "Executed": "888", "Estimated": "879", "Proforma": "0"},
+      {"Loc": "B", "Executed": "1", "Estimated": "943", "Proforma": "0"},
+      {"Loc": "B", "Executed": "1.164", "Estimated": "1164", "Proforma": "720"},
+      {"Loc": "B", "Executed": "929", "Estimated": "866", "Proforma": "0"},
+      {"Loc": "B", "Executed": "1.661", "Estimated": "1663", "Proforma": "0"},
+      {"Loc": "B", "Executed": "1.263", "Estimated": "525", "Proforma": "0"},
+      {"Loc": "C", "Executed": "298", "Estimated": null, "Proforma": "0"},
+      {"Loc": "C", "Executed": "304", "Estimated": null, "Proforma": "0"},
+      {"Loc": "C", "Executed": "1.203", "Estimated": null, "Proforma": "0"},
+      {"Loc": "C", "Executed": "703", "Estimated": null, "Proforma": "0"},
+      {"Loc": "C", "Executed": "2.166", "Estimated": "600", "Proforma": "0"},
+      {"Loc": "C", "Executed": "416", "Estimated": null, "Proforma": "0"},
+      {"Loc": "C", "Executed": "289", "Estimated": null, "Proforma": "0"},
+      {"Loc": "C", "Executed": "1.466", "Estimated": null, "Proforma": "1400"},
+      {"Loc": "C", "Executed": "555", "Estimated": null, "Proforma": "0"},
+      {"Loc": "C", "Executed": "699", "Estimated": null, "Proforma": "0"}
+    ],
+    "format": {
+      "parse": {
+        "Executed": "number",
+        "Estimated": "number",
+        "Proforma": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "fold": ["Executed", "Estimated", "Proforma"],
+      "as": ["MoveType", "TotalMoves"]
+    }
+  ],
+  "layer": [
+    {
+      "encoding": {
+        "y": {
+          "field": "TotalMoves",
+          "type": "quantitative",
+          "aggregate": "sum",
+          "axis": {"title": null}
+        },
+        "x": {
+          "field": "Loc",
+          "type": "nominal",
+          "sort": "ascending",
+          "scale": {"padding": 0.2},
+          "axis": {"title": null, "labelAngle": 0}
+        },
+        "xOffset": {
+          "field": "MoveType",
+          "sort": "descending",
+          "scale": {"paddingInner": 0.1}
+        }
+      },
+      "layer": [
+        {
+          "name": "bars",
+          "mark": {"type": "bar", "tooltip": true},
+          "encoding": {
+            "color": {
+              "field": "MoveType",
+              "type": "nominal",
+              "title": null,
+              "sort": "ascending",
+              "scale": {"range": ["#666685", "#E3A611", "#DE6A73"]},
+              "legend": {
+                "orient": "none",
+                "direction": "horizontal",
+                "legendX": {"expr": "width/2-125"},
+                "legendY": {"expr": "height+25"}
+              }
+            }
+          }
+        },
+        {
+          "name": "Custom labels",
+          "mark": {
+            "type": "text",
+            "color": "black",
+            "angle": 0,
+            "baseline": "top",
+            "dy": -12
+          },
+          "encoding": {
+            "text": {
+              "field": "TotalMoves",
+              "type": "quantitative",
+              "aggregate": "sum",
+              "formatType": "pbiFormat",
+              "format": "#0,,.00M"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

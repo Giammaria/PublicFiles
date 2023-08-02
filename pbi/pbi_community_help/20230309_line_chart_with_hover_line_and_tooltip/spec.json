@@ -1,0 +1,50 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "params": [{"name": "dt", "expr": "hover['date']"}],
+  "width": 800,
+  "height": 400,
+  "description": "Google's stock price over time.",
+  "data": {"url": "data/stocks.csv"},
+  "transform": [{"filter": "datum.symbol==='GOOG'"}],
+  "layer": [
+    {
+      "encoding": {"x": {"field": "date", "type": "temporal"}},
+      "layer": [
+        {
+          "mark": "line",
+          "encoding": {"y": {"field": "price", "type": "quantitative"}}
+        },
+        {
+          "params": [
+            {
+              "name": "hover",
+              "select": {
+                "type": "point",
+                "fields": ["date"],
+                "nearest": true,
+                "on": "mouseover",
+                "clear": "mouseout"
+              }
+            }
+          ],
+          "mark": {"type": "rule", "y": 0, "y2": {"expr": "height"}},
+          "transform": [{"calculate": "format(datum['price'], '$')", "as": "price"}],
+          "encoding": {
+            "opacity": {
+              "condition": {
+                "test": "+hover['date'] === datum['date']",
+                "value": 0.5
+              },
+              "value": 0
+            },
+            "tooltip": [
+              {"title": "Symbol", "field": "GOOG"},
+              {"title": "Price", "field": "price"}
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "config": {"axis": {"grid": false}}
+}

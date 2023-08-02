@@ -1,0 +1,3194 @@
+[
+	{
+		"id": 1,
+		"session_count": 110,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 4.56
+	},
+	{
+		"id": 1,
+		"session_count": 110,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 4.43
+	},
+	{
+		"id": 1,
+		"session_count": 110,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 4.12
+	},
+	{
+		"id": 1,
+		"session_count": 110,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 4.74
+	},
+	{
+		"id": 2,
+		"session_count": 103,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.34
+	},
+	{
+		"id": 2,
+		"session_count": 103,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.69
+	},
+	{
+		"id": 2,
+		"session_count": 103,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 4.2
+	},
+	{
+		"id": 2,
+		"session_count": 103,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 4.41
+	},
+	{
+		"id": 3,
+		"session_count": 8,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 4.25
+	},
+	{
+		"id": 3,
+		"session_count": 8,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.99
+	},
+	{
+		"id": 3,
+		"session_count": 8,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.97
+	},
+	{
+		"id": 3,
+		"session_count": 8,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.87
+	},
+	{
+		"id": 4,
+		"session_count": 32,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.79
+	},
+	{
+		"id": 4,
+		"session_count": 32,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.92
+	},
+	{
+		"id": 4,
+		"session_count": 32,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 4.25
+	},
+	{
+		"id": 4,
+		"session_count": 32,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.67
+	},
+	{
+		"id": 5,
+		"session_count": 88,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.9
+	},
+	{
+		"id": 5,
+		"session_count": 88,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.7
+	},
+	{
+		"id": 5,
+		"session_count": 88,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.58
+	},
+	{
+		"id": 5,
+		"session_count": 88,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.76
+	},
+	{
+		"id": 6,
+		"session_count": 44,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.69
+	},
+	{
+		"id": 6,
+		"session_count": 44,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.86
+	},
+	{
+		"id": 6,
+		"session_count": 44,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.93
+	},
+	{
+		"id": 6,
+		"session_count": 44,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.68
+	},
+	{
+		"id": 7,
+		"session_count": 84,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.75
+	},
+	{
+		"id": 7,
+		"session_count": 84,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.19
+	},
+	{
+		"id": 7,
+		"session_count": 84,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.84
+	},
+	{
+		"id": 7,
+		"session_count": 84,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.29
+	},
+	{
+		"id": 8,
+		"session_count": 128,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.7
+	},
+	{
+		"id": 8,
+		"session_count": 128,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.06
+	},
+	{
+		"id": 8,
+		"session_count": 128,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.12
+	},
+	{
+		"id": 8,
+		"session_count": 128,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.6
+	},
+	{
+		"id": 9,
+		"session_count": 90,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 4.08
+	},
+	{
+		"id": 9,
+		"session_count": 90,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.89
+	},
+	{
+		"id": 9,
+		"session_count": 90,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 4.36
+	},
+	{
+		"id": 9,
+		"session_count": 90,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.96
+	},
+	{
+		"id": 10,
+		"session_count": 15,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 4.3
+	},
+	{
+		"id": 10,
+		"session_count": 15,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.5
+	},
+	{
+		"id": 10,
+		"session_count": 15,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 4.37
+	},
+	{
+		"id": 10,
+		"session_count": 15,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 4.44
+	},
+	{
+		"id": 11,
+		"session_count": 135,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.7
+	},
+	{
+		"id": 11,
+		"session_count": 135,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.74
+	},
+	{
+		"id": 11,
+		"session_count": 135,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.71
+	},
+	{
+		"id": 11,
+		"session_count": 135,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.94
+	},
+	{
+		"id": 12,
+		"session_count": 17,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.34
+	},
+	{
+		"id": 12,
+		"session_count": 17,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.7
+	},
+	{
+		"id": 12,
+		"session_count": 17,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 4.39
+	},
+	{
+		"id": 12,
+		"session_count": 17,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 4.14
+	},
+	{
+		"id": 13,
+		"session_count": 87,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.53
+	},
+	{
+		"id": 13,
+		"session_count": 87,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.93
+	},
+	{
+		"id": 13,
+		"session_count": 87,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.56
+	},
+	{
+		"id": 13,
+		"session_count": 87,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 4.25
+	},
+	{
+		"id": 14,
+		"session_count": 98,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.77
+	},
+	{
+		"id": 14,
+		"session_count": 98,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.96
+	},
+	{
+		"id": 14,
+		"session_count": 98,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.34
+	},
+	{
+		"id": 14,
+		"session_count": 98,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.72
+	},
+	{
+		"id": 15,
+		"session_count": 15,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.81
+	},
+	{
+		"id": 15,
+		"session_count": 15,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.58
+	},
+	{
+		"id": 15,
+		"session_count": 15,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.12
+	},
+	{
+		"id": 15,
+		"session_count": 15,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.69
+	},
+	{
+		"id": 16,
+		"session_count": 82,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.2
+	},
+	{
+		"id": 16,
+		"session_count": 82,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.59
+	},
+	{
+		"id": 16,
+		"session_count": 82,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.24
+	},
+	{
+		"id": 16,
+		"session_count": 82,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.95
+	},
+	{
+		"id": 17,
+		"session_count": 152,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.66
+	},
+	{
+		"id": 17,
+		"session_count": 152,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.74
+	},
+	{
+		"id": 17,
+		"session_count": 152,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.99
+	},
+	{
+		"id": 17,
+		"session_count": 152,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.39
+	},
+	{
+		"id": 18,
+		"session_count": 132,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.01
+	},
+	{
+		"id": 18,
+		"session_count": 132,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 4.26
+	},
+	{
+		"id": 18,
+		"session_count": 132,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.75
+	},
+	{
+		"id": 18,
+		"session_count": 132,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.83
+	},
+	{
+		"id": 19,
+		"session_count": 125,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 4.36
+	},
+	{
+		"id": 19,
+		"session_count": 125,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.92
+	},
+	{
+		"id": 19,
+		"session_count": 125,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 4.66
+	},
+	{
+		"id": 19,
+		"session_count": 125,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 4.59
+	},
+	{
+		"id": 20,
+		"session_count": 14,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.89
+	},
+	{
+		"id": 20,
+		"session_count": 14,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.95
+	},
+	{
+		"id": 20,
+		"session_count": 14,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.91
+	},
+	{
+		"id": 20,
+		"session_count": 14,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.78
+	},
+	{
+		"id": 21,
+		"session_count": 137,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.52
+	},
+	{
+		"id": 21,
+		"session_count": 137,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.59
+	},
+	{
+		"id": 21,
+		"session_count": 137,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.89
+	},
+	{
+		"id": 21,
+		"session_count": 137,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.75
+	},
+	{
+		"id": 22,
+		"session_count": 133,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.25
+	},
+	{
+		"id": 22,
+		"session_count": 133,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.95
+	},
+	{
+		"id": 22,
+		"session_count": 133,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.78
+	},
+	{
+		"id": 22,
+		"session_count": 133,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.91
+	},
+	{
+		"id": 23,
+		"session_count": 72,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.93
+	},
+	{
+		"id": 23,
+		"session_count": 72,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.33
+	},
+	{
+		"id": 23,
+		"session_count": 72,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.56
+	},
+	{
+		"id": 23,
+		"session_count": 72,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.7
+	},
+	{
+		"id": 24,
+		"session_count": 143,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.95
+	},
+	{
+		"id": 24,
+		"session_count": 143,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.31
+	},
+	{
+		"id": 24,
+		"session_count": 143,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.43
+	},
+	{
+		"id": 24,
+		"session_count": 143,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.99
+	},
+	{
+		"id": 25,
+		"session_count": 129,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.01
+	},
+	{
+		"id": 25,
+		"session_count": 129,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.1
+	},
+	{
+		"id": 25,
+		"session_count": 129,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.94
+	},
+	{
+		"id": 25,
+		"session_count": 129,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.18
+	},
+	{
+		"id": 26,
+		"session_count": 111,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.68
+	},
+	{
+		"id": 26,
+		"session_count": 111,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.66
+	},
+	{
+		"id": 26,
+		"session_count": 111,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.32
+	},
+	{
+		"id": 26,
+		"session_count": 111,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.72
+	},
+	{
+		"id": 27,
+		"session_count": 86,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.49
+	},
+	{
+		"id": 27,
+		"session_count": 86,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.91
+	},
+	{
+		"id": 27,
+		"session_count": 86,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 4.05
+	},
+	{
+		"id": 27,
+		"session_count": 86,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.62
+	},
+	{
+		"id": 28,
+		"session_count": 111,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 4.6
+	},
+	{
+		"id": 28,
+		"session_count": 111,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 4.31
+	},
+	{
+		"id": 28,
+		"session_count": 111,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 4.48
+	},
+	{
+		"id": 28,
+		"session_count": 111,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 4.54
+	},
+	{
+		"id": 29,
+		"session_count": 40,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 4.06
+	},
+	{
+		"id": 29,
+		"session_count": 40,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.89
+	},
+	{
+		"id": 29,
+		"session_count": 40,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 4.47
+	},
+	{
+		"id": 29,
+		"session_count": 40,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.77
+	},
+	{
+		"id": 30,
+		"session_count": 54,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.7
+	},
+	{
+		"id": 30,
+		"session_count": 54,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.91
+	},
+	{
+		"id": 30,
+		"session_count": 54,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 4.46
+	},
+	{
+		"id": 30,
+		"session_count": 54,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 4.32
+	},
+	{
+		"id": 31,
+		"session_count": 128,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 4.02
+	},
+	{
+		"id": 31,
+		"session_count": 128,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.74
+	},
+	{
+		"id": 31,
+		"session_count": 128,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.67
+	},
+	{
+		"id": 31,
+		"session_count": 128,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.68
+	},
+	{
+		"id": 32,
+		"session_count": 99,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.7
+	},
+	{
+		"id": 32,
+		"session_count": 99,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.93
+	},
+	{
+		"id": 32,
+		"session_count": 99,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.98
+	},
+	{
+		"id": 32,
+		"session_count": 99,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.11
+	},
+	{
+		"id": 33,
+		"session_count": 99,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.91
+	},
+	{
+		"id": 33,
+		"session_count": 99,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.54
+	},
+	{
+		"id": 33,
+		"session_count": 99,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.24
+	},
+	{
+		"id": 33,
+		"session_count": 99,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.42
+	},
+	{
+		"id": 34,
+		"session_count": 66,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.98
+	},
+	{
+		"id": 34,
+		"session_count": 66,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.53
+	},
+	{
+		"id": 34,
+		"session_count": 66,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.71
+	},
+	{
+		"id": 34,
+		"session_count": 66,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.16
+	},
+	{
+		"id": 35,
+		"session_count": 121,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.84
+	},
+	{
+		"id": 35,
+		"session_count": 121,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.31
+	},
+	{
+		"id": 35,
+		"session_count": 121,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.49
+	},
+	{
+		"id": 35,
+		"session_count": 121,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.55
+	},
+	{
+		"id": 36,
+		"session_count": 97,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.67
+	},
+	{
+		"id": 36,
+		"session_count": 97,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.76
+	},
+	{
+		"id": 36,
+		"session_count": 97,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.59
+	},
+	{
+		"id": 36,
+		"session_count": 97,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.71
+	},
+	{
+		"id": 37,
+		"session_count": 92,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 4.55
+	},
+	{
+		"id": 37,
+		"session_count": 92,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 4.39
+	},
+	{
+		"id": 37,
+		"session_count": 92,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.82
+	},
+	{
+		"id": 37,
+		"session_count": 92,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 4.15
+	},
+	{
+		"id": 38,
+		"session_count": 93,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.57
+	},
+	{
+		"id": 38,
+		"session_count": 93,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.95
+	},
+	{
+		"id": 38,
+		"session_count": 93,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.87
+	},
+	{
+		"id": 38,
+		"session_count": 93,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.92
+	},
+	{
+		"id": 39,
+		"session_count": 82,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.04
+	},
+	{
+		"id": 39,
+		"session_count": 82,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.62
+	},
+	{
+		"id": 39,
+		"session_count": 82,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.74
+	},
+	{
+		"id": 39,
+		"session_count": 82,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.62
+	},
+	{
+		"id": 40,
+		"session_count": 124,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.98
+	},
+	{
+		"id": 40,
+		"session_count": 124,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.8
+	},
+	{
+		"id": 40,
+		"session_count": 124,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 4.27
+	},
+	{
+		"id": 40,
+		"session_count": 124,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.95
+	},
+	{
+		"id": 41,
+		"session_count": 151,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.76
+	},
+	{
+		"id": 41,
+		"session_count": 151,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.55
+	},
+	{
+		"id": 41,
+		"session_count": 151,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.21
+	},
+	{
+		"id": 41,
+		"session_count": 151,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.47
+	},
+	{
+		"id": 42,
+		"session_count": 72,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.06
+	},
+	{
+		"id": 42,
+		"session_count": 72,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.34
+	},
+	{
+		"id": 42,
+		"session_count": 72,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.42
+	},
+	{
+		"id": 42,
+		"session_count": 72,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.74
+	},
+	{
+		"id": 43,
+		"session_count": 148,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.8
+	},
+	{
+		"id": 43,
+		"session_count": 148,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.59
+	},
+	{
+		"id": 43,
+		"session_count": 148,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.7
+	},
+	{
+		"id": 43,
+		"session_count": 148,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.86
+	},
+	{
+		"id": 44,
+		"session_count": 108,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3
+	},
+	{
+		"id": 44,
+		"session_count": 108,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.24
+	},
+	{
+		"id": 44,
+		"session_count": 108,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.24
+	},
+	{
+		"id": 44,
+		"session_count": 108,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.67
+	},
+	{
+		"id": 45,
+		"session_count": 14,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.12
+	},
+	{
+		"id": 45,
+		"session_count": 14,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 4.39
+	},
+	{
+		"id": 45,
+		"session_count": 14,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.71
+	},
+	{
+		"id": 45,
+		"session_count": 14,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.63
+	},
+	{
+		"id": 46,
+		"session_count": 118,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.98
+	},
+	{
+		"id": 46,
+		"session_count": 118,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 4.24
+	},
+	{
+		"id": 46,
+		"session_count": 118,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 4.46
+	},
+	{
+		"id": 46,
+		"session_count": 118,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 4.4
+	},
+	{
+		"id": 47,
+		"session_count": 30,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.85
+	},
+	{
+		"id": 47,
+		"session_count": 30,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.84
+	},
+	{
+		"id": 47,
+		"session_count": 30,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.73
+	},
+	{
+		"id": 47,
+		"session_count": 30,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 4.34
+	},
+	{
+		"id": 48,
+		"session_count": 14,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.65
+	},
+	{
+		"id": 48,
+		"session_count": 14,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 4.4
+	},
+	{
+		"id": 48,
+		"session_count": 14,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.61
+	},
+	{
+		"id": 48,
+		"session_count": 14,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.83
+	},
+	{
+		"id": 49,
+		"session_count": 122,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.2
+	},
+	{
+		"id": 49,
+		"session_count": 122,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.99
+	},
+	{
+		"id": 49,
+		"session_count": 122,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 4.04
+	},
+	{
+		"id": 49,
+		"session_count": 122,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 4.03
+	},
+	{
+		"id": 50,
+		"session_count": 145,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.11
+	},
+	{
+		"id": 50,
+		"session_count": 145,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.73
+	},
+	{
+		"id": 50,
+		"session_count": 145,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.6
+	},
+	{
+		"id": 50,
+		"session_count": 145,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.37
+	},
+	{
+		"id": 51,
+		"session_count": 68,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.11
+	},
+	{
+		"id": 51,
+		"session_count": 68,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.7
+	},
+	{
+		"id": 51,
+		"session_count": 68,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.94
+	},
+	{
+		"id": 51,
+		"session_count": 68,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.87
+	},
+	{
+		"id": 52,
+		"session_count": 103,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.81
+	},
+	{
+		"id": 52,
+		"session_count": 103,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.08
+	},
+	{
+		"id": 52,
+		"session_count": 103,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.67
+	},
+	{
+		"id": 52,
+		"session_count": 103,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.9
+	},
+	{
+		"id": 53,
+		"session_count": 52,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.56
+	},
+	{
+		"id": 53,
+		"session_count": 52,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.12
+	},
+	{
+		"id": 53,
+		"session_count": 52,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.25
+	},
+	{
+		"id": 53,
+		"session_count": 52,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.92
+	},
+	{
+		"id": 54,
+		"session_count": 9,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.57
+	},
+	{
+		"id": 54,
+		"session_count": 9,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 4.33
+	},
+	{
+		"id": 54,
+		"session_count": 9,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.78
+	},
+	{
+		"id": 54,
+		"session_count": 9,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.69
+	},
+	{
+		"id": 55,
+		"session_count": 85,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 4.09
+	},
+	{
+		"id": 55,
+		"session_count": 85,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 4.13
+	},
+	{
+		"id": 55,
+		"session_count": 85,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 4.27
+	},
+	{
+		"id": 55,
+		"session_count": 85,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 4.21
+	},
+	{
+		"id": 56,
+		"session_count": 94,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.42
+	},
+	{
+		"id": 56,
+		"session_count": 94,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.55
+	},
+	{
+		"id": 56,
+		"session_count": 94,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.75
+	},
+	{
+		"id": 56,
+		"session_count": 94,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.73
+	},
+	{
+		"id": 57,
+		"session_count": 128,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.15
+	},
+	{
+		"id": 57,
+		"session_count": 128,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 4.3
+	},
+	{
+		"id": 57,
+		"session_count": 128,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.74
+	},
+	{
+		"id": 57,
+		"session_count": 128,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.95
+	},
+	{
+		"id": 58,
+		"session_count": 84,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.21
+	},
+	{
+		"id": 58,
+		"session_count": 84,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.75
+	},
+	{
+		"id": 58,
+		"session_count": 84,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.66
+	},
+	{
+		"id": 58,
+		"session_count": 84,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.56
+	},
+	{
+		"id": 59,
+		"session_count": 143,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.92
+	},
+	{
+		"id": 59,
+		"session_count": 143,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.07
+	},
+	{
+		"id": 59,
+		"session_count": 143,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.48
+	},
+	{
+		"id": 59,
+		"session_count": 143,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.17
+	},
+	{
+		"id": 60,
+		"session_count": 18,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3
+	},
+	{
+		"id": 60,
+		"session_count": 18,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.45
+	},
+	{
+		"id": 60,
+		"session_count": 18,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.15
+	},
+	{
+		"id": 60,
+		"session_count": 18,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.94
+	},
+	{
+		"id": 61,
+		"session_count": 75,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.81
+	},
+	{
+		"id": 61,
+		"session_count": 75,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.69
+	},
+	{
+		"id": 61,
+		"session_count": 75,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.43
+	},
+	{
+		"id": 61,
+		"session_count": 75,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.01
+	},
+	{
+		"id": 62,
+		"session_count": 107,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.73
+	},
+	{
+		"id": 62,
+		"session_count": 107,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.69
+	},
+	{
+		"id": 62,
+		"session_count": 107,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.5
+	},
+	{
+		"id": 62,
+		"session_count": 107,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.7
+	},
+	{
+		"id": 63,
+		"session_count": 63,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.76
+	},
+	{
+		"id": 63,
+		"session_count": 63,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.64
+	},
+	{
+		"id": 63,
+		"session_count": 63,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 4.35
+	},
+	{
+		"id": 63,
+		"session_count": 63,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.66
+	},
+	{
+		"id": 64,
+		"session_count": 150,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 4.3
+	},
+	{
+		"id": 64,
+		"session_count": 150,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 4.32
+	},
+	{
+		"id": 64,
+		"session_count": 150,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 4.2
+	},
+	{
+		"id": 64,
+		"session_count": 150,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 4.48
+	},
+	{
+		"id": 65,
+		"session_count": 30,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.81
+	},
+	{
+		"id": 65,
+		"session_count": 30,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 4.35
+	},
+	{
+		"id": 65,
+		"session_count": 30,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.88
+	},
+	{
+		"id": 65,
+		"session_count": 30,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.87
+	},
+	{
+		"id": 66,
+		"session_count": 85,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.39
+	},
+	{
+		"id": 66,
+		"session_count": 85,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.78
+	},
+	{
+		"id": 66,
+		"session_count": 85,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.56
+	},
+	{
+		"id": 66,
+		"session_count": 85,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 4.17
+	},
+	{
+		"id": 67,
+		"session_count": 38,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.13
+	},
+	{
+		"id": 67,
+		"session_count": 38,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 4.21
+	},
+	{
+		"id": 67,
+		"session_count": 38,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.95
+	},
+	{
+		"id": 67,
+		"session_count": 38,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.7
+	},
+	{
+		"id": 68,
+		"session_count": 123,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.03
+	},
+	{
+		"id": 68,
+		"session_count": 123,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.94
+	},
+	{
+		"id": 68,
+		"session_count": 123,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.04
+	},
+	{
+		"id": 68,
+		"session_count": 123,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.86
+	},
+	{
+		"id": 69,
+		"session_count": 131,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.69
+	},
+	{
+		"id": 69,
+		"session_count": 131,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.65
+	},
+	{
+		"id": 69,
+		"session_count": 131,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.94
+	},
+	{
+		"id": 69,
+		"session_count": 131,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.34
+	},
+	{
+		"id": 70,
+		"session_count": 22,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.11
+	},
+	{
+		"id": 70,
+		"session_count": 22,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.54
+	},
+	{
+		"id": 70,
+		"session_count": 22,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.17
+	},
+	{
+		"id": 70,
+		"session_count": 22,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.1
+	},
+	{
+		"id": 71,
+		"session_count": 33,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.79
+	},
+	{
+		"id": 71,
+		"session_count": 33,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.12
+	},
+	{
+		"id": 71,
+		"session_count": 33,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.13
+	},
+	{
+		"id": 71,
+		"session_count": 33,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.62
+	},
+	{
+		"id": 72,
+		"session_count": 17,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.63
+	},
+	{
+		"id": 72,
+		"session_count": 17,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.8
+	},
+	{
+		"id": 72,
+		"session_count": 17,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.92
+	},
+	{
+		"id": 72,
+		"session_count": 17,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 4.24
+	},
+	{
+		"id": 73,
+		"session_count": 33,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 4.45
+	},
+	{
+		"id": 73,
+		"session_count": 33,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 4.29
+	},
+	{
+		"id": 73,
+		"session_count": 33,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 4.11
+	},
+	{
+		"id": 73,
+		"session_count": 33,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 4.47
+	},
+	{
+		"id": 74,
+		"session_count": 144,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.66
+	},
+	{
+		"id": 74,
+		"session_count": 144,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 4.16
+	},
+	{
+		"id": 74,
+		"session_count": 144,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 4.43
+	},
+	{
+		"id": 74,
+		"session_count": 144,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.68
+	},
+	{
+		"id": 75,
+		"session_count": 143,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.28
+	},
+	{
+		"id": 75,
+		"session_count": 143,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 4.42
+	},
+	{
+		"id": 75,
+		"session_count": 143,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.59
+	},
+	{
+		"id": 75,
+		"session_count": 143,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.66
+	},
+	{
+		"id": 76,
+		"session_count": 40,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.38
+	},
+	{
+		"id": 76,
+		"session_count": 40,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.64
+	},
+	{
+		"id": 76,
+		"session_count": 40,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 4.09
+	},
+	{
+		"id": 76,
+		"session_count": 40,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.86
+	},
+	{
+		"id": 77,
+		"session_count": 12,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.84
+	},
+	{
+		"id": 77,
+		"session_count": 12,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.5
+	},
+	{
+		"id": 77,
+		"session_count": 12,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.27
+	},
+	{
+		"id": 77,
+		"session_count": 12,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.31
+	},
+	{
+		"id": 78,
+		"session_count": 94,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.79
+	},
+	{
+		"id": 78,
+		"session_count": 94,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.63
+	},
+	{
+		"id": 78,
+		"session_count": 94,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.5
+	},
+	{
+		"id": 78,
+		"session_count": 94,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.5
+	},
+	{
+		"id": 79,
+		"session_count": 66,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.8
+	},
+	{
+		"id": 79,
+		"session_count": 66,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.46
+	},
+	{
+		"id": 79,
+		"session_count": 66,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.37
+	},
+	{
+		"id": 79,
+		"session_count": 66,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.27
+	},
+	{
+		"id": 80,
+		"session_count": 97,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.61
+	},
+	{
+		"id": 80,
+		"session_count": 97,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.38
+	},
+	{
+		"id": 80,
+		"session_count": 97,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.69
+	},
+	{
+		"id": 80,
+		"session_count": 97,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.38
+	},
+	{
+		"id": 81,
+		"session_count": 54,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.75
+	},
+	{
+		"id": 81,
+		"session_count": 54,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 4.08
+	},
+	{
+		"id": 81,
+		"session_count": 54,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.6
+	},
+	{
+		"id": 81,
+		"session_count": 54,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.84
+	},
+	{
+		"id": 82,
+		"session_count": 94,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 4.55
+	},
+	{
+		"id": 82,
+		"session_count": 94,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 4.39
+	},
+	{
+		"id": 82,
+		"session_count": 94,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 4.54
+	},
+	{
+		"id": 82,
+		"session_count": 94,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.69
+	},
+	{
+		"id": 83,
+		"session_count": 18,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.59
+	},
+	{
+		"id": 83,
+		"session_count": 18,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.94
+	},
+	{
+		"id": 83,
+		"session_count": 18,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 4.1
+	},
+	{
+		"id": 83,
+		"session_count": 18,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 4
+	},
+	{
+		"id": 84,
+		"session_count": 58,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.68
+	},
+	{
+		"id": 84,
+		"session_count": 58,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.68
+	},
+	{
+		"id": 84,
+		"session_count": 58,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 4.47
+	},
+	{
+		"id": 84,
+		"session_count": 58,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.73
+	},
+	{
+		"id": 85,
+		"session_count": 14,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.84
+	},
+	{
+		"id": 85,
+		"session_count": 14,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 4.39
+	},
+	{
+		"id": 85,
+		"session_count": 14,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.91
+	},
+	{
+		"id": 85,
+		"session_count": 14,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 4.41
+	},
+	{
+		"id": 86,
+		"session_count": 149,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.57
+	},
+	{
+		"id": 86,
+		"session_count": 149,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.69
+	},
+	{
+		"id": 86,
+		"session_count": 149,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.14
+	},
+	{
+		"id": 86,
+		"session_count": 149,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.53
+	},
+	{
+		"id": 87,
+		"session_count": 131,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.8
+	},
+	{
+		"id": 87,
+		"session_count": 131,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.71
+	},
+	{
+		"id": 87,
+		"session_count": 131,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.42
+	},
+	{
+		"id": 87,
+		"session_count": 131,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.26
+	},
+	{
+		"id": 88,
+		"session_count": 33,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.54
+	},
+	{
+		"id": 88,
+		"session_count": 33,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.36
+	},
+	{
+		"id": 88,
+		"session_count": 33,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.25
+	},
+	{
+		"id": 88,
+		"session_count": 33,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.9
+	},
+	{
+		"id": 89,
+		"session_count": 111,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.02
+	},
+	{
+		"id": 89,
+		"session_count": 111,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.99
+	},
+	{
+		"id": 89,
+		"session_count": 111,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.85
+	},
+	{
+		"id": 89,
+		"session_count": 111,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.2
+	},
+	{
+		"id": 90,
+		"session_count": 70,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.78
+	},
+	{
+		"id": 90,
+		"session_count": 70,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.63
+	},
+	{
+		"id": 90,
+		"session_count": 70,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.97
+	},
+	{
+		"id": 90,
+		"session_count": 70,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 4.02
+	},
+	{
+		"id": 91,
+		"session_count": 133,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 4.48
+	},
+	{
+		"id": 91,
+		"session_count": 133,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 4.48
+	},
+	{
+		"id": 91,
+		"session_count": 133,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 4.33
+	},
+	{
+		"id": 91,
+		"session_count": 133,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 4.32
+	},
+	{
+		"id": 92,
+		"session_count": 18,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.87
+	},
+	{
+		"id": 92,
+		"session_count": 18,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.84
+	},
+	{
+		"id": 92,
+		"session_count": 18,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 4.35
+	},
+	{
+		"id": 92,
+		"session_count": 18,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 4.31
+	},
+	{
+		"id": 93,
+		"session_count": 136,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 4
+	},
+	{
+		"id": 93,
+		"session_count": 136,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.89
+	},
+	{
+		"id": 93,
+		"session_count": 136,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.7
+	},
+	{
+		"id": 93,
+		"session_count": 136,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 4.21
+	},
+	{
+		"id": 94,
+		"session_count": 142,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.84
+	},
+	{
+		"id": 94,
+		"session_count": 142,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.61
+	},
+	{
+		"id": 94,
+		"session_count": 142,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.82
+	},
+	{
+		"id": 94,
+		"session_count": 142,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.78
+	},
+	{
+		"id": 95,
+		"session_count": 69,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.87
+	},
+	{
+		"id": 95,
+		"session_count": 69,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.69
+	},
+	{
+		"id": 95,
+		"session_count": 69,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.51
+	},
+	{
+		"id": 95,
+		"session_count": 69,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.15
+	},
+	{
+		"id": 96,
+		"session_count": 97,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.99
+	},
+	{
+		"id": 96,
+		"session_count": 97,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.68
+	},
+	{
+		"id": 96,
+		"session_count": 97,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.91
+	},
+	{
+		"id": 96,
+		"session_count": 97,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.79
+	},
+	{
+		"id": 97,
+		"session_count": 95,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.79
+	},
+	{
+		"id": 97,
+		"session_count": 95,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.47
+	},
+	{
+		"id": 97,
+		"session_count": 95,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.31
+	},
+	{
+		"id": 97,
+		"session_count": 95,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.91
+	},
+	{
+		"id": 98,
+		"session_count": 37,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.69
+	},
+	{
+		"id": 98,
+		"session_count": 37,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.17
+	},
+	{
+		"id": 98,
+		"session_count": 37,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.03
+	},
+	{
+		"id": 98,
+		"session_count": 37,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.91
+	},
+	{
+		"id": 99,
+		"session_count": 38,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.93
+	},
+	{
+		"id": 99,
+		"session_count": 38,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.61
+	},
+	{
+		"id": 99,
+		"session_count": 38,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.92
+	},
+	{
+		"id": 99,
+		"session_count": 38,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.79
+	},
+	{
+		"id": 100,
+		"session_count": 66,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 4.3
+	},
+	{
+		"id": 100,
+		"session_count": 66,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 4.66
+	},
+	{
+		"id": 100,
+		"session_count": 66,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 4.71
+	},
+	{
+		"id": 100,
+		"session_count": 66,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 4.62
+	},
+	{
+		"id": 101,
+		"session_count": 144,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.99
+	},
+	{
+		"id": 101,
+		"session_count": 144,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 4.24
+	},
+	{
+		"id": 101,
+		"session_count": 144,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 4.36
+	},
+	{
+		"id": 101,
+		"session_count": 144,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 4.27
+	},
+	{
+		"id": 102,
+		"session_count": 142,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.87
+	},
+	{
+		"id": 102,
+		"session_count": 142,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.74
+	},
+	{
+		"id": 102,
+		"session_count": 142,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.78
+	},
+	{
+		"id": 102,
+		"session_count": 142,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 4.17
+	},
+	{
+		"id": 103,
+		"session_count": 18,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 4.42
+	},
+	{
+		"id": 103,
+		"session_count": 18,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.75
+	},
+	{
+		"id": 103,
+		"session_count": 18,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.83
+	},
+	{
+		"id": 103,
+		"session_count": 18,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.62
+	},
+	{
+		"id": 104,
+		"session_count": 65,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.62
+	},
+	{
+		"id": 104,
+		"session_count": 65,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.72
+	},
+	{
+		"id": 104,
+		"session_count": 65,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.67
+	},
+	{
+		"id": 104,
+		"session_count": 65,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.17
+	},
+	{
+		"id": 105,
+		"session_count": 118,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.95
+	},
+	{
+		"id": 105,
+		"session_count": 118,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.77
+	},
+	{
+		"id": 105,
+		"session_count": 118,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.94
+	},
+	{
+		"id": 105,
+		"session_count": 118,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.83
+	},
+	{
+		"id": 106,
+		"session_count": 9,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.68
+	},
+	{
+		"id": 106,
+		"session_count": 9,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.47
+	},
+	{
+		"id": 106,
+		"session_count": 9,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.32
+	},
+	{
+		"id": 106,
+		"session_count": 9,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.37
+	},
+	{
+		"id": 107,
+		"session_count": 60,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.78
+	},
+	{
+		"id": 107,
+		"session_count": 60,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.44
+	},
+	{
+		"id": 107,
+		"session_count": 60,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.06
+	},
+	{
+		"id": 107,
+		"session_count": 60,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.57
+	},
+	{
+		"id": 108,
+		"session_count": 113,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 4.33
+	},
+	{
+		"id": 108,
+		"session_count": 113,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.51
+	},
+	{
+		"id": 108,
+		"session_count": 113,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.79
+	},
+	{
+		"id": 108,
+		"session_count": 113,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.63
+	},
+	{
+		"id": 109,
+		"session_count": 29,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 4.54
+	},
+	{
+		"id": 109,
+		"session_count": 29,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 4.3
+	},
+	{
+		"id": 109,
+		"session_count": 29,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 4.74
+	},
+	{
+		"id": 109,
+		"session_count": 29,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.68
+	},
+	{
+		"id": 110,
+		"session_count": 35,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 4.01
+	},
+	{
+		"id": 110,
+		"session_count": 35,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 2.84
+	},
+	{
+		"id": 110,
+		"session_count": 35,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.63
+	},
+	{
+		"id": 110,
+		"session_count": 35,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.72
+	},
+	{
+		"id": 111,
+		"session_count": 115,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 4.01
+	},
+	{
+		"id": 111,
+		"session_count": 115,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 4.08
+	},
+	{
+		"id": 111,
+		"session_count": 115,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 4.28
+	},
+	{
+		"id": 111,
+		"session_count": 115,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.84
+	},
+	{
+		"id": 112,
+		"session_count": 136,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.84
+	},
+	{
+		"id": 112,
+		"session_count": 136,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 4.02
+	},
+	{
+		"id": 112,
+		"session_count": 136,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3.93
+	},
+	{
+		"id": 112,
+		"session_count": 136,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 4.03
+	},
+	{
+		"id": 113,
+		"session_count": 5,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 3.27
+	},
+	{
+		"id": 113,
+		"session_count": 5,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.1
+	},
+	{
+		"id": 113,
+		"session_count": 5,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 3
+	},
+	{
+		"id": 113,
+		"session_count": 5,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 2.39
+	},
+	{
+		"id": 114,
+		"session_count": 130,
+		"category": "Overall",
+		"category_sort": 1,
+		"rating": 2.89
+	},
+	{
+		"id": 114,
+		"session_count": 130,
+		"category": "Content",
+		"category_sort": 2,
+		"rating": 3.27
+	},
+	{
+		"id": 114,
+		"session_count": 130,
+		"category": "Speaker presentation",
+		"category_sort": 3,
+		"rating": 2.49
+	},
+	{
+		"id": 114,
+		"session_count": 130,
+		"category": "Relevance",
+		"category_sort": 4,
+		"rating": 3.32
+	}
+]

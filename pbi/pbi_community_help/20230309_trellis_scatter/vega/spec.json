@@ -1,0 +1,480 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "background": "white",
+  "padding": 5,
+  "data": [
+    {"name": "brush_store"},
+    {
+      "name": "dataset",
+      "url": "https://raw.githubusercontent.com/Giammaria/PublicFiles/master/pbi/pbi_community_help/20230309_trellis_scatter/data/mtcars_unpivoted.tsv",
+      "format": {
+        "type": "tsv",
+        "parse": {"Index": "number", "Value": "number"},
+        "delimiter": "\t"
+      }
+    },
+    {
+      "name": "data_0",
+      "source": "dataset",
+      "transform": [
+        {
+          "type": "formula",
+          "expr": "200",
+          "as": "Facet Width"
+        },
+        {
+          "type": "formula",
+          "expr": "100",
+          "as": "Facet Height"
+        },
+        {
+          "type": "joinaggregate",
+          "as": ["total_observation_count"],
+          "ops": ["count"],
+          "fields": [null]
+        },
+        {
+          "type": "formula",
+          "expr": "sequence(1,datum['total_observation_count']+1,1)",
+          "as": "index_2"
+        },
+        {
+          "type": "formula",
+          "expr": "split(replace(replace(join(datum['index_2'], ','), toString(datum['Index']), ''), ',,', ','), ',')",
+          "as": "index_2"
+        },
+        {"type": "flatten", "fields": ["index_2"], "as": ["index_2"]},
+        {"type": "filter", "expr": "datum['index_2']"},
+        {"type": "formula", "expr": "+datum['index_2']", "as": "index_2"},
+        {
+          "type": "lookup",
+          "from": "dataset",
+          "key": "index",
+          "fields": ["index_2"],
+          "values": ["Attribute", "Value"],
+          "as": ["attribute_2", "value_2"]
+        },
+        {
+          "type": "formula",
+          "expr": "data('dataset')[datum['index_2']-1]",
+          "as": "row_to_compare"
+        },
+        {
+          "type": "filter",
+          "expr": "datum['Observation']===datum['row_to_compare']['Observation']"
+        },
+        {
+          "type": "formula",
+          "expr": "datum['row_to_compare']['Attribute']",
+          "as": "attribute_2"
+        },
+        {
+          "type": "formula",
+          "expr": "datum['row_to_compare']['Value']",
+          "as": "value_2"
+        },
+        {
+          "type": "formula",
+          "expr": "[datum['Attribute'], datum['attribute_2']]",
+          "as": "variables"
+        },
+        {
+          "type": "joinaggregate",
+          "as": ["facet_count"],
+          "ops": ["distinct"],
+          "fields": ["variables"]
+        },
+        {
+          "type": "window",
+          "params": [null],
+          "as": ["facet_index"],
+          "ops": ["dense_rank"],
+          "fields": ["variables"],
+          "sort": {"field": ["variables"], "order": ["ascending"]},
+          "frame": [null, null]
+        },
+        {
+          "type": "formula",
+          "expr": "floor(sqrt(datum['facet_count']))",
+          "as": "row_count"
+        },
+        {
+          "type": "formula",
+          "expr": "ceil(datum['facet_count']/datum['row_count'])",
+          "as": "column_count"
+        },
+        {
+          "type": "formula",
+          "expr": "datum['facet_index']%datum['column_count'] === 0 ? datum['column_count'] : datum['facet_index']%datum['column_count']",
+          "as": "column"
+        },
+        {
+          "type": "window",
+          "params": [null],
+          "as": ["row"],
+          "ops": ["dense_rank"],
+          "fields": [null],
+          "sort": {"field": ["facet_index"], "order": ["ascending"]},
+          "groupby": ["column"],
+          "frame": [null, 1]
+        },
+        {
+          "type": "window",
+          "params": [null],
+          "as": ["facet_data_index"],
+          "ops": ["row_number"],
+          "fields": [null],
+          "sort": {"field": [], "order": []},
+          "groupby": ["facet_index"],
+          "frame": [null, null]
+        },
+        {
+          "type": "formula",
+          "expr": "datum['Attribute']+': '+toString(datum['Value'])",
+          "as": "tooltipX"
+        },
+        {
+          "type": "formula",
+          "expr": "datum['attribute_2']+': '+toString(datum['value_2'])",
+          "as": "tooltipY"
+        }
+      ]
+    },
+    {
+      "name": "column_domain",
+      "source": "data_0",
+      "transform": [{"type": "aggregate", "groupby": ["column"]}]
+    },
+    {
+      "name": "row_domain",
+      "source": "data_0",
+      "transform": [{"type": "aggregate", "groupby": ["row"]}]
+    },
+    {
+      "name": "data_2",
+      "source": "data_0",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "isValid(datum[\"Value\"]) && isFinite(+datum[\"Value\"]) && isValid(datum[\"value_2\"]) && isFinite(+datum[\"value_2\"])"
+        }
+      ]
+    },
+    {
+      "name": "data_3",
+      "source": "data_0",
+      "transform": [{"type": "filter", "expr": "datum['facet_data_index']===1"}]
+    }
+  ],
+  "signals": [
+    {
+      "name": "facet_size",
+      "value": 20,
+      "bind": {"input": "range", "min": 10, "max": 425, "name": "Cell Size (px²)"}
+    },
+    {"name": "child_width", "update": "facet_size"},
+    {"name": "child_height", "update": "facet_size"},
+    {
+      "name": "unit",
+      "value": {},
+      "on": [
+        {"events": "mousemove", "update": "isTuple(group()) ? group() : unit"}
+      ]
+    },
+    {
+      "name": "brush",
+      "update": "vlSelectionResolve(\"brush_store\", \"union\", true, true)"
+    },
+    {"name": "observation", "update": "toString(brush['Observation'])"}
+  ],
+  "layout": {
+    "padding": 20,
+    "columns": {"signal": "length(data('column_domain'))"},
+    "bounds": "full",
+    "align": "all"
+  },
+  "marks": [
+    {
+      "name": "cell",
+      "type": "group",
+      "style": "cell",
+      "from": {
+        "facet": {
+          "name": "facet",
+          "data": "data_0",
+          "groupby": ["row", "column"],
+          "aggregate": {"cross": true}
+        }
+      },
+      "sort": {
+        "field": ["datum[\"row\"]", "datum[\"column\"]"],
+        "order": ["ascending", "ascending"]
+      },
+      "data": [
+        {
+          "source": "facet",
+          "name": "data_0",
+          "transform": [
+            {
+              "type": "filter",
+              "expr": "isValid(datum[\"Value\"]) && isFinite(+datum[\"Value\"]) && isValid(datum[\"value_2\"]) && isFinite(+datum[\"value_2\"])"
+            }
+          ]
+        },
+        {
+          "source": "facet",
+          "name": "data_1",
+          "transform": [
+            {"type": "filter", "expr": "datum['facet_data_index']===1"}
+          ]
+        }
+      ],
+      "encode": {
+        "update": {
+          "width": {"signal": "child_width"},
+          "height": {"signal": "child_height"}
+        }
+      },
+      "signals": [
+        {
+          "name": "facet",
+          "value": {},
+          "on": [
+            {
+              "events": [{"source": "scope", "type": "mousemove"}],
+              "update": "isTuple(facet) ? facet : group(\"cell\").datum"
+            }
+          ]
+        },
+        {
+          "name": "brush_tuple",
+          "on": [
+            {
+              "events": [
+                {
+                  "source": "scope",
+                  "type": "mouseover",
+                  "markname": "splom_voronoi"
+                }
+              ],
+              "update": "datum && item().mark.marktype !== 'group' && indexof(item().mark.role, 'legend') < 0 ? {unit: \"splom\" + '__facet_row_' + (facet[\"row\"]) + '__facet_column_' + (facet[\"column\"]), fields: brush_tuple_fields, values: [(item().isVoronoi ? datum.datum : datum)[\"Observation\"]]} : null",
+              "force": true
+            },
+            {"events": {"type": "mouseout"}, "update": "null"}
+          ]
+        },
+        {
+          "name": "brush_tuple_fields",
+          "value": [{"field": "Observation", "channel": "color", "type": "E"}]
+        },
+        {
+          "name": "brush_toggle",
+          "value": false,
+          "on": [
+            {
+              "events": [
+                {
+                  "source": "scope",
+                  "type": "mouseover",
+                  "markname": "splom_voronoi"
+                }
+              ],
+              "update": "event.shiftKey"
+            },
+            {"events": {"type": "mouseout"}, "update": "false"}
+          ]
+        },
+        {
+          "name": "brush_modify",
+          "on": [
+            {
+              "events": {"signal": "brush_tuple"},
+              "update": "modify(\"brush_store\", brush_toggle ? null : brush_tuple, brush_toggle ? null : true, brush_toggle ? brush_tuple : null)"
+            }
+          ]
+        }
+      ],
+      "marks": [
+        {
+          "name": "splom_marks",
+          "type": "symbol",
+          "style": ["point"],
+          "interactive": true,
+          "from": {"data": "data_0"},
+          "encode": {
+            "update": {
+              "opacity": {"value": 0.7},
+              "fill": [
+                {
+                  "test": "observation==datum['Observation']",
+                  "scale": "color",
+                  "field": "Observation"
+                },
+                {"value": "steelblue"}
+              ],
+              "tooltip": {
+                "signal": "{\"Observation\": isValid(datum[\"Observation\"]) ? datum[\"Observation\"] : \"\"+datum[\"Observation\"], \"x\": isValid(datum[\"tooltipX\"]) ? datum[\"tooltipX\"] : \"\"+datum[\"tooltipX\"], \"y\": isValid(datum[\"tooltipY\"]) ? datum[\"tooltipY\"] : \"\"+datum[\"tooltipY\"]}"
+              },
+              "ariaRoleDescription": {"value": "point"},
+              "description": {
+                "signal": "\"Value: \" + (format(datum[\"Value\"], \"\")) + \"; value_2: \" + (format(datum[\"value_2\"], \"\")) + \"; Observation: \" + (isValid(datum[\"Observation\"]) ? datum[\"Observation\"] : \"\"+datum[\"Observation\"]) + \"; x: \" + (isValid(datum[\"tooltipX\"]) ? datum[\"tooltipX\"] : \"\"+datum[\"tooltipX\"]) + \"; y: \" + (isValid(datum[\"tooltipY\"]) ? datum[\"tooltipY\"] : \"\"+datum[\"tooltipY\"])"
+              },
+              "x": {"scale": "child_x", "field": "Value"},
+              "y": {"scale": "child_y", "field": "value_2"},
+              "size": [
+                {"test": "observation===datum['Observation']", "value": 400},
+                {"value": 40}
+              ]
+            }
+          }
+        },
+        {
+          "name": "splom_voronoi",
+          "type": "path",
+          "interactive": true,
+          "from": {"data": "splom_marks"},
+          "encode": {
+            "update": {
+              "fill": {"value": "transparent"},
+              "strokeWidth": {"value": 0.35},
+              "stroke": {"value": "transparent"},
+              "isVoronoi": {"value": true},
+              "tooltip": {
+                "signal": "{\"Observation\": isValid(datum.datum[\"Observation\"]) ? datum.datum[\"Observation\"] : \"\"+datum.datum[\"Observation\"], \"x\": isValid(datum.datum[\"tooltipX\"]) ? datum.datum[\"tooltipX\"] : \"\"+datum.datum[\"tooltipX\"], \"y\": isValid(datum.datum[\"tooltipY\"]) ? datum.datum[\"tooltipY\"] : \"\"+datum.datum[\"tooltipY\"]}"
+              }
+            }
+          },
+          "transform": [
+            {
+              "type": "voronoi",
+              "x": {"expr": "datum.datum.x || 0"},
+              "y": {"expr": "datum.datum.y || 0"},
+              "size": [{"signal": "child_width"}, {"signal": "child_height"}]
+            }
+          ]
+        },
+        {
+          "name": "x_title_marks",
+          "type": "text",
+          "style": ["text"],
+          "interactive": false,
+          "from": {"data": "data_1"},
+          "encode": {
+            "update": {
+              "fontSize": {"value": 14},
+              "fill": {"value": "black"},
+              "description": {
+                "signal": "\"Attribute: \" + (isValid(datum[\"Attribute\"]) ? datum[\"Attribute\"] : \"\"+datum[\"Attribute\"])"
+              },
+              "x": {"signal": "child_width", "mult": 0.5},
+              "y": {"signal": "child_height", "offset": 25},
+              "text": {
+                "signal": "isValid(datum[\"Attribute\"]) ? datum[\"Attribute\"] : \"\"+datum[\"Attribute\"]"
+              },
+              "align": {"value": "center"},
+              "baseline": {"value": "middle"}
+            }
+          }
+        },
+        {
+          "name": "y_title_marks",
+          "type": "text",
+          "style": ["text"],
+          "interactive": false,
+          "from": {"data": "data_1"},
+          "encode": {
+            "update": {
+              "align": {"value": "center"},
+              "angle": {"value": 270},
+              "fontSize": {"value": 14},
+              "fill": {"value": "black"},
+              "description": {
+                "signal": "\"attribute_2: \" + (isValid(datum[\"attribute_2\"]) ? datum[\"attribute_2\"] : \"\"+datum[\"attribute_2\"])"
+              },
+              "x": {"signal": "0", "offset": -30},
+              "y": {"signal": "child_height", "mult": 0.5},
+              "text": {
+                "signal": "isValid(datum[\"attribute_2\"]) ? datum[\"attribute_2\"] : \"\"+datum[\"attribute_2\"]"
+              },
+              "baseline": {"value": "middle"}
+            }
+          }
+        }
+      ],
+      "scales": [
+        {
+          "name": "child_x",
+          "type": "linear",
+          "domain": {"data": "data_0", "field": "Value"},
+          "range": [0, {"signal": "child_width"}],
+          "nice": true,
+          "zero": true
+        },
+        {
+          "name": "child_y",
+          "type": "linear",
+          "domain": {"data": "data_0", "field": "value_2"},
+          "range": [{"signal": "child_height"}, 0],
+          "nice": true,
+          "zero": true
+        }
+      ],
+      "axes": [
+        {
+          "scale": "child_x",
+          "orient": "bottom",
+          "gridScale": "child_y",
+          "grid": true,
+          "tickCount": {"signal": "ceil(child_width/40)"},
+          "domain": false,
+          "labels": false,
+          "aria": false,
+          "maxExtent": 0,
+          "minExtent": 0,
+          "ticks": false,
+          "zindex": 0
+        },
+        {
+          "scale": "child_y",
+          "orient": "left",
+          "gridScale": "child_x",
+          "grid": true,
+          "tickCount": {"signal": "ceil(child_height/40)"},
+          "domain": false,
+          "labels": false,
+          "aria": false,
+          "maxExtent": 0,
+          "minExtent": 0,
+          "ticks": false,
+          "zindex": 0
+        },
+        {
+          "scale": "child_x",
+          "orient": "bottom",
+          "grid": false,
+          "labelFlush": true,
+          "labelOverlap": true,
+          "tickCount": {"signal": "ceil(child_width/40)"},
+          "zindex": 0
+        },
+        {
+          "scale": "child_y",
+          "orient": "left",
+          "grid": false,
+          "labelOverlap": true,
+          "tickCount": {"signal": "ceil(child_height/40)"},
+          "zindex": 0
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": {"data": "data_2", "field": "Observation", "sort": true},
+      "range": "category"
+    }
+  ],
+  "config": {"range": {"category": ["orange"]}}
+}

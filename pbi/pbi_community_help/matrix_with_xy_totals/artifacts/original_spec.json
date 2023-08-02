@@ -1,0 +1,107 @@
+{
+"transform":[
+{
+"joinaggregate":[{
+"op": "sum",
+"field": "Count of Records",
+"as": "group_category"
+}],
+"groupby": ["Category"]
+},
+{
+"filter": "datum['group_category'] != 0.0"
+},
+{
+"joinaggregate":[{
+"op": "sum",
+"field": "Count of Records",
+"as": "group_band"
+}],
+"groupby": ["Band Size"]
+}],
+"params": [
+{
+"name": "Size",
+"value": 9,
+"bind": {"input": "range", "min": 0, "max": 16, "step": 1, "name": " "}
+}
+],
+"data": {"name": "dataset"},
+"height": 360,
+"encoding": {
+"y": {
+"field": "Category",
+"title": null,
+"sort": "descending"
+},
+"x": {
+"field": "Band Size",
+"type": "ordinal",
+"sort": {"field": "Index"},
+"axis": {
+"orient": "bottom",
+"title": null
+}
+},
+"tooltip": [
+{"field": "Category"},
+{"field": "Band Size"},
+{"field": "Count of Records"}
+]
+},
+"layer": [
+{
+"mark": {"type": "rect"},
+"encoding": {
+"color": {
+"condition": {"test": "datum['Band Size'] == 'Total'",
+"value":"white"},
+"field": "Count of Records",
+"scale": {
+"scheme": "lightgreyteal"
+},
+"legend": null,
+"tooltip": true
+}
+}
+},
+{
+"mark": {
+"type": "text",
+"tooltip": true,
+"fontSize": {"expr": "Size"}
+},
+"encoding": {
+"text": {
+"field": "Count of Records",
+"type":"quantitative",
+"format": ",.0f"
+},
+"color": {
+"condition": {
+"test": "datum.Metric === 0.0",
+"value": "#E3E9E9"
+},
+"scale": {"scheme": "lightgreyteal"},
+"tooltip": false
+}
+}
+},
+{
+"mark": {
+"type": "text",
+"yOffset": -50,
+"tooltip": true,
+"fontSize": {"expr": "Size"}
+},
+"encoding": {
+"text": {
+"field": "group_band",
+"aggregate": "max",
+"type":"quantitative",
+"format": ",.0f"
+}
+}
+}
+]
+}

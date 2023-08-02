@@ -1,0 +1,343 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "autosize": "pad",
+  "background": "white",
+  "padding": 5,
+  "data": [
+    {
+      "name": "dataset",
+      "url": "https://raw.githubusercontent.com/Giammaria/PublicFiles/master/pbi/pbi_community_help/trellis_pie/data/data.tsv",
+      "format": {
+        "type": "tsv",
+        "parse": {"Result": "number"},
+        "delimiter": "\t"
+      },
+      "transform": [
+        {
+          "type": "window",
+          "params": [null],
+          "as": ["type_dr"],
+          "ops": ["dense_rank"],
+          "fields": [null],
+          "sort": {"field": ["Type"], "order": ["ascending"]},
+          "frame": [null, null]
+        },
+        {
+          "type": "joinaggregate",
+          "as": ["type_count"],
+          "ops": ["distinct"],
+          "fields": ["Type"]
+        },
+        {
+          "type": "joinaggregate",
+          "as": ["result_total"],
+          "ops": ["sum"],
+          "fields": ["Result"],
+          "groupby": ["Type"]
+        },
+        {
+          "type": "formula",
+          "expr": "toString(datum['Result'])+' out of '+toString(datum['result_total'])",
+          "as": "result_out_of"
+        },
+        {
+          "type": "formula",
+          "expr": "format(datum['Result']/datum['result_total'],'.0%')",
+          "as": "percentage"
+        },
+        {
+          "type": "formula",
+          "expr": "floor(sqrt(datum['type_count']))",
+          "as": "row_count"
+        },
+        {
+          "type": "formula",
+          "expr": "ceil(datum['type_count']/datum['row_count'])",
+          "as": "column_count"
+        },
+        {
+          "type": "formula",
+          "expr": "datum['type_dr']%datum['column_count'] === 0 ? datum['column_count'] : datum['type_dr']%datum['column_count']",
+          "as": "column"
+        },
+        {
+          "type": "window",
+          "params": [null],
+          "as": ["row"],
+          "ops": ["dense_rank"],
+          "fields": [null],
+          "sort": {"field": ["type_dr"], "order": ["ascending"]},
+          "groupby": ["column"],
+          "frame": [null, 1]
+        }
+      ]
+    },
+    {
+      "name": "column_domain",
+      "source": "dataset",
+      "transform": [{"type": "aggregate", "groupby": ["column"]}]
+    },
+    {
+      "name": "row_domain",
+      "source": "dataset",
+      "transform": [{"type": "aggregate", "groupby": ["row"]}]
+    },
+    {
+      "name": "data_2",
+      "source": "dataset",
+      "transform": [
+        {
+          "type": "stack",
+          "groupby": ["row", "column"],
+          "field": "Result",
+          "sort": {"field": ["Voice"], "order": ["ascending"]},
+          "as": ["Result_start", "Result_end"],
+          "offset": "zero"
+        },
+        {
+          "type": "filter",
+          "expr": "isValid(datum[\"Result\"]) && isFinite(+datum[\"Result\"])"
+        }
+      ]
+    },
+    {
+      "name": "data_3",
+      "source": "dataset",
+      "transform": [
+        {
+          "type": "stack",
+          "groupby": ["row", "column"],
+          "field": "Result",
+          "sort": {
+            "field": ["Voice", "percentage"],
+            "order": ["ascending", "ascending"]
+          },
+          "as": ["Result_start", "Result_end"],
+          "offset": "zero"
+        },
+        {
+          "type": "filter",
+          "expr": "isValid(datum[\"Result\"]) && isFinite(+datum[\"Result\"])"
+        }
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "name": "facet_size",
+      "value": 110,
+      "bind": {
+        "input": "range",
+        "min": 50,
+        "max": 500,
+        "step": 1,
+        "name": "Cell Size (px²)"
+      }
+    },
+    {"name": "child_width", "update": "facet_size"},
+    {"name": "child_height", "update": "facet_size"},
+    {
+      "name": "pie_outer_radius",
+      "update": "0.53*min(child_width,child_height)"
+    },
+    {"name": "pie_label_radius", "update": "0.63*min(child_width,child_height)"}
+  ],
+  "layout": {
+    "padding": 20,
+    "columns": {"signal": "length(data('column_domain'))"},
+    "bounds": "full",
+    "align": "all"
+  },
+  "marks": [
+    {
+      "name": "cell",
+      "type": "group",
+      "from": {
+        "facet": {
+          "name": "facet",
+          "data": "dataset",
+          "groupby": ["row", "column"],
+          "aggregate": {"cross": true}
+        }
+      },
+      "sort": {
+        "field": ["datum[\"row\"]", "datum[\"column\"]"],
+        "order": ["ascending", "ascending"]
+      },
+      "data": [
+        {
+          "name": "data_1",
+          "source": "facet",
+          "transform": [
+            {
+              "type": "stack",
+              "groupby": [],
+              "field": "Result",
+              "sort": {"field": ["Voice"], "order": ["ascending"]},
+              "as": ["Result_start", "Result_end"],
+              "offset": "zero"
+            },
+            {
+              "type": "filter",
+              "expr": "isValid(datum[\"Result\"]) && isFinite(+datum[\"Result\"])"
+            }
+          ]
+        },
+        {
+          "name": "data_2",
+          "source": "facet",
+          "transform": [
+            {
+              "type": "stack",
+              "groupby": [],
+              "field": "Result",
+              "sort": {
+                "field": ["Voice", "percentage"],
+                "order": ["ascending", "ascending"]
+              },
+              "as": ["Result_start", "Result_end"],
+              "offset": "zero"
+            },
+            {
+              "type": "filter",
+              "expr": "isValid(datum[\"Result\"]) && isFinite(+datum[\"Result\"])"
+            }
+          ]
+        }
+      ],
+      "encode": {
+        "update": {
+          "width": {"signal": "child_width"},
+          "height": {"signal": "child_height"}
+        }
+      },
+      "marks": [
+        {
+          "name": "type_text_marks",
+          "type": "text",
+          "style": ["text"],
+          "from": {"data": "facet"},
+          "encode": {
+            "update": {
+              "fontSize": {"value": 16},
+              "fill": {"value": "black"},
+              "description": {
+                "signal": "\"Type: \" + (isValid(datum[\"Type\"]) ? datum[\"Type\"] : \"\"+datum[\"Type\"])"
+              },
+              "x": {"signal": "child_width", "mult": 0.5},
+              "y": {"value": -35},
+              "text": {
+                "signal": "isValid(datum[\"Type\"]) ? datum[\"Type\"] : \"\"+datum[\"Type\"]"
+              },
+              "align": {"value": "center"},
+              "baseline": {"value": "middle"}
+            }
+          }
+        },
+        {
+          "name": "pie_marks",
+          "type": "arc",
+          "style": ["arc"],
+          "from": {"data": "data_1"},
+          "encode": {
+            "update": {
+              "outerRadius": {"signal": "pie_outer_radius"},
+              "fill": {"scale": "color", "field": "Voice"},
+              "tooltip": {
+                "signal": "{\"Type\": isValid(datum[\"Type\"]) ? datum[\"Type\"] : \"\"+datum[\"Type\"], \"Voice\": isValid(datum[\"Voice\"]) ? datum[\"Voice\"] : \"\"+datum[\"Voice\"], \"Result\": isValid(datum[\"result_out_of\"]) ? datum[\"result_out_of\"] : \"\"+datum[\"result_out_of\"], \"Result %\": isValid(datum[\"percentage\"]) ? datum[\"percentage\"] : \"\"+datum[\"percentage\"]}"
+              },
+              "description": {
+                "signal": "\"Result: \" + (format(datum[\"Result\"], \"\")) + \"; Voice: \" + (isValid(datum[\"Voice\"]) ? datum[\"Voice\"] : \"\"+datum[\"Voice\"]) + \"; Type: \" + (isValid(datum[\"Type\"]) ? datum[\"Type\"] : \"\"+datum[\"Type\"]) + \"; Result %: \" + (isValid(datum[\"percentage\"]) ? datum[\"percentage\"] : \"\"+datum[\"percentage\"])"
+              },
+              "x": {"signal": "child_width", "mult": 0.5},
+              "y": {"signal": "child_height", "mult": 0.5},
+              "innerRadius": {"value": 0},
+              "startAngle": {"scale": "child_theta", "field": "Result_end"},
+              "endAngle": {"scale": "child_theta", "field": "Result_start"}
+            }
+          }
+        },
+        {
+          "name": "pie_label_marks",
+          "type": "text",
+          "style": ["text"],
+          "from": {"data": "data_2"},
+          "encode": {
+            "update": {
+              "align": {"value": "center"},
+              "baseline": {"value": "top"},
+              "radius": {"signal": "pie_label_radius"},
+              "fill": {"scale": "color", "field": "Voice"},
+              "description": {
+                "signal": "\"Result: \" + (format(datum[\"Result\"], \"\")) + \"; Voice: \" + (isValid(datum[\"Voice\"]) ? datum[\"Voice\"] : \"\"+datum[\"Voice\"]) + \"; percentage: \" + (isValid(datum[\"percentage\"]) ? datum[\"percentage\"] : \"\"+datum[\"percentage\"])"
+              },
+              "x": {"signal": "child_width", "mult": 0.5},
+              "y": {"signal": "child_height", "mult": 0.5},
+              "text": {
+                "signal": "isValid(datum[\"percentage\"]) ? datum[\"percentage\"] : \"\"+datum[\"percentage\"]"
+              },
+              "theta": {
+                "signal": "scale(\"child_theta\", 0.5 * datum[\"Result_start\"] + 0.5 * datum[\"Result_end\"])"
+              }
+            }
+          }
+        }
+      ],
+      "scales": [
+        {
+          "name": "child_theta",
+          "type": "linear",
+          "domain": {
+            "fields": [
+              {"data": "data_1", "field": "Result_start"},
+              {"data": "data_1", "field": "Result_end"},
+              {"data": "data_2", "field": "Result_start"},
+              {"data": "data_2", "field": "Result_end"}
+            ]
+          },
+          "range": [0, 6.283185307179586],
+          "zero": true
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": {
+        "fields": [
+          {"data": "data_2", "field": "Voice"},
+          {"data": "data_3", "field": "Voice"}
+        ],
+        "sort": true
+      },
+      "range": "category"
+    }
+  ],
+  "legends": [
+    {
+      "fill": "color",
+      "symbolType": "circle",
+      "title": "Voice",
+      "titleOrient": "left",
+      "orient": "top",
+      "direction": "horizontal"
+    }
+  ],
+  "config": {
+    "range": {
+      "category": [
+        "#118DFF",
+        "#12239E",
+        "#E66C37",
+        "#6B007B",
+        "#E044A7",
+        "#744EC2",
+        "#D9B300",
+        "#D64550"
+      ]
+    },
+    "style": {"cell": {"stroke": "transparent"}}
+  }
+}
