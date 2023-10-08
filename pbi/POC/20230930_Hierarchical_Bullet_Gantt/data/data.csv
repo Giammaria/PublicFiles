@@ -1,7 +1,7 @@
 ﻿Number,Category,Subcategory,Target Start Date,Target End Date,Actual Start Date,Current Progress Date,Actual End Date,Today
-1.01,Evaluate Current Requirements,Assess Current Personnel,9/15/23,9/20/23,9/15/23,9/19/23,9/19/23,11/26/23
-1.02,Evaluate Current Requirements,Assess Capacity,9/17/23,9/21/23,9/17/23,9/19/23,9/19/23,11/26/23
-1.03,Evaluate Current Requirements,Perform Evaluation,9/22/23,9/30/23,9/22/23,9/27/23,9/27/23,11/26/23
+1.01,Evaluate,Assess Current Personnel,9/15/23,9/20/23,9/15/23,9/19/23,9/19/23,11/26/23
+1.02,Evaluate,Assess Capacity,9/17/23,9/21/23,9/17/23,9/19/23,9/19/23,11/26/23
+1.03,Evaluate,Perform Evaluation,9/22/23,9/30/23,9/22/23,9/27/23,9/27/23,11/26/23
 2.01,Forecast,Assess Personnel Demand,9/25/23,10/3/23,9/27/23,10/10/23,10/10/23,11/26/23
 2.02,Forecast,Examine Market Supply,9/25/23,10/7/23,9/27/23,10/7/23,10/7/23,11/26/23
 2.03,Forecast,Balance Forecasted Personnel Demand with Supply,10/8/23,10/17/23,10/8/23,10/17/23,10/17/23,11/26/23
