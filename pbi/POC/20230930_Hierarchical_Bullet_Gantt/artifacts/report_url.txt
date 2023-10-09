@@ -1,1 +1,5 @@
+v1:
 https://app.powerbi.com/reportEmbed?reportId=7f642eb4-04ef-4381-843f-d5985c9a9a7a&autoAuth=true&ctid=078253e3-8b11-4d0e-81f6-edf69f268c82
+
+v2:
+https://app.powerbi.com/reportEmbed?reportId=bebe41f6-62f2-46a9-b09d-a2e84b4b2d3f&autoAuth=true&ctid=078253e3-8b11-4d0e-81f6-edf69f268c82
