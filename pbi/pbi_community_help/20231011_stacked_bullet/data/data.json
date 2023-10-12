@@ -1,77 +1,77 @@
-  {
-    "Department": "Red",
-    "Paid $": "$74",
-    "Committed $": 67,
-    "Pipeline $": 46,
-    "Planned $": 121,
-    "Available $": "",
-    "Total $": 308,
-    "Reforecast $": 270,
-    "Budget $": 252
-  },
-  {
-    "Department": "Purple",
-    "Paid $": "$24",
-    "Committed $": 81,
-    "Pipeline $": 58,
-    "Planned $": 111,
-    "Available $": 8,
-    "Total $": 274,
-    "Reforecast $": 282,
-    "Budget $": 276
-  },
-  {
-    "Department": "Pink",
-    "Paid $": "$65",
-    "Committed $": 125,
-    "Pipeline $": 82,
-    "Planned $": 130,
-    "Available $": 4,
-    "Total $": 402,
-    "Reforecast $": 406,
-    "Budget $": 388
-  },
-  {
-    "Department": "Green",
-    "Paid $": "$40",
-    "Committed $": 78,
-    "Pipeline $": 48,
-    "Planned $": 114,
-    "Available $": 24,
-    "Total $": 280,
-    "Reforecast $": 304,
-    "Budget $": 275
-  },
-  {
-    "Department": "Brown",
-    "Paid $": "$20",
-    "Committed $": 88,
-    "Pipeline $": 60,
-    "Planned $": 80,
-    "Available $": 9,
-    "Total $": 248,
-    "Reforecast $": 257,
-    "Budget $": 255
-  },
-  {
-    "Department": "Blue",
-    "Paid $": "($25)",
-    "Committed $": 33,
-    "Pipeline $": 25,
-    "Planned $": 71,
-    "Available $": "",
-    "Total $": 104,
-    "Reforecast $": 93,
-    "Budget $": 92
-  },
-  {
-    "Department": "Black",
-    "Paid $": "$39",
-    "Committed $": 88,
-    "Pipeline $": 68,
-    "Planned $": 76,
-    "Available $": 21,
-    "Total $": 271,
-    "Reforecast $": 292,
-    "Budget $": 280
-  }
+     {
+        "Department": "Red",
+        "Paid$": "$74",
+        "Committed$": 67,
+        "Pipeline$": 46,
+        "Planned$": 121,
+        "Available$": "",
+        "Total$": 308,
+        "Reforecast$": 270,
+        "Budget$": 252
+      },
+      {
+        "Department": "Purple",
+        "Paid$": "$24",
+        "Committed$": 81,
+        "Pipeline$": 58,
+        "Planned$": 111,
+        "Available$": 8,
+        "Total$": 274,
+        "Reforecast$": 282,
+        "Budget$": 276
+      },
+      {
+        "Department": "Pink",
+        "Paid$": "$65",
+        "Committed$": 125,
+        "Pipeline$": 82,
+        "Planned$": 130,
+        "Available$": 4,
+        "Total$": 402,
+        "Reforecast$": 406,
+        "Budget$": 388
+      },
+      {
+        "Department": "Green",
+        "Paid$": "$40",
+        "Committed$": 78,
+        "Pipeline$": 48,
+        "Planned$": 114,
+        "Available$": 24,
+        "Total$": 280,
+        "Reforecast$": 304,
+        "Budget$": 275
+      },
+      {
+        "Department": "Brown",
+        "Paid$": "$20",
+        "Committed$": 88,
+        "Pipeline$": 60,
+        "Planned$": 80,
+        "Available$": 9,
+        "Total$": 248,
+        "Reforecast$": 257,
+        "Budget$": 255
+      },
+      {
+        "Department": "Blue",
+        "Paid$": "($25)",
+        "Committed$": 33,
+        "Pipeline$": 25,
+        "Planned$": 71,
+        "Available$": "",
+        "Total$": 104,
+        "Reforecast$": 93,
+        "Budget$": 92
+      },
+      {
+        "Department": "Black",
+        "Paid$": "$39",
+        "Committed$": 88,
+        "Pipeline$": 68,
+        "Planned$": 76,
+        "Available$": 21,
+        "Total$": 271,
+        "Reforecast$": 292,
+        "Budget$": 280
+      }
