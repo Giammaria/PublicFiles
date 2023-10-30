@@ -1,287 +1,287 @@
 [
   {
-    "Date": "2023-10-01",
+    "Month": "October",
     "Cat": "Cat 1",
-    "Value": "11"
+    "Value": "7"
   },
   {
-    "Date": "2023-10-01",
+    "Month": "October",
     "Cat": "Cat 2",
-    "Value": "28"
-  },
-  {
-    "Date": "2023-10-01",
-    "Cat": "Cat 3",
-    "Value": "80"
-  },
-  {
-    "Date": "2023-10-01",
-    "Cat": "Cat 4",
-    "Value": "28"
-  },
-  {
-    "Date": "2023-10-01",
-    "Cat": "Cat 5",
-    "Value": "72"
-  },
-  {
-    "Date": "2023-10-01",
-    "Cat": "Cat 6",
-    "Value": "52"
-  },
-  {
-    "Date": "2023-10-01",
-    "Cat": "Cat 7",
-    "Value": "88"
-  },
-  {
-    "Date": "2023-10-01",
-    "Cat": "Cat 8",
-    "Value": "58"
-  },
-  {
-    "Date": "2023-10-01",
-    "Cat": "Cat 9",
-    "Value": "40"
-  },
-  {
-    "Date": "2023-10-01",
-    "Cat": "Cat 10",
-    "Value": "33"
-  },
-  {
-    "Date": "2023-10-01",
-    "Cat": "Cat 11",
-    "Value": "59"
-  },
-  {
-    "Date": "2023-10-01",
-    "Cat": "Cat 12",
-    "Value": "15"
-  },
-  {
-    "Date": "2023-10-01",
-    "Cat": "Cat 13",
-    "Value": "29"
-  },
-  {
-    "Date": "2023-10-01",
-    "Cat": "Cat 14",
-    "Value": "78"
-  },
-  {
-    "Date": "2023-10-01",
-    "Cat": "Cat 15",
     "Value": "23"
   },
   {
-    "Date": "2023-10-01",
-    "Cat": "Cat 16",
-    "Value": "9"
-  },
-  {
-    "Date": "2023-10-01",
-    "Cat": "Cat 17",
-    "Value": "63"
-  },
-  {
-    "Date": "2023-10-01",
-    "Cat": "Cat 18",
-    "Value": "10"
-  },
-  {
-    "Date": "2023-10-01",
-    "Cat": "Cat 19",
-    "Value": "16"
-  },
-  {
-    "Date": "2023-11-01",
-    "Cat": "Cat 1",
-    "Value": "10"
-  },
-  {
-    "Date": "2023-11-01",
-    "Cat": "Cat 2",
-    "Value": "33"
-  },
-  {
-    "Date": "2023-11-01",
+    "Month": "October",
     "Cat": "Cat 3",
-    "Value": "44"
+    "Value": "83"
   },
   {
-    "Date": "2023-11-01",
+    "Month": "October",
     "Cat": "Cat 4",
-    "Value": "26"
+    "Value": "89"
   },
   {
-    "Date": "2023-11-01",
+    "Month": "October",
     "Cat": "Cat 5",
-    "Value": "41"
+    "Value": "20"
   },
   {
-    "Date": "2023-11-01",
+    "Month": "October",
     "Cat": "Cat 6",
-    "Value": "23"
+    "Value": "50"
   },
   {
-    "Date": "2023-11-01",
+    "Month": "October",
     "Cat": "Cat 7",
-    "Value": "49"
+    "Value": "70"
   },
   {
-    "Date": "2023-11-01",
+    "Month": "October",
     "Cat": "Cat 8",
-    "Value": "52"
-  },
-  {
-    "Date": "2023-11-01",
-    "Cat": "Cat 9",
-    "Value": "81"
-  },
-  {
-    "Date": "2023-11-01",
-    "Cat": "Cat 10",
-    "Value": "91"
-  },
-  {
-    "Date": "2023-11-01",
-    "Cat": "Cat 11",
-    "Value": "88"
-  },
-  {
-    "Date": "2023-11-01",
-    "Cat": "Cat 12",
-    "Value": "75"
-  },
-  {
-    "Date": "2023-11-01",
-    "Cat": "Cat 13",
-    "Value": "91"
-  },
-  {
-    "Date": "2023-11-01",
-    "Cat": "Cat 14",
-    "Value": "96"
-  },
-  {
-    "Date": "2023-11-01",
-    "Cat": "Cat 15",
-    "Value": "40"
-  },
-  {
-    "Date": "2023-11-01",
-    "Cat": "Cat 16",
-    "Value": "84"
-  },
-  {
-    "Date": "2023-11-01",
-    "Cat": "Cat 17",
-    "Value": "92"
-  },
-  {
-    "Date": "2023-11-01",
-    "Cat": "Cat 18",
-    "Value": "68"
-  },
-  {
-    "Date": "2023-11-01",
-    "Cat": "Cat 19",
     "Value": "82"
   },
   {
-    "Date": "2023-12-01",
+    "Month": "October",
+    "Cat": "Cat 9",
+    "Value": "79"
+  },
+  {
+    "Month": "October",
+    "Cat": "Cat 10",
+    "Value": "94"
+  },
+  {
+    "Month": "October",
+    "Cat": "Cat 11",
+    "Value": "42"
+  },
+  {
+    "Month": "October",
+    "Cat": "Cat 12",
+    "Value": "12"
+  },
+  {
+    "Month": "October",
+    "Cat": "Cat 13",
+    "Value": "2"
+  },
+  {
+    "Month": "October",
+    "Cat": "Cat 14",
+    "Value": "56"
+  },
+  {
+    "Month": "October",
+    "Cat": "Cat 15",
+    "Value": "3"
+  },
+  {
+    "Month": "October",
+    "Cat": "Cat 16",
+    "Value": "30"
+  },
+  {
+    "Month": "October",
+    "Cat": "Cat 17",
+    "Value": "98"
+  },
+  {
+    "Month": "October",
+    "Cat": "Cat 18",
+    "Value": "31"
+  },
+  {
+    "Month": "October",
+    "Cat": "Cat 19",
+    "Value": "5"
+  },
+  {
+    "Month": "November",
     "Cat": "Cat 1",
-    "Value": "1"
+    "Value": "26"
   },
   {
-    "Date": "2023-12-01",
+    "Month": "November",
     "Cat": "Cat 2",
-    "Value": "63"
+    "Value": "2"
   },
   {
-    "Date": "2023-12-01",
+    "Month": "November",
     "Cat": "Cat 3",
-    "Value": "77"
+    "Value": "90"
   },
   {
-    "Date": "2023-12-01",
+    "Month": "November",
     "Cat": "Cat 4",
-    "Value": "28"
+    "Value": "53"
   },
   {
-    "Date": "2023-12-01",
+    "Month": "November",
     "Cat": "Cat 5",
     "Value": "55"
   },
   {
-    "Date": "2023-12-01",
+    "Month": "November",
     "Cat": "Cat 6",
-    "Value": "73"
+    "Value": "40"
   },
   {
-    "Date": "2023-12-01",
+    "Month": "November",
     "Cat": "Cat 7",
-    "Value": "84"
+    "Value": "98"
   },
   {
-    "Date": "2023-12-01",
+    "Month": "November",
     "Cat": "Cat 8",
-    "Value": "68"
+    "Value": "40"
   },
   {
-    "Date": "2023-12-01",
+    "Month": "November",
     "Cat": "Cat 9",
-    "Value": "64"
+    "Value": "89"
   },
   {
-    "Date": "2023-12-01",
+    "Month": "November",
     "Cat": "Cat 10",
-    "Value": "74"
+    "Value": "33"
   },
   {
-    "Date": "2023-12-01",
+    "Month": "November",
     "Cat": "Cat 11",
-    "Value": "78"
-  },
-  {
-    "Date": "2023-12-01",
-    "Cat": "Cat 12",
-    "Value": "19"
-  },
-  {
-    "Date": "2023-12-01",
-    "Cat": "Cat 13",
     "Value": "59"
   },
   {
-    "Date": "2023-12-01",
+    "Month": "November",
+    "Cat": "Cat 12",
+    "Value": "12"
+  },
+  {
+    "Month": "November",
+    "Cat": "Cat 13",
+    "Value": "15"
+  },
+  {
+    "Month": "November",
     "Cat": "Cat 14",
-    "Value": "70"
+    "Value": "83"
   },
   {
-    "Date": "2023-12-01",
+    "Month": "November",
     "Cat": "Cat 15",
-    "Value": "93"
+    "Value": "9"
   },
   {
-    "Date": "2023-12-01",
+    "Month": "November",
     "Cat": "Cat 16",
+    "Value": "94"
+  },
+  {
+    "Month": "November",
+    "Cat": "Cat 17",
+    "Value": "77"
+  },
+  {
+    "Month": "November",
+    "Cat": "Cat 18",
+    "Value": "9"
+  },
+  {
+    "Month": "November",
+    "Cat": "Cat 19",
+    "Value": "1"
+  },
+  {
+    "Month": "December",
+    "Cat": "Cat 1",
+    "Value": "20"
+  },
+  {
+    "Month": "December",
+    "Cat": "Cat 2",
+    "Value": "98"
+  },
+  {
+    "Month": "December",
+    "Cat": "Cat 3",
+    "Value": "77"
+  },
+  {
+    "Month": "December",
+    "Cat": "Cat 4",
+    "Value": "4"
+  },
+  {
+    "Month": "December",
+    "Cat": "Cat 5",
+    "Value": "10"
+  },
+  {
+    "Month": "December",
+    "Cat": "Cat 6",
+    "Value": "37"
+  },
+  {
+    "Month": "December",
+    "Cat": "Cat 7",
+    "Value": "21"
+  },
+  {
+    "Month": "December",
+    "Cat": "Cat 8",
+    "Value": "29"
+  },
+  {
+    "Month": "December",
+    "Cat": "Cat 9",
+    "Value": "67"
+  },
+  {
+    "Month": "December",
+    "Cat": "Cat 10",
     "Value": "75"
   },
   {
-    "Date": "2023-12-01",
+    "Month": "December",
+    "Cat": "Cat 11",
+    "Value": "39"
+  },
+  {
+    "Month": "December",
+    "Cat": "Cat 12",
+    "Value": "74"
+  },
+  {
+    "Month": "December",
+    "Cat": "Cat 13",
+    "Value": "55"
+  },
+  {
+    "Month": "December",
+    "Cat": "Cat 14",
+    "Value": "13"
+  },
+  {
+    "Month": "December",
+    "Cat": "Cat 15",
+    "Value": "75"
+  },
+  {
+    "Month": "December",
+    "Cat": "Cat 16",
+    "Value": "30"
+  },
+  {
+    "Month": "December",
     "Cat": "Cat 17",
-    "Value": "22"
+    "Value": "46"
   },
   {
-    "Date": "2023-12-01",
+    "Month": "December",
     "Cat": "Cat 18",
-    "Value": "32"
+    "Value": "45"
   },
   {
-    "Date": "2023-12-01",
+    "Month": "December",
     "Cat": "Cat 19",
-    "Value": "70"
+    "Value": "3"
   }
 ]
