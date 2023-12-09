@@ -8,10 +8,6 @@
     "letter": "L"
   },
   {
-    "row": 14,
-    "letter": "O"
-  },
-  {
     "row": 18,
     "letter": "S"
   },
@@ -98,6 +94,10 @@
   {
     "row": 8,
     "letter": "I"
+  },
+  {
+    "row": 2,
+    "letter": "C"
   },
   {
     "row": 2,
