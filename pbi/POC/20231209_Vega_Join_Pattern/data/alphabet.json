@@ -76,10 +76,6 @@
     "letter": "X"
   },
   {
-    "row": 25,
-    "letter": "Z"
-  },
-  {
     "row": 0,
     "letter": "A"
   },
@@ -98,6 +94,10 @@
   {
     "row": 17,
     "letter": "R"
+  },
+  {
+    "row": 19,
+    "letter": "T"
   },
   {
     "row": 19,
