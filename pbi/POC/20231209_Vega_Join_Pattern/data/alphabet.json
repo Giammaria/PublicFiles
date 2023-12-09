@@ -92,15 +92,15 @@
     "letter": "I"
   },
   {
-    "row": 5,
-    "letter": "F"
-  },
-  {
     "row": 18,
     "letter": "S"
   },
   {
     "row": 2,
     "letter": "C"
+  },
+  {
+    "row": 23,
+    "letter": "X"
   }
 ]
