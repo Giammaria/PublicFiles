@@ -8,10 +8,6 @@
     "letter": "V"
   },
   {
-    "row": 24,
-    "letter": "Y"
-  },
-  {
     "row": 8,
     "letter": "I"
   },
@@ -102,5 +98,9 @@
   {
     "row": 0,
     "letter": "A"
+  },
+  {
+    "row": 2,
+    "letter": "C"
   }
 ]
