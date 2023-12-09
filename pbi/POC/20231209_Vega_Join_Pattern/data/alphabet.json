@@ -96,11 +96,11 @@
     "letter": "X"
   },
   {
-    "row": 7,
-    "letter": "H"
-  },
-  {
     "row": 8,
     "letter": "I"
+  },
+  {
+    "row": 24,
+    "letter": "Y"
   }
 ]
