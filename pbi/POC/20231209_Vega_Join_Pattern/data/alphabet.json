@@ -96,11 +96,11 @@
     "letter": "V"
   },
   {
-    "row": 16,
-    "letter": "Q"
-  },
-  {
     "row": 0,
     "letter": "A"
+  },
+  {
+    "row": 16,
+    "letter": "Q"
   }
 ]
