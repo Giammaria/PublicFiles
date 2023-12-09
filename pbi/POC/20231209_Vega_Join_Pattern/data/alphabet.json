@@ -92,15 +92,15 @@
     "letter": "U"
   },
   {
-    "row": 25,
-    "letter": "Z"
-  },
-  {
     "row": 2,
     "letter": "C"
   },
   {
     "row": 24,
     "letter": "Y"
+  },
+  {
+    "row": 23,
+    "letter": "X"
   }
 ]
