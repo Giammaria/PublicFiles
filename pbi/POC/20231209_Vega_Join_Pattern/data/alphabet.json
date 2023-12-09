@@ -84,10 +84,6 @@
     "letter": "V"
   },
   {
-    "row": 20,
-    "letter": "U"
-  },
-  {
     "row": 17,
     "letter": "R"
   },
@@ -102,5 +98,9 @@
   {
     "row": 15,
     "letter": "P"
+  },
+  {
+    "row": 21,
+    "letter": "V"
   }
 ]
