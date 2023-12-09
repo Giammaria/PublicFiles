@@ -40,10 +40,6 @@
     "letter": "O"
   },
   {
-    "row": 15,
-    "letter": "P"
-  },
-  {
     "row": 19,
     "letter": "T"
   },
@@ -102,5 +98,9 @@
   {
     "row": 17,
     "letter": "R"
+  },
+  {
+    "row": 15,
+    "letter": "P"
   }
 ]
