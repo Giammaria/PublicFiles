@@ -32,10 +32,6 @@
     "letter": "T"
   },
   {
-    "row": 11,
-    "letter": "L"
-  },
-  {
     "row": 23,
     "letter": "X"
   },
@@ -98,6 +94,10 @@
   {
     "row": 19,
     "letter": "T"
+  },
+  {
+    "row": 8,
+    "letter": "I"
   },
   {
     "row": 8,
