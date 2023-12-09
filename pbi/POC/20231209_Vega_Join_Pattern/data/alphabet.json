@@ -92,15 +92,15 @@
     "letter": "O"
   },
   {
-    "row": 7,
-    "letter": "H"
-  },
-  {
     "row": 24,
     "letter": "Y"
   },
   {
     "row": 12,
     "letter": "M"
+  },
+  {
+    "row": 7,
+    "letter": "H"
   }
 ]
