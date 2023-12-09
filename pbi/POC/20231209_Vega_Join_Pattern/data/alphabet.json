@@ -16,10 +16,6 @@
     "letter": "F"
   },
   {
-    "row": 5,
-    "letter": "F"
-  },
-  {
     "row": 18,
     "letter": "S"
   },
@@ -102,5 +98,9 @@
   {
     "row": 19,
     "letter": "T"
+  },
+  {
+    "row": 4,
+    "letter": "E"
   }
 ]
