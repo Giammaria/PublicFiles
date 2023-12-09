@@ -24,10 +24,6 @@
     "letter": "H"
   },
   {
-    "row": 19,
-    "letter": "T"
-  },
-  {
     "row": 4,
     "letter": "E"
   },
@@ -102,5 +98,9 @@
   {
     "row": 17,
     "letter": "R"
+  },
+  {
+    "row": 19,
+    "letter": "T"
   }
 ]
