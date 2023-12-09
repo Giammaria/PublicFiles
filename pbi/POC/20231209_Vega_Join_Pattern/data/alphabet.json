@@ -80,10 +80,6 @@
     "letter": "U"
   },
   {
-    "row": 22,
-    "letter": "W"
-  },
-  {
     "row": 23,
     "letter": "X"
   },
@@ -98,6 +94,10 @@
   {
     "row": 23,
     "letter": "X"
+  },
+  {
+    "row": 20,
+    "letter": "U"
   },
   {
     "row": 20,
