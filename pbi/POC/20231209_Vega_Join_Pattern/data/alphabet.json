@@ -60,10 +60,6 @@
     "letter": "Z"
   },
   {
-    "row": 5,
-    "letter": "F"
-  },
-  {
     "row": 4,
     "letter": "E"
   },
@@ -102,5 +98,9 @@
   {
     "row": 22,
     "letter": "W"
+  },
+  {
+    "row": 15,
+    "letter": "P"
   }
 ]
