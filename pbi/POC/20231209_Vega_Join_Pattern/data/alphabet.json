@@ -56,10 +56,6 @@
     "letter": "B"
   },
   {
-    "row": 15,
-    "letter": "P"
-  },
-  {
     "row": 19,
     "letter": "T"
   },
@@ -102,5 +98,9 @@
   {
     "row": 24,
     "letter": "Y"
+  },
+  {
+    "row": 14,
+    "letter": "O"
   }
 ]
