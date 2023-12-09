@@ -72,10 +72,6 @@
     "letter": "G"
   },
   {
-    "row": 8,
-    "letter": "I"
-  },
-  {
     "row": 3,
     "letter": "D"
   },
@@ -102,5 +98,9 @@
   {
     "row": 21,
     "letter": "V"
+  },
+  {
+    "row": 18,
+    "letter": "S"
   }
 ]
