@@ -20,12 +20,20 @@
     "letter": "E"
   },
   {
+    "row": 5,
+    "letter": "F"
+  },
+  {
     "row": 6,
     "letter": "G"
   },
   {
     "row": 7,
     "letter": "H"
+  },
+  {
+    "row": 8,
+    "letter": "I"
   },
   {
     "row": 9,
@@ -44,10 +52,6 @@
     "letter": "M"
   },
   {
-    "row": 13,
-    "letter": "N"
-  },
-  {
     "row": 14,
     "letter": "O"
   },
@@ -56,8 +60,16 @@
     "letter": "P"
   },
   {
+    "row": 16,
+    "letter": "Q"
+  },
+  {
     "row": 17,
     "letter": "R"
+  },
+  {
+    "row": 18,
+    "letter": "S"
   },
   {
     "row": 19,
@@ -82,5 +94,13 @@
   {
     "row": 24,
     "letter": "Y"
+  },
+  {
+    "row": 25,
+    "letter": "Z"
+  },
+  {
+    "row": 13,
+    "letter": "N"
   }
 ]
