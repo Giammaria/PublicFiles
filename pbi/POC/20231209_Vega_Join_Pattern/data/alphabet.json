@@ -12,10 +12,6 @@
     "letter": "L"
   },
   {
-    "row": 12,
-    "letter": "M"
-  },
-  {
     "row": 15,
     "letter": "P"
   },
@@ -102,5 +98,9 @@
   {
     "row": 25,
     "letter": "Z"
+  },
+  {
+    "row": 3,
+    "letter": "D"
   }
 ]
