@@ -4,10 +4,6 @@
     "letter": "E"
   },
   {
-    "row": 17,
-    "letter": "R"
-  },
-  {
     "row": 5,
     "letter": "F"
   },
@@ -98,6 +94,10 @@
   {
     "row": 25,
     "letter": "Z"
+  },
+  {
+    "row": 1,
+    "letter": "B"
   },
   {
     "row": 1,
