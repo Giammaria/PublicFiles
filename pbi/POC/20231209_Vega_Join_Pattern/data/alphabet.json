@@ -80,10 +80,6 @@
     "letter": "S"
   },
   {
-    "row": 23,
-    "letter": "X"
-  },
-  {
     "row": 13,
     "letter": "N"
   },
@@ -102,5 +98,9 @@
   {
     "row": 6,
     "letter": "G"
+  },
+  {
+    "row": 20,
+    "letter": "U"
   }
 ]
