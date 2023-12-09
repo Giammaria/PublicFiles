@@ -52,10 +52,6 @@
     "letter": "U"
   },
   {
-    "row": 23,
-    "letter": "X"
-  },
-  {
     "row": 4,
     "letter": "E"
   },
@@ -102,5 +98,9 @@
   {
     "row": 4,
     "letter": "E"
+  },
+  {
+    "row": 13,
+    "letter": "N"
   }
 ]
