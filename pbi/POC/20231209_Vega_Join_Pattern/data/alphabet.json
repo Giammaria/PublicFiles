@@ -12,10 +12,6 @@
     "letter": "X"
   },
   {
-    "row": 0,
-    "letter": "A"
-  },
-  {
     "row": 15,
     "letter": "P"
   },
@@ -98,6 +94,10 @@
   {
     "row": 10,
     "letter": "K"
+  },
+  {
+    "row": 3,
+    "letter": "D"
   },
   {
     "row": 3,
