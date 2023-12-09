@@ -92,15 +92,15 @@
     "letter": "D"
   },
   {
-    "row": 8,
-    "letter": "I"
-  },
-  {
     "row": 3,
     "letter": "D"
   },
   {
     "row": 14,
     "letter": "O"
+  },
+  {
+    "row": 23,
+    "letter": "X"
   }
 ]
