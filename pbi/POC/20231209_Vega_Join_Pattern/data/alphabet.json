@@ -76,10 +76,6 @@
     "letter": "U"
   },
   {
-    "row": 21,
-    "letter": "V"
-  },
-  {
     "row": 22,
     "letter": "W"
   },
@@ -102,5 +98,9 @@
   {
     "row": 10,
     "letter": "K"
+  },
+  {
+    "row": 21,
+    "letter": "V"
   }
 ]
