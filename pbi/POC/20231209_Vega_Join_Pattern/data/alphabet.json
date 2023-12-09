@@ -1,106 +1,106 @@
 [
   {
-    "row": 1,
-    "letter": "B"
+    "row": 7,
+    "letter": "H"
   },
   {
     "row": 11,
     "letter": "L"
   },
   {
-    "row": 13,
-    "letter": "N"
-  },
-  {
-    "row": 14,
-    "letter": "O"
-  },
-  {
-    "row": 3,
-    "letter": "D"
-  },
-  {
-    "row": 6,
-    "letter": "G"
-  },
-  {
-    "row": 22,
-    "letter": "W"
-  },
-  {
-    "row": 23,
-    "letter": "X"
-  },
-  {
-    "row": 6,
-    "letter": "G"
-  },
-  {
-    "row": 7,
-    "letter": "H"
-  },
-  {
-    "row": 5,
-    "letter": "F"
-  },
-  {
-    "row": 3,
-    "letter": "D"
-  },
-  {
     "row": 2,
     "letter": "C"
-  },
-  {
-    "row": 14,
-    "letter": "O"
-  },
-  {
-    "row": 24,
-    "letter": "Y"
-  },
-  {
-    "row": 18,
-    "letter": "S"
-  },
-  {
-    "row": 21,
-    "letter": "V"
-  },
-  {
-    "row": 20,
-    "letter": "U"
-  },
-  {
-    "row": 18,
-    "letter": "S"
-  },
-  {
-    "row": 24,
-    "letter": "Y"
-  },
-  {
-    "row": 22,
-    "letter": "W"
-  },
-  {
-    "row": 17,
-    "letter": "R"
-  },
-  {
-    "row": 20,
-    "letter": "U"
   },
   {
     "row": 8,
     "letter": "I"
   },
   {
+    "row": 4,
+    "letter": "E"
+  },
+  {
+    "row": 7,
+    "letter": "H"
+  },
+  {
+    "row": 6,
+    "letter": "G"
+  },
+  {
+    "row": 17,
+    "letter": "R"
+  },
+  {
+    "row": 25,
+    "letter": "Z"
+  },
+  {
+    "row": 7,
+    "letter": "H"
+  },
+  {
+    "row": 17,
+    "letter": "R"
+  },
+  {
+    "row": 11,
+    "letter": "L"
+  },
+  {
+    "row": 24,
+    "letter": "Y"
+  },
+  {
+    "row": 23,
+    "letter": "X"
+  },
+  {
     "row": 16,
     "letter": "Q"
   },
   {
+    "row": 2,
+    "letter": "C"
+  },
+  {
+    "row": 6,
+    "letter": "G"
+  },
+  {
+    "row": 15,
+    "letter": "P"
+  },
+  {
+    "row": 25,
+    "letter": "Z"
+  },
+  {
+    "row": 18,
+    "letter": "S"
+  },
+  {
+    "row": 2,
+    "letter": "C"
+  },
+  {
     "row": 12,
     "letter": "M"
+  },
+  {
+    "row": 11,
+    "letter": "L"
+  },
+  {
+    "row": 24,
+    "letter": "Y"
+  },
+  {
+    "row": 4,
+    "letter": "E"
+  },
+  {
+    "row": 13,
+    "letter": "N"
   }
 ]
