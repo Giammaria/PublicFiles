@@ -80,10 +80,6 @@
     "letter": "H"
   },
   {
-    "row": 25,
-    "letter": "Z"
-  },
-  {
     "row": 22,
     "letter": "W"
   },
@@ -102,5 +98,9 @@
   {
     "row": 15,
     "letter": "P"
+  },
+  {
+    "row": 20,
+    "letter": "U"
   }
 ]
