@@ -20,10 +20,6 @@
     "letter": "X"
   },
   {
-    "row": 13,
-    "letter": "N"
-  },
-  {
     "row": 19,
     "letter": "T"
   },
@@ -98,6 +94,10 @@
   {
     "row": 24,
     "letter": "Y"
+  },
+  {
+    "row": 5,
+    "letter": "F"
   },
   {
     "row": 5,
