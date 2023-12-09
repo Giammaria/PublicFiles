@@ -8,10 +8,6 @@
     "letter": "J"
   },
   {
-    "row": 19,
-    "letter": "T"
-  },
-  {
     "row": 20,
     "letter": "U"
   },
@@ -102,5 +98,9 @@
   {
     "row": 13,
     "letter": "N"
+  },
+  {
+    "row": 2,
+    "letter": "C"
   }
 ]
