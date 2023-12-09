@@ -20,10 +20,6 @@
     "letter": "G"
   },
   {
-    "row": 3,
-    "letter": "D"
-  },
-  {
     "row": 15,
     "letter": "P"
   },
@@ -98,6 +94,10 @@
   {
     "row": 24,
     "letter": "Y"
+  },
+  {
+    "row": 5,
+    "letter": "F"
   },
   {
     "row": 5,
