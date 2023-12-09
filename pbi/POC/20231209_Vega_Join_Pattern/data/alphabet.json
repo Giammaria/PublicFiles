@@ -92,15 +92,15 @@
     "letter": "T"
   },
   {
-    "row": 6,
-    "letter": "G"
-  },
-  {
     "row": 9,
     "letter": "J"
   },
   {
     "row": 23,
     "letter": "X"
+  },
+  {
+    "row": 6,
+    "letter": "G"
   }
 ]
