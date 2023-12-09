@@ -28,10 +28,6 @@
     "letter": "G"
   },
   {
-    "row": 20,
-    "letter": "U"
-  },
-  {
     "row": 13,
     "letter": "N"
   },
@@ -102,5 +98,9 @@
   {
     "row": 23,
     "letter": "X"
+  },
+  {
+    "row": 7,
+    "letter": "H"
   }
 ]
