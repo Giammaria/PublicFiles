@@ -44,10 +44,6 @@
     "letter": "U"
   },
   {
-    "row": 20,
-    "letter": "U"
-  },
-  {
     "row": 5,
     "letter": "F"
   },
@@ -98,6 +94,10 @@
   {
     "row": 7,
     "letter": "H"
+  },
+  {
+    "row": 11,
+    "letter": "L"
   },
   {
     "row": 11,
