@@ -4,10 +4,6 @@
     "letter": "L"
   },
   {
-    "row": 18,
-    "letter": "S"
-  },
-  {
     "row": 24,
     "letter": "Y"
   },
@@ -102,5 +98,9 @@
   {
     "row": 24,
     "letter": "Y"
+  },
+  {
+    "row": 1,
+    "letter": "B"
   }
 ]
