@@ -28,10 +28,6 @@
     "letter": "F"
   },
   {
-    "row": 18,
-    "letter": "S"
-  },
-  {
     "row": 0,
     "letter": "A"
   },
@@ -102,5 +98,9 @@
   {
     "row": 24,
     "letter": "Y"
+  },
+  {
+    "row": 7,
+    "letter": "H"
   }
 ]
