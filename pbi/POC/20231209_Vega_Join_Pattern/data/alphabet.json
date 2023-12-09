@@ -72,10 +72,6 @@
     "letter": "O"
   },
   {
-    "row": 14,
-    "letter": "O"
-  },
-  {
     "row": 11,
     "letter": "L"
   },
@@ -102,5 +98,9 @@
   {
     "row": 25,
     "letter": "Z"
+  },
+  {
+    "row": 18,
+    "letter": "S"
   }
 ]
