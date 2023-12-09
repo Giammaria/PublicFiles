@@ -36,10 +36,6 @@
     "letter": "F"
   },
   {
-    "row": 24,
-    "letter": "Y"
-  },
-  {
     "row": 3,
     "letter": "D"
   },
@@ -102,5 +98,9 @@
   {
     "row": 23,
     "letter": "X"
+  },
+  {
+    "row": 24,
+    "letter": "Y"
   }
 ]
