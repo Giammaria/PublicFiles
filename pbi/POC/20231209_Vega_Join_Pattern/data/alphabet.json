@@ -20,10 +20,6 @@
     "letter": "H"
   },
   {
-    "row": 19,
-    "letter": "T"
-  },
-  {
     "row": 22,
     "letter": "W"
   },
@@ -98,6 +94,10 @@
   {
     "row": 14,
     "letter": "O"
+  },
+  {
+    "row": 5,
+    "letter": "F"
   },
   {
     "row": 5,
