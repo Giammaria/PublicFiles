@@ -20,10 +20,6 @@
     "letter": "K"
   },
   {
-    "row": 16,
-    "letter": "Q"
-  },
-  {
     "row": 11,
     "letter": "L"
   },
@@ -102,5 +98,9 @@
   {
     "row": 25,
     "letter": "Z"
+  },
+  {
+    "row": 5,
+    "letter": "F"
   }
 ]
