@@ -32,6 +32,10 @@
     "letter": "J"
   },
   {
+    "row": 10,
+    "letter": "K"
+  },
+  {
     "row": 12,
     "letter": "M"
   },
@@ -48,23 +52,7 @@
     "letter": "R"
   },
   {
-    "row": 19,
-    "letter": "T"
-  },
-  {
-    "row": 20,
-    "letter": "U"
-  },
-  {
-    "row": 21,
-    "letter": "V"
-  },
-  {
     "row": 23,
     "letter": "X"
-  },
-  {
-    "row": 25,
-    "letter": "Z"
   }
 ]
