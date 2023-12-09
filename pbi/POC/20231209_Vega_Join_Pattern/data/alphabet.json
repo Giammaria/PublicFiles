@@ -64,10 +64,6 @@
     "letter": "S"
   },
   {
-    "row": 16,
-    "letter": "Q"
-  },
-  {
     "row": 5,
     "letter": "F"
   },
@@ -98,6 +94,10 @@
   {
     "row": 17,
     "letter": "R"
+  },
+  {
+    "row": 16,
+    "letter": "Q"
   },
   {
     "row": 16,
