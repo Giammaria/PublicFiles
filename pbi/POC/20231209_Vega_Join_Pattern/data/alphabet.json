@@ -32,10 +32,6 @@
     "letter": "N"
   },
   {
-    "row": 0,
-    "letter": "A"
-  },
-  {
     "row": 18,
     "letter": "S"
   },
@@ -102,5 +98,9 @@
   {
     "row": 19,
     "letter": "T"
+  },
+  {
+    "row": 8,
+    "letter": "I"
   }
 ]
