@@ -52,10 +52,6 @@
     "letter": "K"
   },
   {
-    "row": 10,
-    "letter": "K"
-  },
-  {
     "row": 25,
     "letter": "Z"
   },
@@ -102,5 +98,9 @@
   {
     "row": 18,
     "letter": "S"
+  },
+  {
+    "row": 13,
+    "letter": "N"
   }
 ]
