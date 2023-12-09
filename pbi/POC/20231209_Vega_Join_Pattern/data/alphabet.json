@@ -68,10 +68,6 @@
     "letter": "P"
   },
   {
-    "row": 22,
-    "letter": "W"
-  },
-  {
     "row": 5,
     "letter": "F"
   },
@@ -98,6 +94,10 @@
   {
     "row": 16,
     "letter": "Q"
+  },
+  {
+    "row": 17,
+    "letter": "R"
   },
   {
     "row": 17,
