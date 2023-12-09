@@ -1,63 +1,99 @@
 [
   {
-    "row": 0,
-    "letter": "A"
+    "row": 21,
+    "letter": "V"
   },
   {
     "row": 1,
     "letter": "B"
   },
   {
-    "row": 2,
-    "letter": "C"
-  },
-  {
-    "row": 3,
-    "letter": "D"
-  },
-  {
-    "row": 4,
-    "letter": "E"
-  },
-  {
-    "row": 6,
-    "letter": "G"
-  },
-  {
-    "row": 7,
-    "letter": "H"
-  },
-  {
-    "row": 8,
-    "letter": "I"
-  },
-  {
-    "row": 9,
-    "letter": "J"
-  },
-  {
-    "row": 10,
-    "letter": "K"
+    "row": 13,
+    "letter": "N"
   },
   {
     "row": 13,
     "letter": "N"
   },
   {
-    "row": 14,
-    "letter": "O"
+    "row": 23,
+    "letter": "X"
+  },
+  {
+    "row": 20,
+    "letter": "U"
+  },
+  {
+    "row": 4,
+    "letter": "E"
+  },
+  {
+    "row": 0,
+    "letter": "A"
+  },
+  {
+    "row": 25,
+    "letter": "Z"
+  },
+  {
+    "row": 13,
+    "letter": "N"
+  },
+  {
+    "row": 21,
+    "letter": "V"
+  },
+  {
+    "row": 23,
+    "letter": "X"
+  },
+  {
+    "row": 6,
+    "letter": "G"
+  },
+  {
+    "row": 17,
+    "letter": "R"
+  },
+  {
+    "row": 22,
+    "letter": "W"
+  },
+  {
+    "row": 20,
+    "letter": "U"
   },
   {
     "row": 15,
     "letter": "P"
   },
   {
+    "row": 4,
+    "letter": "E"
+  },
+  {
+    "row": 24,
+    "letter": "Y"
+  },
+  {
+    "row": 10,
+    "letter": "K"
+  },
+  {
     "row": 16,
     "letter": "Q"
   },
   {
-    "row": 17,
-    "letter": "R"
+    "row": 1,
+    "letter": "B"
+  },
+  {
+    "row": 16,
+    "letter": "Q"
+  },
+  {
+    "row": 11,
+    "letter": "L"
   },
   {
     "row": 18,
@@ -66,41 +102,5 @@
   {
     "row": 19,
     "letter": "T"
-  },
-  {
-    "row": 20,
-    "letter": "U"
-  },
-  {
-    "row": 21,
-    "letter": "V"
-  },
-  {
-    "row": 22,
-    "letter": "W"
-  },
-  {
-    "row": 25,
-    "letter": "Z"
-  },
-  {
-    "row": 23,
-    "letter": "X"
-  },
-  {
-    "row": 5,
-    "letter": "F"
-  },
-  {
-    "row": 22,
-    "letter": "W"
-  },
-  {
-    "row": 11,
-    "letter": "L"
-  },
-  {
-    "row": 10,
-    "letter": "K"
   }
 ]
