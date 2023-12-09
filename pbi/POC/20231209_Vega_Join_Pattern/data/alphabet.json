@@ -1,9 +1,5 @@
 [
   {
-    "row": 6,
-    "letter": "G"
-  },
-  {
     "row": 13,
     "letter": "N"
   },
@@ -102,5 +98,9 @@
   {
     "row": 10,
     "letter": "K"
+  },
+  {
+    "row": 0,
+    "letter": "A"
   }
 ]
