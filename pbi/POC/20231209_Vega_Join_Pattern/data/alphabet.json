@@ -4,6 +4,14 @@
     "letter": "A"
   },
   {
+    "row": 1,
+    "letter": "B"
+  },
+  {
+    "row": 2,
+    "letter": "C"
+  },
+  {
     "row": 3,
     "letter": "D"
   },
@@ -40,6 +48,10 @@
     "letter": "L"
   },
   {
+    "row": 12,
+    "letter": "M"
+  },
+  {
     "row": 13,
     "letter": "N"
   },
@@ -52,10 +64,6 @@
     "letter": "P"
   },
   {
-    "row": 16,
-    "letter": "Q"
-  },
-  {
     "row": 17,
     "letter": "R"
   },
@@ -64,8 +72,8 @@
     "letter": "S"
   },
   {
-    "row": 19,
-    "letter": "T"
+    "row": 20,
+    "letter": "U"
   },
   {
     "row": 21,
@@ -88,19 +96,11 @@
     "letter": "Z"
   },
   {
-    "row": 2,
-    "letter": "C"
+    "row": 19,
+    "letter": "T"
   },
   {
-    "row": 11,
-    "letter": "L"
-  },
-  {
-    "row": 1,
-    "letter": "B"
-  },
-  {
-    "row": 17,
-    "letter": "R"
+    "row": 16,
+    "letter": "Q"
   }
 ]
