@@ -24,10 +24,6 @@
     "letter": "F"
   },
   {
-    "row": 25,
-    "letter": "Z"
-  },
-  {
     "row": 18,
     "letter": "S"
   },
@@ -98,6 +94,10 @@
   {
     "row": 13,
     "letter": "N"
+  },
+  {
+    "row": 6,
+    "letter": "G"
   },
   {
     "row": 6,
