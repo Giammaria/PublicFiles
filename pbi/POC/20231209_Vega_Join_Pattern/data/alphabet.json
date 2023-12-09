@@ -88,10 +88,6 @@
     "letter": "Y"
   },
   {
-    "row": 10,
-    "letter": "K"
-  },
-  {
     "row": 20,
     "letter": "U"
   },
@@ -102,5 +98,9 @@
   {
     "row": 0,
     "letter": "A"
+  },
+  {
+    "row": 22,
+    "letter": "W"
   }
 ]
