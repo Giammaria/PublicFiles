@@ -32,10 +32,6 @@
     "letter": "Z"
   },
   {
-    "row": 7,
-    "letter": "H"
-  },
-  {
     "row": 23,
     "letter": "X"
   },
@@ -98,6 +94,10 @@
   {
     "row": 22,
     "letter": "W"
+  },
+  {
+    "row": 8,
+    "letter": "I"
   },
   {
     "row": 8,
