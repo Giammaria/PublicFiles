@@ -44,10 +44,6 @@
     "letter": "Q"
   },
   {
-    "row": 25,
-    "letter": "Z"
-  },
-  {
     "row": 3,
     "letter": "D"
   },
@@ -102,5 +98,9 @@
   {
     "row": 5,
     "letter": "F"
+  },
+  {
+    "row": 11,
+    "letter": "L"
   }
 ]
