@@ -4,76 +4,80 @@
     "letter": "L"
   },
   {
-    "row": 7,
-    "letter": "H"
+    "row": 14,
+    "letter": "O"
   },
   {
     "row": 6,
     "letter": "G"
   },
   {
-    "row": 7,
-    "letter": "H"
+    "row": 14,
+    "letter": "O"
   },
   {
-    "row": 6,
-    "letter": "G"
-  },
-  {
-    "row": 15,
-    "letter": "P"
-  },
-  {
-    "row": 18,
-    "letter": "S"
-  },
-  {
-    "row": 12,
-    "letter": "M"
-  },
-  {
-    "row": 13,
-    "letter": "N"
-  },
-  {
-    "row": 2,
-    "letter": "C"
-  },
-  {
-    "row": 16,
-    "letter": "Q"
-  },
-  {
-    "row": 9,
-    "letter": "J"
+    "row": 21,
+    "letter": "V"
   },
   {
     "row": 17,
     "letter": "R"
   },
   {
-    "row": 22,
-    "letter": "W"
-  },
-  {
-    "row": 1,
-    "letter": "B"
-  },
-  {
-    "row": 8,
-    "letter": "I"
-  },
-  {
-    "row": 5,
-    "letter": "F"
-  },
-  {
-    "row": 1,
-    "letter": "B"
+    "row": 2,
+    "letter": "C"
   },
   {
     "row": 14,
     "letter": "O"
+  },
+  {
+    "row": 23,
+    "letter": "X"
+  },
+  {
+    "row": 9,
+    "letter": "J"
+  },
+  {
+    "row": 3,
+    "letter": "D"
+  },
+  {
+    "row": 12,
+    "letter": "M"
+  },
+  {
+    "row": 20,
+    "letter": "U"
+  },
+  {
+    "row": 10,
+    "letter": "K"
+  },
+  {
+    "row": 19,
+    "letter": "T"
+  },
+  {
+    "row": 11,
+    "letter": "L"
+  },
+  {
+    "row": 6,
+    "letter": "G"
+  },
+  {
+    "row": 4,
+    "letter": "E"
+  },
+  {
+    "row": 3,
+    "letter": "D"
+  },
+  {
+    "row": 9,
+    "letter": "J"
   },
   {
     "row": 4,
@@ -84,23 +88,19 @@
     "letter": "I"
   },
   {
-    "row": 11,
-    "letter": "L"
+    "row": 25,
+    "letter": "Z"
   },
   {
-    "row": 18,
-    "letter": "S"
+    "row": 22,
+    "letter": "W"
   },
   {
-    "row": 13,
-    "letter": "N"
+    "row": 23,
+    "letter": "X"
   },
   {
-    "row": 19,
-    "letter": "T"
-  },
-  {
-    "row": 24,
-    "letter": "Y"
+    "row": 6,
+    "letter": "G"
   }
 ]
