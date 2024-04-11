@@ -2,6 +2,7 @@
   {
     "EnterprisePriorityNumber": 1,
     "EnterprisePriority": "Sustain uninterrupted operations and support to the Fleet Operator.",
+    "ParentName": "Cyber",
     "TaskOutlineNumber": 5.2,
     "TaskName": "Conduct impact analysis training for IA Team",
     "TaskStartDate": "2024-01-26 08:00:00",
@@ -13,6 +14,7 @@
   {
     "EnterprisePriorityNumber": 1,
     "EnterprisePriority": "Sustain uninterrupted operations and support to the Fleet Operator.",
+    "ParentName": "Cyber",
     "TaskOutlineNumber": 5.5,
     "TaskName": "Develop SOP for CTO reports and reviews",
     "TaskStartDate": "2024-05-30 08:00:00",
@@ -24,6 +26,7 @@
   {
     "EnterprisePriorityNumber": 1,
     "EnterprisePriority": "Sustain uninterrupted operations and support to the Fleet Operator.",
+    "ParentName": "NTIMS",
     "TaskOutlineNumber": 6.1,
     "TaskName": "NMETL Consumer",
     "TaskStartDate": "2023-09-14 08:00:00",
@@ -35,6 +38,7 @@
   {
     "EnterprisePriorityNumber": 1,
     "EnterprisePriority": "Sustain uninterrupted operations and support to the Fleet Operator.",
+    "ParentName": "NTIMS",
     "TaskOutlineNumber": 6.2,
     "TaskName": "MSC Capabilities to DRRS",
     "TaskStartDate": "2023-12-17 08:00:00",
@@ -46,6 +50,7 @@
   {
     "EnterprisePriorityNumber": 1,
     "EnterprisePriority": "Sustain uninterrupted operations and support to the Fleet Operator.",
+    "ParentName": "NTIMS",
     "TaskOutlineNumber": 6.6,
     "TaskName": "AVN CRG Data",
     "TaskStartDate": "2023-10-12 08:00:00",
@@ -57,6 +62,7 @@
   {
     "EnterprisePriorityNumber": 1,
     "EnterprisePriority": "Sustain uninterrupted operations and support to the Fleet Operator.",
+    "ParentName": "NRRE-BI / NRRIF",
     "TaskOutlineNumber": 7.2,
     "TaskName": "Migrate NRRE-BI and NRRIF to NIPR IL5 Azure Cloud",
     "TaskStartDate": "2023-07-01 08:00:00",
@@ -68,6 +74,7 @@
   {
     "EnterprisePriorityNumber": 1,
     "EnterprisePriority": "Sustain uninterrupted operations and support to the Fleet Operator.",
+    "ParentName": "NRRE-BI / NRRIF",
     "TaskOutlineNumber": 7.4,
     "TaskName": "Migrate NRRE-BI to the SIPR IL6 Azure Cloud",
     "TaskStartDate": "2023-07-01 08:00:00",
@@ -79,6 +86,7 @@
   {
     "EnterprisePriorityNumber": 1,
     "EnterprisePriority": "Sustain uninterrupted operations and support to the Fleet Operator.",
+    "ParentName": "NRRE-BI / NRRIF",
     "TaskOutlineNumber": 7.5,
     "TaskName": "Migrate NRRIF to the SIPR IL6 Azure Cloud",
     "TaskStartDate": "2023-07-01 08:00:00",
@@ -90,6 +98,7 @@
   {
     "EnterprisePriorityNumber": 1,
     "EnterprisePriority": "Sustain uninterrupted operations and support to the Fleet Operator.",
+    "ParentName": "NRAS",
     "TaskOutlineNumber": 8.1,
     "TaskName": ".NET 3.5 to .NET 6",
     "TaskStartDate": "2023-09-07 08:00:00",
@@ -101,6 +110,7 @@
   {
     "EnterprisePriorityNumber": 1,
     "EnterprisePriority": "Sustain uninterrupted operations and support to the Fleet Operator.",
+    "ParentName": "NRAS",
     "TaskOutlineNumber": 8.3,
     "TaskName": "Release 82 Ashore IRRI",
     "TaskStartDate": "2022-12-05 08:00:00",
@@ -112,6 +122,7 @@
   {
     "EnterprisePriorityNumber": 1,
     "EnterprisePriority": "Sustain uninterrupted operations and support to the Fleet Operator.",
+    "ParentName": "NRAS",
     "TaskOutlineNumber": 8.4,
     "TaskName": "R82 Afloat IRRI",
     "TaskStartDate": "2022-12-05 08:00:00",
@@ -123,6 +134,7 @@
   {
     "EnterprisePriorityNumber": 1,
     "EnterprisePriority": "Sustain uninterrupted operations and support to the Fleet Operator.",
+    "ParentName": "NRAS",
     "TaskOutlineNumber": 8.7,
     "TaskName": "r82 Documentation / Techinical Field Manual",
     "TaskStartDate": "2024-02-27 08:00:00",
@@ -134,6 +146,7 @@
   {
     "EnterprisePriorityNumber": 2,
     "EnterprisePriority": "Resolve emergent security vulnerabilities.",
+    "ParentName": "GFM NOS",
     "TaskOutlineNumber": 1.1,
     "TaskName": "Release GFM NOS modernized application",
     "TaskStartDate": "2023-10-01 08:00:00",
@@ -145,6 +158,7 @@
   {
     "EnterprisePriorityNumber": 2,
     "EnterprisePriority": "Resolve emergent security vulnerabilities.",
+    "ParentName": "GFM NOS",
     "TaskOutlineNumber": 1.3,
     "TaskName": "Retire legacy NOS and address Profile Management feature",
     "TaskStartDate": "2023-10-01 08:00:00",
@@ -156,6 +170,7 @@
   {
     "EnterprisePriorityNumber": 2,
     "EnterprisePriority": "Resolve emergent security vulnerabilities.",
+    "ParentName": "NRRM",
     "TaskOutlineNumber": 4.3,
     "TaskName": "Automated notification of account functions",
     "TaskStartDate": "2025-05-31 17:00:00",
@@ -167,6 +182,7 @@
   {
     "EnterprisePriorityNumber": 2,
     "EnterprisePriority": "Resolve emergent security vulnerabilities.",
+    "ParentName": "Cyber",
     "TaskOutlineNumber": 5.5,
     "TaskName": "Develop SOP for CTO reports and reviews",
     "TaskStartDate": "2024-05-30 08:00:00",
@@ -178,6 +194,7 @@
   {
     "EnterprisePriorityNumber": 3,
     "EnterprisePriority": "Maintain cybersecurity baseline and accreditation.",
+    "ParentName": "GFM NOS",
     "TaskOutlineNumber": 1.1,
     "TaskName": "Release GFM NOS modernized application",
     "TaskStartDate": "2023-10-01 08:00:00",
@@ -189,6 +206,7 @@
   {
     "EnterprisePriorityNumber": 3,
     "EnterprisePriority": "Maintain cybersecurity baseline and accreditation.",
+    "ParentName": "GFM NOS",
     "TaskOutlineNumber": 1.3,
     "TaskName": "Retire legacy NOS and address Profile Management feature",
     "TaskStartDate": "2023-10-01 08:00:00",
@@ -200,6 +218,7 @@
   {
     "EnterprisePriorityNumber": 3,
     "EnterprisePriority": "Maintain cybersecurity baseline and accreditation.",
+    "ParentName": "Cyber",
     "TaskOutlineNumber": 5.3,
     "TaskName": "AppSecDev STIGs",
     "TaskStartDate": "2024-03-07 08:00:00",
@@ -211,6 +230,7 @@
   {
     "EnterprisePriorityNumber": 3,
     "EnterprisePriority": "Maintain cybersecurity baseline and accreditation.",
+    "ParentName": "NTIMS",
     "TaskOutlineNumber": 6.1,
     "TaskName": "NMETL Consumer",
     "TaskStartDate": "2023-09-14 08:00:00",
@@ -222,6 +242,7 @@
   {
     "EnterprisePriorityNumber": 3,
     "EnterprisePriority": "Maintain cybersecurity baseline and accreditation.",
+    "ParentName": "NTIMS",
     "TaskOutlineNumber": 6.7,
     "TaskName": ".NET 8",
     "TaskStartDate": "2024-02-13 08:00:00",
@@ -233,6 +254,7 @@
   {
     "EnterprisePriorityNumber": 3,
     "EnterprisePriority": "Maintain cybersecurity baseline and accreditation.",
+    "ParentName": "NRAS",
     "TaskOutlineNumber": 8.1,
     "TaskName": ".NET 3.5 to .NET 6",
     "TaskStartDate": "2023-09-07 08:00:00",
@@ -244,6 +266,7 @@
   {
     "EnterprisePriorityNumber": 3,
     "EnterprisePriority": "Maintain cybersecurity baseline and accreditation.",
+    "ParentName": "NRAS",
     "TaskOutlineNumber": 8.4,
     "TaskName": "R82 Afloat IRRI",
     "TaskStartDate": "2022-12-05 08:00:00",
@@ -255,6 +278,7 @@
   {
     "EnterprisePriorityNumber": 3,
     "EnterprisePriority": "Maintain cybersecurity baseline and accreditation.",
+    "ParentName": "NRAS",
     "TaskOutlineNumber": 8.6,
     "TaskName": "PFOM Unclassified Decomission",
     "TaskStartDate": "2023-02-12 08:00:00",
@@ -266,6 +290,7 @@
   {
     "EnterprisePriorityNumber": 4,
     "EnterprisePriority": "Maintain software baseline.",
+    "ParentName": "GFM NOS",
     "TaskOutlineNumber": 1.1,
     "TaskName": "Release GFM NOS modernized application",
     "TaskStartDate": "2023-10-01 08:00:00",
@@ -277,6 +302,7 @@
   {
     "EnterprisePriorityNumber": 4,
     "EnterprisePriority": "Maintain software baseline.",
+    "ParentName": "GFM NOS",
     "TaskOutlineNumber": 1.3,
     "TaskName": "Retire legacy NOS and address Profile Management feature",
     "TaskStartDate": "2023-10-01 08:00:00",
@@ -288,6 +314,7 @@
   {
     "EnterprisePriorityNumber": 4,
     "EnterprisePriority": "Maintain software baseline.",
+    "ParentName": "NRRM",
     "TaskOutlineNumber": 4.5,
     "TaskName": "Reduce Usage of OSS",
     "TaskStartDate": "2023-10-25 08:00:00",
@@ -299,6 +326,7 @@
   {
     "EnterprisePriorityNumber": 4,
     "EnterprisePriority": "Maintain software baseline.",
+    "ParentName": "Cyber",
     "TaskOutlineNumber": 5.1,
     "TaskName": "Ensure software assurance is conducted similarly",
     "TaskStartDate": "2024-03-01 08:00:00",
@@ -310,6 +338,7 @@
   {
     "EnterprisePriorityNumber": 4,
     "EnterprisePriority": "Maintain software baseline.",
+    "ParentName": "NTIMS",
     "TaskOutlineNumber": 6.1,
     "TaskName": "NMETL Consumer",
     "TaskStartDate": "2023-09-14 08:00:00",
@@ -321,6 +350,7 @@
   {
     "EnterprisePriorityNumber": 4,
     "EnterprisePriority": "Maintain software baseline.",
+    "ParentName": "NTIMS",
     "TaskOutlineNumber": 6.3,
     "TaskName": "SQL 22",
     "TaskStartDate": "2023-12-12 08:00:00",
@@ -332,6 +362,7 @@
   {
     "EnterprisePriorityNumber": 4,
     "EnterprisePriority": "Maintain software baseline.",
+    "ParentName": "NTIMS",
     "TaskOutlineNumber": 6.7,
     "TaskName": ".NET 8",
     "TaskStartDate": "2024-02-13 08:00:00",
@@ -343,6 +374,7 @@
   {
     "EnterprisePriorityNumber": 4,
     "EnterprisePriority": "Maintain software baseline.",
+    "ParentName": "NTIMS",
     "TaskOutlineNumber": 6.8,
     "TaskName": "TTRCE Web Application into NTIMS",
     "TaskStartDate": "2022-07-24 08:00:00",
@@ -354,6 +386,7 @@
   {
     "EnterprisePriorityNumber": 4,
     "EnterprisePriority": "Maintain software baseline.",
+    "ParentName": "NRRE-BI / NRRIF",
     "TaskOutlineNumber": 7.3,
     "TaskName": "Upgrade Cognos to Version 12",
     "TaskStartDate": "2023-12-01 08:00:00",
@@ -365,6 +398,7 @@
   {
     "EnterprisePriorityNumber": 4,
     "EnterprisePriority": "Maintain software baseline.",
+    "ParentName": "NRAS",
     "TaskOutlineNumber": 8.3,
     "TaskName": "Release 82 Ashore IRRI",
     "TaskStartDate": "2022-12-05 08:00:00",
@@ -376,6 +410,7 @@
   {
     "EnterprisePriorityNumber": 4,
     "EnterprisePriority": "Maintain software baseline.",
+    "ParentName": "NRAS",
     "TaskOutlineNumber": 8.4,
     "TaskName": "R82 Afloat IRRI",
     "TaskStartDate": "2022-12-05 08:00:00",
@@ -387,6 +422,7 @@
   {
     "EnterprisePriorityNumber": 5,
     "EnterprisePriority": "Respond to higher headquarters requirements.",
+    "ParentName": "GFM NOS",
     "TaskOutlineNumber": 1.5,
     "TaskName": "Improved Forces for Assignment data quality",
     "TaskStartDate": "2023-10-01 08:00:00",
@@ -398,6 +434,7 @@
   {
     "EnterprisePriorityNumber": 5,
     "EnterprisePriority": "Respond to higher headquarters requirements.",
+    "ParentName": "Cyber",
     "TaskOutlineNumber": 5.2,
     "TaskName": "Conduct impact analysis training for IA Team",
     "TaskStartDate": "2024-01-26 08:00:00",
@@ -409,6 +446,7 @@
   {
     "EnterprisePriorityNumber": 5,
     "EnterprisePriority": "Respond to higher headquarters requirements.",
+    "ParentName": "Cyber",
     "TaskOutlineNumber": 5.4,
     "TaskName": "SOP for external dynamic code scans",
     "TaskStartDate": "2024-04-15 08:00:00",
@@ -420,6 +458,7 @@
   {
     "EnterprisePriorityNumber": 5,
     "EnterprisePriority": "Respond to higher headquarters requirements.",
+    "ParentName": "NTIMS",
     "TaskOutlineNumber": 6.4,
     "TaskName": "Move the NTIMS application to the Cloud",
     "TaskStartDate": "2021-06-17 08:00:00",
@@ -431,6 +470,7 @@
   {
     "EnterprisePriorityNumber": 5,
     "EnterprisePriority": "Respond to higher headquarters requirements.",
+    "ParentName": "NTIMS",
     "TaskOutlineNumber": 6.6,
     "TaskName": "AVN CRG Data",
     "TaskStartDate": "2023-10-12 08:00:00",
@@ -442,6 +482,7 @@
   {
     "EnterprisePriorityNumber": 5,
     "EnterprisePriority": "Respond to higher headquarters requirements.",
+    "ParentName": "NRRE-BI / NRRIF",
     "TaskOutlineNumber": 7.1,
     "TaskName": "Modernize file ingest and deploy historical readiness datamart",
     "TaskStartDate": "2023-08-01 08:00:00",
@@ -453,6 +494,7 @@
   {
     "EnterprisePriorityNumber": 5,
     "EnterprisePriority": "Respond to higher headquarters requirements.",
+    "ParentName": "NRAS",
     "TaskOutlineNumber": 8.2,
     "TaskName": "HOGEO",
     "TaskStartDate": "2023-08-30 08:00:00",
@@ -464,6 +506,7 @@
   {
     "EnterprisePriorityNumber": 5,
     "EnterprisePriority": "Respond to higher headquarters requirements.",
+    "ParentName": "NRAS",
     "TaskOutlineNumber": 8.8,
     "TaskName": "R83 OFOM Control Mapping, File Uploader .NET8 and SQL 22",
     "TaskStartDate": "2023-10-12 08:00:00",
@@ -475,6 +518,7 @@
   {
     "EnterprisePriorityNumber": 6,
     "EnterprisePriority": "Transition to cloud hosting.",
+    "ParentName": "GFM NOS",
     "TaskOutlineNumber": 1.4,
     "TaskName": "Deploy GFM NOS cloud application to GCCH and pre-ATO environments (6)",
     "TaskStartDate": "2023-10-01 08:00:00",
@@ -486,6 +530,7 @@
   {
     "EnterprisePriorityNumber": 6,
     "EnterprisePriority": "Transition to cloud hosting.",
+    "ParentName": "Configuration",
     "TaskOutlineNumber": 2.1,
     "TaskName": "NRRM Migration to Cloud",
     "TaskStartDate": "2023-08-01 08:00:00",
@@ -497,6 +542,7 @@
   {
     "EnterprisePriorityNumber": 6,
     "EnterprisePriority": "Transition to cloud hosting.",
+    "ParentName": "Configuration",
     "TaskOutlineNumber": 2.2,
     "TaskName": "NRRE-U Migration to Cloud",
     "TaskStartDate": "2024-02-23 08:00:00",
@@ -508,6 +554,7 @@
   {
     "EnterprisePriorityNumber": 6,
     "EnterprisePriority": "Transition to cloud hosting.",
+    "ParentName": "Configuration",
     "TaskOutlineNumber": 2.5,
     "TaskName": "SIPR App Migration to Cloud",
     "TaskStartDate": "2024-05-01 08:00:00",
@@ -519,6 +566,7 @@
   {
     "EnterprisePriorityNumber": 6,
     "EnterprisePriority": "Transition to cloud hosting.",
+    "ParentName": "NRRM",
     "TaskOutlineNumber": 4.1,
     "TaskName": "Cloud Transition (NRRM Regression Test x/ Prod Data)",
     "TaskStartDate": "2023-10-18 08:00:00",
@@ -530,6 +578,7 @@
   {
     "EnterprisePriorityNumber": 6,
     "EnterprisePriority": "Transition to cloud hosting.",
+    "ParentName": "NRRE-BI / NRRIF",
     "TaskOutlineNumber": 7.1,
     "TaskName": "Modernize file ingest and deploy historical readiness datamart",
     "TaskStartDate": "2023-08-01 08:00:00",
@@ -541,6 +590,7 @@
   {
     "EnterprisePriorityNumber": 6,
     "EnterprisePriority": "Transition to cloud hosting.",
+    "ParentName": "NRRE-BI / NRRIF",
     "TaskOutlineNumber": 7.2,
     "TaskName": "Migrate NRRE-BI and NRRIF to NIPR IL5 Azure Cloud",
     "TaskStartDate": "2023-07-01 08:00:00",
@@ -552,6 +602,7 @@
   {
     "EnterprisePriorityNumber": 6,
     "EnterprisePriority": "Transition to cloud hosting.",
+    "ParentName": "NRRE-BI / NRRIF",
     "TaskOutlineNumber": 7.4,
     "TaskName": "Migrate NRRE-BI to the SIPR IL6 Azure Cloud",
     "TaskStartDate": "2023-07-01 08:00:00",
@@ -563,6 +614,7 @@
   {
     "EnterprisePriorityNumber": 6,
     "EnterprisePriority": "Transition to cloud hosting.",
+    "ParentName": "NRRE-BI / NRRIF",
     "TaskOutlineNumber": 7.5,
     "TaskName": "Migrate NRRIF to the SIPR IL6 Azure Cloud",
     "TaskStartDate": "2023-07-01 08:00:00",
@@ -574,6 +626,7 @@
   {
     "EnterprisePriorityNumber": 7,
     "EnterprisePriority": "All other NRRE tasks and enhancements.",
+    "ParentName": "GFM NOS",
     "TaskOutlineNumber": 1.2,
     "TaskName": "CXSD 4.0 Transition",
     "TaskStartDate": "2024-04-30 08:00:00",
@@ -585,6 +638,7 @@
   {
     "EnterprisePriorityNumber": 7,
     "EnterprisePriority": "All other NRRE tasks and enhancements.",
+    "ParentName": "Configuration",
     "TaskOutlineNumber": 2.3,
     "TaskName": "Mature CAC/CCB Process",
     "TaskStartDate": "2024-01-01 08:00:00",
@@ -596,6 +650,7 @@
   {
     "EnterprisePriorityNumber": 7,
     "EnterprisePriority": "All other NRRE tasks and enhancements.",
+    "ParentName": "Configuration",
     "TaskOutlineNumber": 2.4,
     "TaskName": "Standardize CM Plan CDRL (A018)",
     "TaskStartDate": "2024-02-01 08:00:00",
@@ -607,6 +662,7 @@
   {
     "EnterprisePriorityNumber": 7,
     "EnterprisePriority": "All other NRRE tasks and enhancements.",
+    "ParentName": "NRRM",
     "TaskOutlineNumber": 4.2,
     "TaskName": "Analysis of Power BI (architecture)",
     "TaskStartDate": "2025-03-31 17:00:00",
@@ -618,6 +674,7 @@
   {
     "EnterprisePriorityNumber": 7,
     "EnterprisePriority": "All other NRRE tasks and enhancements.",
+    "ParentName": "NRRM",
     "TaskOutlineNumber": 4.4,
     "TaskName": "Modernize UI",
     "TaskStartDate": "2023-10-23 08:00:00",
@@ -629,6 +686,7 @@
   {
     "EnterprisePriorityNumber": 7,
     "EnterprisePriority": "All other NRRE tasks and enhancements.",
+    "ParentName": "Cyber",
     "TaskOutlineNumber": 5.4,
     "TaskName": "SOP for external dynamic code scans",
     "TaskStartDate": "2024-04-15 08:00:00",
@@ -640,6 +698,7 @@
   {
     "EnterprisePriorityNumber": 7,
     "EnterprisePriority": "All other NRRE tasks and enhancements.",
+    "ParentName": "NTIMS",
     "TaskOutlineNumber": 6.5,
     "TaskName": "Requirements planning Gant and Performance = 100",
     "TaskStartDate": "2024-02-11 08:00:00",
@@ -651,6 +710,7 @@
   {
     "EnterprisePriorityNumber": 7,
     "EnterprisePriority": "All other NRRE tasks and enhancements.",
+    "ParentName": "NTIMS",
     "TaskOutlineNumber": 6.8,
     "TaskName": "TTRCE Web Application into NTIMS",
     "TaskStartDate": "2022-07-24 08:00:00",
@@ -662,6 +722,7 @@
   {
     "EnterprisePriorityNumber": 7,
     "EnterprisePriority": "All other NRRE tasks and enhancements.",
+    "ParentName": "NRRE-BI / NRRIF",
     "TaskOutlineNumber": 7.1,
     "TaskName": "Modernize file ingest and deploy historical readiness datamart",
     "TaskStartDate": "2023-08-01 08:00:00",
@@ -673,6 +734,7 @@
   {
     "EnterprisePriorityNumber": 7,
     "EnterprisePriority": "All other NRRE tasks and enhancements.",
+    "ParentName": "NRRE-BI / NRRIF",
     "TaskOutlineNumber": 7.3,
     "TaskName": "Upgrade Cognos to Version 12",
     "TaskStartDate": "2023-12-01 08:00:00",
@@ -684,6 +746,7 @@
   {
     "EnterprisePriorityNumber": 7,
     "EnterprisePriority": "All other NRRE tasks and enhancements.",
+    "ParentName": "NRAS",
     "TaskOutlineNumber": 8.8,
     "TaskName": "R83 OFOM Control Mapping, File Uploader .NET8 and SQL 22",
     "TaskStartDate": "2023-10-12 08:00:00",
