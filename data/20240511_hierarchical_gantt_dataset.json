@@ -228,8 +228,8 @@
     "id": "26",
     "parentId": "1",
     "name": "Project D",
-    "startDate": "",
-    "endDate": "",
+    "startDate": "2/20/2024",
+    "endDate": "12/31/2024",
     "decimalPercentComplete": "0.08",
     "dependencyId": ""
   },
