@@ -383,8 +383,8 @@
     "id": 39,
     "parentId": 1,
     "name": "Project E",
-    "startDate": 45609,
-    "endDate": "",
+    "startDate": "11/13/2024",
+    "endDate": "3/8/2025",
     "decimalPercentComplete": 0,
     "dependencyId": "",
     "color": "#EF6024"
@@ -393,8 +393,8 @@
     "id": 40,
     "parentId": 39,
     "name": "Task 1",
-    "startDate": 45609,
-    "endDate": 45653,
+    "startDate": "11/13/2024",
+    "endDate": "12/27/2024",
     "decimalPercentComplete": 0,
     "dependencyId": "",
     "color": "#EF6024"
@@ -403,8 +403,8 @@
     "id": 41,
     "parentId": 39,
     "name": "Task 2",
-    "startDate": 45653,
-    "endDate": 45724,
+    "startDate": "12/27/2024",
+    "endDate": "3/8/2025",
     "decimalPercentComplete": 0,
     "dependencyId": 40,
     "color": "#EF6024"
