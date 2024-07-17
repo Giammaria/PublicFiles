@@ -1,2483 +1,412 @@
-{
-  "$schema": "https://vega.github.io/schema/vega/v5.json",
-  "signals": [
-    {"name": "desiredTotalVisualWidth", "update": "1200"},
-    {"name": "height", "value": 600},
-    {"name": "adjustedHeight", "update": "height - rowConfig.rowHeight"},
-    {"name": "dateStepSizelPercentInital", "value": 0.1},
-    {
-      "name": "includeRoot",
-      "description": "boolean to indicate whether the root node should be visible",
-      "init": "false"
-    },
-    {
-      "name": "initialLevel",
-      "description": "the number of levels deep to start with",
-      "value": 1
-    },
-    {
-      "name": "includedLeftHandColumns",
-      "description": "array of column titles to be included",
-      "value": ["name", "startDate", "endDate", "duration", "progress"]
-    },
-    {
-      "name": "resetLevel",
-      "description": "the number of levels deep to revert to when collapsing all nodes",
-      "init": "initialLevel",
-      "on": [
-        {
-          "events": "@expandAll_collapseAll_buttons:click",
-          "update": "!isValid(datum.datum) ? resetLevel : datum.datum.name === 'expandAll' ? 999999 : initialLevel"
-        }
-      ]
-    },
-    {
-      "name": "currentMaxLevel",
-      "description": "the current maximum depth for all visible nodes",
-      "update": "data('currentMaxIndentWidth')[0]['currentMaxLevel']"
-    },
-    {
-      "name": "currentMaxIndentWidth",
-      "description": "the current maximum indent width for all visible nodes",
-      "update": "data('currentMaxIndentWidth')[0]['indent']"
-    },
-    {
-      "name": "expandAllClicked",
-      "description": "boolean indicating whether expandAll was the last element clicked",
-      "init": "false",
-      "on": [
-        {
-          "events": "@expandAll_collapseAll_buttons:click",
-          "update": "!isValid(datum.datum) ? resetLevel : datum.datum.name === 'expandAll' ? true : false"
-        },
-        {"events": "@row_clickable_rect:click", "update": "false"}
-      ]
-    },
-    {
-      "name": "ganttRange",
-      "update": "[leftHandColumnsTotalWidth+dayStepWidth/2, width-(verticalScrollbar.enabled ? verticalScrollbar.config.innerPadding*2 : 0)]"
-    },
-    {
-      "name": "rowConfig",
-      "description": "configurations for the rows",
-      "init": "{rowHeight: 25, levelIndentWidth: 15}"
-    },
-    {
-      "name": "columnConfig",
-      "description": "configurations for the columns that appear to the left of the Gantt",
-      "init": "{xOffset: 5, innerPadding: 25, columns: {'taskTitle': {allowableWidth: 70, font: 'Segoe UI', fontSize: 12, align: 'left', fontWeight: 600}, 'startDate': {allowableWidth: 55, font: 'Segoe UI', fontSize: 12, align: 'right'}, 'endDate': {allowableWidth: 55, font: 'Segoe UI', fontSize: 12, align: 'right'}, 'duration': {allowableWidth: 45, font: 'Segoe UI', fontSize: 12, 'align': 'right'}, 'progress': {allowableWidth: 56, font: 'Segoe UI', fontSize: 12, cornerRadius: 2.5}}}"
-    },
-    {
-      "name": "ganttConfig",
-      "update": "{x: ganttRange[0], childRect: {cornerRadius: 1.5}, label: {xOffset: 7.5, font: 'Segoe UI', fontSize: 11, align: 'left', fontWeight: 400, fill: '#999'}}"
-    },
-    {
-      "name": "leftHandColumnsTotalWidth",
-      "description": "total width of the columns on the left side before the Gantt",
-      "update": "data('LeftHandColumns')[0]['totalWidth']"
-    },
-    {
-      "name": "dayInMilliseconds",
-      "description": "numeric value for 24 hours in milliseconds",
-      "init": "8.64e+7"
-    },
-    {
-      "name": "isInitial",
-      "description": "boolean indicating if this is considered the initial expand/collapse state",
-      "init": "true",
-      "on": [
-        {
-          "events": "@row_clickable_rect:click",
-          "update": "isValid(datum) && datum.hasChildren ? false : isInitial"
-        },
-        {"events": "@expandAll_collapseAll_buttons:click", "update": "true"}
-      ]
-    },
-    {
-      "name": "lastClickedNode",
-      "description": "node in the hierarchy with children that was last expanded or collapsed",
-      "init": "null",
-      "on": [
-        {
-          "events": "@row_clickable_rect:click",
-          "update": "isValid(datum) && datum.hasChildren ? {timestamp: now(), datum: datum} : lastClickedNode"
-        }
-      ]
-    },
-    {
-      "name": "mouseover_rect",
-      "init": "null",
-      "on": [
-        {
-          "events": "@row_clickable_rect:mouseover",
-          "update": "isValid(datum) ? datum : null"
-        },
-        {"events": "@row_clickable_rect:mouseout", "update": "null"}
-      ]
-    },
-    {
-      "name": "expandCollapseButton",
-      "value": null,
-      "on": [
-        {
-          "events": "@expandAll_collapseAll_buttons:mouseover",
-          "update": "datum.datum"
-        },
-        {"events": "@expandAll_collapseAll_buttons:mouseout", "update": "null"}
-      ]
-    },
-    {
-      "name": "progressXRange",
-      "update": "[0, (pluck(data('LeftHandColumns'), 'allowableWidth')[indexof(pluck(data('LeftHandColumns'), 'column'), 'progress')])]"
-    },
-    {"name": "actualHeight", "update": "data('height')[0]['height']"},
-    {
-      "name": "verticalScrollbar",
-      "update": "{enabled: actualHeight>adjustedHeight, config: {innerPadding: 10, track: {width: 10, height: extent([actualHeight, adjustedHeight])[0]}, handle: {height: max((adjustedHeight/actualHeight)*extent([actualHeight, adjustedHeight])[0], 30)}}}"
-    },
-    {
-      "name": "verticalScrollbarMouseDown",
-      "value": false,
-      "on": [
-        {
-          "events": "@group_verticalScrollbar:pointerdown",
-          "update": "verticalScrollbar.enabled"
-        },
-        {"events": "pointerup", "update": "false"},
-        {
-          "events": {"type": "mousemove"},
-          "filter": [{"type": "pointerup"}],
-          "update": "false"
-        }
-      ]
-    },
-    {
-      "name": "verticalScrollPercent",
-      "value": 0,
-      "on": [
-        {
-          "events": {"type": "wheel", "consume": true},
-          "update": "!verticalScrollbar.enabled ? 0 : clamp(verticalScrollPercent - (-event.deltaY * pow(4, event.deltaMode) * 0.001), 0,(actualHeight-adjustedHeight)/actualHeight)"
-        },
-        {
-          "events": "@group_verticalScrollbar:pointerdown",
-          "update": "!verticalScrollbar.enabled ? 0 : invert('scaleScrollHandleY', y(group()))"
-        },
-        {
-          "events": {
-            "type": "pointermove",
-            "source": "scope",
-            "markname": "group_verticalScrollbar",
-            "between": [{"type": "pointerdown"}, {"type": "pointerup"}]
-          },
-          "update": "!verticalScrollbar.enabled ? 0 : isValid(group()) ? invert('scaleScrollHandleY', clamp(y(group()), verticalScrollbar.config.handle.height,  verticalScrollbar.config.track.height)) : verticalScrollPercent"
-        },
-        {"events": {"signal": "!verticalScrollbar.enabled"}, "update": "0"}
-      ]
-    },
-    {
-      "name": "horizontalScrollbar",
-      "update": "{enabled: length(data('dateWindowSize')) > 0 ? data('dateWindowSize')[0]['scrollEnabled'] : false, config: {innerPadding: 10, track: {height: 10, width: ganttRange[1]-ganttRange[0]}, handle: {width:  length(data('dateWindowSize')) <= 0 ? 30 : max((ganttRange[1]-ganttRange[0])*(data('dateWindowSize')[0]['windowRowCount']/data('dateWindowSize')[0]['rowCount']), 30)}}}"
-    },
-    {
-      "name": "horizontalScrollbarMouseDown",
-      "value": false,
-      "on": [
-        {
-          "events": "@group_horizontalScrollbar:pointerdown",
-          "update": "horizontalScrollbar.enabled"
-        },
-        {"events": "pointerup", "update": "false"},
-        {
-          "events": {"type": "mousemove"},
-          "filter": [{"type": "pointerup"}],
-          "update": "false"
-        }
-      ]
-    },
-    {
-      "name": "horizontalScrollPercent",
-      "value": 0,
-      "on": [
-        {
-          "events": "@group_horizontalScrollbar:pointerdown",
-          "update": "!horizontalScrollbar.enabled ? 0 : invert('scaleScrollHandleX', x(group()))"
-        },
-        {
-          "events": {
-            "type": "pointermove",
-            "source": "scope",
-            "markname": "group_horizontalScrollbar",
-            "between": [{"type": "pointerdown"}, {"type": "pointerup"}]
-          },
-          "update": "!horizontalScrollbar.enabled ? 0 : isValid(group()) ? invert('scaleScrollHandleX', clamp(x(group()), horizontalScrollbar.config.handle.width,  horizontalScrollbar.config.track.width)) : horizontalScrollPercent"
-        },
-        {"events": {"signal": "!horizontalScrollbar.enabled"}, "update": "0"}
-      ]
-    },
-    {
-      "name": "dateStepSliderMouseDown",
-      "value": false,
-      "on": [
-        {
-          "events": "@dateGranularitySliderInteractive_rect:pointerdown",
-          "update": "true"
-        },
-        {"events": "pointerup", "update": "false"},
-        {
-          "events": {"type": "mousemove"},
-          "filter": [{"type": "pointerup"}],
-          "update": "false"
-        }
-      ]
-    },
-    {
-      "name": "showDetails",
-      "init": "showDetailsConfig.initialValue",
-      "on": [
-        {
-          "events": "@group_showDetailsToggle:pointerdown",
-          "update": "!showDetails"
-        }
-      ]
-    },
-    {
-      "name": "dateStepSizelPercent",
-      "init": "dateStepSizelPercentInital",
-      "on": [
-        {
-          "events": "@dateGranularitySliderInteractive_rect:pointerdown",
-          "update": "invert('scaleSliderHandleX', (x(group())-(width-dateStepSliderConfig.track.width)+(verticalScrollbar.enabled ? verticalScrollbar.config.innerPadding + verticalScrollbar.config.track.width  : 0)))"
-        },
-        {
-          "events": {
-            "type": "pointermove",
-            "source": "scope",
-            "markname": "dateGranularitySliderInteractive_rect",
-            "between": [{"type": "pointerdown"}, {"type": "pointerup"}]
-          },
-          "update": "isValid(group()) ? invert('scaleSliderHandleX', clamp((x(group())-(width-dateStepSliderConfig.track.width)+(verticalScrollbar.enabled ? verticalScrollbar.config.innerPadding + verticalScrollbar.config.track.width  : 0)), dateStepSliderConfig.track.cornerRadius,  dateStepSliderConfig.track.width- dateStepSliderConfig.track.cornerRadius)) : dateStepSizelPercent"
-        },
-        {
-          "events": "@reset_slider_granularity_interactivity_rect:pointerdown",
-          "update": "dateStepSizelPercentInital"
-        }
-      ]
-    },
-    {
-      "name": "dateStepWidth",
-      "update": "clamp(scale('scaleStepWidth', dateStepSizelPercent), range('scaleStepWidth')[0], range('scaleStepWidth')[1])"
-    },
-    {"name": "dayStepWidth", "value": 20},
-    {"name": "monthStepWidth", "update": "(ganttRange[1]-ganttRange[0])/3.5"},
-    {
-      "name": "dateGranularity",
-      "update": "dateStepWidth <= dayStepWidth ? 'day' : dateStepWidth <= monthStepWidth ? 'month' : 'year'"
-    },
-    {"name": "headerConfig", "update": "{height: 60, yOffset: -35}"},
-    {
-      "name": "buttonConfig",
-      "init": "{padding: 5, yOffset: 5, label: {text: 'Expand/Collapse All', font: 'Segoe UI', fontSize: 12, fill: '#999', fontStyle: 'italic', dy: 15}}"
-    },
-    {
-      "name": "showDetailsConfig",
-      "update": "{enabled: true, initialValue: true, xOffset: 40, track: {height: 7.5, width: 25, cornerRadius: 5, fill: '#EEE', stroke: '#999', strokeWidth: 0.5}, handle: {stroke: '#BBB', strokeWidth: 0.5, fill: '#fff'}, label: {text: 'Details', font: 'Segoe UI', fontSize: 12, fill: '#999', fontStyle: 'italic', dy: 10}, on: {fill: '#d1e0ec', fillOpacity: 1, stroke: '#d1e0ec', strokeWidth: 0.5}, tooltip: {text: 'Show/hide detail columns'}}"
-    },
-    {
-      "name": "dateStepSliderConfig",
-      "update": "{enabled: true, innerPadding: 10, track: {height: 7.5, width: 80, cornerRadius: 5, fill: '#EEE', stroke: '#999', strokeWidth: 0.5}, handle: {outerStroke: '#BBB', outerStrokeWidth: 0.5, outerfill: '#fff', innerStroke: '#999', innerStrokeWidth: 0.5, innerFill: '#999'}, label: {text: 'Date Granularity', font: 'Segoe UI', fontSize: 12, fill: '#999', fontStyle: 'italic', dy: 10}, progress: {fill: '#d1e0ec', fillOpacity: 1}, tooltip: {text: 'Adjust date granularity'}, reset: {iconPath: 'M75 75L41 41C25.9 25.9 0 36.6 0 57.9L0 168c0 13.3 10.7 24 24 24l110.1 0c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24l0 104c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65 0-94.1c0-13.3-10.7-24-24-24z', tooltipText: 'Reset Granularity', fill:'#BBB', hoverFill: '#666'}}"
-    },
-    {
-      "name": "dateStepSliderResetHover",
-      "value": false,
-      "on": [
-        {
-          "events": [
-            {
-              "type": "mouseover",
-              "markname": "reset_slider_granularity_interactivity_rect",
-              "source": "scope"
-            }
-          ],
-          "update": "true"
-        },
-        {
-          "events": [
-            {
-              "type": "mouseout",
-              "markname": "reset_slider_granularity_interactivity_rect",
-              "source": "scope"
-            }
-          ],
-          "update": "false"
-        }
-      ]
-    },
-    {"name": "axisDateDomain", "update": "extent(pluck(data('date'), 'date'))"},
-    {
-      "name": "padding",
-      "update": "{top: 10, right: (verticalScrollbar.enabled ? 0 : verticalScrollbar.config.track.width), bottom: 10, left: 15}"
-    },
-    {
-      "name": "width",
-      "update": "desiredTotalVisualWidth+1+(verticalScrollbar.enabled ? verticalScrollbar.config.track.width : 0)"
-    }
-  ],
-  "marks": [
-    {
-      "name": "left_column_labels",
-      "type": "text",
-      "from": {"data": "LeftHandColumns"},
-      "interactive": false,
-      "encode": {
-        "update": {
-          "text": {"field": "label"},
-          "x": {
-            "signal": "datum.column==='name' ? rowConfig.levelIndentWidth : datum.x"
-          },
-          "y": {"value": -5},
-          "baseline": {"value": "bottom"},
-          "align": {"field": "align"},
-          "fontSize": {"value": 14},
-          "font": {"value": "Segoe UI"},
-          "fontWeight": {"value": "600"}
-        }
-      }
-    },
-    {
-      "name": "header_divider_line",
-      "type": "rect",
-      "interactive": false,
-      "encode": {
-        "update": {
-          "x": {"signal": "0"},
-          "y": {"signal": "0"},
-          "x2": {"signal": "ganttRange[1]"},
-          "height": {"signal": "0"},
-          "cursor": {"value": "pointer"},
-          "fill": {"value": "#6e7a87"},
-          "stroke": {"value": "#6e7a87"},
-          "strokeWidth": {"value": 0.1}
-        }
-      }
-    },
-    {
-      "name": "group_row_level_marks",
-      "type": "group",
-      "clip": true,
-      "encode": {
-        "update": {
-          "x": {"signal": "0"},
-          "y": {
-            "signal": "verticalScrollbar.enabled ? clamp(-verticalScrollPercent*actualHeight,-(actualHeight-adjustedHeight), 0) : 0"
-          }
-        }
-      },
-      "marks": [
-        {
-          "name": "row_clickable_rect",
-          "type": "rect",
-          "from": {"data": "hierarchy_master"},
-          "interactive": true,
-          "encode": {
-            "update": {
-              "x": {"signal": "0"},
-              "y": {"signal": "rowConfig.rowHeight*datum['rowNumber']"},
-              "width": {"signal": "ganttRange[1]"},
-              "height": {
-                "signal": "verticalScrollbar.enabled && datum.isLastRow ? 0 : rowConfig.rowHeight"
-              },
-              "cursor": {"signal": "datum.hasChildren ? 'pointer' : 'default'"},
-              "fill": {"value": "#d1e0ec"},
-              "fillOpacity": {
-                "signal": "isValid(mouseover_rect) && mouseover_rect.id === datum.id ? 0.2 : 0"
-              }
-            }
-          }
-        },
-        {
-          "name": "row_divider_lines",
-          "type": "rect",
-          "from": {"data": "hierarchy_master"},
-          "interactive": false,
-          "encode": {
-            "update": {
-              "x": {
-                "signal": "datum.indentWidth+(pluck(data('LeftHandColumns'), 'x')[indexof(pluck(data('LeftHandColumns'), 'column'), 'name')])"
-              },
-              "y": {
-                "signal": "rowConfig.rowHeight*(datum['rowNumber']+1) - (datum.isLastRow ? 1 : 0)"
-              },
-              "x2": {"signal": "ganttConfig.x"},
-              "height": {"signal": "0"},
-              "cursor": {"value": "pointer"},
-              "fill": {"value": "#6e7a87"},
-              "stroke": {"value": "#6e7a87"},
-              "strokeWidth": {"signal": "datum.isLastRow ? 0 : 0.035"}
-            }
-          }
-        },
-        {
-          "name": "column_lefthandColumn_divider_line",
-          "type": "rect",
-          "from": {"data": "hierarchy_master"},
-          "interactive": false,
-          "encode": {
-            "update": {
-              "x": {"signal": "0"},
-              "y": {"signal": "rowConfig.rowHeight*(datum['rowNumber'])"},
-              "x2": {"signal": "0"},
-              "height": {"signal": "rowConfig.rowHeight"},
-              "cursor": {"value": "pointer"},
-              "fill": {"value": "#6e7a87"},
-              "stroke": {"value": "#6e7a87"},
-              "strokeWidth": {"value": 0.1},
-              "zindex": {"value": 99}
-            }
-          }
-        },
-        {
-          "name": "column_gantt_divider_line",
-          "type": "rect",
-          "from": {"data": "hierarchy_master"},
-          "interactive": false,
-          "encode": {
-            "update": {
-              "x": {"signal": "ganttConfig.x"},
-              "y": {"signal": "rowConfig.rowHeight*(datum['rowNumber'])"},
-              "x2": {"signal": "ganttConfig.x"},
-              "height": {"signal": "rowConfig.rowHeight"},
-              "cursor": {"value": "pointer"},
-              "fill": {"value": "#6e7a87"},
-              "stroke": {"value": "#6e7a87"},
-              "strokeWidth": {"value": 0.1}
-            }
-          }
-        },
-        {
-          "name": "gantt_end_divider_line",
-          "type": "rect",
-          "from": {"data": "hierarchy_master"},
-          "interactive": false,
-          "encode": {
-            "update": {
-              "x": {"signal": "ganttRange[1]"},
-              "y": {"signal": "rowConfig.rowHeight*(datum['rowNumber'])"},
-              "x2": {"signal": "ganttRange[1]"},
-              "height": {"signal": "rowConfig.rowHeight"},
-              "cursor": {"value": "pointer"},
-              "fill": {"value": "#6e7a87"},
-              "stroke": {"value": "#6e7a87"},
-              "strokeWidth": {"value": 0.1}
-            }
-          }
-        },
-        {
-          "name": "expand_collapse_indicator",
-          "type": "text",
-          "from": {"data": "hierarchy_master"},
-          "interactive": false,
-          "encode": {
-            "update": {
-              "text": {"signal": "!isValid(datum.isExpanded) ? '' : '➤'"},
-              "angle": {"field": "expandCollapseIndicatorAngle"},
-              "x": {"field": "expandCollapseIndicatorX"},
-              "y": {
-                "signal": "rowConfig.rowHeight*datum['rowNumber']+rowConfig.rowHeight/2"
-              },
-              "font": {"signal": "columnConfig.columns.taskTitle.font"},
-              "fontSize": {"signal": "12"},
-              "fill": {"signal": "datum.color"},
-              "fillOpacity": {
-                "signal": "isValid(mouseover_rect) && mouseover_rect.id === datum.id ? 1 : 0.5"
-              },
-              "align": {"value": "center"},
-              "baseline": {"value": "middle"},
-              "opacity": {"field": "isVisible"},
-              "fontWeight": {
-                "signal": "isValid(mouseover_rect) && mouseover_rect.id === datum.id ? 800 : 400"
-              }
-            }
-          }
-        },
-        {
-          "name": "task_title_text",
-          "type": "text",
-          "from": {"data": "hierarchy_master"},
-          "interactive": false,
-          "encode": {
-            "update": {
-              "text": {
-                "signal": "indexof(includedLeftHandColumns, 'name') >= 0 ? datum.name : ''"
-              },
-              "x": {
-                "signal": "datum.indentWidth+(pluck(data('LeftHandColumns'), 'x')[indexof(pluck(data('LeftHandColumns'), 'column'), 'name')])"
-              },
-              "y": {
-                "signal": "rowConfig.rowHeight*datum.rowNumber+rowConfig.rowHeight/2"
-              },
-              "font": {"signal": "columnConfig.columns.taskTitle.font"},
-              "fontSize": {"signal": "columnConfig.columns.taskTitle.fontSize"},
-              "align": {
-                "signal": "(pluck(data('LeftHandColumns'), 'align')[indexof(pluck(data('LeftHandColumns'), 'column'), 'name')])"
-              },
-              "baseline": {"value": "middle"},
-              "limit": {
-                "signal": "columnConfig.columns.taskTitle.allowableWidth"
-              },
-              "opacity": {"field": "isVisible"},
-              "fill": {
-                "signal": "isValid(mouseover_rect) && mouseover_rect.id === datum.id ? '#000' : '#666'"
-              },
-              "fontWeight": {
-                "signal": "isValid(mouseover_rect) && mouseover_rect.id === datum.id ? 700 : columnConfig.columns.taskTitle.fontWeight"
-              }
-            }
-          }
-        },
-        {
-          "name": "task_start_date",
-          "type": "text",
-          "from": {"data": "hierarchy_master"},
-          "interactive": false,
-          "encode": {
-            "update": {
-              "text": {
-                "signal": "showDetails && indexof(includedLeftHandColumns, 'startDate') >= 0 ? utcFormat(datum.startDate, '%m/%d/%y') : ''"
-              },
-              "x": {
-                "signal": "(pluck(data('LeftHandColumns'), 'x')[indexof(pluck(data('LeftHandColumns'), 'column'), 'startDate')])"
-              },
-              "y": {
-                "signal": "rowConfig.rowHeight*datum.rowNumber+rowConfig.rowHeight/2"
-              },
-              "font": {"signal": "columnConfig.columns.startDate.font"},
-              "fontSize": {"signal": "columnConfig.columns.startDate.fontSize"},
-              "align": {
-                "signal": "(pluck(data('LeftHandColumns'), 'align')[indexof(pluck(data('LeftHandColumns'), 'column'), 'startDate')])"
-              },
-              "baseline": {"value": "middle"},
-              "limit": {
-                "signal": "columnConfig.columns.startDate.allowableWidth"
-              },
-              "opacity": {"signal": "datum.isVisible && showDetails"},
-              "fill": {
-                "signal": "isValid(mouseover_rect) && mouseover_rect.id === datum.id ? '#000' : '#666'"
-              },
-              "fontWeight": {
-                "signal": "isValid(mouseover_rect) && mouseover_rect.id === datum.id ? 500 : 400"
-              }
-            }
-          }
-        },
-        {
-          "name": "task_end_date",
-          "type": "text",
-          "from": {"data": "hierarchy_master"},
-          "interactive": false,
-          "encode": {
-            "update": {
-              "text": {
-                "signal": "showDetails && indexof(includedLeftHandColumns, 'endDate') >= 0 ? utcFormat(datum.endDate, '%m/%d/%y') : ''"
-              },
-              "x": {
-                "signal": "(pluck(data('LeftHandColumns'), 'x')[indexof(pluck(data('LeftHandColumns'), 'column'), 'endDate')])"
-              },
-              "y": {
-                "signal": "rowConfig.rowHeight*datum.rowNumber+rowConfig.rowHeight/2"
-              },
-              "font": {"signal": "columnConfig.columns.endDate.font"},
-              "fontSize": {"signal": "columnConfig.columns.endDate.fontSize"},
-              "align": {
-                "signal": "(pluck(data('LeftHandColumns'), 'align')[indexof(pluck(data('LeftHandColumns'), 'column'), 'endDate')])"
-              },
-              "baseline": {"value": "middle"},
-              "limit": {
-                "signal": "columnConfig.columns.endDate.allowableWidth"
-              },
-              "opacity": {"signal": "datum.isVisible && showDetails"},
-              "fill": {
-                "signal": "isValid(mouseover_rect) && mouseover_rect.id === datum.id ? '#000' : '#666'"
-              },
-              "fontWeight": {
-                "signal": "isValid(mouseover_rect) && mouseover_rect.id === datum.id ? 500 : 400"
-              }
-            }
-          }
-        },
-        {
-          "name": "task_duration",
-          "type": "text",
-          "from": {"data": "hierarchy_master"},
-          "interactive": false,
-          "encode": {
-            "update": {
-              "text": {
-                "signal": "showDetails && indexof(includedLeftHandColumns, 'duration') >= 0 ? floor((datum.endDate-datum.startDate)/8.64e+7)+' d' : ''"
-              },
-              "x": {
-                "signal": "(pluck(data('LeftHandColumns'), 'x')[indexof(pluck(data('LeftHandColumns'), 'column'), 'duration')])"
-              },
-              "y": {
-                "signal": "rowConfig.rowHeight*datum.rowNumber+rowConfig.rowHeight/2"
-              },
-              "font": {"signal": "columnConfig.columns.duration.font"},
-              "fontSize": {"signal": "columnConfig.columns.duration.fontSize"},
-              "align": {
-                "signal": "(pluck(data('LeftHandColumns'), 'align')[indexof(pluck(data('LeftHandColumns'), 'column'), 'duration')])"
-              },
-              "baseline": {"value": "middle"},
-              "limit": {
-                "signal": "columnConfig.columns.duration.allowableWidth"
-              },
-              "opacity": {"signal": "datum.isVisible && showDetails"},
-              "fill": {
-                "signal": "isValid(mouseover_rect) && mouseover_rect.id === datum.id ? '#000' : '#666'"
-              },
-              "fontWeight": {
-                "signal": "isValid(mouseover_rect) && mouseover_rect.id === datum.id ? 500 : 400"
-              }
-            }
-          }
-        },
-        {
-          "name": "progress_container_rect",
-          "type": "rect",
-          "from": {"data": "hierarchy_master"},
-          "interactive": false,
-          "encode": {
-            "update": {
-              "x": {
-                "signal": "(pluck(data('LeftHandColumns'), 'x')[indexof(pluck(data('LeftHandColumns'), 'column'), 'progress')])"
-              },
-              "width": {
-                "signal": "showDetails && indexof(includedLeftHandColumns, 'progress') >= 0 ? (pluck(data('LeftHandColumns'), 'allowableWidth')[indexof(pluck(data('LeftHandColumns'), 'column'), 'progress')]) : 0"
-              },
-              "y": {"signal": "rowConfig.rowHeight*datum.rowNumber+4"},
-              "height": {"signal": "rowConfig.rowHeight-8"},
-              "cornerRadius": {
-                "signal": "columnConfig.columns.progress.cornerRadius"
-              },
-              "opacity": {"signal": "datum.isVisible && showDetails"},
-              "stroke": {"signal": "datum.color"},
-              "strokeOpacity": {
-                "signal": "!showDetails ? 0 : isValid(mouseover_rect) && mouseover_rect.id === datum.id ? 0.5 : 0.25"
-              },
-              "strokeWidth": {"value": 2}
-            }
-          }
-        },
-        {
-          "name": "progress_bar_rect",
-          "type": "rect",
-          "from": {"data": "hierarchy_master"},
-          "interactive": false,
-          "encode": {
-            "update": {
-              "x": {
-                "signal": "(pluck(data('LeftHandColumns'), 'x')[indexof(pluck(data('LeftHandColumns'), 'column'), 'progress')])"
-              },
-              "width": {
-                "signal": "showDetails && indexof(includedLeftHandColumns, 'progress') >= 0 ? scale('scaleXProgress',datum.decimalPercentComplete) : 0"
-              },
-              "y": {"signal": "rowConfig.rowHeight*datum.rowNumber+4"},
-              "height": {"signal": "rowConfig.rowHeight-8"},
-              "cornerRadiusTopLeft": {
-                "signal": "columnConfig.columns.progress.cornerRadius"
-              },
-              "cornerRadiusBottomLeft": {
-                "signal": "columnConfig.columns.progress.cornerRadius"
-              },
-              "cornerRadiusTopRight": {
-                "signal": "datum.decimalPercentComplete === 1 ? columnConfig.columns.progress.cornerRadius : 0"
-              },
-              "cornerRadiusBottomRight": {
-                "signal": "datum.decimalPercentComplete === 1 ? columnConfig.columns.progress.cornerRadius : 0"
-              },
-              "opacity": {"signal": "datum.isVisible && showDetails"},
-              "fill": {"signal": "datum.color"},
-              "fillOpacity": {
-                "signal": "isValid(mouseover_rect) && mouseover_rect.id === datum.id ? 0.5 : 0.25"
-              }
-            }
-          }
-        },
-        {
-          "name": "progress_text",
-          "type": "text",
-          "from": {"data": "hierarchy_master"},
-          "interactive": false,
-          "encode": {
-            "update": {
-              "text": {
-                "signal": "showDetails && indexof(includedLeftHandColumns, 'progress') >= 0 ? format(datum.decimalPercentComplete, '.0%') : ''"
-              },
-              "x": {
-                "signal": "(pluck(data('LeftHandColumns'), 'x')[indexof(pluck(data('LeftHandColumns'), 'column'), 'progress')])"
-              },
-              "dx": {"value": 5},
-              "y": {
-                "signal": "rowConfig.rowHeight*datum.rowNumber+rowConfig.rowHeight/2"
-              },
-              "font": {"signal": "columnConfig.columns.duration.font"},
-              "fontSize": {"signal": "columnConfig.columns.progress.fontSize"},
-              "baseline": {"value": "middle"},
-              "limit": {
-                "signal": "columnConfig.columns.duration.allowableWidth"
-              },
-              "opacity": {"signal": "datum.isVisible && showDetails"},
-              "fill": {
-                "signal": "isValid(mouseover_rect) && mouseover_rect.id === datum.id ? '#000' : '#666'"
-              },
-              "fontWeight": {
-                "signal": "isValid(mouseover_rect) && mouseover_rect.id === datum.id ? 500 : 400"
-              }
-            }
-          }
-        },
-        {
-          "name": "group_dependencyLinks",
-          "type": "group",
-          "interactive": false,
-          "from": {
-            "facet": {
-              "name": "dependencyLinksFacet",
-              "data": "dependencyLinks",
-              "groupby": ["sourceId", "targetId"]
-            }
-          },
-          "marks": [
-            {
-              "name": "dependencyLinks_line",
-              "type": "line",
-              "from": {"data": "dependencyLinksFacet"},
-              "encode": {
-                "update": {
-                  "x": {"signal": "datum.xy.x"},
-                  "y": {"signal": "datum.xy.y"},
-                  "stroke": {"value": "#666"},
-                  "strokeWidth": {
-                    "signal": "scale('scaleDependencyLinkStrokeWidth', datum.rowSeparationCount)"
-                  },
-                  "opacity": {
-                    "signal": "scale('scaleDependencyLinkOpacity', datum.rowSeparationCount)"
-                  },
-                  "interpolate": {"value": "linear"},
-                  "strokeJoin": {"value": "bevel"},
-                  "strokeCap": {"value": "round"},
-                  "defined": {"value": true}
-                }
-              }
-            },
-            {
-              "name": "dependencyLinks_Arrow",
-              "type": "text",
-              "from": {"data": "dependencyLinksFacet"},
-              "encode": {
-                "update": {
-                  "x": {"signal": "datum.xy.x"},
-                  "y": {"signal": "datum.xy.y"},
-                  "text": {"signal": "datum.sort === 6 ? '➤' : ''"},
-                  "opacity": {
-                    "signal": "datum.sort === 6 ? scale('scaleDependencyLinkOpacity', datum.rowSeparationCount) : 0"
-                  },
-                  "fontSize": {"value": 8},
-                  "align": {"value": "right"},
-                  "baseline": {"value": "middle"},
-                  "fill": {"value": "#888888"},
-                  "stroke": {"value": "#888888"}
-                }
-              }
-            }
-          ]
-        },
-        {
-          "name": "gantt_parent_rect_start_marker",
-          "type": "rect",
-          "from": {"data": "hierarchy_master_gantt_area"},
-          "interactive": false,
-          "encode": {
-            "update": {
-              "x": {"field": "x1", "offset": -0.5},
-              "x2": {"field": "x1", "offset": 2},
-              "y": {
-                "signal": "rowConfig.rowHeight*datum.rowNumber+rowConfig.rowHeight*0.25"
-              },
-              "height": {"signal": "rowConfig.rowHeight*0.5"},
-              "fill": {"signal": "datum.color"},
-              "opacity": {
-                "signal": "datum.shapeType === 'parentRect' && inrange(datum.startDate, domain('xBandScaleDate')) ? (datum.decimalPercentComplete > 0 ? 1 : 0.35) : 0"
-              }
-            }
-          }
-        },
-        {
-          "name": "gantt_parent_rect_end_marker",
-          "type": "rect",
-          "from": {"data": "hierarchy_master_gantt_area"},
-          "interactive": false,
-          "encode": {
-            "update": {
-              "x": {"field": "x2", "offset": -2},
-              "x2": {"field": "x2", "offset": 0.5},
-              "y": {
-                "signal": "rowConfig.rowHeight*datum.rowNumber+rowConfig.rowHeight*0.25"
-              },
-              "height": {"signal": "rowConfig.rowHeight*0.5"},
-              "fill": {"signal": "datum.color"},
-              "opacity": {
-                "signal": "datum.shapeType === 'parentRect' && inrange(datum.endDate, domain('xBandScaleDate')) ? (datum.decimalPercentComplete === 1 ? 1 : 0.35) : 0"
-              }
-            }
-          }
-        },
-        {
-          "name": "gantt_rect_container_background",
-          "type": "rect",
-          "from": {"data": "hierarchy_master_gantt_area"},
-          "interactive": false,
-          "encode": {
-            "update": {
-              "x": {"field": "x1"},
-              "x2": {"field": "x2"},
-              "y": {
-                "signal": "(1*rowConfig.rowHeight*datum.rowNumber)+(datum.shapeType === 'parentRect' ? rowConfig.rowHeight*0.25 : rowConfig.rowHeight*0.25)"
-              },
-              "height": {
-                "signal": "(rowConfig.rowHeight)*(datum.shapeType === 'parentRect' ? 0.25 : 0.5)"
-              },
-              "cornerRadius": {
-                "signal": "datum.shapeType === 'parentRect' ? 0 : ganttConfig.childRect.cornerRadius"
-              },
-              "fill": {"signal": "background || '#fff'"},
-              "stroke": {"signal": "background || '#fff'"},
-              "strokeWidth": {"value": 0.99}
-            }
-          }
-        },
-        {
-          "name": "gantt_rect_container",
-          "type": "rect",
-          "from": {"data": "hierarchy_master_gantt_area"},
-          "interactive": false,
-          "encode": {
-            "update": {
-              "x": {
-                "signal": "inrange(datum.startDate, domain('xBandScaleDate')) ? datum.x1 : ganttRange[0]"
-              },
-              "x2": {
-                "signal": "inrange(datum.endDate, domain('xBandScaleDate')) ? datum.x2 : ganttRange[1]"
-              },
-              "y": {
-                "signal": "(1*rowConfig.rowHeight*datum.rowNumber)+(datum.shapeType === 'parentRect' ? rowConfig.rowHeight*0.25 : rowConfig.rowHeight*0.25)"
-              },
-              "height": {
-                "signal": "(rowConfig.rowHeight)*(datum.shapeType === 'parentRect' ? 0.25 : 0.5)"
-              },
-              "cornerRadius": {
-                "signal": "datum.shapeType === 'parentRect' ? 0 : ganttConfig.childRect.cornerRadius"
-              },
-              "fill": {"signal": "datum.color"},
-              "fillOpacity": {"value": 0.35},
-              "stroke": {"signal": "datum.color"},
-              "strokeWidth": {"value": 1},
-              "strokeOpacity": {
-                "signal": "isValid(mouseover_rect) && mouseover_rect.id === datum.id ? 1 : 0.35"
-              }
-            }
-          }
-        },
-        {
-          "name": "gantt_rect",
-          "type": "rect",
-          "from": {"data": "gantt_rect_container"},
-          "interactive": false,
-          "encode": {
-            "update": {
-              "x": {"signal": "datum.bounds.x1"},
-              "x2": {
-                "signal": "inrange(datum.datum.progressDate, domain('xBandScaleDate')) ? datum.datum.x2Progress : ganttRange[1]"
-              },
-              "y": {
-                "signal": "(1*rowConfig.rowHeight*datum.datum.rowNumber)+(datum.datum.shapeType === 'parentRect' ? rowConfig.rowHeight*0.25 : rowConfig.rowHeight*0.25)"
-              },
-              "height": {
-                "signal": "(rowConfig.rowHeight)*(datum.datum.shapeType === 'parentRect' ? 0.25 : 0.5)"
-              },
-              "cornerRadiusTopLeft": {
-                "signal": "datum.datum.shapeType === 'parentRect' ? 0 : ganttConfig.childRect.cornerRadius"
-              },
-              "cornerRadiusBottomLeft": {
-                "signal": "datum.datum.shapeType === 'parentRect' ? 0 : ganttConfig.childRect.cornerRadius"
-              },
-              "cornerRadiusTopRight": {
-                "signal": "datum.datum.shapeType === 'parentRect' ? 0 : (datum.datum.decimalPercentComplete === 1 ?  ganttConfig.childRect.cornerRadius : 0)"
-              },
-              "cornerRadiusBottomRight": {
-                "signal": "datum.datum.shapeType === 'parentRect' ? 0 :(datum.datum.decimalPercentComplete === 1 ? ganttConfig.childRect.cornerRadius : 0)"
-              },
-              "fill": {"signal": "datum.datum.color"},
-              "fillOpacity": {
-                "signal": "isValid(mouseover_rect) && mouseover_rect.id === datum.datum.id ? 1 : 0.35"
-              },
-              "opacity": {
-                "signal": "datum.datum.decimalPercentComplete > 0 && (datum.datum.progressDate > domain('xBandScaleDate')[0]) ? 1 : 0"
-              },
-              "stroke": {"signal": "datum.datum.color"},
-              "strokeOpacity": {
-                "signal": "isValid(mouseover_rect) && mouseover_rect.id === datum.datum.id ? 1 : 0.35"
-              }
-            }
-          }
-        },
-        {
-          "name": "gantt_label_text_background",
-          "type": "text",
-          "from": {"data": "gantt_rect_container"},
-          "interactive": false,
-          "encode": {
-            "update": {
-              "text": {
-                "signal": "datum.datum.label"
-              },
-              "x": {
-                "signal": "datum.datum.x2"
-              },
-              "dx": {"signal": "ganttConfig.label.xOffset"},
-              "y": {
-                "signal": "rowConfig.rowHeight*datum.datum.rowNumber+rowConfig.rowHeight/2"
-              },
-              "font": {"signal": "ganttConfig.label.font"},
-              "fontSize": {"signal": "ganttConfig.label.fontSize"},
-              "align": {
-                "value": "left"
-              },
-              "baseline": {"value": "middle"},
-              "limit": {
-                "signal": "ganttRange[1]-(datum.datum.x2+10)"
-              },
-              "fill": {
-                "signal": "background || '#fff'"
-              },
-              "stroke": {
-                "signal": "background || '#fff'"
-              },
-              "strokeWidth": {"value": 3},
-              "fontWeight": {
-                "signal": "isValid(mouseover_rect) && mouseover_rect.id === datum.id ? 800 : ganttConfig.label.fontWeight"
-              },
-              "opacity": {"signal": "inrange(datum.datum.endDate, domain('xBandScaleDate')) ? 1 : 0"}
-            }
-          }
-        },
-        {
-          "name": "gantt_label_text",
-          "type": "text",
-          "from": {"data": "gantt_rect_container"},
-          "interactive": false,
-          "encode": {
-            "update": {
-              "text": {
-                "signal": "datum.datum.label"
-              },
-              "x": {
-                "signal": "datum.datum.x2"
-              },
-             "dx": {"signal": "ganttConfig.label.xOffset"},
-              "y": {
-                "signal": "rowConfig.rowHeight*datum.datum.rowNumber+rowConfig.rowHeight/2"
-              },
-              "font": {"signal": "ganttConfig.label.font"},
-              "fontSize": {"signal": "ganttConfig.label.fontSize"},
-              "align": {
-                "value": "left"
-              },
-              "baseline": {"value": "middle"},
-              "limit": {
-                "signal": "ganttRange[1]-(datum.datum.x2+10)"
-              },
-              "fill": {
-                "signal": "ganttConfig.label.fill"
-              },
-              "fontWeight": {
-                "signal": "isValid(mouseover_rect) && mouseover_rect.id === datum.id ? 800 : ganttConfig.label.fontWeight"
-              },
-              "opacity": {"signal": "inrange(datum.datum.endDate, domain('xBandScaleDate')) ? 1 : 0"}
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "ganttGrid_rect",
-      "type": "rect",
-      "from": {"data": "date"},
-      "interactive": false,
-      "encode": {
-        "update": {
-          "x": {"scale": "xBandScaleDate", "field": "date"},
-          "width": {"signal": "bandwidth('xBandScaleDate')"},
-          "y": {"signal": "0"},
-          "height": {"signal": "extent([adjustedHeight, actualHeight])[0]"},
-          "fill": {
-            "signal": "dateGranularity === 'day' && indexof(['Sat', 'Sun'], utcFormat(datum.date, '%a')) >= 0 ? '#9ba5b2' : 'transparent'"
-          },
-          "fillOpacity": {"value": 0.05},
-          "stroke": {"signal": "'#6e7a87'"},
-          "strokeWidth": {"signal": "0.0115"}
-        }
-      }
-    },
-    {
-      "name": "group_verticalScrollbar",
-      "type": "group",
-      "clip": true,
-      "encode": {
-        "update": {
-          "x": {
-            "signal": "verticalScrollbarMouseDown ? 0 : width-verticalScrollbar.config.track.width"
-          },
-          "width": {
-            "signal": "verticalScrollbar.enabled ? verticalScrollbarMouseDown ? width+verticalScrollbar.config.track.width : verticalScrollbar.config.track.width : 0"
-          },
-          "y": {"value": 0},
-          "height": {
-            "signal": "verticalScrollbar.enabled ? verticalScrollbar.config.track.height : 0"
-          },
-          "fill": {"value": "transparent"},
-          "cursor": {"value": "pointer"}
-        }
-      },
-      "marks": [
-        {
-          "name": "rect_verticalScrollbar_handle",
-          "type": "rect",
-          "interactive": false,
-          "encode": {
-            "update": {
-              "x": {
-                "signal": "verticalScrollbarMouseDown ? width-verticalScrollbar.config.track.width : 0"
-              },
-              "width": {
-                "signal": "verticalScrollbar.enabled ? verticalScrollbar.config.track.width : 0"
-              },
-              "y": {
-                "signal": "scale('scaleScrollHandleY', verticalScrollPercent)-verticalScrollbar.config.handle.height"
-              },
-              "y2": {
-                "signal": "scale('scaleScrollHandleY', verticalScrollPercent)"
-              },
-              "fill": {"value": "#ddd"},
-              "cursor": {"value": "pointer"}
-            },
-            "hover": {"fill": {"value": "#888"}}
-          }
-        }
-      ]
-    },
-    {
-      "name": "last_row_concealer_rect",
-      "type": "rect",
-      "interactive": true,
-      "encode": {
-        "update": {
-          "x": {"value": 0},
-          "width": {"signal": "width"},
-          "y": {"signal": "extent([actualHeight, adjustedHeight])[0]"},
-          "height": {"signal": "rowConfig.rowHeight"},
-          "fill": {"signal": "isValid(background) ? background : '#fff'"}
-        }
-      }
-    },
-    {
-      "name": "header_footer_divider_line",
-      "type": "rect",
-      "interactive": false,
-      "encode": {
-        "update": {
-          "x": {"signal": "0"},
-          "y": {"signal": "min(adjustedHeight, actualHeight)"},
-          "x2": {"signal": "ganttRange[1]"},
-          "height": {"signal": "0"},
-          "cursor": {"value": "pointer"},
-          "fill": {"value": "#6e7a87"},
-          "stroke": {"value": "#6e7a87"},
-          "strokeWidth": {"value": 0.1}
-        }
-      }
-    },
-    {
-      "name": "group_horizontalScrollbar",
-      "type": "group",
-      "clip": true,
-      "zindex": 99,
-      "interactive": true,
-      "encode": {
-        "update": {
-          "y": {
-            "signal": "horizontalScrollbarMouseDown ? 0 : extent([actualHeight, adjustedHeight])[0] +horizontalScrollbar.config.innerPadding"
-          },
-          "height": {
-            "signal": "horizontalScrollbarMouseDown ? height : horizontalScrollbar.enabled ? +horizontalScrollbar.config.track.height : 0"
-          },
-          "x": {"signal": "ganttRange[0]"},
-          "width": {
-            "signal": "horizontalScrollbarMouseDown ? width :ganttRange[1]-ganttRange[0]"
-          },
-          "fill": {"value": "transparent"},
-          "cursor": {"value": "pointer"}
-        }
-      },
-      "marks": [
-        {
-          "name": "rect_horizontalScrollbar_handle",
-          "type": "rect",
-          "interactive": false,
-          "encode": {
-            "update": {
-              "y": {
-                "signal": "!horizontalScrollbarMouseDown ? 0 : extent([actualHeight, adjustedHeight])[0] +horizontalScrollbar.config.innerPadding"
-              },
-              "height": {
-                "signal": "horizontalScrollbar.enabled ? horizontalScrollbar.config.track.height : 0"
-              },
-              "x": {
-                "signal": "scale('scaleScrollHandleX', horizontalScrollPercent)-horizontalScrollbar.config.handle.width"
-              },
-              "x2": {
-                "signal": "scale('scaleScrollHandleX', horizontalScrollPercent)"
-              },
-              "fill": {"value": "#ddd"},
-              "cursor": {"value": "pointer"}
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "group_header",
-      "type": "group",
-      "encode": {
-        "update": {"y": {"signal": "headerConfig.yOffset-headerConfig.height"}}
-      },
-      "marks": [
-        {
-          "name": "group_expand_all_collapse_all_buttons",
-          "type": "group",
-          "marks": [
-            {
-              "name": "labelExpandCollapse_text",
-              "type": "text",
-              "interactive": false,
-              "encode": {
-                "update": {
-                  "x": {
-                    "signal": "data('expandAllCollapseAllConfig')[0]['rowNumber']*(12000*data('expandAllCollapseAllConfig')[0]['size'])",
-                    "offset": {"signal": "rowConfig.levelIndentWidth"}
-                  },
-                  "text": {"signal": "buttonConfig.label.text || ''"},
-                  "baseline": {"value": "top"},
-                  "font": {"signal": "buttonConfig.label.font"},
-                  "fontSize": {"signal": "buttonConfig.label.fontSize"},
-                  "fontStyle": {"signal": "buttonConfig.label.fontStyle"},
-                  "align": {"value": "left"},
-                  "fill": {"signal": "buttonConfig.label.fill"}
-                }
-              }
-            },
-            {
-              "name": "expandAll_collapseAll_button_labels",
-              "type": "symbol",
-              "from": {"data": "expandAllCollapseAllConfig"},
-              "interactive": false,
-              "encode": {
-                "enter": {
-                  "x": {
-                    "signal": "buttonConfig.padding+datum.rowNumber*(12000*datum.size)",
-                    "offset": {"signal": "rowConfig.levelIndentWidth"}
-                  },
-                  "y": {"signal": "buttonConfig.yOffset+buttonConfig.label.dy"},
-                  "size": {"field": "size"},
-                  "shape": {"field": "path"},
-                  "fill": {"value": "#999"}
-                },
-                "update": {
-                  "fill": {
-                    "signal": "isValid(expandCollapseButton) && expandCollapseButton.rowNumber === datum.rowNumber ? 'steelblue' : '#999'"
-                  }
-                }
-              }
-            },
-            {
-              "name": "expandAll_collapseAll_buttons",
-              "type": "rect",
-              "from": {"data": "expandAll_collapseAll_button_labels"},
-              "interactive": true,
-              "encode": {
-                "enter": {
-                  "x": {"signal": "datum.bounds.x1-buttonConfig.padding"},
-                  "x2": {"signal": "datum.bounds.x2+buttonConfig.padding"},
-                  "y": {"signal": "datum.bounds.y1-buttonConfig.padding"},
-                  "y2": {"signal": "datum.bounds.y2+buttonConfig.padding"},
-                  "cornerRadiusTopLeft": {
-                    "signal": "datum.datum.rowNumber == 0 ? 5 : 0"
-                  },
-                  "cornerRadiusBottomLeft": {
-                    "signal": "datum.datum.rowNumber == 0 ? 5 : 0"
-                  },
-                  "cornerRadiusTopRight": {
-                    "signal": "datum.datum.rowNumber == 1 ? 5 : 0"
-                  },
-                  "cornerRadiusBottomRight": {
-                    "signal": "datum.datum.rowNumber == 1 ? 5 : 0"
-                  },
-                  "fill": {"value": "#EEE"},
-                  "fillOpacity": {"value": 0.25},
-                  "stroke": {"value": "#000"},
-                  "strokeWidth": {"value": 0.25},
-                  "cursor": {"value": "pointer"},
-                  "tooltip": {"signal": "datum.datum.tooltip"}
-                },
-                "update": {
-                  "fill": {
-                    "signal": "isValid(expandCollapseButton) && expandCollapseButton.rowNumber === datum.datum.rowNumber ? 'steelblue' : '#EEE'"
-                  }
-                }
-              }
-            }
-          ]
-        },
-        {
-          "name": "group_showDetailsToggle",
-          "type": "group",
-          "interactive": true,
-          "from": {"data": "group_expand_all_collapse_all_buttons"},
-          "clip": false,
-          "encode": {
-            "update": {
-              "y": {"value": 0},
-              "height": {"signal": "headerConfig.height"},
-              "x": {"signal": "datum.bounds.x2+showDetailsConfig.xOffset"},
-              "width": {"signal": "showDetailsConfig.track.width"},
-              "fill": {"value": "transparent"},
-              "tooltip": {"signal": "showDetailsConfig.tooltip.text"},
-              "cursor": {"value": "pointer"}
-            }
-          },
-          "marks": [
-            {
-              "name": "labelDateGranularitySlider_text",
-              "type": "text",
-              "interactive": false,
-              "encode": {
-                "update": {
-                  "text": {"signal": "showDetailsConfig.label.text || ''"},
-                  "baseline": {"value": "top"},
-                  "font": {"signal": "showDetailsConfig.label.font"},
-                  "fontSize": {"signal": "showDetailsConfig.label.fontSize"},
-                  "fontStyle": {"signal": "showDetailsConfig.label.fontStyle"},
-                  "align": {"value": "left"},
-                  "fill": {"signal": "showDetailsConfig.label.fill"}
-                }
-              }
-            },
-            {
-              "name": "track_rect",
-              "type": "rect",
-              "from": {"data": "labelDateGranularitySlider_text"},
-              "interactive": false,
-              "encode": {
-                "update": {
-                  "y": {"signal": "datum.bounds.y2+showDetailsConfig.label.dy"},
-                  "height": {"signal": "showDetailsConfig.track.height"},
-                  "x": {"signal": "0"},
-                  "x2": {"signal": "showDetailsConfig.track.width"},
-                  "cornerRadius": {
-                    "signal": "showDetailsConfig.track.cornerRadius"
-                  },
-                  "fill": {
-                    "signal": "showDetails ? showDetailsConfig.on.fill : showDetailsConfig.track.fill"
-                  },
-                  "stroke": {"signal": "showDetailsConfig.track.stroke"},
-                  "strokeWidth": {
-                    "signal": "showDetailsConfig.track.strokeWidth"
-                  }
-                }
-              }
-            },
-            {
-              "name": "handle_outer_arc",
-              "description": "the outer circle mark that serves as the the 'slider handle'",
-              "from": {"data": "labelDateGranularitySlider_text"},
-              "type": "arc",
-              "interactive": false,
-              "encode": {
-                "enter": {
-                  "y": {
-                    "signal": "datum.bounds.y2+showDetailsConfig.label.dy+showDetailsConfig.track.height/2"
-                  },
-                  "innerRadius": {"value": 0},
-                  "outerRadius": {
-                    "signal": "showDetailsConfig.track.height*0.9"
-                  },
-                  "startAngle": {"signal": "0"},
-                  "endAngle": {"signal": "2*PI"},
-                  "stroke": {
-                    "signal": "showDetailsConfig.handle.stroke || '#BBB'"
-                  },
-                  "strokeWidth": {
-                    "signal": "showDetailsConfig.handle.strokeWidth"
-                  },
-                  "fill": {"signal": "showDetailsConfig.handle.fill || '#fff'"}
-                },
-                "update": {
-                  "x": {
-                    "signal": "showDetails ? showDetailsConfig.track.width-showDetailsConfig.track.cornerRadius : showDetailsConfig.track.cornerRadius"
-                  }
-                }
-              }
-            }
-          ]
-        },
-        {
-          "name": "group_dateGranularitySlider",
-          "type": "group",
-          "interactive": false,
-          "clip": false,
-          "encode": {
-            "update": {
-              "y": {"value": 0},
-              "height": {"signal": "headerConfig.height"},
-              "x": {
-                "signal": "width-dateStepSliderConfig.track.width - (verticalScrollbar.enabled ? verticalScrollbar.config.track.width + verticalScrollbar.config.innerPadding : 0)"
-              },
-              "x2": {"signal": "width"}
-            }
-          },
-          "marks": [
-            {
-              "name": "labelDateGranularitySlider_text",
-              "type": "text",
-              "interactive": false,
-              "encode": {
-                "update": {
-                  "text": {"signal": "dateStepSliderConfig.label.text || ''"},
-                  "baseline": {"value": "top"},
-                  "font": {"signal": "dateStepSliderConfig.label.font"},
-                  "fontSize": {"signal": "dateStepSliderConfig.label.fontSize"},
-                  "fontStyle": {
-                    "signal": "dateStepSliderConfig.label.fontStyle"
-                  },
-                  "align": {"value": "left"},
-                  "dx": {"signal": "-dateStepSliderConfig.track.cornerRadius"},
-                  "fill": {"signal": "dateStepSliderConfig.label.fill"}
-                }
-              }
-            },
-            {
-              "name": "track_rect",
-              "type": "rect",
-              "from": {"data": "labelDateGranularitySlider_text"},
-              "interactive": false,
-              "encode": {
-                "update": {
-                  "y": {
-                    "signal": "datum.bounds.y2+dateStepSliderConfig.label.dy"
-                  },
-                  "height": {"signal": "dateStepSliderConfig.track.height"},
-                  "x": {"signal": "0"},
-                  "x2": {"signal": "dateStepSliderConfig.track.width"},
-                  "cornerRadius": {
-                    "signal": "dateStepSliderConfig.track.cornerRadius"
-                  },
-                  "fill": {"signal": "dateStepSliderConfig.track.fill"},
-                  "stroke": {"signal": "dateStepSliderConfig.track.stroke"},
-                  "strokeWidth": {
-                    "signal": "dateStepSliderConfig.track.strokeWidth"
-                  }
-                }
-              }
-            },
-            {
-              "name": "sliderProgress_rect",
-              "type": "rect",
-              "from": {"data": "labelDateGranularitySlider_text"},
-              "interactive": false,
-              "encode": {
-                "update": {
-                  "y": {
-                    "signal": "datum.bounds.y2+dateStepSliderConfig.label.dy"
-                  },
-                  "height": {"signal": "dateStepSliderConfig.track.height"},
-                  "x": {"value": 0},
-                  "x2": {
-                    "signal": "scale('scaleSliderHandleX', dateStepSizelPercent)"
-                  },
-                  "cornerRadius": {
-                    "signal": "dateStepSliderConfig.track.cornerRadius"
-                  },
-                  "fill": {"signal": "dateStepSliderConfig.progress.fill"},
-                  "fillOpacity": {
-                    "signal": "dateStepSliderConfig.progress.fillOpacity"
-                  },
-                  "stroke": {"signal": "dateStepSliderConfig.track.stroke"},
-                  "strokeWidth": {
-                    "signal": "dateStepSliderConfig.track.strokeWidth"
-                  }
-                }
-              }
-            },
-            {
-              "name": "reset_slider_granularity_symbol",
-              "type": "symbol",
-              "from": {"data": "track_rect"},
-              "encode": {
-                "update": {
-                  "shape": {"signal": "dateStepSliderConfig.reset.iconPath"},
-                  "size": {"signal": "0.0025"},
-                  "x": {"signal": "datum.bounds.x1-20"},
-                  "y": {"signal": "datum.bounds.y1-2.5"},
-                  "fill": {
-                    "signal": "dateStepSliderResetHover ? dateStepSliderConfig.reset.hoverFill : dateStepSliderConfig.reset.fill"
-                  }
-                }
-              }
-            },
-            {
-              "name": "reset_slider_granularity_interactivity_rect",
-              "type": "rect",
-              "from": {"data": "reset_slider_granularity_symbol"},
-              "encode": {
-                "update": {
-                  "x": {"signal": "datum.bounds.x1"},
-                  "x2": {"signal": "datum.bounds.x2"},
-                  "y": {"signal": "datum.bounds.y1"},
-                  "y2": {"signal": "datum.bounds.y2"},
-                  "fill": {"signal": "'transparent'"},
-                  "tooltip": {
-                    "signal": "dateStepSliderConfig.reset.tooltipText"
-                  },
-                  "cursor": {"value": "pointer"}
-                }
-              }
-            },
-            {
-              "name": "dateGranularitySliderInteractive_rect",
-              "from": {"data": "labelDateGranularitySlider_text"},
-              "type": "rect",
-              "interactive": true,
-              "encode": {
-                "update": {
-                  "y": {
-                    "signal": "dateStepSliderMouseDown ? 0 : (datum.bounds.y2+dateStepSliderConfig.label.dy)"
-                  },
-                  "x": {
-                    "signal": "dateStepSliderMouseDown ? -(ganttRange[1]-ganttRange[0])/2 : 0"
-                  },
-                  "width": {
-                    "signal": "dateStepSliderConfig.track.width + (dateStepSliderMouseDown ? (2*dateStepSliderConfig.track.strokeWidth+padding.right)+(ganttRange[1]-ganttRange[0])/2 : 0) + (verticalScrollbar.enabled ? verticalScrollbar.config.innerPadding + verticalScrollbar.config.track.width : 0)"
-                  },
-                  "height": {
-                    "signal": "dateStepSliderMouseDown ? adjustedHeight : dateStepSliderConfig.track.height"
-                  },
-                  "fill": {"value": "transparent"},
-                  "cursor": {"value": "pointer"},
-                  "tooltip": {
-                    "signal": "dateStepSliderMouseDown ? '' : dateStepSliderConfig.tooltip.text"
-                  }
-                }
-              }
-            },
-            {
-              "name": "handles_outer_arc",
-              "description": "the outer circle mark that serves as the the 'slider handle'",
-              "from": {"data": "labelDateGranularitySlider_text"},
-              "type": "arc",
-              "interactive": false,
-              "encode": {
-                "enter": {
-                  "y": {
-                    "signal": "datum.bounds.y2+dateStepSliderConfig.label.dy + dateStepSliderConfig.track.height/2"
-                  },
-                  "innerRadius": {"value": 0},
-                  "outerRadius": {
-                    "signal": "dateStepSliderConfig.track.height*0.9"
-                  },
-                  "startAngle": {"signal": "0"},
-                  "endAngle": {"signal": "2*PI"},
-                  "stroke": {
-                    "signal": "dateStepSliderConfig.handle.outerStroke || '#BBB'"
-                  },
-                  "strokeWidth": {
-                    "signal": "dateStepSliderConfig.handle.outerStrokeWidth"
-                  },
-                  "fill": {
-                    "signal": "dateStepSliderConfig.handle.outerFill || '#fff'"
-                  }
-                },
-                "update": {
-                  "x": {
-                    "signal": "scale('scaleSliderHandleX', dateStepSizelPercent)"
-                  }
-                }
-              }
-            },
-            {
-              "name": "handles_inner_arc",
-              "description": "the inner circle mark that serves as the the 'slider handle'",
-              "type": "arc",
-              "from": {"data": "labelDateGranularitySlider_text"},
-              "interactive": false,
-              "encode": {
-                "enter": {
-                  "y": {
-                    "signal": "datum.bounds.y2+dateStepSliderConfig.label.dy + dateStepSliderConfig.track.height/2"
-                  },
-                  "innerRadius": {"value": 0},
-                  "outerRadius": {"signal": "1"},
-                  "startAngle": {"signal": "0"},
-                  "endAngle": {"signal": "2*PI"},
-                  "stroke": {
-                    "signal": "dateStepSliderConfig.handle.innerStroke"
-                  },
-                  "fill": {
-                    "signal": "dateStepSliderConfig.handle.innerFill || '#999'"
-                  }
-                },
-                "update": {
-                  "x": {
-                    "signal": "scale('scaleSliderHandleX', dateStepSizelPercent)"
-                  }
-                }
-              }
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "scales": [
-    {
-      "name": "scaleXProgress",
-      "type": "linear",
-      "domain": [0, 1],
-      "range": {"signal": "progressXRange"},
-      "clamp": true
-    },
-    {
-      "name": "scaleScrollHandleY",
-      "type": "linear",
-      "domain": [0, {"signal": "(actualHeight-adjustedHeight)/actualHeight"}],
-      "range": {
-        "signal": "[verticalScrollbar.config.handle.height, verticalScrollbar.config.track.height]"
-      },
-      "clamp": true
-    },
-    {
-      "name": "scaleScrollHandleX",
-      "type": "linear",
-      "domain": [0, 1],
-      "range": {
-        "signal": "[horizontalScrollbar.config.handle.width, horizontalScrollbar.config.track.width]"
-      },
-      "clamp": true
-    },
-    {
-      "name": "scaleSliderHandleX",
-      "type": "linear",
-      "domain": [0, 1],
-      "range": {
-        "signal": "[dateStepSliderConfig.track.cornerRadius, dateStepSliderConfig.track.width-dateStepSliderConfig.track.cornerRadius]"
-      },
-      "clamp": true
-    },
-    {
-      "name": "xBandScaleDate",
-      "type": "band",
-      "domain": {"data": "date", "fields": ["date"], "sort": true},
-      "range": {"signal": "ganttRange"}
-    },
-    {
-      "name": "minDateRow",
-      "type": "linear",
-      "domain": [0, 1],
-      "clamp": true,
-      "range": {
-        "signal": "[1, data('dateWindowSize')[0]['actualEndRowNumber'] -  data('dateWindowSize')[0]['windowRowCount']]"
-      }
-    },
-    {
-      "name": "maxDateRow",
-      "type": "linear",
-      "domain": [0, 1],
-      "clamp": true,
-      "range": {
-        "signal": "[data('dateWindowSize')[0]['windowRowCount'], data('dateWindowSize')[0]['actualEndRowNumber']]"
-      }
-    },
-    {
-      "name": "yearAnchorRow",
-      "type": "linear",
-      "domain": [0, 1],
-      "clamp": true,
-      "range": {
-        "signal": "[2, data('dateWindowSize')[0]['actualEndRowNumber']-1]"
-      }
-    },
-    {
-      "name": "scaleStepWidth",
-      "type": "linear",
-      "domain": [0, 1],
-      "clamp": true,
-      "range": {"signal": "[dayStepWidth, monthStepWidth+1]"}
-    },
-    {
-      "name": "scaleDependencyLinkOpacity",
-      "domain": {
-        "signal": "[1, extent(pluck(data('dependencyLinks'), 'rowSeparationCount'))[1]]"
-      },
-      "range": [0.5, 1]
-    },
-    {
-      "name": "scaleDependencyLinkStrokeWidth",
-      "domain": {
-        "signal": "[1, extent(pluck(data('dependencyLinks'), 'rowSeparationCount'))[1]]"
-      },
-      "range": [0.5, 1]
-    }
-  ],
-  "axes": [
-    {
-      "description": "date axis",
-      "scale": "xBandScaleDate",
-      "orient": "top",
-      "offset": 2,
-      "domain": false,
-      "labelOverlap": false,
-      "labelFontSize": {"value": 11},
-      "labelFont": {"value": "Segoe UI"},
-      "labelFontWeight": {"value": "600"},
-      "labelLineHeight": 18,
-      "labelPadding": 0,
-      "tickSize": {
-        "signal": "dateGranularity === 'day' ? utcFormat(datum.label, '%m-%d') === '01-01' ? 56 : utcFormat(datum.label, '%d') === '01' ? 38 : 20 : dateGranularity === 'month' ? utcFormat(datum.label, '%m-%d') === '01-01' ? 38 : 20 : 20"
-      },
-      "tickColor": {"value": "#6e7a87"},
-      "tickWidth": {"signal": "0.25"},
-      "labelOffset": {"signal": "bandwidth('xBandScaleDate')/2"},
-      "tickOffset": {"signal": "-bandwidth('xBandScaleDate')/2"},
-      "bandPosition": 0.5,
-      "encode": {
-        "labels": {
-          "update": {
-            "dy": {"signal": "15"},
-            "text": {
-              "signal": "dateGranularity === 'day' ? indexof(pluck(data('date'), 'yearFormatted'), utcFormat(datum.label, '%Y')) >= 0 ? utcFormat(datum.label, '%m-%d') === '01-01' ? ['‎ ‎ ‎ ‎ '+utcFormat(datum.label, '%Y'), '‎ ‎ '+utcFormat(datum.label, '%b'), utcFormat(datum.label, '%d')] : utcFormat(datum.label, '%d') === '01' ? ['‎ ‎ '+utcFormat(datum.label, '%b'), utcFormat(datum.label, '%d')] : utcFormat(datum.label, '%d') : null : dateGranularity === 'month' ? utcFormat(datum.label, '%m-%d') === '01-01' ? ['‎ ‎'+utcFormat(datum.label, '%Y'), utcFormat(datum.label, '%b')] : utcFormat(datum.label, '%b') : utcFormat(datum.label, '%Y')"
-            }
-          }
-        }
-      }
-    }
-  ],
-  "data": [
-    {
-      "name": "dataset",
-      "url": "https://raw.githubusercontent.com/Giammaria/PublicFiles/master/data/20240511_hierarchical_gantt_dataset.json",
-      "format": {
-        "parse": {
-          "id": "number",
-          "parentId": "number",
-          "name": "string",
-          "startDate": "date",
-          "endDate": "date",
-          "decimalPercentComplete": "number",
-          "dependencyId": "number"
-        }
-      },
-      "transform": []
-    },
-    {
-      "name": "dataset_formatted",
-      "source": "dataset",
-      "transform": [
-        {
-          "type": "formula",
-          "expr": "toDate(utcFormat(datum.startDate, '%m/%d/%Y')+' 00:00:00.000')",
-          "as": "startDate"
-        },
-        {
-          "type": "formula",
-          "expr": "toDate(utcFormat(datum.endDate, '%m/%d/%Y')+' 00:00:00.000')",
-          "as": "endDate"
-        },
-        {"type": "window", "ops": ["row_number"], "as": ["sort"]},
-        {
-          "type": "formula",
-          "expr": "!isValid(datum['startDate']) ? null : datum['endDate']",
-          "as": "endDate"
-        },
-        {"type": "stratify", "key": "id", "parentKey": "parentId"},
-        {
-          "type": "formula",
-          "expr": "{id: datum.id, parentId: datum.parentId}",
-          "as": "idObj"
-        }
-      ]
-    },
-    {
-      "name": "allDates",
-      "values": "[{}]",
-      "transform": [
-        {
-          "type": "formula",
-          "expr": "extent(pluck(data('dataset_formatted'), 'startDate'))[0]- (dayInMilliseconds*([1,31,365][indexof(['day','month','year'], dateGranularity)]))",
-          "as": "minDate"
-        },
-        {
-          "type": "formula",
-          "expr": "extent(pluck(data('dataset_formatted'), 'endDate'))[1]+ (dayInMilliseconds*([1,31,365][indexof(['day','month','year'], dateGranularity)]))",
-          "as": "maxDate"
-        },
-        {
-          "type": "formula",
-          "expr": "sequence(datum.minDate, datum.maxDate+dayInMilliseconds, dayInMilliseconds)",
-          "as": "date"
-        },
-        {"type": "flatten", "fields": ["date"]},
-        {
-          "type": "formula",
-          "expr": "utcFormat(datum.date, '%Y%m%d')",
-          "as": "dateKey"
-        },
-        {
-          "type": "formula",
-          "expr": "utcFormat(datum.date, '%Y-%m-%d')",
-          "as": "dateFormatted"
-        },
-        {
-          "type": "formula",
-          "expr": "utcFormat(datum.date, '%m-%y')",
-          "as": "monthYearFormatted"
-        },
-        {
-          "type": "formula",
-          "expr": "utcFormat(datum.date, '%Y')",
-          "as": "yearFormatted"
-        },
-        {
-          "type": "window",
-          "ops": ["dense_rank"],
-          "fields": ["dateFormatted"],
-          "sort": {"field": "date"},
-          "frame": [null, null],
-          "as": ["dateDR"]
-        },
-        {
-          "type": "window",
-          "ops": ["dense_rank"],
-          "fields": ["monthYearFormatted"],
-          "sort": {"field": "monthYearFormatted"},
-          "frame": [null, null],
-          "as": ["monthDR"]
-        },
-        {
-          "type": "window",
-          "ops": ["dense_rank"],
-          "fields": ["yearFormatted"],
-          "sort": {"field": "yearFormatted"},
-          "frame": [null, null],
-          "as": ["yearDR"]
-        },
-        {
-          "type": "formula",
-          "expr": "(dateGranularity === 'day' ? datum.dateDR * dateStepWidth : dateGranularity === 'month' && utcFormat(datum.date, '%d') === '01' ? datum.monthDR * dateStepWidth : dateGranularity === 'year' &&  utcFormat(datum.date, '%m-%d') === '01-01' ? datum.yearDR*dateStepWidth : 0)",
-          "as": "runningWidth"
-        }
-      ]
-    },
-    {
-      "name": "dateWindowSize",
-      "source": "allDates",
-      "transform": [
-        {"type": "filter", "expr": "datum.runningWidth >0"},
-        {
-          "type": "window",
-          "ops": ["row_number"],
-          "sort": {"field": "date"},
-          "as": ["rowNumber"]
-        },
-        {"type": "joinaggregate", "ops": ["count"], "as": ["rowCount"]},
-        {
-          "type": "formula",
-          "expr": "extent(pluck(data('allDates'), 'date'))[0] === datum.date ? datum.rowNumber : 0",
-          "as": "actualStartRowNumber"
-        },
-        {
-          "type": "formula",
-          "expr": "extent(pluck(data('allDates'), 'date'))[1] === datum.date ? datum.rowNumber : datum.rowCount",
-          "as": "actualEndRowNumber"
-        },
-        {
-          "type": "joinaggregate",
-          "ops": ["max", "max"],
-          "fields": ["actualStartRowNumber", "actualEndRowNumber"],
-          "as": ["actualStartRowNumber", "actualEndRowNumber"]
-        },
-        {
-          "type": "filter",
-          "expr": "datum.runningWidth<=(ganttRange[1]-ganttRange[0])"
-        },
-        {
-          "type": "aggregate",
-          "ops": ["count"],
-          "groupby": ["rowCount", "actualStartRowNumber", "actualEndRowNumber"],
-          "as": ["windowRowCount", "actualStartRowNumber", "actualEndRowNumber"]
-        },
-        {
-          "type": "formula",
-          "expr": "datum.rowCount > datum.windowRowCount",
-          "as": "scrollEnabled"
-        }
-      ]
-    },
-    {
-      "name": "date",
-      "source": "allDates",
-      "transform": [
-        {"type": "filter", "expr": "datum.runningWidth >0"},
-        {
-          "type": "window",
-          "ops": ["row_number"],
-          "sort": {"field": "date"},
-          "as": ["rowNumber"]
-        },
-        {"type": "joinaggregate", "ops": ["count"], "as": ["rowCount"]},
-        {
-          "type": "formula",
-          "expr": "round(scale('yearAnchorRow', horizontalScrollPercent))",
-          "as": "yearAnchorRow"
-        },
-        {
-          "type": "formula",
-          "expr": "[datum.yearAnchorRow-1, datum.yearAnchorRow, datum.yearAnchorRow+1]",
-          "as": "yearRowNumbers"
-        },
-        {
-          "type": "filter",
-          "expr": "(dateGranularity !== 'year' && (datum.rowNumber >= (scale('minDateRow', horizontalScrollPercent)) && datum.rowNumber <= (scale('maxDateRow', horizontalScrollPercent)))) || (dateGranularity === 'year' && indexof(datum.yearRowNumbers, datum.rowNumber)>=0)"
-        }
-      ]
-    },
-    {
-      "name": "hierarchy_initial",
-      "source": "dataset_formatted",
-      "transform": [
-        {"type": "formula", "expr": "resetLevel", "as": "resetLevel"},
-        {
-          "type": "filter",
-          "expr": "includeRoot ? true : (isValid(datum['parentId']))"
-        },
-        {
-          "type": "formula",
-          "expr": "length(treeAncestors('dataset_formatted', datum['id']))-(includeRoot ? 0 : 1)",
-          "as": "level"
-        },
-        {
-          "type": "formula",
-          "expr": "indexof(pluck(data('dataset_formatted'), 'parentId'), datum['id'])>=0",
-          "as": "hasChildren"
-        },
-        {
-          "type": "formula",
-          "expr": "datum.hasChildren ? rowConfig.levelIndentWidth*(datum['level']-0.25) : null",
-          "as": "expandCollapseIndicatorX"
-        },
-        {
-          "type": "formula",
-          "expr": "rowConfig.levelIndentWidth*datum['level']",
-          "as": "indentWidth"
-        },
-        {
-          "type": "formula",
-          "expr": "slice(pluck(treeAncestors('dataset_formatted', datum['id']), 'id'), 1)",
-          "as": "ancestorIds"
-        },
-        {
-          "type": "formula",
-          "expr": "pluck(data('dataset_formatted'), 'idObj')",
-          "as": "immediateChildrenIds"
-        },
-        {
-          "type": "flatten",
-          "fields": ["immediateChildrenIds"],
-          "as": ["immediateChildrenIds"]
-        },
-        {
-          "type": "filter",
-          "expr": "datum.id === datum.immediateChildrenIds.id || datum.id === datum.immediateChildrenIds.parentId"
-        },
-        {
-          "type": "aggregate",
-          "ops": ["values"],
-          "fields": ["idObs"],
-          "groupby": [
-            "id",
-            "parentId",
-            "name",
-            "startDate",
-            "endDate",
-            "decimalPercentComplete",
-            "dependencyId",
-            "sort",
-            "level",
-            "expandCollapseIndicatorX",
-            "indentWidth",
-            "ancestorIds",
-            "hasChildren",
-            "resetLevel",
-            "color"
-          ],
-          "as": ["immediateChildrenIds"]
-        },
-        {
-          "type": "formula",
-          "expr": "pluck(slice(pluck(datum.immediateChildrenIds, 'immediateChildrenIds'), 1), 'id')",
-          "as": "immediateChildrenIds"
-        },
-        {
-          "type": "formula",
-          "expr": "isValid(datum.isExpanded) ? datum.isExpanded : !datum.hasChildren ? null : datum.resetLevel > datum.level ? 1 : 0",
-          "as": "isExpanded"
-        },
-        {
-          "type": "formula",
-          "expr": "!expandAllClicked && datum.hasChildren && isValid(lastClickedNode) && lastClickedNode.datum.id === datum.id ? lastClickedNode.datum.isExpanded === 1 ? 0 : 1 : datum.isExpanded",
-          "as": "isExpanded"
-        },
-        {
-          "type": "formula",
-          "expr": "datum.hasChildren && isInitial ? datum.level >= datum.resetLevel ? 0 : 1 : datum.isExpanded",
-          "as": "isExpanded"
-        }
-      ]
-    },
-    {
-      "name": "hierarchy_hidden_ancestorIds",
-      "source": "hierarchy_initial",
-      "transform": [
-        {"type": "filter", "expr": "datum.isExpanded === 0"},
-        {"type": "filter", "expr": "datum.hasChildren"},
-        {"type": "project", "fields": ["id", "name"]}
-      ]
-    },
-    {
-      "name": "hierarchy_master",
-      "source": "hierarchy_initial",
-      "transform": [
-        {
-          "type": "formula",
-          "expr": "pluck(data('hierarchy_hidden_ancestorIds'), 'id')",
-          "as": "collapsedIds"
-        },
-        {
-          "type": "filter",
-          "expr": "!test('(\\\\b\\\\d+\\\\b).*\\\\b\\\\1\\\\b', (join(datum.ancestorIds, ',')+','+join(datum.collapsedIds, ',')))"
-        },
-        {
-          "type": "formula",
-          "expr": "isInitial ? (datum.level <= datum.resetLevel) ? 1 : 0 : indexof(lastClickedNode.datum.immediateChildrenIds, datum.id)>=0 ? lastClickedNode.datum.isExpanded === 1 ? 1 : 0 : 1",
-          "as": "isVisible"
-        },
-        {
-          "type": "collect",
-          "sort": {
-            "field": ["isVisible", "sort"],
-            "order": ["descending", "ascending"]
-          }
-        },
-        {
-          "type": "window",
-          "ops": ["row_number"],
-          "as": ["rowNumber"],
-          "sort": {
-            "field": ["isVisible", "sort"],
-            "order": ["descending", "ascending"]
-          }
-        },
-        {"type": "formula", "expr": "datum.rowNumber-1", "as": "rowNumber"},
-        {
-          "type": "formula",
-          "expr": "!datum.hasChildren ? 0 : datum.isExpanded === 1 ? 90 : 0",
-          "as": "expandCollapseIndicatorAngle"
-        },
-        {
-          "type": "joinaggregate",
-          "fields": ["sort"],
-          "ops": ["max"],
-          "as": ["isLastRow"]
-        },
-        {
-          "type": "formula",
-          "expr": "datum.sort === datum.isLastRow ? true : false",
-          "as": "isLastRow"
-        }
-      ]
-    },
-    {
-      "name": "hierarchy_master_gantt_area",
-      "source": "hierarchy_master",
-      "transform": [
-        {"type": "collect", "sort": {"field": "sort"}},
-        {
-          "type": "filter",
-          "expr": "datum.startDate <  axisDateDomain[1] && datum.endDate > axisDateDomain[0]"
-        },
-        {
-          "type": "formula",
-          "expr": "+utcFormat(timeOffset('day', timeOffset('month', toDate(utcFormat(datum.startDate, '%m')+'/01/'+utcFormat(datum.startDate, '%Y')), 1),-1), '%d')",
-          "as": "daysInStartDateMonth"
-        },
-        {
-          "type": "formula",
-          "expr": "+utcFormat(datum.startDate, '%d')/datum.daysInStartDateMonth",
-          "as": "startDatePercentageOfMonth"
-        },
-        {
-          "type": "formula",
-          "expr": "+utcFormat(timeOffset('day', timeOffset('month', toDate(utcFormat(datum.endDate, '%m')+'/01/'+utcFormat(datum.endDate, '%Y')), 1),-1), '%d')",
-          "as": "daysInEndDateMonth"
-        },
-        {
-          "type": "formula",
-          "expr": "+utcFormat(datum.endDate, '%d')/datum.daysInEndDateMonth",
-          "as": "endDatePercentageOfMonth"
-        },
-        {
-          "type": "formula",
-          "expr": "toDate(utcFormat(datum.startDate+((datum.endDate-datum.startDate)*datum.decimalPercentComplete), '%m/%d/%Y'))",
-          "as": "progressDate"
-        },
-        {
-          "type": "formula",
-          "expr": "+utcFormat(datum.progressDate, '%d')/datum.daysInEndDateMonth",
-          "as": "progressDatePercentageOfMonth"
-        },
-        {
-          "type": "formula",
-          "expr": "utcdayofyear(datum.startDate)/((utcFormat(datum.startDate, '%Y') % 4 === 0 && utcFormat(datum.startDate, '%Y') % 100 > 0) || utcFormat(datum.startDate, '%Y') %400 == 0 ? 366 : 365)",
-          "as": "startDatePercentageOfYear"
-        },
-        {
-          "type": "formula",
-          "expr": "utcdayofyear(datum.endDate)/((utcFormat(datum.endDate, '%Y') % 4 === 0 && utcFormat(datum.endDate, '%Y') % 100 > 0) || utcFormat(datum.endDate, '%Y') %400 == 0 ? 366 : 365)",
-          "as": "endDatePercentageOfYear"
-        },
-        {
-          "type": "formula",
-          "expr": "utcdayofyear(datum.progressDate)/((utcFormat(datum.progressDate, '%Y') % 4 === 0 && utcFormat(datum.progressDate, '%Y') % 100 > 0) || utcFormat(datum.progressDate, '%Y') %400 == 0 ? 366 : 365)",
-          "as": "progressDatePercentageOfYear"
-        },
-        {"type": "formula", "expr": "dateGranularity", "as": "dateGranularity"},
-        {
-          "type": "formula",
-          "expr": "[0,datum.startDatePercentageOfMonth, datum.startDatePercentageOfYear][indexof(['day', 'month', 'year'], datum.dateGranularity)]",
-          "as": "startDatePercentage"
-        },
-        {
-          "type": "formula",
-          "expr": "[1,datum.endDatePercentageOfMonth, datum.endDatePercentageOfYear][indexof(['day', 'month', 'year'], datum.dateGranularity)]",
-          "as": "endDatePercentage"
-        },
-        {
-          "type": "formula",
-          "expr": "[1,datum.progressDatePercentageOfMonth, datum.progressDatePercentageOfYear][indexof(['day', 'month', 'year'], datum.dateGranularity)]",
-          "as": "progressDatePercentage"
-        },
-        {
-          "type": "formula",
-          "expr": "toDate([utcFormat(datum.startDate, '%m/%d/%Y'), utcFormat(datum.startDate, '%m')+'/01/'+utcFormat(datum.startDate, '%Y'), '01/01/'+utcFormat(datum.startDate, '%Y')][indexof(['day', 'month', 'year'], datum.dateGranularity)]+' 00:00:00.000')",
-          "as": "startDateTick"
-        },
-        {
-          "type": "formula",
-          "expr": "utcFormat(datum.startDateTick, '%Y%m%d')",
-          "as": "startDateKey"
-        },
-        {
-          "type": "lookup",
-          "key": "dateKey",
-          "from": "allDates",
-          "fields": ["startDateKey"],
-          "values": ["date"],
-          "as": ["startDateTick"]
-        },
-        {
-          "type": "formula",
-          "expr": "toDate([utcFormat(datum.endDate, '%m/%d/%Y'), utcFormat(datum.endDate, '%m')+'/01/'+utcFormat(datum.endDate, '%Y'), '01/01/'+utcFormat(datum.endDate, '%Y')][indexof(['day', 'month', 'year'], datum.dateGranularity)]+' 00:00:00.000')",
-          "as": "endDateTick"
-        },
-        {
-          "type": "formula",
-          "expr": "utcFormat(datum.endDateTick, '%Y%m%d')",
-          "as": "endDateKey"
-        },
-        {
-          "type": "lookup",
-          "key": "dateKey",
-          "from": "allDates",
-          "fields": ["endDateKey"],
-          "values": ["date"],
-          "as": ["endDateTick"]
-        },
-        {
-          "type": "formula",
-          "expr": "toDate([utcFormat(datum.progressDate, '%m/%d/%Y'), utcFormat(datum.progressDate, '%m')+'/01/'+utcFormat(datum.progressDate, '%Y'), '01/01/'+utcFormat(datum.progressDate, '%Y')][indexof(['day', 'month', 'year'], datum.dateGranularity)]+' 00:00:00.000')",
-          "as": "progressDateTick"
-        },
-        {
-          "type": "formula",
-          "expr": "datum.decimalPercentComplete === 0 ? datum.startDateTick : datum.decimalPercentComplete === 1 ? datum.endDateTick : datum.progressDateTick",
-          "as": "progressDateTick"
-        },
-        {
-          "type": "formula",
-          "expr": "utcFormat(datum.progressDateTick, '%Y%m%d')",
-          "as": "progressDateKey"
-        },
-        {
-          "type": "lookup",
-          "key": "dateKey",
-          "from": "allDates",
-          "fields": ["progressDateKey"],
-          "values": ["date"],
-          "as": ["progressDateTick"]
-        },
-        {
-          "type": "formula",
-          "expr": "clamp((scale('xBandScaleDate', datum.startDateTick)+bandwidth('xBandScaleDate')*datum.startDatePercentage), ganttRange[0], ganttRange[1]) || (inrange(datum.endDate, domain('xBandScaleDate')) ? ganttRange[0] : ganttRange[1])",
-          "as": "x1"
-        },
-        {
-          "type": "formula",
-          "expr": "clamp((scale('xBandScaleDate', datum.endDateTick)+bandwidth('xBandScaleDate')*datum.endDatePercentage), ganttRange[0], ganttRange[1]) || (inrange(datum.startDate, domain('xBandScaleDate')) ? ganttRange[1] : ganttRange[0])",
-          "as": "x2"
-        },
-        {
-          "type": "formula",
-          "expr": "clamp((scale('xBandScaleDate', datum.progressDateTick)+bandwidth('xBandScaleDate')*datum.progressDatePercentage), ganttRange[0], ganttRange[1]) || (inrange(datum.startDate, domain('xBandScaleDate')) ? ganttRange[1] : ganttRange[0])",
-          "as": "x2Progress"
-        },
-        {
-          "type": "formula",
-          "expr": "datum.isExpanded ? 'parentRect':'childRect'",
-          "as": "shapeType"
-        },
-        {
-          "type": "formula",
-          "expr": "datum.name + ' ('+format(datum.decimalPercentComplete, '.0%')+')'",
-          "as": "label"
-        },
-        {
-          "type": "project",
-          "fields": [
-            "id",
-            "rowNumber",
-            "name",
-            "startDate",
-            "endDate",
-            "progressDate",
-            "decimalPercentComplete",
-            "level",
-            "x1",
-            "x2",
-            "x2Progress",
-            "color",
-            "shapeType",
-            "label"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "dependencyLinks",
-      "source": "dataset_formatted",
-      "transform": [
-        {"type": "filter", "expr": "isValid(datum.dependencyId)"},
-        {
-          "type": "project",
-          "fields": ["dependencyId", "id"],
-          "as": ["sourceId", "targetId"]
-        },
-        {
-          "type": "lookup",
-          "key": "id",
-          "from": "hierarchy_master",
-          "values": ["endDate", "rowNumber"],
-          "fields": ["sourceId"],
-          "as": ["sourceEndDate", "sourceRowNumber"]
-        },
-        {
-          "type": "lookup",
-          "key": "id",
-          "from": "hierarchy_master",
-          "values": ["startDate", "rowNumber"],
-          "fields": ["targetId"],
-          "as": ["targetStartDate", "targetRowNumber"]
-        },
-        {
-          "type": "formula",
-          "expr": "inrange(datum.sourceEndDate, domain('xBandScaleDate'))",
-          "as": "sourceXInRange"
-        },
-        {
-          "type": "formula",
-          "expr": "inrange(datum.targetStartDate, domain('xBandScaleDate'))",
-          "as": "targetXInRange"
-        },
-        {
-          "type": "formula",
-          "expr": "datum.sourceRowNumber*rowConfig.rowHeight+rowConfig.rowHeight/2",
-          "as": "sourceY"
-        },
-        {
-          "type": "formula",
-          "expr": "datum.targetRowNumber*rowConfig.rowHeight+rowConfig.rowHeight/2",
-          "as": "targetY"
-        },
-        {
-          "type": "filter",
-          "expr": "datum.sourceXInRange || datum.targetXInRange"
-        },
-        {
-          "type": "lookup",
-          "key": "id",
-          "from": "hierarchy_master_gantt_area",
-          "values": ["x2"],
-          "fields": ["sourceId"],
-          "as": ["sourceX"]
-        },
-        {
-          "type": "lookup",
-          "key": "id",
-          "from": "hierarchy_master_gantt_area",
-          "values": ["x1"],
-          "fields": ["targetId"],
-          "as": ["targetX"]
-        },
-        {
-          "type": "formula",
-          "expr": "datum.sourceX || ganttRange[0]",
-          "as": "sourceX"
-        },
-        {
-          "type": "formula",
-          "expr": "datum.targetX || ganttRange[1]",
-          "as": "targetX"
-        },
-        {
-          "type": "formula",
-          "expr": "{x: datum.sourceX, y: datum.sourceY}",
-          "as": "source"
-        },
-        {
-          "type": "formula",
-          "expr": "{x: datum.targetX, y: datum.targetY}",
-          "as": "target"
-        },
-        {"type": "fold", "fields": ["source", "target"], "as": ["key", "xy"]},
-        {
-          "type": "formula",
-          "expr": "datum.sourceId+'-'+datum.targetId",
-          "as": "sourceTargetCompId"
-        },
-        {
-          "type": "window",
-          "ops": ["dense_rank"],
-          "sort": {"field": "sourceTargetCompId"},
-          "as": ["linkId"]
-        },
-        {
-          "type": "formula",
-          "expr": "(datum.targetY-datum.sourceY)/2",
-          "as": "halfHeight"
-        },
-        {
-          "type": "formula",
-          "expr": "datum.targetRowNumber-datum.sourceRowNumber",
-          "as": "rowSeparationCount"
-        },
-        {
-          "type": "project",
-          "fields": [
-            "linkId",
-            "sourceId",
-            "targetId",
-            "sourceXInRange",
-            "targetXInRange",
-            "halfHeight",
-            "rowSeparationCount",
-            "key",
-            "xy"
-          ]
-        },
-        {"type": "formula", "expr": "[1,2,3]", "as": "sort"},
-        {"type": "flatten", "fields": ["sort"]},
-        {
-          "type": "formula",
-          "expr": "datum.sort+(datum.key === 'source' ? 0 : 3)",
-          "as": "sort"
-        },
-        {
-          "type": "formula",
-          "expr": "datum.sort === 2 ? {x: datum.xy.x+15, y:datum.xy.y} : datum.xy",
-          "as": "xy"
-        },
-        {
-          "type": "formula",
-          "expr": "datum.sort === 3 ? {x:datum.xy.x+15, y:datum.xy.y+datum.halfHeight} : datum.xy",
-          "as": "xy"
-        },
-        {
-          "type": "formula",
-          "expr": "datum.sort === 4 ? {x:datum.xy.x-15, y:datum.xy.y-datum.halfHeight} : datum.xy",
-          "as": "xy"
-        },
-        {
-          "type": "formula",
-          "expr": "datum.sort === 5 ? {x:datum.xy.x-15, y:datum.xy.y} : datum.xy",
-          "as": "xy"
-        }
-      ]
-    },
-    {
-      "name": "currentMaxIndentWidth",
-      "source": "hierarchy_initial",
-      "transform": [
-        {
-          "type": "aggregate",
-          "ops": ["max"],
-          "fields": ["level"],
-          "as": ["currentMaxLevel"]
-        },
-        {
-          "type": "formula",
-          "expr": "(datum.currentMaxLevel-1)*rowConfig.levelIndentWidth",
-          "as": "indent"
-        }
-      ]
-    },
-    {
-      "name": "height",
-      "source": "hierarchy_master",
-      "transform": [
-        {"type": "filter", "expr": "datum.isVisible === 1"},
-        {"type": "aggregate", "ops": ["count"], "as": ["height"]},
-        {
-          "type": "formula",
-          "expr": "(datum.height)*rowConfig.rowHeight",
-          "as": "height"
-        }
-      ]
-    },
-    {
-      "name": "LeftHandColumns",
-      "values": [{}],
-      "transform": [
-        {"type": "formula", "expr": "includedLeftHandColumns", "as": "column"},
-        {"type": "flatten", "fields": ["column"]},
-        {
-          "type": "formula",
-          "expr": "currentMaxIndentWidth",
-          "as": "currentMaxIndentWidth"
-        },
-        {
-          "type": "filter",
-          "expr": "indexof(['name','startDate','endDate','duration','progress'], datum.column) >= 0"
-        },
-        {
-          "type": "filter",
-          "expr": "showDetails ? true : datum.column==='name'"
-        },
-        {
-          "type": "formula",
-          "expr": "['Task', 'Start Date', 'End Date', 'Duration', 'Progress'][indexof(['name','startDate','endDate','duration','progress'], datum.column)]",
-          "as": "label"
-        },
-        {
-          "type": "formula",
-          "expr": "indexof(['name','startDate','endDate','duration','progress'], datum.column)",
-          "as": "rowNumber"
-        },
-        {
-          "type": "window",
-          "ops": ["row_number"],
-          "sort": {"field": "rowNumber"},
-          "as": ["rowNumber"]
-        },
-        {"type": "collect", "sort": {"field": "rowNumber"}},
-        {
-          "type": "formula",
-          "expr": "[columnConfig.columns.taskTitle.align, columnConfig.columns.startDate.align, columnConfig.columns.endDate.align, columnConfig.columns.duration.align, columnConfig.columns.progress.align][indexof(['name','startDate','endDate','duration','progress'], datum.column)]",
-          "as": "align"
-        },
-        {
-          "type": "formula",
-          "expr": "[columnConfig.columns.taskTitle.allowableWidth, columnConfig.columns.startDate.allowableWidth, columnConfig.columns.endDate.allowableWidth, columnConfig.columns.duration.allowableWidth, columnConfig.columns.progress.allowableWidth][indexof(['name','startDate','endDate','duration','progress'], datum.column)]",
-          "as": "allowableWidth"
-        },
-        {
-          "type": "window",
-          "ops": ["sum"],
-          "fields": ["allowableWidth"],
-          "sort": {"field": "rowNumber", "order": "ascending"},
-          "frame": [null, 0],
-          "as": ["x"]
-        },
-        {"type": "formula", "expr": "datum.x+columnConfig.xOffset", "as": "x"},
-        {
-          "type": "formula",
-          "expr": "datum.x+(datum.align === 'right' ? datum.allowableWidth : 0)",
-          "as": "x"
-        },
-        {
-          "type": "formula",
-          "expr": "(datum.x-datum.allowableWidth)+(columnConfig.innerPadding*(datum.rowNumber-1))+(datum.column==='name' ? 0 : datum.currentMaxIndentWidth)",
-          "as": "x"
-        },
-        {
-          "type": "window",
-          "ops": ["last_value", "last_value"],
-          "fields": ["allowableWidth", "x"],
-          "sort": {"field": "rowNumber"},
-          "frame": [null, null],
-          "as": ["lastAllowableWidth", "lastX"]
-        },
-        {
-          "type": "formula",
-          "expr": "(datum.lastAllowableWidth+datum.lastX)*(showDetails ? 1 : 2)",
-          "as": "totalWidth"
-        }
-      ]
-    },
-    {
-      "name": "expandAllCollapseAllConfig",
-      "values": [
-        {
-          "rowNumber": 0,
-          "name": "expandAll",
-          "path": "M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z",
-          "size": 0.00175,
-          "tooltip": "Expand all"
-        },
-        {
-          "rowNumber": 1,
-          "name": "collapseAll",
-          "path": "M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z",
-          "size": 0.00175,
-          "fontWeight": 400,
-          "tooltip": "Collapse all"
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "parentId": "",
+    "name": "root",
+    "startDate": "",
+    "endDate": "",
+    "decimalPercentComplete": "",
+    "dependencyId": "",
+    "color": "#fff"
+  },
+  {
+    "id": 2,
+    "parentId": 1,
+    "name": "Project A",
+    "startDate": "1/1/2024",
+    "endDate": "4/8/2024",
+    "decimalPercentComplete": 1,
+    "dependencyId": "",
+    "color": "#363432"
+  },
+  {
+    "id": 3,
+    "parentId": 2,
+    "name": "Task 1",
+    "startDate": "1/1/2024",
+    "endDate": "2/10/2024",
+    "decimalPercentComplete": 1,
+    "dependencyId": "",
+    "color": "#363432"
+  },
+  {
+    "id": 4,
+    "parentId": 3,
+    "name": "Task 1.1",
+    "startDate": "1/1/2024",
+    "endDate": "1/15/2024",
+    "decimalPercentComplete": 1,
+    "dependencyId": "",
+    "color": "#363432"
+  },
+  {
+    "id": 5,
+    "parentId": 3,
+    "name": "Task 1.2",
+    "startDate": "1/16/2024",
+    "endDate": "1/20/2024",
+    "decimalPercentComplete": 1,
+    "dependencyId": "",
+    "color": "#363432"
+  },
+  {
+    "id": 6,
+    "parentId": 3,
+    "name": "Task 1.3",
+    "startDate": "1/16/2024",
+    "endDate": "2/5/2024",
+    "decimalPercentComplete": 1,
+    "dependencyId": "",
+    "color": "#363432"
+  },
+  {
+    "id": 7,
+    "parentId": 3,
+    "name": "Task 1.4",
+    "startDate": "1/16/2024",
+    "endDate": "2/10/2024",
+    "decimalPercentComplete": 1,
+    "dependencyId": 4,
+    "color": "#363432"
+  },
+  {
+    "id": 8,
+    "parentId": 2,
+    "name": "Task 2",
+    "startDate": "2/11/2024",
+    "endDate": "3/5/2024",
+    "decimalPercentComplete": 1,
+    "dependencyId": 3,
+    "color": "#363432"
+  },
+  {
+    "id": 9,
+    "parentId": 8,
+    "name": "Task 2.1",
+    "startDate": "2/11/2024",
+    "endDate": "3/3/2024",
+    "decimalPercentComplete": 1,
+    "dependencyId": "",
+    "color": "#363432"
+  },
+  {
+    "id": 10,
+    "parentId": 8,
+    "name": "Task 2.2",
+    "startDate": "2/11/2024",
+    "endDate": "2/16/2024",
+    "decimalPercentComplete": 1,
+    "dependencyId": "",
+    "color": "#363432"
+  },
+  {
+    "id": 11,
+    "parentId": 8,
+    "name": "Task 2.3",
+    "startDate": "2/17/2024",
+    "endDate": "3/3/2024",
+    "decimalPercentComplete": 1,
+    "dependencyId": 10,
+    "color": "#363432"
+  },
+  {
+    "id": 12,
+    "parentId": 8,
+    "name": "Task 2.4",
+    "startDate": "2/22/2024",
+    "endDate": "3/5/2024",
+    "decimalPercentComplete": 1,
+    "dependencyId": "",
+    "color": "#363432"
+  },
+  {
+    "id": 13,
+    "parentId": 2,
+    "name": "Task 3",
+    "startDate": "3/1/2024",
+    "endDate": "4/8/2024",
+    "decimalPercentComplete": 1,
+    "dependencyId": "",
+    "color": "#363432"
+  },
+  {
+    "id": 14,
+    "parentId": 1,
+    "name": "Project B",
+    "startDate": "1/15/2024",
+    "endDate": "9/15/2024",
+    "decimalPercentComplete": 0.31,
+    "dependencyId": "",
+    "color": "#2EC3DF"
+  },
+  {
+    "id": 15,
+    "parentId": 14,
+    "name": "Task 1",
+    "startDate": "1/15/2024",
+    "endDate": "7/16/2024",
+    "decimalPercentComplete": 0.63,
+    "dependencyId": "",
+    "color": "#2EC3DF"
+  },
+  {
+    "id": 16,
+    "parentId": 15,
+    "name": "Task 1.1",
+    "startDate": "1/15/2024",
+    "endDate": "3/23/2024",
+    "decimalPercentComplete": 1,
+    "dependencyId": "",
+    "color": "#2EC3DF"
+  },
+  {
+    "id": 17,
+    "parentId": 15,
+    "name": "Task 1.2",
+    "startDate": "3/24/2024",
+    "endDate": "7/16/2024",
+    "decimalPercentComplete": 0.25,
+    "dependencyId": 16,
+    "color": "#2EC3DF"
+  },
+  {
+    "id": 18,
+    "parentId": 14,
+    "name": "Task 2",
+    "startDate": "7/17/2024",
+    "endDate": "9/15/2024",
+    "decimalPercentComplete": 0,
+    "dependencyId": 15,
+    "color": "#2EC3DF"
+  },
+  {
+    "id": 19,
+    "parentId": 1,
+    "name": "Project C",
+    "startDate": "1/1/2024",
+    "endDate": "9/30/2024",
+    "decimalPercentComplete": 0.63,
+    "dependencyId": "",
+    "color": "#90A19D"
+  },
+  {
+    "id": 20,
+    "parentId": 19,
+    "name": "Task 1",
+    "startDate": "1/1/2024",
+    "endDate": "2/12/2024",
+    "decimalPercentComplete": 1,
+    "dependencyId": "",
+    "color": "#90A19D"
+  },
+  {
+    "id": 21,
+    "parentId": 19,
+    "name": "Task 2",
+    "startDate": "1/1/2024",
+    "endDate": "1/16/2024",
+    "decimalPercentComplete": 1,
+    "dependencyId": "",
+    "color": "#90A19D"
+  },
+  {
+    "id": 22,
+    "parentId": 19,
+    "name": "Task 3",
+    "startDate": "1/20/2024",
+    "endDate": "4/20/2024",
+    "decimalPercentComplete": 0.85,
+    "dependencyId": "",
+    "color": "#90A19D"
+  },
+  {
+    "id": 23,
+    "parentId": 19,
+    "name": "Task 4",
+    "startDate": "3/15/2024",
+    "endDate": "6/12/2024",
+    "decimalPercentComplete": 0.81,
+    "dependencyId": "",
+    "color": "#90A19D"
+  },
+  {
+    "id": 24,
+    "parentId": 19,
+    "name": "Task 5",
+    "startDate": "5/15/2024",
+    "endDate": "8/19/2024",
+    "decimalPercentComplete": 0.11,
+    "dependencyId": "",
+    "color": "#90A19D"
+  },
+  {
+    "id": 25,
+    "parentId": 19,
+    "name": "Task 6",
+    "startDate": "5/15/2024",
+    "endDate": "9/30/2024",
+    "decimalPercentComplete": 0,
+    "dependencyId": "",
+    "color": "#90A19D"
+  },
+  {
+    "id": 26,
+    "parentId": 1,
+    "name": "Project D",
+    "startDate": "2/20/2024",
+    "endDate": "12/31/2024",
+    "decimalPercentComplete": 0.08,
+    "dependencyId": "",
+    "color": "#F0941F"
+  },
+  {
+    "id": 27,
+    "parentId": 26,
+    "name": "Task 1",
+    "startDate": "2/20/2024",
+    "endDate": "6/15/2024",
+    "decimalPercentComplete": 0.38,
+    "dependencyId": "",
+    "color": "#F0941F"
+  },
+  {
+    "id": 28,
+    "parentId": 27,
+    "name": "Task 1.1",
+    "startDate": "2/20/2024",
+    "endDate": "5/1/2024",
+    "decimalPercentComplete": 0.73,
+    "dependencyId": "",
+    "color": "#F0941F"
+  },
+  {
+    "id": 29,
+    "parentId": 28,
+    "name": "Task 1.1.1",
+    "startDate": "2/20/2024",
+    "endDate": "4/15/2024",
+    "decimalPercentComplete": 1,
+    "dependencyId": "",
+    "color": "#F0941F"
+  },
+  {
+    "id": 30,
+    "parentId": 28,
+    "name": "Task 1.1.2",
+    "startDate": "4/16/2024",
+    "endDate": "5/1/2024",
+    "decimalPercentComplete": 0.45,
+    "dependencyId": 29,
+    "color": "#F0941F"
+  },
+  {
+    "id": 31,
+    "parentId": 27,
+    "name": "Task 1.2",
+    "startDate": "5/2/2024",
+    "endDate": "6/15/2024",
+    "decimalPercentComplete": 0.13,
+    "dependencyId": 28,
+    "color": "#F0941F"
+  },
+  {
+    "id": 32,
+    "parentId": 27,
+    "name": "Task 1.3",
+    "startDate": "5/2/2024",
+    "endDate": "6/15/2024",
+    "decimalPercentComplete": 0.29,
+    "dependencyId": 28,
+    "color": "#F0941F"
+  },
+  {
+    "id": 33,
+    "parentId": 26,
+    "name": "Task 2",
+    "startDate": "6/16/2024",
+    "endDate": "7/1/2024",
+    "decimalPercentComplete": 0,
+    "dependencyId": 27,
+    "color": "#F0941F"
+  },
+  {
+    "id": 34,
+    "parentId": 26,
+    "name": "Task 3",
+    "startDate": "6/16/2024",
+    "endDate": "8/1/2024",
+    "decimalPercentComplete": 0,
+    "dependencyId": 27,
+    "color": "#F0941F"
+  },
+  {
+    "id": 35,
+    "parentId": 26,
+    "name": "Task 4",
+    "startDate": "8/2/2024",
+    "endDate": "10/1/2024",
+    "decimalPercentComplete": 0,
+    "dependencyId": 34,
+    "color": "#F0941F"
+  },
+  {
+    "id": 36,
+    "parentId": 35,
+    "name": "Task 4.1",
+    "startDate": "8/2/2024",
+    "endDate": "9/15/2024",
+    "decimalPercentComplete": 0,
+    "dependencyId": "",
+    "color": "#F0941F"
+  },
+  {
+    "id": 37,
+    "parentId": 35,
+    "name": "Task 4.2",
+    "startDate": "9/16/2024",
+    "endDate": "10/1/2024",
+    "decimalPercentComplete": 0,
+    "dependencyId": 36,
+    "color": "#F0941F"
+  },
+  {
+    "id": 38,
+    "parentId": 26,
+    "name": "Task 5",
+    "startDate": "10/2/2024",
+    "endDate": "12/31/2024",
+    "decimalPercentComplete": 0,
+    "dependencyId": 35,
+    "color": "#F0941F"
+  },
+  {
+    "id": 39,
+    "parentId": 1,
+    "name": "Project E",
+    "startDate": "11/13/2024",
+    "endDate": "3/8/2025",
+    "decimalPercentComplete": 0,
+    "dependencyId": "",
+    "color": "#196774"
+  },
+  {
+    "id": 40,
+    "parentId": 39,
+    "name": "Task 1",
+    "startDate": "11/13/2024",
+    "endDate": "12/27/2024",
+    "decimalPercentComplete": 0,
+    "dependencyId": "",
+    "color": "#196774"
+  },
+  {
+    "id": 41,
+    "parentId": 39,
+    "name": "Task 2",
+    "startDate": "12/27/2024",
+    "endDate": "3/8/2025",
+    "decimalPercentComplete": 0,
+    "dependencyId": 40,
+    "color": "#196774"
+  }
+]
