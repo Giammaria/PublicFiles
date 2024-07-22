@@ -44,7 +44,7 @@
     "parentId": 3,
     "name": "Task 1.2",
     "startDate": "1/16/2024",
-    "endDate": "1/20/2024",
+    "endDate": "1/16/2024",
     "decimalPercentComplete": 1,
     "dependencyId": "",
     "color": "#363432"
@@ -204,7 +204,7 @@
     "parentId": 19,
     "name": "Task 2",
     "startDate": "1/1/2024",
-    "endDate": "1/16/2024",
+    "endDate": "1/1/2024",
     "decimalPercentComplete": 1,
     "dependencyId": "",
     "color": "#90A19D"
@@ -234,7 +234,7 @@
     "parentId": 19,
     "name": "Task 5",
     "startDate": "5/15/2024",
-    "endDate": "8/19/2024",
+    "endDate": "5/15/2024",
     "decimalPercentComplete": 0.11,
     "dependencyId": "",
     "color": "#90A19D"
