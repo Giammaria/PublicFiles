@@ -33,19 +33,19 @@ SBD 2 - Buckley,SpOC,Delta 4,0005 SPACE WARNING SQ 0004,"5 SWS, Det 4",Buckley S
 SBD 2 - Buckley,SpOC,Delta 4,0011 SPACE WARNING SQ 0000,11 SWS,Buckley Space Force Base,Receive,2,10
 SBD 2 - Buckley,SPOC,Delta 6,0064 CYBERSPACE SQ 0000,64 CYS,Buckley Space Force Base,Receive,2,11
 SBD 2 - Buckley,SPOC,Delta 7,0072 INTL/SURVEIL/RECON SQ 0007,"72 ISRS, Det 7",Buckley Space Force Base,Receive,2,12
-SBD 3 - Los Angelas,SSC,SBD 3,0003 SPACE BASE DE 0000,SBD 3,Los Angeles Air Force Base,Provide,3,13
-SBD 3 - Los Angelas,SPOC,SBD 3,0061 COMMUNICATIONS SQ 0000,61 COMS,Los Angeles Air Force Base,Receive,3,1
-SLD 30 - Vandenberg,SSC,SLD 30,0030 SPACE LAUNCH DE 0000,SLD 30,Vandenberg Space Force Base,Provide,4,2
-SLD 30 - Vandenberg,S4S,Delta 5,0005 SPACE DE 0000,Delta 5,Vandenberg Space Force Base,Receive,4,1
-SLD 30 - Vandenberg,SSC,SLD 30,0002 SPACE LAUNCH SQ 0000,2 SLS,Vandenberg Space Force Base,Receive,4,2
-SLD 30 - Vandenberg,SSC,SLD 30,0002 RANGE OPERATIONS SQ 0000,2 SOPS,Vandenberg Space Force Base,Receive,4,3
-SLD 30 - Vandenberg,SPOC,Delta 2,0018 SPACE DEFENSE SQ 0000,18 SDS,Vandenberg Space Force Base,Receive,4,4
-SLD 30 - Vandenberg,SPOC,Delta 2,0018 SPACE DEFENSE SQ 0001,"18 SDS, Det 1",Vandenberg Space Force Base,Receive,4,5
-SLD 30 - Vandenberg,SPOC,Delta 6,0021 SPACE OPNS SQ 0000,21 SOPS,Vandenberg Space Force Base,Receive,4,6
-SLD 30 - Vandenberg,SSC,SLD 30,0030 SPACE COMM SQ 0000,30 SCS,Vandenberg Space Force Base,Receive,4,7
-SLD 30 - Vandenberg,SSC,SLD 30,0030 OPERATIONS SUPPORT SQ 0000,30 OSS,Vandenberg Space Force Base,Receive,4,8
-SLD 30 - Vandenberg,SPOC,Delta 6,0065 CYBERSPACE SQ 0000,65 CYS,Vandenberg Space Force Base,Receive,4,9
-SLD 30 - Vandenberg,SPOC,Delta 7,0071 INTL/SURVEIL/RECON SQ 0002,"71 ISRS, Det 2",Vandenberg Space Force Base,Receive,4,10
+SBD 3 - Los Angelas,SSC,SBD 3,0003 SPACE BASE DE 0000,SBD 3,Los Angeles Air Force Base,Provide,3,1
+SBD 3 - Los Angelas,SPOC,SBD 3,0061 COMMUNICATIONS SQ 0000,61 COMS,Los Angeles Air Force Base,Receive,3,2
+SLD 30 - Vandenberg,SSC,SLD 30,0030 SPACE LAUNCH DE 0000,SLD 30,Vandenberg Space Force Base,Provide,4,1
+SLD 30 - Vandenberg,S4S,Delta 5,0005 SPACE DE 0000,Delta 5,Vandenberg Space Force Base,Receive,4,2
+SLD 30 - Vandenberg,SSC,SLD 30,0002 SPACE LAUNCH SQ 0000,2 SLS,Vandenberg Space Force Base,Receive,4,3
+SLD 30 - Vandenberg,SSC,SLD 30,0002 RANGE OPERATIONS SQ 0000,2 SOPS,Vandenberg Space Force Base,Receive,4,4
+SLD 30 - Vandenberg,SPOC,Delta 2,0018 SPACE DEFENSE SQ 0000,18 SDS,Vandenberg Space Force Base,Receive,4,5
+SLD 30 - Vandenberg,SPOC,Delta 2,0018 SPACE DEFENSE SQ 0001,"18 SDS, Det 1",Vandenberg Space Force Base,Receive,4,6
+SLD 30 - Vandenberg,SPOC,Delta 6,0021 SPACE OPNS SQ 0000,21 SOPS,Vandenberg Space Force Base,Receive,4,7
+SLD 30 - Vandenberg,SSC,SLD 30,0030 SPACE COMM SQ 0000,30 SCS,Vandenberg Space Force Base,Receive,4,8
+SLD 30 - Vandenberg,SSC,SLD 30,0030 OPERATIONS SUPPORT SQ 0000,30 OSS,Vandenberg Space Force Base,Receive,4,9
+SLD 30 - Vandenberg,SPOC,Delta 6,0065 CYBERSPACE SQ 0000,65 CYS,Vandenberg Space Force Base,Receive,4,10
+SLD 30 - Vandenberg,SPOC,Delta 7,0071 INTL/SURVEIL/RECON SQ 0002,"71 ISRS, Det 2",Vandenberg Space Force Base,Receive,4,11
 SLD 45 - Patrick,SSC,SLD 45,0045 SPACE LAUNCH DE 0000,SLD 45,Patrick Space Force Base,Provide,5,1
 SLD 45 - Patrick,SSC,SLD 45,0001 RANGE OPERATIONS SQ 0000,1 ROPS,Patrick Space Force Base,Receive,5,2
 SLD 45 - Patrick,SSC,SLD 45,0005 SPACE LAUNCH SQ 0000,5 SLS,Patrick Space Force Base,Receive,5,3
