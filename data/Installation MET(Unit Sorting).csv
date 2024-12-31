@@ -50,35 +50,35 @@ SLD 45 - Patrick,SSC,SLD 45,0045 SPACE LAUNCH DE 0000,SLD 45,Patrick Space Force
 SLD 45 - Patrick,SSC,SLD 45,0001 RANGE OPERATIONS SQ 0000,1 ROPS,Patrick Space Force Base,Receive,5,2
 SLD 45 - Patrick,SSC,SLD 45,0005 SPACE LAUNCH SQ 0000,5 SLS,Patrick Space Force Base,Receive,5,3
 SLD 45 - Patrick,SPOC,Delta 6,0645 CYBERSPACE SQ 0000,645 CYS,Patrick Space Force Base,Receive,5,4
-Other - CONUS,NSIC,NSIC,0001 SPACE ANALYSIS SQ 0000,1 SAS,Wright Patterson,Receive,7,1
-Other - CONUS,NSIC,NSIC,0002 SPACE ANALYSIS SQ 0000,2 SAS,Wright Patterson,Receive,7,2
-Other - CONUS,SpOC,Delta 4,0006 SPACE WARNING SQ 0000,6 SWS,Cape Cod Space Force Station,Receive,7,3
-Other - CONUS,SpOC,Delta 4,0007 SPACE WARNING SQ 0000,7 SWS,Beale Air Force Base,Receive,7,4
-Other - CONUS,SpOC,Delta 4,0010 SPACE WARNING SQ 0000,10 SWS,Cavalier Air Force Station,Receive,7,5
-Other - CONUS,SPOC,Delta 2,0015 SPACE SURVEILLANCE SQ 0001,"15 SPSS, Det 1",Stallion Air Field,Receive,7,6
-Other - CONUS,SPOC,Delta 2,0019 SPACE DEFENSE SQ 0000,19 SDS,Dahlgren,Receive,7,7
-Other - CONUS,SPOC,Delta 2,0019 SPACE DEFENSE SQ 000A,19 SDS OL-A,Suitland,Receive,7,8
-Other - CONUS,SPOC,Delta 2,0020 SPACE SURVEILLANCE SQ 0000,20 SPSS,Eglin Air Force Base,Receive,7,9
-Other - CONUS,SPOC,Delta 6,0023 SPACE OPNS SQ 0000,23 SOPS,New Boston Space Force Station,Receive,7,10
-Other - CONUS,SPOC,Delta 8,0053 SPACE OPNS SQ 0001,"53 SOPS, Det 1",Ft Detrick,Receive,7,11
-Other - CONUS,SPOC,Delta 8,0053 SPACE OPNS SQ 0002,"53 SOPS, Det 2",Ft George Meade,Receive,7,12
-Other - CONUS,SPOC,Delta 8,0053 SPACE OPNS SQ 0005,"53 SOPS, Det 5",Ft Buckner,Receive,7,13
-Other - CONUS,SPOC,Delta 7,0072 INTL/SURVEIL/RECON SQ 0003,"72 ISRS, Det 3",Ft George Meade,Receive,7,14
-Other - CONUS,SPOC,Delta 7,0072 INTL/SURVEIL/RECON SQ 0005,"72 ISRS, Det 5",Chantilly,Receive,7,15
-Other - CONUS,SPOC,Delta 7,0073 INTL/SURVEIL/RECON SQ 0000,73 ISRS,Wright Patterson,Receive,7,16
-Other - CONUS,SPOC,Delta 7,0073 INTL/SURVEIL/RECON SQ 0006,"73 ISRS, Det 6",Ft George Meade,Receive,7,17
-Other - OCONUS,SpOC,Delta 4,0003 SATELLITE COMM SQ 000A,3 SCS OL-A,Other,Receive,6,1
-Other - OCONUS,SPOC,Delta 8,0010 SPACE OPNS SQ 0000,10 SOPS,Point Mugu Naval Air Station,Receive,6,2
-Other - OCONUS,SpOC,Delta 4,0012 SPACE WARNING SQ 0000,12 SWS,"Pituffik, Greenland",Receive,6,3
-Other - OCONUS,SpOC,Delta 4,0013 SPACE WARNING SQ 0000,13 SWS,Clear Air Force Station,Receive,6,4
-Other - OCONUS,SpOC,Delta 4,0013 SPACE WARNING SQ 00CD,13 SWS OL-CD,Earckson Air Station,Receive,6,5
-Other - OCONUS,SPOC,Delta 2,0015 SPACE SURVEILLANCE SQ 0000,15 SPSS,Maui Island,Receive,6,6
-Other - OCONUS,SPOC,Delta 2,0015 SPACE SURVEILLANCE SQ 0002,"15 SPSS, Det 2",Diego Garcia Naval Air Station,Receive,6,7
-Other - OCONUS,SPOC,Delta 6,0021 SPACE OPNS SQ 0001,"21 SOPS, Det 1",Diego Garcia Naval Air Station,Receive,6,8
-Other - OCONUS,SPOC,Delta 6,0021 SPACE OPNS SQ 0002,"21 SOPS, Det 2",Guam Area,Receive,6,9
-Other - OCONUS,SPOC,Delta 6,0021 SPACE OPNS SQ 0003,"21 SOPS, Det 3",Kaena Point,Receive,6,10
-Other - OCONUS,SPOC,Delta 6,0023 SPACE OPNS SQ 0001,"23 SOPS, Det 1","Pituffik, Greenland",Receive,6,11
-Other - OCONUS,SPOC,Delta 8,0053 SPACE OPNS SQ 0003,"53 SOPS, Det 3",Landstuhl,Receive,6,12
-Other - OCONUS,SPOC,Delta 8,0053 SPACE OPNS SQ 0004,"53 SOPS, Det 4",Wahiawa,Receive,6,13
-Other - OCONUS,SPOC,Delta 7,0073 INTL/SURVEIL/RECON SQ 0002,"73 ISRS, Det 2",Osan ,Receive,6,14
-Other - OCONUS,SPOC,Delta 7,0073 INTL/SURVEIL/RECON SQ 0004,"73 ISRS, Det 4",Feltwell,Receive,6,15
+Other - CONUS,NSIC,NSIC,0001 SPACE ANALYSIS SQ 0000,1 SAS,Wright Patterson,Receive,6,1
+Other - CONUS,NSIC,NSIC,0002 SPACE ANALYSIS SQ 0000,2 SAS,Wright Patterson,Receive,6,2
+Other - CONUS,SpOC,Delta 4,0006 SPACE WARNING SQ 0000,6 SWS,Cape Cod Space Force Station,Receive,6,3
+Other - CONUS,SpOC,Delta 4,0007 SPACE WARNING SQ 0000,7 SWS,Beale Air Force Base,Receive,6,4
+Other - CONUS,SpOC,Delta 4,0010 SPACE WARNING SQ 0000,10 SWS,Cavalier Air Force Station,Receive,6,5
+Other - CONUS,SPOC,Delta 2,0015 SPACE SURVEILLANCE SQ 0001,"15 SPSS, Det 1",Stallion Air Field,Receive,6,6
+Other - CONUS,SPOC,Delta 2,0019 SPACE DEFENSE SQ 0000,19 SDS,Dahlgren,Receive,6,7
+Other - CONUS,SPOC,Delta 2,0019 SPACE DEFENSE SQ 000A,19 SDS OL-A,Suitland,Receive,6,8
+Other - CONUS,SPOC,Delta 2,0020 SPACE SURVEILLANCE SQ 0000,20 SPSS,Eglin Air Force Base,Receive,6,9
+Other - CONUS,SPOC,Delta 6,0023 SPACE OPNS SQ 0000,23 SOPS,New Boston Space Force Station,Receive,6,10
+Other - CONUS,SPOC,Delta 8,0053 SPACE OPNS SQ 0001,"53 SOPS, Det 1",Ft Detrick,Receive,6,11
+Other - CONUS,SPOC,Delta 8,0053 SPACE OPNS SQ 0002,"53 SOPS, Det 2",Ft George Meade,Receive,6,12
+Other - CONUS,SPOC,Delta 8,0053 SPACE OPNS SQ 0005,"53 SOPS, Det 5",Ft Buckner,Receive,6,13
+Other - CONUS,SPOC,Delta 7,0072 INTL/SURVEIL/RECON SQ 0003,"72 ISRS, Det 3",Ft George Meade,Receive,6,14
+Other - CONUS,SPOC,Delta 7,0072 INTL/SURVEIL/RECON SQ 0005,"72 ISRS, Det 5",Chantilly,Receive,6,15
+Other - CONUS,SPOC,Delta 7,0073 INTL/SURVEIL/RECON SQ 0000,73 ISRS,Wright Patterson,Receive,6,16
+Other - CONUS,SPOC,Delta 7,0073 INTL/SURVEIL/RECON SQ 0006,"73 ISRS, Det 6",Ft George Meade,Receive,6,17
+Other - OCONUS,SpOC,Delta 4,0003 SATELLITE COMM SQ 000A,3 SCS OL-A,Other,Receive,7,1
+Other - OCONUS,SPOC,Delta 8,0010 SPACE OPNS SQ 0000,10 SOPS,Point Mugu Naval Air Station,Receive,7,2
+Other - OCONUS,SpOC,Delta 4,0012 SPACE WARNING SQ 0000,12 SWS,"Pituffik, Greenland",Receive,7,3
+Other - OCONUS,SpOC,Delta 4,0013 SPACE WARNING SQ 0000,13 SWS,Clear Air Force Station,Receive,7,4
+Other - OCONUS,SpOC,Delta 4,0013 SPACE WARNING SQ 00CD,13 SWS OL-CD,Earckson Air Station,Receive,7,5
+Other - OCONUS,SPOC,Delta 2,0015 SPACE SURVEILLANCE SQ 0000,15 SPSS,Maui Island,Receive,7,6
+Other - OCONUS,SPOC,Delta 2,0015 SPACE SURVEILLANCE SQ 0002,"15 SPSS, Det 2",Diego Garcia Naval Air Station,Receive,7,7
+Other - OCONUS,SPOC,Delta 6,0021 SPACE OPNS SQ 0001,"21 SOPS, Det 1",Diego Garcia Naval Air Station,Receive,7,8
+Other - OCONUS,SPOC,Delta 6,0021 SPACE OPNS SQ 0002,"21 SOPS, Det 2",Guam Area,Receive,7,9
+Other - OCONUS,SPOC,Delta 6,0021 SPACE OPNS SQ 0003,"21 SOPS, Det 3",Kaena Point,Receive,7,10
+Other - OCONUS,SPOC,Delta 6,0023 SPACE OPNS SQ 0001,"23 SOPS, Det 1","Pituffik, Greenland",Receive,7,11
+Other - OCONUS,SPOC,Delta 8,0053 SPACE OPNS SQ 0003,"53 SOPS, Det 3",Landstuhl,Receive,7,12
+Other - OCONUS,SPOC,Delta 8,0053 SPACE OPNS SQ 0004,"53 SOPS, Det 4",Wahiawa,Receive,7,13
+Other - OCONUS,SPOC,Delta 7,0073 INTL/SURVEIL/RECON SQ 0002,"73 ISRS, Det 2",Osan ,Receive,7,14
+Other - OCONUS,SPOC,Delta 7,0073 INTL/SURVEIL/RECON SQ 0004,"73 ISRS, Det 4",Feltwell,Receive,7,15
