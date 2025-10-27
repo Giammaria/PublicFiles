@@ -17,7 +17,7 @@
     "endDate": "4/8/2025",
     "decimalPercentComplete": 1,
     "dependencyId": "",
-    "color": "#363432"
+    "color": "#828E9B"
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@
     "endDate": "2/10/2025",
     "decimalPercentComplete": 1,
     "dependencyId": "",
-    "color": "#363432"
+    "color": "#828E9B"
   },
   {
     "id": 4,
@@ -37,7 +37,7 @@
     "endDate": "1/15/2025",
     "decimalPercentComplete": 1,
     "dependencyId": "",
-    "color": "#363432"
+    "color": "#828E9B"
   },
   {
     "id": 5,
@@ -47,7 +47,7 @@
     "endDate": "1/16/2025",
     "decimalPercentComplete": 1,
     "dependencyId": "",
-    "color": "#363432"
+    "color": "#828E9B"
   },
   {
     "id": 6,
@@ -57,7 +57,7 @@
     "endDate": "2/5/2025",
     "decimalPercentComplete": 1,
     "dependencyId": "",
-    "color": "#363432"
+    "color": "#828E9B"
   },
   {
     "id": 7,
@@ -67,7 +67,7 @@
     "endDate": "2/10/2025",
     "decimalPercentComplete": 1,
     "dependencyId": "",
-    "color": "#363432"
+    "color": "#828E9B"
   },
   {
     "id": 8,
@@ -77,7 +77,7 @@
     "endDate": "3/5/2025",
     "decimalPercentComplete": 1,
     "dependencyId": 3,
-    "color": "#363432"
+    "color": "#828E9B"
   },
   {
     "id": 9,
@@ -87,7 +87,7 @@
     "endDate": "3/3/2025",
     "decimalPercentComplete": 1,
     "dependencyId": "",
-    "color": "#363432"
+    "color": "#828E9B"
   },
   {
     "id": 10,
@@ -97,7 +97,7 @@
     "endDate": "2/16/2025",
     "decimalPercentComplete": 1,
     "dependencyId": "",
-    "color": "#363432"
+    "color": "#828E9B"
   },
   {
     "id": 11,
@@ -107,7 +107,7 @@
     "endDate": "3/3/2025",
     "decimalPercentComplete": 1,
     "dependencyId": "",
-    "color": "#363432"
+    "color": "#828E9B"
   },
   {
     "id": 12,
@@ -117,7 +117,7 @@
     "endDate": "3/5/2025",
     "decimalPercentComplete": 1,
     "dependencyId": "",
-    "color": "#363432"
+    "color": "#828E9B"
   },
   {
     "id": 13,
@@ -127,7 +127,7 @@
     "endDate": "4/8/2025",
     "decimalPercentComplete": 1,
     "dependencyId": "3,8",
-    "color": "#363432"
+    "color": "#828E9B"
   },
   {
     "id": 14,
@@ -137,7 +137,7 @@
     "endDate": "9/15/2025",
     "decimalPercentComplete": 0.31,
     "dependencyId": "",
-    "color": "#2EC3DF"
+    "color": "#67BDE0"
   },
   {
     "id": 15,
@@ -147,7 +147,7 @@
     "endDate": "7/16/2025",
     "decimalPercentComplete": 0.63,
     "dependencyId": "",
-    "color": "#2EC3DF"
+    "color": "#67BDE0"
   },
   {
     "id": 16,
@@ -157,7 +157,7 @@
     "endDate": "3/23/2025",
     "decimalPercentComplete": 1,
     "dependencyId": "",
-    "color": "#2EC3DF"
+    "color": "#67BDE0"
   },
   {
     "id": 17,
@@ -167,7 +167,7 @@
     "endDate": "7/16/2025",
     "decimalPercentComplete": 0.25,
     "dependencyId": 16,
-    "color": "#2EC3DF"
+    "color": "#67BDE0"
   },
   {
     "id": 18,
@@ -177,7 +177,7 @@
     "endDate": "9/15/2025",
     "decimalPercentComplete": 0,
     "dependencyId": 15,
-    "color": "#2EC3DF"
+    "color": "#67BDE0"
   },
   {
     "id": 19,
