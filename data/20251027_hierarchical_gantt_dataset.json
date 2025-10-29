@@ -19,7 +19,7 @@
     "decimalPercentComplete": 1,
     "dependencyId": "",
     "color": "#828E9B",
-    "duration": "100d"
+    "duration": "100 days"
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "decimalPercentComplete": 1,
     "dependencyId": "",
     "color": "#828E9B",
-    "duration": "41d"
+    "duration": "41 days"
   },
   {
     "id": 4,
@@ -41,7 +41,7 @@
     "decimalPercentComplete": 1,
     "dependencyId": "",
     "color": "#828E9B",
-    "duration": "15d"
+    "duration": "15 days"
   },
   {
     "id": 5,
@@ -63,7 +63,7 @@
     "decimalPercentComplete": 1,
     "dependencyId": "",
     "color": "#828E9B",
-    "duration": "21d"
+    "duration": "21 days"
   },
   {
     "id": 7,
@@ -74,7 +74,7 @@
     "decimalPercentComplete": 1,
     "dependencyId": "",
     "color": "#828E9B",
-    "duration": "26d"
+    "duration": "26 days"
   },
   {
     "id": 8,
@@ -85,7 +85,7 @@
     "decimalPercentComplete": 1,
     "dependencyId": 3,
     "color": "#828E9B",
-    "duration": "26d"
+    "duration": "26 days"
   },
   {
     "id": 9,
@@ -96,7 +96,7 @@
     "decimalPercentComplete": 1,
     "dependencyId": "",
     "color": "#828E9B",
-    "duration": "24d"
+    "duration": "24 days"
   },
   {
     "id": 10,
@@ -107,7 +107,7 @@
     "decimalPercentComplete": 1,
     "dependencyId": "",
     "color": "#828E9B",
-    "duration": "6d"
+    "duration": "6 days"
   },
   {
     "id": 11,
@@ -118,7 +118,7 @@
     "decimalPercentComplete": 1,
     "dependencyId": "",
     "color": "#828E9B",
-    "duration": "18d"
+    "duration": "18 days"
   },
   {
     "id": 12,
@@ -129,7 +129,7 @@
     "decimalPercentComplete": 1,
     "dependencyId": "",
     "color": "#828E9B",
-    "duration": "15d"
+    "duration": "15 days"
   },
   {
     "id": 13,
@@ -140,7 +140,7 @@
     "decimalPercentComplete": 1,
     "dependencyId": "3,8",
     "color": "#828E9B",
-    "duration": "38d"
+    "duration": "38 days"
   },
   {
     "id": 14,
@@ -151,7 +151,7 @@
     "decimalPercentComplete": 0.31,
     "dependencyId": "",
     "color": "#67BDE0",
-    "duration": "244d"
+    "duration": "244 days"
   },
   {
     "id": 15,
@@ -162,7 +162,7 @@
     "decimalPercentComplete": 0.63,
     "dependencyId": "",
     "color": "#67BDE0",
-    "duration": "186d"
+    "duration": "186 days"
   },
   {
     "id": 16,
@@ -173,7 +173,7 @@
     "decimalPercentComplete": 1,
     "dependencyId": "",
     "color": "#67BDE0",
-    "duration": "71d"
+    "duration": "71 days"
   },
   {
     "id": 17,
@@ -184,7 +184,7 @@
     "decimalPercentComplete": 0.25,
     "dependencyId": 16,
     "color": "#67BDE0",
-    "duration": "115d"
+    "duration": "115 days"
   },
   {
     "id": 18,
@@ -195,7 +195,7 @@
     "decimalPercentComplete": 0,
     "dependencyId": 15,
     "color": "#67BDE0",
-    "duration": "58d"
+    "duration": "58 days"
   },
   {
     "id": 19,
@@ -206,7 +206,7 @@
     "decimalPercentComplete": 0.63,
     "dependencyId": "",
     "color": "#6DC5B3",
-    "duration": "273d"
+    "duration": "273 days"
   },
   {
     "id": 20,
@@ -217,7 +217,7 @@
     "decimalPercentComplete": 1,
     "dependencyId": "",
     "color": "#6DC5B3",
-    "duration": "43d"
+    "duration": "43 days"
   },
   {
     "id": 21,
@@ -239,7 +239,7 @@
     "decimalPercentComplete": 0.85,
     "dependencyId": "",
     "color": "#6DC5B3",
-    "duration": "93d"
+    "duration": "93 days"
   },
   {
     "id": 23,
@@ -250,7 +250,7 @@
     "decimalPercentComplete": 0.81,
     "dependencyId": "",
     "color": "#6DC5B3",
-    "duration": "89d"
+    "duration": "89 days"
   },
   {
     "id": 24,
@@ -272,7 +272,7 @@
     "decimalPercentComplete": 0,
     "dependencyId": "",
     "color": "#6DC5B3",
-    "duration": "137d"
+    "duration": "136 days"
   },
   {
     "id": 26,
@@ -283,7 +283,7 @@
     "decimalPercentComplete": 0.08,
     "dependencyId": "",
     "color": "#EEB058",
-    "duration": "316d"
+    "duration": "315 days"
   },
   {
     "id": 27,
@@ -294,7 +294,7 @@
     "decimalPercentComplete": 0.38,
     "dependencyId": "",
     "color": "#EEB058",
-    "duration": "118d"
+    "duration": "118 days"
   },
   {
     "id": 28,
@@ -305,7 +305,7 @@
     "decimalPercentComplete": 0.73,
     "dependencyId": "",
     "color": "#EEB058",
-    "duration": "74d"
+    "duration": "74 days"
   },
   {
     "id": 29,
@@ -316,7 +316,7 @@
     "decimalPercentComplete": 1,
     "dependencyId": "",
     "color": "#EEB058",
-    "duration": "57d"
+    "duration": "57 days"
   },
   {
     "id": 30,
@@ -327,7 +327,7 @@
     "decimalPercentComplete": 0.45,
     "dependencyId": 29,
     "color": "#EEB058",
-    "duration": "17d"
+    "duration": "17 days"
   },
   {
     "id": 31,
@@ -338,7 +338,7 @@
     "decimalPercentComplete": 0.13,
     "dependencyId": 28,
     "color": "#EEB058",
-    "duration": "44d"
+    "duration": "44 days"
   },
   {
     "id": 32,
@@ -349,7 +349,7 @@
     "decimalPercentComplete": 0.29,
     "dependencyId": 28,
     "color": "#EEB058",
-    "duration": "44d"
+    "duration": "44 days"
   },
   {
     "id": 33,
@@ -360,7 +360,7 @@
     "decimalPercentComplete": 0,
     "dependencyId": 27,
     "color": "#EEB058",
-    "duration": "17d"
+    "duration": "17 days"
   },
   {
     "id": 34,
@@ -371,7 +371,7 @@
     "decimalPercentComplete": 0,
     "dependencyId": 27,
     "color": "#EEB058",
-    "duration": "48d"
+    "duration": "48 days"
   },
   {
     "id": 35,
@@ -382,7 +382,7 @@
     "decimalPercentComplete": 0,
     "dependencyId": 34,
     "color": "#EEB058",
-    "duration": "60d"
+    "duration": "59 days"
   },
   {
     "id": 36,
@@ -393,7 +393,7 @@
     "decimalPercentComplete": 0,
     "dependencyId": "",
     "color": "#EEB058",
-    "duration": "43d"
+    "duration": "42 days"
   },
   {
     "id": 37,
@@ -404,7 +404,7 @@
     "decimalPercentComplete": 0,
     "dependencyId": 36,
     "color": "#EEB058",
-    "duration": "17d"
+    "duration": "17 days"
   },
   {
     "id": 38,
@@ -415,7 +415,7 @@
     "decimalPercentComplete": 0,
     "dependencyId": 35,
     "color": "#EEB058",
-    "duration": "90d"
+    "duration": "90 days"
   },
   {
     "id": 39,
@@ -426,7 +426,7 @@
     "decimalPercentComplete": 0,
     "dependencyId": "",
     "color": "#196774",
-    "duration": "118d"
+    "duration": "119 days"
   },
   {
     "id": 40,
@@ -437,7 +437,7 @@
     "decimalPercentComplete": 0,
     "dependencyId": "",
     "color": "#196774",
-    "duration": "46d"
+    "duration": "46 days"
   },
   {
     "id": 41,
@@ -448,6 +448,6 @@
     "decimalPercentComplete": 0,
     "dependencyId": 40,
     "color": "#196774",
-    "duration": "74d"
+    "duration": "74 days"
   }
 ]
