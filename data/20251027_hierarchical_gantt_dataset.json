@@ -358,4 +358,96 @@
     "startDate": "12/16/2025",
     "endDate": "1/1/2026",
     "decimalPercentComplete": 0,
-    "dependencyId":
+    "dependencyId": 27,
+    "color": "#EEB058",
+    "duration": "17d"
+  },
+  {
+    "id": 34,
+    "parentId": 26,
+    "name": "Task 3",
+    "startDate": "12/16/2025",
+    "endDate": "2/1/2026",
+    "decimalPercentComplete": 0,
+    "dependencyId": 27,
+    "color": "#EEB058",
+    "duration": "48d"
+  },
+  {
+    "id": 35,
+    "parentId": 26,
+    "name": "Task 4",
+    "startDate": "2/2/2026",
+    "endDate": "4/1/2026",
+    "decimalPercentComplete": 0,
+    "dependencyId": 34,
+    "color": "#EEB058",
+    "duration": "60d"
+  },
+  {
+    "id": 36,
+    "parentId": 35,
+    "name": "Task 4.1",
+    "startDate": "2/2/2026",
+    "endDate": "3/15/2026",
+    "decimalPercentComplete": 0,
+    "dependencyId": "",
+    "color": "#EEB058",
+    "duration": "43d"
+  },
+  {
+    "id": 37,
+    "parentId": 35,
+    "name": "Task 4.2",
+    "startDate": "3/16/2026",
+    "endDate": "4/1/2026",
+    "decimalPercentComplete": 0,
+    "dependencyId": 36,
+    "color": "#EEB058",
+    "duration": "17d"
+  },
+  {
+    "id": 38,
+    "parentId": 26,
+    "name": "Task 5",
+    "startDate": "4/2/2026",
+    "endDate": "6/30/2026",
+    "decimalPercentComplete": 0,
+    "dependencyId": 35,
+    "color": "#EEB058",
+    "duration": "90d"
+  },
+  {
+    "id": 39,
+    "parentId": 1,
+    "name": "Project E",
+    "startDate": "5/13/2026",
+    "endDate": "9/8/2026",
+    "decimalPercentComplete": 0,
+    "dependencyId": "",
+    "color": "#196774",
+    "duration": "118d"
+  },
+  {
+    "id": 40,
+    "parentId": 39,
+    "name": "Task 1",
+    "startDate": "5/13/2026",
+    "endDate": "6/27/2026",
+    "decimalPercentComplete": 0,
+    "dependencyId": "",
+    "color": "#196774",
+    "duration": "46d"
+  },
+  {
+    "id": 41,
+    "parentId": 39,
+    "name": "Task 2",
+    "startDate": "6/27/2026",
+    "endDate": "9/8/2026",
+    "decimalPercentComplete": 0,
+    "dependencyId": 40,
+    "color": "#196774",
+    "duration": "74d"
+  }
+]
