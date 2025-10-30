@@ -8,7 +8,7 @@
     "decimalPercentComplete": "",
     "dependencyId": "",
     "color": "#fff",
-    "duration": null
+    "label": null
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "decimalPercentComplete": 1,
     "dependencyId": "",
     "color": "#828E9B",
-    "duration": "100 days"
+    "label": "Project A (100%)"
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "decimalPercentComplete": 1,
     "dependencyId": "",
     "color": "#828E9B",
-    "duration": "41 days"
+    "label": "Task 1 (100%)"
   },
   {
     "id": 4,
@@ -41,18 +41,18 @@
     "decimalPercentComplete": 1,
     "dependencyId": "",
     "color": "#828E9B",
-    "duration": "15 days"
+    "label": "Task 1.1 (100%)"
   },
   {
     "id": 5,
     "parentId": 3,
-    "name": "Task 1.2",
+    "name": "Milestone 1.2",
     "startDate": "7/16/2025",
     "endDate": "7/16/2025",
     "decimalPercentComplete": 1,
     "dependencyId": "",
     "color": "#828E9B",
-    "duration": null
+    "label": "Milestone 1.2 (100%)"
   },
   {
     "id": 6,
@@ -63,7 +63,7 @@
     "decimalPercentComplete": 1,
     "dependencyId": "",
     "color": "#828E9B",
-    "duration": "21 days"
+    "label": "Task 1.3 (100%)"
   },
   {
     "id": 7,
@@ -74,7 +74,7 @@
     "decimalPercentComplete": 1,
     "dependencyId": "",
     "color": "#828E9B",
-    "duration": "26 days"
+    "label": "Task 1.4 (100%)"
   },
   {
     "id": 8,
@@ -85,7 +85,7 @@
     "decimalPercentComplete": 1,
     "dependencyId": 3,
     "color": "#828E9B",
-    "duration": "26 days"
+    "label": "Task 2 (100%)"
   },
   {
     "id": 9,
@@ -96,7 +96,7 @@
     "decimalPercentComplete": 1,
     "dependencyId": "",
     "color": "#828E9B",
-    "duration": "24 days"
+    "label": "Task 2.1 (100%)"
   },
   {
     "id": 10,
@@ -107,7 +107,7 @@
     "decimalPercentComplete": 1,
     "dependencyId": "",
     "color": "#828E9B",
-    "duration": "6 days"
+    "label": "Task 2.2 (100%)"
   },
   {
     "id": 11,
@@ -118,7 +118,7 @@
     "decimalPercentComplete": 1,
     "dependencyId": "",
     "color": "#828E9B",
-    "duration": "18 days"
+    "label": "Task 2.3 (100%)"
   },
   {
     "id": 12,
@@ -129,7 +129,7 @@
     "decimalPercentComplete": 1,
     "dependencyId": "",
     "color": "#828E9B",
-    "duration": "15 days"
+    "label": "Task 2.4 (100%)"
   },
   {
     "id": 13,
@@ -140,7 +140,7 @@
     "decimalPercentComplete": 1,
     "dependencyId": "3,8",
     "color": "#828E9B",
-    "duration": "38 days"
+    "label": "Task 3 (100%)"
   },
   {
     "id": 14,
@@ -151,7 +151,7 @@
     "decimalPercentComplete": 0.31,
     "dependencyId": "",
     "color": "#67BDE0",
-    "duration": "244 days"
+    "label": "Project B (31%)"
   },
   {
     "id": 15,
@@ -162,7 +162,7 @@
     "decimalPercentComplete": 0.63,
     "dependencyId": "",
     "color": "#67BDE0",
-    "duration": "186 days"
+    "label": "Task 1 (63%)"
   },
   {
     "id": 16,
@@ -173,7 +173,7 @@
     "decimalPercentComplete": 1,
     "dependencyId": "",
     "color": "#67BDE0",
-    "duration": "71 days"
+    "label": "Task 1.1 (100%)"
   },
   {
     "id": 17,
@@ -184,7 +184,7 @@
     "decimalPercentComplete": 0.25,
     "dependencyId": 16,
     "color": "#67BDE0",
-    "duration": "115 days"
+    "label": "Task 1.2 (25%)"
   },
   {
     "id": 18,
@@ -195,7 +195,7 @@
     "decimalPercentComplete": 0,
     "dependencyId": 15,
     "color": "#67BDE0",
-    "duration": "58 days"
+    "label": "Task 2 (0%)"
   },
   {
     "id": 19,
@@ -206,7 +206,7 @@
     "decimalPercentComplete": 0.63,
     "dependencyId": "",
     "color": "#6DC5B3",
-    "duration": "273 days"
+    "label": "Project C (63%)"
   },
   {
     "id": 20,
@@ -217,18 +217,18 @@
     "decimalPercentComplete": 1,
     "dependencyId": "",
     "color": "#6DC5B3",
-    "duration": "43 days"
+    "label": "Task 1 (100%)"
   },
   {
     "id": 21,
     "parentId": 19,
-    "name": "Task 2",
+    "name": "Milestone 2",
     "startDate": "7/1/2025",
     "endDate": "7/1/2025",
     "decimalPercentComplete": 1,
     "dependencyId": "20",
     "color": "#6DC5B3",
-    "duration": null
+    "label": "Milestone 2 (100%)"
   },
   {
     "id": 22,
@@ -239,7 +239,7 @@
     "decimalPercentComplete": 0.85,
     "dependencyId": "",
     "color": "#6DC5B3",
-    "duration": "93 days"
+    "label": "Task 3 (85%)"
   },
   {
     "id": 23,
@@ -250,18 +250,18 @@
     "decimalPercentComplete": 0.81,
     "dependencyId": "",
     "color": "#6DC5B3",
-    "duration": "89 days"
+    "label": "Task 4 (81%)"
   },
   {
     "id": 24,
     "parentId": 19,
-    "name": "Task 5",
+    "name": "Milestone 5",
     "startDate": "11/15/2025",
     "endDate": "11/15/2025",
     "decimalPercentComplete": 0.11,
     "dependencyId": "",
     "color": "#6DC5B3",
-    "duration": null
+    "label": "Milestone 5 (11%)"
   },
   {
     "id": 25,
@@ -272,7 +272,7 @@
     "decimalPercentComplete": 0,
     "dependencyId": "",
     "color": "#6DC5B3",
-    "duration": "136 days"
+    "label": "Task 6 (0%)"
   },
   {
     "id": 26,
@@ -283,7 +283,7 @@
     "decimalPercentComplete": 0.08,
     "dependencyId": "",
     "color": "#EEB058",
-    "duration": "315 days"
+    "label": "Project D (8%)"
   },
   {
     "id": 27,
@@ -294,7 +294,7 @@
     "decimalPercentComplete": 0.38,
     "dependencyId": "",
     "color": "#EEB058",
-    "duration": "118 days"
+    "label": "Task 1 (38%)"
   },
   {
     "id": 28,
@@ -305,7 +305,7 @@
     "decimalPercentComplete": 0.73,
     "dependencyId": "",
     "color": "#EEB058",
-    "duration": "74 days"
+    "label": "Task 1.1 (73%)"
   },
   {
     "id": 29,
@@ -316,7 +316,7 @@
     "decimalPercentComplete": 1,
     "dependencyId": "",
     "color": "#EEB058",
-    "duration": "57 days"
+    "label": "Task 1.1.1 (100%)"
   },
   {
     "id": 30,
@@ -327,7 +327,7 @@
     "decimalPercentComplete": 0.45,
     "dependencyId": 29,
     "color": "#EEB058",
-    "duration": "17 days"
+    "label": "Task 1.1.2 (45%)"
   },
   {
     "id": 31,
@@ -338,7 +338,7 @@
     "decimalPercentComplete": 0.13,
     "dependencyId": 28,
     "color": "#EEB058",
-    "duration": "44 days"
+    "label": "Task 1.2 (13%)"
   },
   {
     "id": 32,
@@ -349,7 +349,7 @@
     "decimalPercentComplete": 0.29,
     "dependencyId": 28,
     "color": "#EEB058",
-    "duration": "44 days"
+    "label": "Task 1.3 (29%)"
   },
   {
     "id": 33,
@@ -360,7 +360,7 @@
     "decimalPercentComplete": 0,
     "dependencyId": 27,
     "color": "#EEB058",
-    "duration": "17 days"
+    "label": "Task 2 (0%)"
   },
   {
     "id": 34,
@@ -371,7 +371,7 @@
     "decimalPercentComplete": 0,
     "dependencyId": 27,
     "color": "#EEB058",
-    "duration": "48 days"
+    "label": "Task 3 (0%)"
   },
   {
     "id": 35,
@@ -382,7 +382,7 @@
     "decimalPercentComplete": 0,
     "dependencyId": 34,
     "color": "#EEB058",
-    "duration": "59 days"
+    "label": "Task 4 (0%)"
   },
   {
     "id": 36,
@@ -393,7 +393,7 @@
     "decimalPercentComplete": 0,
     "dependencyId": "",
     "color": "#EEB058",
-    "duration": "42 days"
+    "label": "Task 4.1 (0%)"
   },
   {
     "id": 37,
@@ -404,7 +404,7 @@
     "decimalPercentComplete": 0,
     "dependencyId": 36,
     "color": "#EEB058",
-    "duration": "17 days"
+    "label": "Task 4.2 (0%)"
   },
   {
     "id": 38,
@@ -415,7 +415,7 @@
     "decimalPercentComplete": 0,
     "dependencyId": 35,
     "color": "#EEB058",
-    "duration": "90 days"
+    "label": "Task 5 (0%)"
   },
   {
     "id": 39,
@@ -426,7 +426,7 @@
     "decimalPercentComplete": 0,
     "dependencyId": "",
     "color": "#196774",
-    "duration": "119 days"
+    "label": "Project E (0%)"
   },
   {
     "id": 40,
@@ -437,7 +437,7 @@
     "decimalPercentComplete": 0,
     "dependencyId": "",
     "color": "#196774",
-    "duration": "46 days"
+    "label": "Task 1 (0%)"
   },
   {
     "id": 41,
@@ -448,6 +448,6 @@
     "decimalPercentComplete": 0,
     "dependencyId": 40,
     "color": "#196774",
-    "duration": "74 days"
+    "label": "Task 2 (0%)"
   }
 ]
