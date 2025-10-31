@@ -1,0 +1,87 @@
+[
+  {"id": 0, "parentId": null, "name": "Halloween Candy (All)", "childQuantity": 58, "descendantQuantity": 3160},
+
+  {"id": 1, "parentId": 0, "name": "Chocolate", "childQuantity": 36, "descendantQuantity": 1258},
+  {"id": 2, "parentId": 0, "name": "Non-Chocolate", "childQuantity": 12, "descendantQuantity": 1088},
+  {"id": 3, "parentId": 0, "name": "Gum & Mints", "childQuantity": 2, "descendantQuantity": 190},
+  {"id": 4, "parentId": 0, "name": "Specialty & Seasonal", "childQuantity": 2, "descendantQuantity": 260},
+  {"id": 5, "parentId": 0, "name": "Allergen-Friendly", "childQuantity": 5, "descendantQuantity": 307},
+
+  {"id": 6, "parentId": 1, "name": "Milk Chocolate", "childQuantity": 25, "descendantQuantity": 1057},
+  {"id": 7, "parentId": 1, "name": "Dark Chocolate", "childQuantity": 3, "descendantQuantity": 112},
+  {"id": 8, "parentId": 1, "name": "White Chocolate", "childQuantity": 1, "descendantQuantity": 60},
+
+  {"id": 9, "parentId": 6, "name": "Bars", "childQuantity": 12, "descendantQuantity": 548},
+  {"id": 10, "parentId": 6, "name": "Cups & Pieces", "childQuantity": 6, "descendantQuantity": 364},
+  {"id": 11, "parentId": 6, "name": "Crunchy (Wafer/Toffee)", "childQuantity": 2, "descendantQuantity": 125},
+
+  {"id": 12, "parentId": 9, "name": "Full Size", "childQuantity": 6, "descendantQuantity": 82},
+  {"id": 13, "parentId": 9, "name": "Fun Size", "childQuantity": 6, "descendantQuantity": 454},
+
+  {"id": 14, "parentId": 12, "name": "With Nuts", "childQuantity": 2, "descendantQuantity": 42},
+  {"id": 15, "parentId": 12, "name": "Without Nuts", "childQuantity": 2, "descendantQuantity": 36},
+
+  {"id": 16, "parentId": 14, "name": "Snickers Full Size", "childQuantity": 24, "descendantQuantity": 0},
+  {"id": 17, "parentId": 14, "name": "Mr. Goodbar Full Size", "childQuantity": 18, "descendantQuantity": 0},
+
+  {"id": 18, "parentId": 15, "name": "Hershey's Milk Chocolate Full Size", "childQuantity": 20, "descendantQuantity": 0},
+  {"id": 19, "parentId": 15, "name": "Kit Kat Full Size", "childQuantity": 16, "descendantQuantity": 0},
+
+  {"id": 20, "parentId": 13, "name": "With Nuts", "childQuantity": 2, "descendantQuantity": 200},
+  {"id": 21, "parentId": 13, "name": "Without Nuts", "childQuantity": 2, "descendantQuantity": 250},
+
+  {"id": 22, "parentId": 20, "name": "Snickers Fun Size", "childQuantity": 120, "descendantQuantity": 0},
+  {"id": 23, "parentId": 20, "name": "Baby Ruth Fun Size", "childQuantity": 80, "descendantQuantity": 0},
+
+  {"id": 24, "parentId": 21, "name": "Kit Kat Minis", "childQuantity": 150, "descendantQuantity": 0},
+  {"id": 25, "parentId": 21, "name": "Twix Fun Size", "childQuantity": 100, "descendantQuantity": 0},
+
+  {"id": 26, "parentId": 10, "name": "Peanut Butter Cups", "childQuantity": 2, "descendantQuantity": 120},
+  {"id": 27, "parentId": 10, "name": "Candy-Coated Pieces", "childQuantity": 2, "descendantQuantity": 240},
+
+  {"id": 28, "parentId": 26, "name": "Reese's Peanut Butter Cups", "childQuantity": 96, "descendantQuantity": 0},
+  {"id": 29, "parentId": 26, "name": "Reese's Pumpkins", "childQuantity": 24, "descendantQuantity": 0},
+
+  {"id": 30, "parentId": 27, "name": "M&M's Milk Chocolate Fun Size", "childQuantity": 130, "descendantQuantity": 0},
+  {"id": 31, "parentId": 27, "name": "M&M's Peanut Fun Size", "childQuantity": 110, "descendantQuantity": 0},
+
+  {"id": 32, "parentId": 11, "name": "Butterfinger Fun Size", "childQuantity": 85, "descendantQuantity": 0},
+  {"id": 33, "parentId": 11, "name": "Heath Miniatures", "childQuantity": 40, "descendantQuantity": 0},
+
+  {"id": 34, "parentId": 7, "name": "Dark Bars", "childQuantity": 2, "descendantQuantity": 110},
+  {"id": 35, "parentId": 34, "name": "Hershey's Special Dark Mini", "childQuantity": 60, "descendantQuantity": 0},
+  {"id": 36, "parentId": 34, "name": "Dove Dark Promises", "childQuantity": 50, "descendantQuantity": 0},
+
+  {"id": 37, "parentId": 8, "name": "Hershey's Cookies 'n' Creme Mini", "childQuantity": 60, "descendantQuantity": 0},
+
+  {"id": 38, "parentId": 2, "name": "Fruity Chews", "childQuantity": 2, "descendantQuantity": 340},
+  {"id": 39, "parentId": 2, "name": "Hard Candy & Lollipops", "childQuantity": 2, "descendantQuantity": 320},
+  {"id": 40, "parentId": 2, "name": "Sour & Tart", "childQuantity": 2, "descendantQuantity": 210},
+  {"id": 41, "parentId": 2, "name": "Caramels & Taffy", "childQuantity": 2, "descendantQuantity": 210},
+
+  {"id": 42, "parentId": 38, "name": "Skittles Fun Size", "childQuantity": 180, "descendantQuantity": 0},
+  {"id": 43, "parentId": 38, "name": "Starburst Fun Size", "childQuantity": 160, "descendantQuantity": 0},
+
+  {"id": 44, "parentId": 39, "name": "Dum-Dums", "childQuantity": 200, "descendantQuantity": 0},
+  {"id": 45, "parentId": 39, "name": "Jolly Rancher Hard Candy", "childQuantity": 120, "descendantQuantity": 0},
+
+  {"id": 46, "parentId": 40, "name": "Sour Patch Kids", "childQuantity": 150, "descendantQuantity": 0},
+  {"id": 47, "parentId": 40, "name": "Warheads Minis", "childQuantity": 60, "descendantQuantity": 0},
+
+  {"id": 48, "parentId": 41, "name": "Werther's Original", "childQuantity": 70, "descendantQuantity": 0},
+  {"id": 49, "parentId": 41, "name": "Laffy Taffy Mini", "childQuantity": 140, "descendantQuantity": 0},
+
+  {"id": 50, "parentId": 3, "name": "Double Bubble", "childQuantity": 100, "descendantQuantity": 0},
+  {"id": 51, "parentId": 3, "name": "Peppermint Starlights", "childQuantity": 90, "descendantQuantity": 0},
+
+  {"id": 52, "parentId": 4, "name": "Candy Corn", "childQuantity": 200, "descendantQuantity": 0},
+  {"id": 53, "parentId": 4, "name": "Caramel Apple Pops", "childQuantity": 60, "descendantQuantity": 0},
+
+  {"id": 54, "parentId": 5, "name": "Top-8-Free Fruity", "childQuantity": 2, "descendantQuantity": 280},
+  {"id": 55, "parentId": 5, "name": "Dairy-Free Chocolate-Like", "childQuantity": 1, "descendantQuantity": 24},
+
+  {"id": 56, "parentId": 54, "name": "Smarties (US)", "childQuantity": 180, "descendantQuantity": 0},
+  {"id": 57, "parentId": 54, "name": "YumEarth Organic Lollipops", "childQuantity": 100, "descendantQuantity": 0},
+
+  {"id": 58, "parentId": 55, "name": "Enjoy Life Mini RiceMilk Bars", "childQuantity": 24, "descendantQuantity": 0}
+]
