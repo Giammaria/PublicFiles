@@ -3,2163 +3,7616 @@
     "id": 0,
     "parentId": null,
     "name": "University Catalog",
-    "childQuantity": 4,
-    "descendantQuantity": 4624
+    "childQuantity": 6,
+    "descendantQuantity": 20431
   },
   {
     "id": 1,
     "parentId": 0,
     "name": "College of Arts & Sciences",
-    "childQuantity": 4,
-    "descendantQuantity": 1156
+    "childQuantity": 3,
+    "descendantQuantity": 2383
   },
   {
     "id": 2,
     "parentId": 0,
     "name": "College of Engineering",
-    "childQuantity": 4,
-    "descendantQuantity": 1156
+    "childQuantity": 3,
+    "descendantQuantity": 2545
   },
   {
     "id": 3,
     "parentId": 0,
     "name": "College of Business",
-    "childQuantity": 4,
-    "descendantQuantity": 1156
+    "childQuantity": 5,
+    "descendantQuantity": 5731
   },
   {
     "id": 4,
     "parentId": 0,
     "name": "College of Health & Human Services",
-    "childQuantity": 4,
-    "descendantQuantity": 1156
+    "childQuantity": 3,
+    "descendantQuantity": 3669
   },
   {
     "id": 5,
-    "parentId": 1,
-    "name": "Department of Mathematics",
+    "parentId": 0,
+    "name": "College of Education",
     "childQuantity": 3,
-    "descendantQuantity": 289
+    "descendantQuantity": 3679
   },
   {
     "id": 6,
-    "parentId": 1,
-    "name": "Department of Biology",
+    "parentId": 0,
+    "name": "College of Fine Arts",
     "childQuantity": 3,
-    "descendantQuantity": 289
+    "descendantQuantity": 2404
   },
   {
     "id": 7,
     "parentId": 1,
-    "name": "Department of History",
-    "childQuantity": 3,
-    "descendantQuantity": 289
+    "name": "Department of Mathematics",
+    "childQuantity": 2,
+    "descendantQuantity": 749
   },
   {
     "id": 8,
     "parentId": 1,
-    "name": "Department of Psychology",
-    "childQuantity": 3,
-    "descendantQuantity": 289
+    "name": "Department of History",
+    "childQuantity": 4,
+    "descendantQuantity": 1308
   },
   {
     "id": 9,
-    "parentId": 2,
-    "name": "Department of Computer Science",
-    "childQuantity": 3,
-    "descendantQuantity": 289
+    "parentId": 1,
+    "name": "Department of Biology",
+    "childQuantity": 2,
+    "descendantQuantity": 318
   },
   {
     "id": 10,
     "parentId": 2,
     "name": "Department of Electrical Engineering",
-    "childQuantity": 3,
-    "descendantQuantity": 289
+    "childQuantity": 2,
+    "descendantQuantity": 492
   },
   {
     "id": 11,
     "parentId": 2,
-    "name": "Department of Mechanical Engineering",
-    "childQuantity": 3,
-    "descendantQuantity": 289
+    "name": "Department of Computer Science",
+    "childQuantity": 4,
+    "descendantQuantity": 1122
   },
   {
     "id": 12,
     "parentId": 2,
-    "name": "Department of Civil Engineering",
-    "childQuantity": 3,
-    "descendantQuantity": 289
+    "name": "Department of Mechanical Engineering",
+    "childQuantity": 2,
+    "descendantQuantity": 923
   },
   {
     "id": 13,
     "parentId": 3,
-    "name": "Department of Accounting",
+    "name": "Department of Information Systems",
     "childQuantity": 3,
-    "descendantQuantity": 289
+    "descendantQuantity": 885
   },
   {
     "id": 14,
     "parentId": 3,
-    "name": "Department of Finance",
-    "childQuantity": 3,
-    "descendantQuantity": 289
+    "name": "Department of Accounting",
+    "childQuantity": 4,
+    "descendantQuantity": 909
   },
   {
     "id": 15,
     "parentId": 3,
     "name": "Department of Marketing",
-    "childQuantity": 3,
-    "descendantQuantity": 289
+    "childQuantity": 4,
+    "descendantQuantity": 1703
   },
   {
     "id": 16,
     "parentId": 3,
-    "name": "Department of Management",
-    "childQuantity": 3,
-    "descendantQuantity": 289
+    "name": "Department of Finance",
+    "childQuantity": 4,
+    "descendantQuantity": 1215
   },
   {
     "id": 17,
-    "parentId": 4,
-    "name": "Department of Nursing",
+    "parentId": 3,
+    "name": "Department of Management",
     "childQuantity": 3,
-    "descendantQuantity": 289
+    "descendantQuantity": 1001
   },
   {
     "id": 18,
     "parentId": 4,
-    "name": "Department of Public Health",
-    "childQuantity": 3,
-    "descendantQuantity": 289
+    "name": "Department of Nursing",
+    "childQuantity": 4,
+    "descendantQuantity": 1859
   },
   {
     "id": 19,
     "parentId": 4,
-    "name": "Department of Social Work",
-    "childQuantity": 3,
-    "descendantQuantity": 289
+    "name": "Department of Public Health",
+    "childQuantity": 2,
+    "descendantQuantity": 453
   },
   {
     "id": 20,
     "parentId": 4,
-    "name": "Department of Nutrition",
-    "childQuantity": 3,
-    "descendantQuantity": 289
+    "name": "Department of Kinesiology",
+    "childQuantity": 4,
+    "descendantQuantity": 1347
   },
   {
     "id": 21,
     "parentId": 5,
-    "name": "Bachelor of Mathematics",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "name": "Department of Special Education",
+    "childQuantity": 5,
+    "descendantQuantity": 1147
   },
   {
     "id": 22,
     "parentId": 5,
-    "name": "Master of Mathematics",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "name": "Department of Educational Leadership",
+    "childQuantity": 3,
+    "descendantQuantity": 1319
   },
   {
     "id": 23,
     "parentId": 5,
-    "name": "Certificate in Mathematics",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "name": "Department of Counselor Education",
+    "childQuantity": 4,
+    "descendantQuantity": 1201
   },
   {
     "id": 24,
     "parentId": 6,
-    "name": "Bachelor of Biology",
+    "name": "Department of Dance",
     "childQuantity": 2,
-    "descendantQuantity": 58
+    "descendantQuantity": 374
   },
   {
     "id": 25,
     "parentId": 6,
-    "name": "Master of Biology",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "name": "Department of Visual Arts",
+    "childQuantity": 3,
+    "descendantQuantity": 525
   },
   {
     "id": 26,
     "parentId": 6,
-    "name": "Certificate in Biology",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "name": "Department of Theatre",
+    "childQuantity": 5,
+    "descendantQuantity": 1495
   },
   {
     "id": 27,
     "parentId": 7,
-    "name": "Bachelor of History",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "name": "Master of Mathematics",
+    "childQuantity": 4,
+    "descendantQuantity": 343
   },
   {
     "id": 28,
     "parentId": 7,
-    "name": "Master of History",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "name": "Minor in Mathematics",
+    "childQuantity": 5,
+    "descendantQuantity": 397
   },
   {
     "id": 29,
-    "parentId": 7,
+    "parentId": 8,
     "name": "Certificate in History",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "childQuantity": 6,
+    "descendantQuantity": 556
   },
   {
     "id": 30,
     "parentId": 8,
-    "name": "Bachelor of Psychology",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "name": "Master of History",
+    "childQuantity": 5,
+    "descendantQuantity": 335
   },
   {
     "id": 31,
     "parentId": 8,
-    "name": "Master of Psychology",
+    "name": "Master of History",
     "childQuantity": 2,
-    "descendantQuantity": 58
+    "descendantQuantity": 234
   },
   {
     "id": 32,
     "parentId": 8,
-    "name": "Certificate in Psychology",
+    "name": "Certificate in History",
     "childQuantity": 2,
-    "descendantQuantity": 58
+    "descendantQuantity": 168
   },
   {
     "id": 33,
     "parentId": 9,
-    "name": "Bachelor of Computer Science",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "name": "Bachelor of Biology",
+    "childQuantity": 6,
+    "descendantQuantity": 143
   },
   {
     "id": 34,
     "parentId": 9,
-    "name": "Master of Computer Science",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "name": "Minor in Biology",
+    "childQuantity": 3,
+    "descendantQuantity": 166
   },
   {
     "id": 35,
-    "parentId": 9,
-    "name": "Certificate in Computer Science",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "parentId": 10,
+    "name": "Certificate in Electrical Engineering",
+    "childQuantity": 4,
+    "descendantQuantity": 241
   },
   {
     "id": 36,
     "parentId": 10,
-    "name": "Bachelor of Electrical Engineering",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "name": "Certificate in Electrical Engineering",
+    "childQuantity": 3,
+    "descendantQuantity": 244
   },
   {
     "id": 37,
-    "parentId": 10,
-    "name": "Master of Electrical Engineering",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "parentId": 11,
+    "name": "Bachelor of Computer Science",
+    "childQuantity": 6,
+    "descendantQuantity": 653
   },
   {
     "id": 38,
-    "parentId": 10,
-    "name": "Certificate in Electrical Engineering",
+    "parentId": 11,
+    "name": "Minor in Computer Science",
     "childQuantity": 2,
-    "descendantQuantity": 58
+    "descendantQuantity": 86
   },
   {
     "id": 39,
     "parentId": 11,
-    "name": "Bachelor of Mechanical Engineering",
+    "name": "Bachelor of Computer Science",
     "childQuantity": 2,
-    "descendantQuantity": 58
+    "descendantQuantity": 137
   },
   {
     "id": 40,
     "parentId": 11,
-    "name": "Master of Mechanical Engineering",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "name": "Minor in Computer Science",
+    "childQuantity": 5,
+    "descendantQuantity": 231
   },
   {
     "id": 41,
-    "parentId": 11,
+    "parentId": 12,
     "name": "Certificate in Mechanical Engineering",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "childQuantity": 5,
+    "descendantQuantity": 458
   },
   {
     "id": 42,
     "parentId": 12,
-    "name": "Bachelor of Civil Engineering",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "name": "Certificate in Mechanical Engineering",
+    "childQuantity": 5,
+    "descendantQuantity": 455
   },
   {
     "id": 43,
-    "parentId": 12,
-    "name": "Master of Civil Engineering",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "parentId": 13,
+    "name": "Bachelor of Information Systems",
+    "childQuantity": 5,
+    "descendantQuantity": 273
   },
   {
     "id": 44,
-    "parentId": 12,
-    "name": "Certificate in Civil Engineering",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "parentId": 13,
+    "name": "Bachelor of Information Systems",
+    "childQuantity": 6,
+    "descendantQuantity": 304
   },
   {
     "id": 45,
     "parentId": 13,
-    "name": "Bachelor of Accounting",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "name": "Master of Information Systems",
+    "childQuantity": 3,
+    "descendantQuantity": 294
   },
   {
     "id": 46,
-    "parentId": 13,
-    "name": "Master of Accounting",
+    "parentId": 14,
+    "name": "Bachelor of Accounting",
     "childQuantity": 2,
-    "descendantQuantity": 58
+    "descendantQuantity": 353
   },
   {
     "id": 47,
-    "parentId": 13,
-    "name": "Certificate in Accounting",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "parentId": 14,
+    "name": "Master of Accounting",
+    "childQuantity": 3,
+    "descendantQuantity": 71
   },
   {
     "id": 48,
     "parentId": 14,
-    "name": "Bachelor of Finance",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "name": "Bachelor of Accounting",
+    "childQuantity": 5,
+    "descendantQuantity": 382
   },
   {
     "id": 49,
     "parentId": 14,
-    "name": "Master of Finance",
+    "name": "Minor in Accounting",
     "childQuantity": 2,
-    "descendantQuantity": 58
+    "descendantQuantity": 91
   },
   {
     "id": 50,
-    "parentId": 14,
-    "name": "Certificate in Finance",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "parentId": 15,
+    "name": "Minor in Marketing",
+    "childQuantity": 5,
+    "descendantQuantity": 308
   },
   {
     "id": 51,
     "parentId": 15,
-    "name": "Bachelor of Marketing",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "name": "Certificate in Marketing",
+    "childQuantity": 4,
+    "descendantQuantity": 388
   },
   {
     "id": 52,
     "parentId": 15,
     "name": "Master of Marketing",
     "childQuantity": 2,
-    "descendantQuantity": 58
+    "descendantQuantity": 164
   },
   {
     "id": 53,
     "parentId": 15,
     "name": "Certificate in Marketing",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "childQuantity": 6,
+    "descendantQuantity": 826
   },
   {
     "id": 54,
     "parentId": 16,
-    "name": "Bachelor of Management",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "name": "Master of Finance",
+    "childQuantity": 3,
+    "descendantQuantity": 268
   },
   {
     "id": 55,
     "parentId": 16,
-    "name": "Master of Management",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "name": "Certificate in Finance",
+    "childQuantity": 6,
+    "descendantQuantity": 447
   },
   {
     "id": 56,
     "parentId": 16,
-    "name": "Certificate in Management",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "name": "Bachelor of Finance",
+    "childQuantity": 4,
+    "descendantQuantity": 189
   },
   {
     "id": 57,
-    "parentId": 17,
-    "name": "Bachelor of Nursing",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "parentId": 16,
+    "name": "Master of Finance",
+    "childQuantity": 4,
+    "descendantQuantity": 294
   },
   {
     "id": 58,
     "parentId": 17,
-    "name": "Master of Nursing",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "name": "Master of Management",
+    "childQuantity": 5,
+    "descendantQuantity": 532
   },
   {
     "id": 59,
     "parentId": 17,
-    "name": "Certificate in Nursing",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "name": "Minor in Management",
+    "childQuantity": 4,
+    "descendantQuantity": 172
   },
   {
     "id": 60,
-    "parentId": 18,
-    "name": "Bachelor of Public Health",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "parentId": 17,
+    "name": "Minor in Management",
+    "childQuantity": 3,
+    "descendantQuantity": 285
   },
   {
     "id": 61,
     "parentId": 18,
-    "name": "Master of Public Health",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "name": "Master of Nursing",
+    "childQuantity": 6,
+    "descendantQuantity": 650
   },
   {
     "id": 62,
     "parentId": 18,
-    "name": "Certificate in Public Health",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "name": "Certificate in Nursing",
+    "childQuantity": 6,
+    "descendantQuantity": 399
   },
   {
     "id": 63,
-    "parentId": 19,
-    "name": "Bachelor of Social Work",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "parentId": 18,
+    "name": "Bachelor of Nursing",
+    "childQuantity": 4,
+    "descendantQuantity": 323
   },
   {
     "id": 64,
-    "parentId": 19,
-    "name": "Master of Social Work",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "parentId": 18,
+    "name": "Master of Nursing",
+    "childQuantity": 5,
+    "descendantQuantity": 466
   },
   {
     "id": 65,
     "parentId": 19,
-    "name": "Certificate in Social Work",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "name": "Certificate in Public Health",
+    "childQuantity": 4,
+    "descendantQuantity": 273
   },
   {
     "id": 66,
-    "parentId": 20,
-    "name": "Bachelor of Nutrition",
+    "parentId": 19,
+    "name": "Minor in Public Health",
     "childQuantity": 2,
-    "descendantQuantity": 58
+    "descendantQuantity": 174
   },
   {
     "id": 67,
     "parentId": 20,
-    "name": "Master of Nutrition",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "name": "Bachelor of Kinesiology",
+    "childQuantity": 6,
+    "descendantQuantity": 449
   },
   {
     "id": 68,
     "parentId": 20,
-    "name": "Certificate in Nutrition",
-    "childQuantity": 2,
-    "descendantQuantity": 58
+    "name": "Master of Kinesiology",
+    "childQuantity": 4,
+    "descendantQuantity": 254
   },
   {
     "id": 69,
-    "parentId": 21,
-    "name": "Mathematics 101",
-    "childQuantity": 2,
-    "descendantQuantity": 60
+    "parentId": 20,
+    "name": "Certificate in Kinesiology",
+    "childQuantity": 3,
+    "descendantQuantity": 255
   },
   {
     "id": 70,
-    "parentId": 21,
-    "name": "Mathematics 201",
-    "childQuantity": 1,
-    "descendantQuantity": 30
+    "parentId": 20,
+    "name": "Master of Kinesiology",
+    "childQuantity": 6,
+    "descendantQuantity": 370
   },
   {
     "id": 71,
-    "parentId": 22,
-    "name": "Mathematics 101",
-    "childQuantity": 2,
-    "descendantQuantity": 60
+    "parentId": 21,
+    "name": "Minor in Special Education",
+    "childQuantity": 3,
+    "descendantQuantity": 188
   },
   {
     "id": 72,
-    "parentId": 22,
-    "name": "Mathematics 201",
-    "childQuantity": 1,
-    "descendantQuantity": 30
+    "parentId": 21,
+    "name": "Minor in Special Education",
+    "childQuantity": 4,
+    "descendantQuantity": 250
   },
   {
     "id": 73,
-    "parentId": 23,
-    "name": "Mathematics 101",
-    "childQuantity": 2,
-    "descendantQuantity": 60
+    "parentId": 21,
+    "name": "Master of Special Education",
+    "childQuantity": 5,
+    "descendantQuantity": 150
   },
   {
     "id": 74,
-    "parentId": 23,
-    "name": "Mathematics 201",
-    "childQuantity": 1,
-    "descendantQuantity": 30
+    "parentId": 21,
+    "name": "Certificate in Special Education",
+    "childQuantity": 3,
+    "descendantQuantity": 263
   },
   {
     "id": 75,
-    "parentId": 24,
-    "name": "Biology 101",
-    "childQuantity": 2,
-    "descendantQuantity": 60
+    "parentId": 21,
+    "name": "Master of Special Education",
+    "childQuantity": 5,
+    "descendantQuantity": 276
   },
   {
     "id": 76,
-    "parentId": 24,
-    "name": "Biology 201",
-    "childQuantity": 1,
-    "descendantQuantity": 30
+    "parentId": 22,
+    "name": "Certificate in Educational Leadership",
+    "childQuantity": 6,
+    "descendantQuantity": 408
   },
   {
     "id": 77,
-    "parentId": 25,
-    "name": "Biology 101",
-    "childQuantity": 2,
-    "descendantQuantity": 60
+    "parentId": 22,
+    "name": "Minor in Educational Leadership",
+    "childQuantity": 6,
+    "descendantQuantity": 501
   },
   {
     "id": 78,
-    "parentId": 25,
-    "name": "Biology 201",
-    "childQuantity": 1,
-    "descendantQuantity": 30
+    "parentId": 22,
+    "name": "Minor in Educational Leadership",
+    "childQuantity": 5,
+    "descendantQuantity": 393
   },
   {
     "id": 79,
-    "parentId": 26,
-    "name": "Biology 101",
-    "childQuantity": 2,
-    "descendantQuantity": 60
+    "parentId": 23,
+    "name": "Master of Counselor Education",
+    "childQuantity": 5,
+    "descendantQuantity": 358
   },
   {
     "id": 80,
-    "parentId": 26,
-    "name": "Biology 201",
-    "childQuantity": 1,
-    "descendantQuantity": 30
+    "parentId": 23,
+    "name": "Master of Counselor Education",
+    "childQuantity": 4,
+    "descendantQuantity": 268
   },
   {
     "id": 81,
-    "parentId": 27,
-    "name": "History 101",
-    "childQuantity": 2,
-    "descendantQuantity": 60
+    "parentId": 23,
+    "name": "Minor in Counselor Education",
+    "childQuantity": 5,
+    "descendantQuantity": 208
   },
   {
     "id": 82,
-    "parentId": 27,
-    "name": "History 201",
-    "childQuantity": 1,
-    "descendantQuantity": 30
+    "parentId": 23,
+    "name": "Bachelor of Counselor Education",
+    "childQuantity": 5,
+    "descendantQuantity": 348
   },
   {
     "id": 83,
-    "parentId": 28,
-    "name": "History 101",
-    "childQuantity": 2,
-    "descendantQuantity": 60
+    "parentId": 24,
+    "name": "Bachelor of Dance",
+    "childQuantity": 4,
+    "descendantQuantity": 168
   },
   {
     "id": 84,
-    "parentId": 28,
-    "name": "History 201",
-    "childQuantity": 1,
-    "descendantQuantity": 30
+    "parentId": 24,
+    "name": "Master of Dance",
+    "childQuantity": 5,
+    "descendantQuantity": 197
   },
   {
     "id": 85,
-    "parentId": 29,
-    "name": "History 101",
+    "parentId": 25,
+    "name": "Minor in Visual Arts",
     "childQuantity": 2,
-    "descendantQuantity": 60
+    "descendantQuantity": 62
   },
   {
     "id": 86,
-    "parentId": 29,
-    "name": "History 201",
-    "childQuantity": 1,
-    "descendantQuantity": 30
+    "parentId": 25,
+    "name": "Bachelor of Visual Arts",
+    "childQuantity": 2,
+    "descendantQuantity": 101
   },
   {
     "id": 87,
-    "parentId": 30,
-    "name": "Psychology 101",
-    "childQuantity": 2,
-    "descendantQuantity": 60
+    "parentId": 25,
+    "name": "Minor in Visual Arts",
+    "childQuantity": 3,
+    "descendantQuantity": 355
   },
   {
     "id": 88,
-    "parentId": 30,
-    "name": "Psychology 201",
-    "childQuantity": 1,
-    "descendantQuantity": 30
+    "parentId": 26,
+    "name": "Minor in Theatre",
+    "childQuantity": 2,
+    "descendantQuantity": 140
   },
   {
     "id": 89,
-    "parentId": 31,
-    "name": "Psychology 101",
-    "childQuantity": 2,
-    "descendantQuantity": 60
+    "parentId": 26,
+    "name": "Certificate in Theatre",
+    "childQuantity": 6,
+    "descendantQuantity": 313
   },
   {
     "id": 90,
-    "parentId": 31,
-    "name": "Psychology 201",
-    "childQuantity": 1,
-    "descendantQuantity": 30
+    "parentId": 26,
+    "name": "Bachelor of Theatre",
+    "childQuantity": 5,
+    "descendantQuantity": 391
   },
   {
     "id": 91,
-    "parentId": 32,
-    "name": "Psychology 101",
-    "childQuantity": 2,
-    "descendantQuantity": 60
+    "parentId": 26,
+    "name": "Bachelor of Theatre",
+    "childQuantity": 3,
+    "descendantQuantity": 302
   },
   {
     "id": 92,
-    "parentId": 32,
-    "name": "Psychology 201",
-    "childQuantity": 1,
-    "descendantQuantity": 30
+    "parentId": 26,
+    "name": "Certificate in Theatre",
+    "childQuantity": 6,
+    "descendantQuantity": 327
   },
   {
     "id": 93,
-    "parentId": 33,
-    "name": "Computer Science 101",
-    "childQuantity": 2,
-    "descendantQuantity": 60
+    "parentId": 27,
+    "name": "of Mathematics 102",
+    "childQuantity": 5,
+    "descendantQuantity": 162
   },
   {
     "id": 94,
-    "parentId": 33,
-    "name": "Computer Science 201",
-    "childQuantity": 1,
-    "descendantQuantity": 30
+    "parentId": 27,
+    "name": "of Mathematics 301",
+    "childQuantity": 2,
+    "descendantQuantity": 47
   },
   {
     "id": 95,
-    "parentId": 34,
-    "name": "Computer Science 101",
+    "parentId": 27,
+    "name": "of Mathematics 450",
     "childQuantity": 2,
-    "descendantQuantity": 60
+    "descendantQuantity": 38
   },
   {
     "id": 96,
-    "parentId": 34,
-    "name": "Computer Science 201",
-    "childQuantity": 1,
-    "descendantQuantity": 30
+    "parentId": 27,
+    "name": "of Mathematics 201",
+    "childQuantity": 3,
+    "descendantQuantity": 84
   },
   {
     "id": 97,
-    "parentId": 35,
-    "name": "Computer Science 101",
-    "childQuantity": 2,
-    "descendantQuantity": 60
+    "parentId": 28,
+    "name": "in Mathematics 101",
+    "childQuantity": 4,
+    "descendantQuantity": 124
   },
   {
     "id": 98,
-    "parentId": 35,
-    "name": "Computer Science 201",
+    "parentId": 28,
+    "name": "in Mathematics 301",
     "childQuantity": 1,
-    "descendantQuantity": 30
+    "descendantQuantity": 24
   },
   {
     "id": 99,
-    "parentId": 36,
-    "name": "Electrical Engineering 101",
-    "childQuantity": 2,
-    "descendantQuantity": 60
+    "parentId": 28,
+    "name": "in Mathematics 201",
+    "childQuantity": 3,
+    "descendantQuantity": 82
   },
   {
     "id": 100,
-    "parentId": 36,
-    "name": "Electrical Engineering 201",
-    "childQuantity": 1,
-    "descendantQuantity": 30
+    "parentId": 28,
+    "name": "in Mathematics 102",
+    "childQuantity": 3,
+    "descendantQuantity": 89
   },
   {
     "id": 101,
-    "parentId": 37,
-    "name": "Electrical Engineering 101",
-    "childQuantity": 2,
-    "descendantQuantity": 60
+    "parentId": 28,
+    "name": "in Mathematics 301",
+    "childQuantity": 3,
+    "descendantQuantity": 64
   },
   {
     "id": 102,
-    "parentId": 37,
-    "name": "Electrical Engineering 201",
-    "childQuantity": 1,
-    "descendantQuantity": 30
+    "parentId": 29,
+    "name": "in History 202",
+    "childQuantity": 4,
+    "descendantQuantity": 113
   },
   {
     "id": 103,
-    "parentId": 38,
-    "name": "Electrical Engineering 101",
-    "childQuantity": 2,
-    "descendantQuantity": 60
+    "parentId": 29,
+    "name": "in History 201",
+    "childQuantity": 4,
+    "descendantQuantity": 107
   },
   {
     "id": 104,
-    "parentId": 38,
-    "name": "Electrical Engineering 201",
+    "parentId": 29,
+    "name": "in History 401",
     "childQuantity": 1,
-    "descendantQuantity": 30
+    "descendantQuantity": 22
   },
   {
     "id": 105,
-    "parentId": 39,
-    "name": "Mechanical Engineering 101",
-    "childQuantity": 2,
-    "descendantQuantity": 60
+    "parentId": 29,
+    "name": "in History 201",
+    "childQuantity": 4,
+    "descendantQuantity": 107
   },
   {
     "id": 106,
-    "parentId": 39,
-    "name": "Mechanical Engineering 201",
-    "childQuantity": 1,
-    "descendantQuantity": 30
+    "parentId": 29,
+    "name": "in History 101",
+    "childQuantity": 5,
+    "descendantQuantity": 166
   },
   {
     "id": 107,
-    "parentId": 40,
-    "name": "Mechanical Engineering 101",
-    "childQuantity": 2,
-    "descendantQuantity": 60
+    "parentId": 29,
+    "name": "in History 401",
+    "childQuantity": 1,
+    "descendantQuantity": 22
   },
   {
     "id": 108,
-    "parentId": 40,
-    "name": "Mechanical Engineering 201",
-    "childQuantity": 1,
-    "descendantQuantity": 30
+    "parentId": 30,
+    "name": "of History 101",
+    "childQuantity": 3,
+    "descendantQuantity": 92
   },
   {
     "id": 109,
-    "parentId": 41,
-    "name": "Mechanical Engineering 101",
+    "parentId": 30,
+    "name": "of History 102",
     "childQuantity": 2,
-    "descendantQuantity": 60
+    "descendantQuantity": 61
   },
   {
     "id": 110,
-    "parentId": 41,
-    "name": "Mechanical Engineering 201",
-    "childQuantity": 1,
-    "descendantQuantity": 30
+    "parentId": 30,
+    "name": "of History 401",
+    "childQuantity": 2,
+    "descendantQuantity": 40
   },
   {
     "id": 111,
-    "parentId": 42,
-    "name": "Civil Engineering 101",
-    "childQuantity": 2,
-    "descendantQuantity": 60
+    "parentId": 30,
+    "name": "of History 301",
+    "childQuantity": 1,
+    "descendantQuantity": 20
   },
   {
     "id": 112,
-    "parentId": 42,
-    "name": "Civil Engineering 201",
-    "childQuantity": 1,
-    "descendantQuantity": 30
+    "parentId": 30,
+    "name": "of History 202",
+    "childQuantity": 4,
+    "descendantQuantity": 110
   },
   {
     "id": 113,
-    "parentId": 43,
-    "name": "Civil Engineering 101",
-    "childQuantity": 2,
-    "descendantQuantity": 60
+    "parentId": 31,
+    "name": "of History 202",
+    "childQuantity": 4,
+    "descendantQuantity": 105
   },
   {
     "id": 114,
-    "parentId": 43,
-    "name": "Civil Engineering 201",
-    "childQuantity": 1,
-    "descendantQuantity": 30
+    "parentId": 31,
+    "name": "of History 102",
+    "childQuantity": 4,
+    "descendantQuantity": 121
   },
   {
     "id": 115,
-    "parentId": 44,
-    "name": "Civil Engineering 101",
+    "parentId": 32,
+    "name": "in History 498",
     "childQuantity": 2,
-    "descendantQuantity": 60
+    "descendantQuantity": 42
   },
   {
     "id": 116,
-    "parentId": 44,
-    "name": "Civil Engineering 201",
-    "childQuantity": 1,
-    "descendantQuantity": 30
+    "parentId": 32,
+    "name": "in History 102",
+    "childQuantity": 4,
+    "descendantQuantity": 120
   },
   {
     "id": 117,
-    "parentId": 45,
-    "name": "Accounting 101",
-    "childQuantity": 2,
-    "descendantQuantity": 60
+    "parentId": 33,
+    "name": "of Biology 201",
+    "childQuantity": 1,
+    "descendantQuantity": 30
   },
   {
     "id": 118,
-    "parentId": 45,
-    "name": "Accounting 201",
+    "parentId": 33,
+    "name": "of Biology 201",
     "childQuantity": 1,
-    "descendantQuantity": 30
+    "descendantQuantity": 27
   },
   {
     "id": 119,
-    "parentId": 46,
-    "name": "Accounting 101",
-    "childQuantity": 2,
-    "descendantQuantity": 60
+    "parentId": 33,
+    "name": "of Biology 498",
+    "childQuantity": 1,
+    "descendantQuantity": 15
   },
   {
     "id": 120,
-    "parentId": 46,
-    "name": "Accounting 201",
+    "parentId": 33,
+    "name": "of Biology 201",
     "childQuantity": 1,
-    "descendantQuantity": 30
+    "descendantQuantity": 25
   },
   {
     "id": 121,
-    "parentId": 47,
-    "name": "Accounting 101",
-    "childQuantity": 2,
-    "descendantQuantity": 60
+    "parentId": 33,
+    "name": "of Biology 301",
+    "childQuantity": 1,
+    "descendantQuantity": 22
   },
   {
     "id": 122,
-    "parentId": 47,
-    "name": "Accounting 201",
+    "parentId": 33,
+    "name": "of Biology 450",
     "childQuantity": 1,
-    "descendantQuantity": 30
+    "descendantQuantity": 18
   },
   {
     "id": 123,
-    "parentId": 48,
-    "name": "Finance 101",
+    "parentId": 34,
+    "name": "in Biology 202",
     "childQuantity": 2,
-    "descendantQuantity": 60
+    "descendantQuantity": 54
   },
   {
     "id": 124,
-    "parentId": 48,
-    "name": "Finance 201",
-    "childQuantity": 1,
-    "descendantQuantity": 30
+    "parentId": 34,
+    "name": "in Biology 301",
+    "childQuantity": 3,
+    "descendantQuantity": 67
   },
   {
     "id": 125,
-    "parentId": 49,
-    "name": "Finance 101",
+    "parentId": 34,
+    "name": "in Biology 450",
     "childQuantity": 2,
-    "descendantQuantity": 60
+    "descendantQuantity": 38
   },
   {
     "id": 126,
-    "parentId": 49,
-    "name": "Finance 201",
+    "parentId": 35,
+    "name": "in Electrical Engineering 498",
     "childQuantity": 1,
-    "descendantQuantity": 30
+    "descendantQuantity": 18
   },
   {
     "id": 127,
-    "parentId": 50,
-    "name": "Finance 101",
+    "parentId": 35,
+    "name": "in Electrical Engineering 498",
     "childQuantity": 2,
-    "descendantQuantity": 60
+    "descendantQuantity": 30
   },
   {
     "id": 128,
-    "parentId": 50,
-    "name": "Finance 201",
-    "childQuantity": 1,
-    "descendantQuantity": 30
+    "parentId": 35,
+    "name": "in Electrical Engineering 102",
+    "childQuantity": 4,
+    "descendantQuantity": 129
   },
   {
     "id": 129,
-    "parentId": 51,
-    "name": "Marketing 101",
+    "parentId": 35,
+    "name": "in Electrical Engineering 202",
     "childQuantity": 2,
-    "descendantQuantity": 60
+    "descendantQuantity": 55
   },
   {
     "id": 130,
-    "parentId": 51,
-    "name": "Marketing 201",
-    "childQuantity": 1,
-    "descendantQuantity": 30
+    "parentId": 36,
+    "name": "in Electrical Engineering 102",
+    "childQuantity": 3,
+    "descendantQuantity": 93
   },
   {
     "id": 131,
-    "parentId": 52,
-    "name": "Marketing 101",
-    "childQuantity": 2,
-    "descendantQuantity": 60
+    "parentId": 36,
+    "name": "in Electrical Engineering 401",
+    "childQuantity": 1,
+    "descendantQuantity": 15
   },
   {
     "id": 132,
-    "parentId": 52,
-    "name": "Marketing 201",
-    "childQuantity": 1,
-    "descendantQuantity": 30
+    "parentId": 36,
+    "name": "in Electrical Engineering 101",
+    "childQuantity": 4,
+    "descendantQuantity": 128
   },
   {
     "id": 133,
-    "parentId": 53,
-    "name": "Marketing 101",
-    "childQuantity": 2,
-    "descendantQuantity": 60
+    "parentId": 37,
+    "name": "of Computer Science 202",
+    "childQuantity": 1,
+    "descendantQuantity": 30
   },
   {
     "id": 134,
-    "parentId": 53,
-    "name": "Marketing 201",
-    "childQuantity": 1,
-    "descendantQuantity": 30
+    "parentId": 37,
+    "name": "of Computer Science 202",
+    "childQuantity": 3,
+    "descendantQuantity": 81
   },
   {
     "id": 135,
-    "parentId": 54,
-    "name": "Management 101",
+    "parentId": 37,
+    "name": "of Computer Science 101",
     "childQuantity": 2,
-    "descendantQuantity": 60
+    "descendantQuantity": 61
   },
   {
     "id": 136,
-    "parentId": 54,
-    "name": "Management 201",
-    "childQuantity": 1,
-    "descendantQuantity": 30
+    "parentId": 37,
+    "name": "of Computer Science 102",
+    "childQuantity": 5,
+    "descendantQuantity": 159
   },
   {
     "id": 137,
-    "parentId": 55,
-    "name": "Management 101",
-    "childQuantity": 2,
-    "descendantQuantity": 60
+    "parentId": 37,
+    "name": "of Computer Science 101",
+    "childQuantity": 6,
+    "descendantQuantity": 191
   },
   {
     "id": 138,
-    "parentId": 55,
-    "name": "Management 201",
-    "childQuantity": 1,
-    "descendantQuantity": 30
+    "parentId": 37,
+    "name": "of Computer Science 202",
+    "childQuantity": 4,
+    "descendantQuantity": 110
   },
   {
     "id": 139,
-    "parentId": 56,
-    "name": "Management 101",
+    "parentId": 38,
+    "name": "in Computer Science 101",
     "childQuantity": 2,
-    "descendantQuantity": 60
+    "descendantQuantity": 61
   },
   {
     "id": 140,
-    "parentId": 56,
-    "name": "Management 201",
+    "parentId": 38,
+    "name": "in Computer Science 401",
     "childQuantity": 1,
-    "descendantQuantity": 30
+    "descendantQuantity": 22
   },
   {
     "id": 141,
-    "parentId": 57,
-    "name": "Nursing 101",
-    "childQuantity": 2,
-    "descendantQuantity": 60
+    "parentId": 39,
+    "name": "of Computer Science 202",
+    "childQuantity": 4,
+    "descendantQuantity": 107
   },
   {
     "id": 142,
-    "parentId": 57,
-    "name": "Nursing 201",
+    "parentId": 39,
+    "name": "of Computer Science 301",
     "childQuantity": 1,
-    "descendantQuantity": 30
+    "descendantQuantity": 25
   },
   {
     "id": 143,
-    "parentId": 58,
-    "name": "Nursing 101",
+    "parentId": 40,
+    "name": "in Computer Science 202",
     "childQuantity": 2,
-    "descendantQuantity": 60
+    "descendantQuantity": 54
   },
   {
     "id": 144,
-    "parentId": 58,
-    "name": "Nursing 201",
-    "childQuantity": 1,
-    "descendantQuantity": 30
+    "parentId": 40,
+    "name": "in Computer Science 201",
+    "childQuantity": 3,
+    "descendantQuantity": 84
   },
   {
     "id": 145,
-    "parentId": 59,
-    "name": "Nursing 101",
-    "childQuantity": 2,
-    "descendantQuantity": 60
+    "parentId": 40,
+    "name": "in Computer Science 498",
+    "childQuantity": 1,
+    "descendantQuantity": 18
   },
   {
     "id": 146,
-    "parentId": 59,
-    "name": "Nursing 201",
+    "parentId": 40,
+    "name": "in Computer Science 202",
     "childQuantity": 1,
-    "descendantQuantity": 30
+    "descendantQuantity": 26
   },
   {
     "id": 147,
-    "parentId": 60,
-    "name": "Public Health 101",
+    "parentId": 40,
+    "name": "in Computer Science 498",
     "childQuantity": 2,
-    "descendantQuantity": 60
+    "descendantQuantity": 40
   },
   {
     "id": 148,
-    "parentId": 60,
-    "name": "Public Health 201",
-    "childQuantity": 1,
-    "descendantQuantity": 30
+    "parentId": 41,
+    "name": "in Mechanical Engineering 202",
+    "childQuantity": 4,
+    "descendantQuantity": 106
   },
   {
     "id": 149,
-    "parentId": 61,
-    "name": "Public Health 101",
-    "childQuantity": 2,
-    "descendantQuantity": 60
+    "parentId": 41,
+    "name": "in Mechanical Engineering 102",
+    "childQuantity": 4,
+    "descendantQuantity": 124
   },
   {
     "id": 150,
-    "parentId": 61,
-    "name": "Public Health 201",
-    "childQuantity": 1,
-    "descendantQuantity": 30
+    "parentId": 41,
+    "name": "in Mechanical Engineering 102",
+    "childQuantity": 4,
+    "descendantQuantity": 128
   },
   {
     "id": 151,
-    "parentId": 62,
-    "name": "Public Health 101",
+    "parentId": 41,
+    "name": "in Mechanical Engineering 450",
     "childQuantity": 2,
-    "descendantQuantity": 60
+    "descendantQuantity": 42
   },
   {
     "id": 152,
-    "parentId": 62,
-    "name": "Public Health 201",
-    "childQuantity": 1,
-    "descendantQuantity": 30
+    "parentId": 41,
+    "name": "in Mechanical Engineering 401",
+    "childQuantity": 2,
+    "descendantQuantity": 42
   },
   {
     "id": 153,
-    "parentId": 63,
-    "name": "Social Work 101",
+    "parentId": 42,
+    "name": "in Mechanical Engineering 450",
     "childQuantity": 2,
-    "descendantQuantity": 60
+    "descendantQuantity": 38
   },
   {
     "id": 154,
-    "parentId": 63,
-    "name": "Social Work 201",
+    "parentId": 42,
+    "name": "in Mechanical Engineering 498",
     "childQuantity": 1,
-    "descendantQuantity": 30
+    "descendantQuantity": 18
   },
   {
     "id": 155,
-    "parentId": 64,
-    "name": "Social Work 101",
-    "childQuantity": 2,
-    "descendantQuantity": 60
+    "parentId": 42,
+    "name": "in Mechanical Engineering 101",
+    "childQuantity": 4,
+    "descendantQuantity": 130
   },
   {
     "id": 156,
-    "parentId": 64,
-    "name": "Social Work 201",
-    "childQuantity": 1,
-    "descendantQuantity": 30
+    "parentId": 42,
+    "name": "in Mechanical Engineering 102",
+    "childQuantity": 3,
+    "descendantQuantity": 93
   },
   {
     "id": 157,
-    "parentId": 65,
-    "name": "Social Work 101",
-    "childQuantity": 2,
-    "descendantQuantity": 60
+    "parentId": 42,
+    "name": "in Mechanical Engineering 101",
+    "childQuantity": 5,
+    "descendantQuantity": 161
   },
   {
     "id": 158,
-    "parentId": 65,
-    "name": "Social Work 201",
-    "childQuantity": 1,
-    "descendantQuantity": 30
+    "parentId": 43,
+    "name": "of Information Systems 401",
+    "childQuantity": 2,
+    "descendantQuantity": 33
   },
   {
     "id": 159,
-    "parentId": 66,
-    "name": "Nutrition 101",
-    "childQuantity": 2,
-    "descendantQuantity": 60
+    "parentId": 43,
+    "name": "of Information Systems 102",
+    "childQuantity": 4,
+    "descendantQuantity": 118
   },
   {
     "id": 160,
-    "parentId": 66,
-    "name": "Nutrition 201",
+    "parentId": 43,
+    "name": "of Information Systems 202",
     "childQuantity": 1,
     "descendantQuantity": 30
   },
   {
     "id": 161,
-    "parentId": 67,
-    "name": "Nutrition 101",
+    "parentId": 43,
+    "name": "of Information Systems 202",
     "childQuantity": 2,
-    "descendantQuantity": 60
+    "descendantQuantity": 52
   },
   {
     "id": 162,
-    "parentId": 67,
-    "name": "Nutrition 201",
+    "parentId": 43,
+    "name": "of Information Systems 202",
     "childQuantity": 1,
     "descendantQuantity": 30
   },
   {
     "id": 163,
-    "parentId": 68,
-    "name": "Nutrition 101",
+    "parentId": 44,
+    "name": "of Information Systems 498",
     "childQuantity": 2,
-    "descendantQuantity": 60
+    "descendantQuantity": 40
   },
   {
     "id": 164,
-    "parentId": 68,
-    "name": "Nutrition 201",
+    "parentId": 44,
+    "name": "of Information Systems 201",
+    "childQuantity": 1,
+    "descendantQuantity": 25
+  },
+  {
+    "id": 165,
+    "parentId": 44,
+    "name": "of Information Systems 450",
+    "childQuantity": 2,
+    "descendantQuantity": 44
+  },
+  {
+    "id": 166,
+    "parentId": 44,
+    "name": "of Information Systems 201",
+    "childQuantity": 4,
+    "descendantQuantity": 105
+  },
+  {
+    "id": 167,
+    "parentId": 44,
+    "name": "of Information Systems 301",
+    "childQuantity": 2,
+    "descendantQuantity": 40
+  },
+  {
+    "id": 168,
+    "parentId": 44,
+    "name": "of Information Systems 498",
+    "childQuantity": 2,
+    "descendantQuantity": 37
+  },
+  {
+    "id": 169,
+    "parentId": 45,
+    "name": "of Information Systems 102",
+    "childQuantity": 6,
+    "descendantQuantity": 188
+  },
+  {
+    "id": 170,
+    "parentId": 45,
+    "name": "of Information Systems 498",
+    "childQuantity": 2,
+    "descendantQuantity": 33
+  },
+  {
+    "id": 171,
+    "parentId": 45,
+    "name": "of Information Systems 102",
+    "childQuantity": 2,
+    "descendantQuantity": 63
+  },
+  {
+    "id": 172,
+    "parentId": 46,
+    "name": "of Accounting 101",
+    "childQuantity": 6,
+    "descendantQuantity": 187
+  },
+  {
+    "id": 173,
+    "parentId": 46,
+    "name": "of Accounting 102",
+    "childQuantity": 5,
+    "descendantQuantity": 155
+  },
+  {
+    "id": 174,
+    "parentId": 47,
+    "name": "of Accounting 201",
     "childQuantity": 1,
     "descendantQuantity": 30
   },
   {
-    "id": 165,
-    "parentId": 69,
-    "name": "Mathematics 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
-  },
-  {
-    "id": 166,
-    "parentId": 69,
-    "name": "Mathematics 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
-  },
-  {
-    "id": 167,
-    "parentId": 70,
-    "name": "Mathematics 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
-  },
-  {
-    "id": 168,
-    "parentId": 71,
-    "name": "Mathematics 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
-  },
-  {
-    "id": 169,
-    "parentId": 71,
-    "name": "Mathematics 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
-  },
-  {
-    "id": 170,
-    "parentId": 72,
-    "name": "Mathematics 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
-  },
-  {
-    "id": 171,
-    "parentId": 73,
-    "name": "Mathematics 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
-  },
-  {
-    "id": 172,
-    "parentId": 73,
-    "name": "Mathematics 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
-  },
-  {
-    "id": 173,
-    "parentId": 74,
-    "name": "Mathematics 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
-  },
-  {
-    "id": 174,
-    "parentId": 75,
-    "name": "Biology 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
-  },
-  {
     "id": 175,
-    "parentId": 75,
-    "name": "Biology 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 47,
+    "name": "of Accounting 450",
+    "childQuantity": 1,
+    "descendantQuantity": 18
   },
   {
     "id": 176,
-    "parentId": 76,
-    "name": "Biology 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 47,
+    "name": "of Accounting 498",
+    "childQuantity": 1,
+    "descendantQuantity": 20
   },
   {
     "id": 177,
-    "parentId": 77,
-    "name": "Biology 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 48,
+    "name": "of Accounting 202",
+    "childQuantity": 1,
+    "descendantQuantity": 26
   },
   {
     "id": 178,
-    "parentId": 77,
-    "name": "Biology 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 48,
+    "name": "of Accounting 450",
+    "childQuantity": 1,
+    "descendantQuantity": 18
   },
   {
     "id": 179,
-    "parentId": 78,
-    "name": "Biology 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 48,
+    "name": "of Accounting 101",
+    "childQuantity": 6,
+    "descendantQuantity": 182
   },
   {
     "id": 180,
-    "parentId": 79,
-    "name": "Biology 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 48,
+    "name": "of Accounting 201",
+    "childQuantity": 4,
+    "descendantQuantity": 105
   },
   {
     "id": 181,
-    "parentId": 79,
-    "name": "Biology 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 48,
+    "name": "of Accounting 450",
+    "childQuantity": 2,
+    "descendantQuantity": 37
   },
   {
     "id": 182,
-    "parentId": 80,
-    "name": "Biology 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 49,
+    "name": "in Accounting 450",
+    "childQuantity": 1,
+    "descendantQuantity": 20
   },
   {
     "id": 183,
-    "parentId": 81,
-    "name": "History 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 49,
+    "name": "in Accounting 301",
+    "childQuantity": 3,
+    "descendantQuantity": 67
   },
   {
     "id": 184,
-    "parentId": 81,
-    "name": "History 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 50,
+    "name": "in Marketing 301",
+    "childQuantity": 3,
+    "descendantQuantity": 68
   },
   {
     "id": 185,
-    "parentId": 82,
-    "name": "History 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 50,
+    "name": "in Marketing 450",
+    "childQuantity": 1,
+    "descendantQuantity": 15
   },
   {
     "id": 186,
-    "parentId": 83,
-    "name": "History 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 50,
+    "name": "in Marketing 498",
+    "childQuantity": 1,
+    "descendantQuantity": 18
   },
   {
     "id": 187,
-    "parentId": 83,
-    "name": "History 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 50,
+    "name": "in Marketing 201",
+    "childQuantity": 3,
+    "descendantQuantity": 87
   },
   {
     "id": 188,
-    "parentId": 84,
-    "name": "History 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 50,
+    "name": "in Marketing 202",
+    "childQuantity": 4,
+    "descendantQuantity": 108
   },
   {
     "id": 189,
-    "parentId": 85,
-    "name": "History 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 51,
+    "name": "in Marketing 202",
+    "childQuantity": 3,
+    "descendantQuantity": 88
   },
   {
     "id": 190,
-    "parentId": 85,
-    "name": "History 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 51,
+    "name": "in Marketing 101",
+    "childQuantity": 5,
+    "descendantQuantity": 154
   },
   {
     "id": 191,
-    "parentId": 86,
-    "name": "History 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 51,
+    "name": "in Marketing 101",
+    "childQuantity": 4,
+    "descendantQuantity": 118
   },
   {
     "id": 192,
-    "parentId": 87,
-    "name": "Psychology 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 51,
+    "name": "in Marketing 401",
+    "childQuantity": 1,
+    "descendantQuantity": 15
   },
   {
     "id": 193,
-    "parentId": 87,
-    "name": "Psychology 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 52,
+    "name": "of Marketing 101",
+    "childQuantity": 4,
+    "descendantQuantity": 120
   },
   {
     "id": 194,
-    "parentId": 88,
-    "name": "Psychology 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 52,
+    "name": "of Marketing 498",
+    "childQuantity": 2,
+    "descendantQuantity": 38
   },
   {
     "id": 195,
-    "parentId": 89,
-    "name": "Psychology 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 53,
+    "name": "in Marketing 201",
+    "childQuantity": 4,
+    "descendantQuantity": 108
   },
   {
     "id": 196,
-    "parentId": 89,
-    "name": "Psychology 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 53,
+    "name": "in Marketing 101",
+    "childQuantity": 5,
+    "descendantQuantity": 152
   },
   {
     "id": 197,
-    "parentId": 90,
-    "name": "Psychology 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 53,
+    "name": "in Marketing 102",
+    "childQuantity": 4,
+    "descendantQuantity": 127
   },
   {
     "id": 198,
-    "parentId": 91,
-    "name": "Psychology 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 53,
+    "name": "in Marketing 201",
+    "childQuantity": 4,
+    "descendantQuantity": 108
   },
   {
     "id": 199,
-    "parentId": 91,
-    "name": "Psychology 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 53,
+    "name": "in Marketing 102",
+    "childQuantity": 4,
+    "descendantQuantity": 119
   },
   {
     "id": 200,
-    "parentId": 92,
-    "name": "Psychology 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 53,
+    "name": "in Marketing 102",
+    "childQuantity": 6,
+    "descendantQuantity": 185
   },
   {
     "id": 201,
-    "parentId": 93,
-    "name": "Computer Science 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 54,
+    "name": "of Finance 450",
+    "childQuantity": 1,
+    "descendantQuantity": 20
   },
   {
     "id": 202,
-    "parentId": 93,
-    "name": "Computer Science 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 54,
+    "name": "of Finance 102",
+    "childQuantity": 6,
+    "descendantQuantity": 184
   },
   {
     "id": 203,
-    "parentId": 94,
-    "name": "Computer Science 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 54,
+    "name": "of Finance 202",
+    "childQuantity": 2,
+    "descendantQuantity": 55
   },
   {
     "id": 204,
-    "parentId": 95,
-    "name": "Computer Science 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 55,
+    "name": "in Finance 101",
+    "childQuantity": 5,
+    "descendantQuantity": 152
   },
   {
     "id": 205,
-    "parentId": 95,
-    "name": "Computer Science 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 55,
+    "name": "in Finance 102",
+    "childQuantity": 3,
+    "descendantQuantity": 90
   },
   {
     "id": 206,
-    "parentId": 96,
-    "name": "Computer Science 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 55,
+    "name": "in Finance 450",
+    "childQuantity": 2,
+    "descendantQuantity": 33
   },
   {
     "id": 207,
-    "parentId": 97,
-    "name": "Computer Science 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 55,
+    "name": "in Finance 401",
+    "childQuantity": 1,
+    "descendantQuantity": 22
   },
   {
     "id": 208,
-    "parentId": 97,
-    "name": "Computer Science 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 55,
+    "name": "in Finance 301",
+    "childQuantity": 1,
+    "descendantQuantity": 22
   },
   {
     "id": 209,
-    "parentId": 98,
-    "name": "Computer Science 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 55,
+    "name": "in Finance 202",
+    "childQuantity": 4,
+    "descendantQuantity": 112
   },
   {
     "id": 210,
-    "parentId": 99,
-    "name": "Electrical Engineering 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 56,
+    "name": "of Finance 202",
+    "childQuantity": 4,
+    "descendantQuantity": 112
   },
   {
     "id": 211,
-    "parentId": 99,
-    "name": "Electrical Engineering 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 56,
+    "name": "of Finance 301",
+    "childQuantity": 1,
+    "descendantQuantity": 25
   },
   {
     "id": 212,
-    "parentId": 100,
-    "name": "Electrical Engineering 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 56,
+    "name": "of Finance 450",
+    "childQuantity": 1,
+    "descendantQuantity": 18
   },
   {
     "id": 213,
-    "parentId": 101,
-    "name": "Electrical Engineering 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 56,
+    "name": "of Finance 201",
+    "childQuantity": 1,
+    "descendantQuantity": 27
   },
   {
     "id": 214,
-    "parentId": 101,
-    "name": "Electrical Engineering 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 57,
+    "name": "of Finance 498",
+    "childQuantity": 2,
+    "descendantQuantity": 40
   },
   {
     "id": 215,
-    "parentId": 102,
-    "name": "Electrical Engineering 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 57,
+    "name": "of Finance 401",
+    "childQuantity": 1,
+    "descendantQuantity": 20
   },
   {
     "id": 216,
-    "parentId": 103,
-    "name": "Electrical Engineering 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 57,
+    "name": "of Finance 102",
+    "childQuantity": 4,
+    "descendantQuantity": 130
   },
   {
     "id": 217,
-    "parentId": 103,
-    "name": "Electrical Engineering 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 57,
+    "name": "of Finance 101",
+    "childQuantity": 3,
+    "descendantQuantity": 94
   },
   {
     "id": 218,
-    "parentId": 104,
-    "name": "Electrical Engineering 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 58,
+    "name": "of Management 102",
+    "childQuantity": 4,
+    "descendantQuantity": 125
   },
   {
     "id": 219,
-    "parentId": 105,
-    "name": "Mechanical Engineering 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 58,
+    "name": "of Management 102",
+    "childQuantity": 5,
+    "descendantQuantity": 155
   },
   {
     "id": 220,
-    "parentId": 105,
-    "name": "Mechanical Engineering 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 58,
+    "name": "of Management 202",
+    "childQuantity": 4,
+    "descendantQuantity": 106
   },
   {
     "id": 221,
-    "parentId": 106,
-    "name": "Mechanical Engineering 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 58,
+    "name": "of Management 301",
+    "childQuantity": 3,
+    "descendantQuantity": 75
   },
   {
     "id": 222,
-    "parentId": 107,
-    "name": "Mechanical Engineering 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 58,
+    "name": "of Management 201",
+    "childQuantity": 2,
+    "descendantQuantity": 53
   },
   {
     "id": 223,
-    "parentId": 107,
-    "name": "Mechanical Engineering 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 59,
+    "name": "in Management 102",
+    "childQuantity": 3,
+    "descendantQuantity": 94
   },
   {
     "id": 224,
-    "parentId": 108,
-    "name": "Mechanical Engineering 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 59,
+    "name": "in Management 202",
+    "childQuantity": 1,
+    "descendantQuantity": 28
   },
   {
     "id": 225,
-    "parentId": 109,
-    "name": "Mechanical Engineering 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 59,
+    "name": "in Management 401",
+    "childQuantity": 1,
+    "descendantQuantity": 22
   },
   {
     "id": 226,
-    "parentId": 109,
-    "name": "Mechanical Engineering 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 59,
+    "name": "in Management 301",
+    "childQuantity": 1,
+    "descendantQuantity": 22
   },
   {
     "id": 227,
-    "parentId": 110,
-    "name": "Mechanical Engineering 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 60,
+    "name": "in Management 498",
+    "childQuantity": 2,
+    "descendantQuantity": 33
   },
   {
     "id": 228,
-    "parentId": 111,
-    "name": "Civil Engineering 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 60,
+    "name": "in Management 301",
+    "childQuantity": 2,
+    "descendantQuantity": 48
   },
   {
     "id": 229,
-    "parentId": 111,
-    "name": "Civil Engineering 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 60,
+    "name": "in Management 101",
+    "childQuantity": 6,
+    "descendantQuantity": 194
   },
   {
     "id": 230,
-    "parentId": 112,
-    "name": "Civil Engineering 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 61,
+    "name": "of Nursing 301",
+    "childQuantity": 3,
+    "descendantQuantity": 74
   },
   {
     "id": 231,
-    "parentId": 113,
-    "name": "Civil Engineering 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 61,
+    "name": "of Nursing 102",
+    "childQuantity": 6,
+    "descendantQuantity": 187
   },
   {
     "id": 232,
-    "parentId": 113,
-    "name": "Civil Engineering 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 61,
+    "name": "of Nursing 201",
+    "childQuantity": 3,
+    "descendantQuantity": 79
   },
   {
     "id": 233,
-    "parentId": 114,
-    "name": "Civil Engineering 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 61,
+    "name": "of Nursing 301",
+    "childQuantity": 1,
+    "descendantQuantity": 20
   },
   {
     "id": 234,
-    "parentId": 115,
-    "name": "Civil Engineering 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 61,
+    "name": "of Nursing 102",
+    "childQuantity": 5,
+    "descendantQuantity": 150
   },
   {
     "id": 235,
-    "parentId": 115,
-    "name": "Civil Engineering 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 61,
+    "name": "of Nursing 102",
+    "childQuantity": 4,
+    "descendantQuantity": 118
   },
   {
     "id": 236,
-    "parentId": 116,
-    "name": "Civil Engineering 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 62,
+    "name": "in Nursing 201",
+    "childQuantity": 4,
+    "descendantQuantity": 110
   },
   {
     "id": 237,
-    "parentId": 117,
-    "name": "Accounting 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 62,
+    "name": "in Nursing 301",
+    "childQuantity": 3,
+    "descendantQuantity": 66
   },
   {
     "id": 238,
-    "parentId": 117,
-    "name": "Accounting 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 62,
+    "name": "in Nursing 301",
+    "childQuantity": 1,
+    "descendantQuantity": 25
   },
   {
     "id": 239,
-    "parentId": 118,
-    "name": "Accounting 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 62,
+    "name": "in Nursing 202",
+    "childQuantity": 2,
+    "descendantQuantity": 58
   },
   {
     "id": 240,
-    "parentId": 119,
-    "name": "Accounting 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 62,
+    "name": "in Nursing 401",
+    "childQuantity": 1,
+    "descendantQuantity": 18
   },
   {
     "id": 241,
-    "parentId": 119,
-    "name": "Accounting 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 62,
+    "name": "in Nursing 202",
+    "childQuantity": 4,
+    "descendantQuantity": 107
   },
   {
     "id": 242,
-    "parentId": 120,
-    "name": "Accounting 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 63,
+    "name": "of Nursing 498",
+    "childQuantity": 2,
+    "descendantQuantity": 38
   },
   {
     "id": 243,
-    "parentId": 121,
-    "name": "Accounting 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 63,
+    "name": "of Nursing 301",
+    "childQuantity": 1,
+    "descendantQuantity": 25
   },
   {
     "id": 244,
-    "parentId": 121,
-    "name": "Accounting 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 63,
+    "name": "of Nursing 101",
+    "childQuantity": 4,
+    "descendantQuantity": 128
   },
   {
     "id": 245,
-    "parentId": 122,
-    "name": "Accounting 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 63,
+    "name": "of Nursing 102",
+    "childQuantity": 4,
+    "descendantQuantity": 121
   },
   {
     "id": 246,
-    "parentId": 123,
-    "name": "Finance 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 64,
+    "name": "of Nursing 301",
+    "childQuantity": 2,
+    "descendantQuantity": 42
   },
   {
     "id": 247,
-    "parentId": 123,
-    "name": "Finance 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 64,
+    "name": "of Nursing 101",
+    "childQuantity": 5,
+    "descendantQuantity": 159
   },
   {
     "id": 248,
-    "parentId": 124,
-    "name": "Finance 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 64,
+    "name": "of Nursing 101",
+    "childQuantity": 4,
+    "descendantQuantity": 124
   },
   {
     "id": 249,
-    "parentId": 125,
-    "name": "Finance 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 64,
+    "name": "of Nursing 401",
+    "childQuantity": 1,
+    "descendantQuantity": 15
   },
   {
     "id": 250,
-    "parentId": 125,
-    "name": "Finance 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 64,
+    "name": "of Nursing 201",
+    "childQuantity": 4,
+    "descendantQuantity": 110
   },
   {
     "id": 251,
-    "parentId": 126,
-    "name": "Finance 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 65,
+    "name": "in Public Health 201",
+    "childQuantity": 2,
+    "descendantQuantity": 56
   },
   {
     "id": 252,
-    "parentId": 127,
-    "name": "Finance 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 65,
+    "name": "in Public Health 498",
+    "childQuantity": 2,
+    "descendantQuantity": 33
   },
   {
     "id": 253,
-    "parentId": 127,
-    "name": "Finance 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 65,
+    "name": "in Public Health 450",
+    "childQuantity": 1,
+    "descendantQuantity": 20
   },
   {
     "id": 254,
-    "parentId": 128,
-    "name": "Finance 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 65,
+    "name": "in Public Health 101",
+    "childQuantity": 5,
+    "descendantQuantity": 154
   },
   {
     "id": 255,
-    "parentId": 129,
-    "name": "Marketing 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 66,
+    "name": "in Public Health 102",
+    "childQuantity": 2,
+    "descendantQuantity": 60
   },
   {
     "id": 256,
-    "parentId": 129,
-    "name": "Marketing 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 66,
+    "name": "in Public Health 201",
+    "childQuantity": 4,
+    "descendantQuantity": 108
   },
   {
     "id": 257,
-    "parentId": 130,
-    "name": "Marketing 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 67,
+    "name": "of Kinesiology 101",
+    "childQuantity": 4,
+    "descendantQuantity": 123
   },
   {
     "id": 258,
-    "parentId": 131,
-    "name": "Marketing 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 67,
+    "name": "of Kinesiology 401",
+    "childQuantity": 2,
+    "descendantQuantity": 42
   },
   {
     "id": 259,
-    "parentId": 131,
-    "name": "Marketing 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 67,
+    "name": "of Kinesiology 201",
+    "childQuantity": 3,
+    "descendantQuantity": 78
   },
   {
     "id": 260,
-    "parentId": 132,
-    "name": "Marketing 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 67,
+    "name": "of Kinesiology 450",
+    "childQuantity": 1,
+    "descendantQuantity": 18
   },
   {
     "id": 261,
-    "parentId": 133,
-    "name": "Marketing 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 67,
+    "name": "of Kinesiology 201",
+    "childQuantity": 4,
+    "descendantQuantity": 110
   },
   {
     "id": 262,
-    "parentId": 133,
-    "name": "Marketing 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 67,
+    "name": "of Kinesiology 101",
+    "childQuantity": 2,
+    "descendantQuantity": 62
   },
   {
     "id": 263,
-    "parentId": 134,
-    "name": "Marketing 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 68,
+    "name": "of Kinesiology 401",
+    "childQuantity": 1,
+    "descendantQuantity": 22
   },
   {
     "id": 264,
-    "parentId": 135,
-    "name": "Management 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 68,
+    "name": "of Kinesiology 101",
+    "childQuantity": 4,
+    "descendantQuantity": 135
   },
   {
     "id": 265,
-    "parentId": 135,
-    "name": "Management 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 68,
+    "name": "of Kinesiology 401",
+    "childQuantity": 2,
+    "descendantQuantity": 35
   },
   {
     "id": 266,
-    "parentId": 136,
-    "name": "Management 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 68,
+    "name": "of Kinesiology 202",
+    "childQuantity": 2,
+    "descendantQuantity": 53
   },
   {
     "id": 267,
-    "parentId": 137,
-    "name": "Management 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 69,
+    "name": "in Kinesiology 102",
+    "childQuantity": 6,
+    "descendantQuantity": 186
   },
   {
     "id": 268,
-    "parentId": 137,
-    "name": "Management 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 69,
+    "name": "in Kinesiology 401",
+    "childQuantity": 2,
+    "descendantQuantity": 42
   },
   {
     "id": 269,
-    "parentId": 138,
-    "name": "Management 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 69,
+    "name": "in Kinesiology 450",
+    "childQuantity": 1,
+    "descendantQuantity": 18
   },
   {
     "id": 270,
-    "parentId": 139,
-    "name": "Management 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 70,
+    "name": "of Kinesiology 201",
+    "childQuantity": 1,
+    "descendantQuantity": 25
   },
   {
     "id": 271,
-    "parentId": 139,
-    "name": "Management 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 70,
+    "name": "of Kinesiology 202",
+    "childQuantity": 3,
+    "descendantQuantity": 78
   },
   {
     "id": 272,
-    "parentId": 140,
-    "name": "Management 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 70,
+    "name": "of Kinesiology 201",
+    "childQuantity": 2,
+    "descendantQuantity": 56
   },
   {
     "id": 273,
-    "parentId": 141,
-    "name": "Nursing 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 70,
+    "name": "of Kinesiology 201",
+    "childQuantity": 4,
+    "descendantQuantity": 113
   },
   {
     "id": 274,
-    "parentId": 141,
-    "name": "Nursing 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 70,
+    "name": "of Kinesiology 450",
+    "childQuantity": 1,
+    "descendantQuantity": 22
   },
   {
     "id": 275,
-    "parentId": 142,
-    "name": "Nursing 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 70,
+    "name": "of Kinesiology 101",
+    "childQuantity": 2,
+    "descendantQuantity": 63
   },
   {
     "id": 276,
-    "parentId": 143,
-    "name": "Nursing 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 71,
+    "name": "in Special Education 401",
+    "childQuantity": 2,
+    "descendantQuantity": 35
   },
   {
     "id": 277,
-    "parentId": 143,
-    "name": "Nursing 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 71,
+    "name": "in Special Education 450",
+    "childQuantity": 2,
+    "descendantQuantity": 40
   },
   {
     "id": 278,
-    "parentId": 144,
-    "name": "Nursing 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 71,
+    "name": "in Special Education 202",
+    "childQuantity": 4,
+    "descendantQuantity": 105
   },
   {
     "id": 279,
-    "parentId": 145,
-    "name": "Nursing 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 72,
+    "name": "in Special Education 201",
+    "childQuantity": 3,
+    "descendantQuantity": 80
   },
   {
     "id": 280,
-    "parentId": 145,
-    "name": "Nursing 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 72,
+    "name": "in Special Education 102",
+    "childQuantity": 3,
+    "descendantQuantity": 87
   },
   {
     "id": 281,
-    "parentId": 146,
-    "name": "Nursing 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 72,
+    "name": "in Special Education 450",
+    "childQuantity": 1,
+    "descendantQuantity": 15
   },
   {
     "id": 282,
-    "parentId": 147,
-    "name": "Public Health 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 72,
+    "name": "in Special Education 101",
+    "childQuantity": 2,
+    "descendantQuantity": 59
   },
   {
     "id": 283,
-    "parentId": 147,
-    "name": "Public Health 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 73,
+    "name": "of Special Education 202",
+    "childQuantity": 2,
+    "descendantQuantity": 56
   },
   {
     "id": 284,
-    "parentId": 148,
-    "name": "Public Health 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 73,
+    "name": "of Special Education 202",
+    "childQuantity": 1,
+    "descendantQuantity": 30
   },
   {
     "id": 285,
-    "parentId": 149,
-    "name": "Public Health 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 73,
+    "name": "of Special Education 498",
+    "childQuantity": 1,
+    "descendantQuantity": 18
   },
   {
     "id": 286,
-    "parentId": 149,
-    "name": "Public Health 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 73,
+    "name": "of Special Education 401",
+    "childQuantity": 1,
+    "descendantQuantity": 20
   },
   {
     "id": 287,
-    "parentId": 150,
-    "name": "Public Health 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 73,
+    "name": "of Special Education 301",
+    "childQuantity": 1,
+    "descendantQuantity": 20
   },
   {
     "id": 288,
-    "parentId": 151,
-    "name": "Public Health 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 74,
+    "name": "in Special Education 202",
+    "childQuantity": 3,
+    "descendantQuantity": 82
   },
   {
     "id": 289,
-    "parentId": 151,
-    "name": "Public Health 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 74,
+    "name": "in Special Education 101",
+    "childQuantity": 4,
+    "descendantQuantity": 120
   },
   {
     "id": 290,
-    "parentId": 152,
-    "name": "Public Health 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 74,
+    "name": "in Special Education 202",
+    "childQuantity": 2,
+    "descendantQuantity": 52
   },
   {
     "id": 291,
-    "parentId": 153,
-    "name": "Social Work 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 75,
+    "name": "of Special Education 401",
+    "childQuantity": 1,
+    "descendantQuantity": 20
   },
   {
     "id": 292,
-    "parentId": 153,
-    "name": "Social Work 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 75,
+    "name": "of Special Education 301",
+    "childQuantity": 1,
+    "descendantQuantity": 22
   },
   {
     "id": 293,
-    "parentId": 154,
-    "name": "Social Work 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 75,
+    "name": "of Special Education 102",
+    "childQuantity": 4,
+    "descendantQuantity": 123
   },
   {
     "id": 294,
-    "parentId": 155,
-    "name": "Social Work 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 75,
+    "name": "of Special Education 301",
+    "childQuantity": 3,
+    "descendantQuantity": 65
   },
   {
     "id": 295,
-    "parentId": 155,
-    "name": "Social Work 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 75,
+    "name": "of Special Education 401",
+    "childQuantity": 2,
+    "descendantQuantity": 35
   },
   {
     "id": 296,
-    "parentId": 156,
-    "name": "Social Work 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 76,
+    "name": "in Educational Leadership 450",
+    "childQuantity": 2,
+    "descendantQuantity": 33
   },
   {
     "id": 297,
-    "parentId": 157,
-    "name": "Social Work 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 76,
+    "name": "in Educational Leadership 401",
+    "childQuantity": 2,
+    "descendantQuantity": 37
   },
   {
     "id": 298,
-    "parentId": 157,
-    "name": "Social Work 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 76,
+    "name": "in Educational Leadership 101",
+    "childQuantity": 2,
+    "descendantQuantity": 62
   },
   {
     "id": 299,
-    "parentId": 158,
-    "name": "Social Work 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 76,
+    "name": "in Educational Leadership 102",
+    "childQuantity": 5,
+    "descendantQuantity": 160
   },
   {
     "id": 300,
-    "parentId": 159,
-    "name": "Nutrition 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 76,
+    "name": "in Educational Leadership 301",
+    "childQuantity": 1,
+    "descendantQuantity": 20
   },
   {
     "id": 301,
-    "parentId": 159,
-    "name": "Nutrition 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 76,
+    "name": "in Educational Leadership 201",
+    "childQuantity": 3,
+    "descendantQuantity": 81
   },
   {
     "id": 302,
-    "parentId": 160,
-    "name": "Nutrition 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 77,
+    "name": "in Educational Leadership 301",
+    "childQuantity": 1,
+    "descendantQuantity": 24
   },
   {
     "id": 303,
-    "parentId": 161,
-    "name": "Nutrition 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 77,
+    "name": "in Educational Leadership 101",
+    "childQuantity": 6,
+    "descendantQuantity": 195
   },
   {
     "id": 304,
-    "parentId": 161,
-    "name": "Nutrition 101 - Section 002",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 77,
+    "name": "in Educational Leadership 102",
+    "childQuantity": 6,
+    "descendantQuantity": 188
   },
   {
     "id": 305,
-    "parentId": 162,
-    "name": "Nutrition 201 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 77,
+    "name": "in Educational Leadership 450",
+    "childQuantity": 1,
+    "descendantQuantity": 15
   },
   {
     "id": 306,
-    "parentId": 163,
-    "name": "Nutrition 101 - Section 001",
-    "childQuantity": 30,
-    "descendantQuantity": 0
+    "parentId": 77,
+    "name": "in Educational Leadership 401",
+    "childQuantity": 1,
+    "descendantQuantity": 22
   },
   {
     "id": 307,
-    "parentId": 163,
-    "name": "Nutrition 101 - Section 002",
+    "parentId": 77,
+    "name": "in Educational Leadership 401",
+    "childQuantity": 2,
+    "descendantQuantity": 40
+  },
+  {
+    "id": 308,
+    "parentId": 78,
+    "name": "in Educational Leadership 102",
+    "childQuantity": 4,
+    "descendantQuantity": 128
+  },
+  {
+    "id": 309,
+    "parentId": 78,
+    "name": "in Educational Leadership 450",
+    "childQuantity": 1,
+    "descendantQuantity": 20
+  },
+  {
+    "id": 310,
+    "parentId": 78,
+    "name": "in Educational Leadership 202",
+    "childQuantity": 4,
+    "descendantQuantity": 107
+  },
+  {
+    "id": 311,
+    "parentId": 78,
+    "name": "in Educational Leadership 301",
+    "childQuantity": 3,
+    "descendantQuantity": 65
+  },
+  {
+    "id": 312,
+    "parentId": 78,
+    "name": "in Educational Leadership 101",
+    "childQuantity": 2,
+    "descendantQuantity": 59
+  },
+  {
+    "id": 313,
+    "parentId": 79,
+    "name": "of Counselor Education 101",
+    "childQuantity": 2,
+    "descendantQuantity": 70
+  },
+  {
+    "id": 314,
+    "parentId": 79,
+    "name": "of Counselor Education 202",
+    "childQuantity": 3,
+    "descendantQuantity": 81
+  },
+  {
+    "id": 315,
+    "parentId": 79,
+    "name": "of Counselor Education 401",
+    "childQuantity": 2,
+    "descendantQuantity": 37
+  },
+  {
+    "id": 316,
+    "parentId": 79,
+    "name": "of Counselor Education 450",
+    "childQuantity": 2,
+    "descendantQuantity": 37
+  },
+  {
+    "id": 317,
+    "parentId": 79,
+    "name": "of Counselor Education 102",
+    "childQuantity": 4,
+    "descendantQuantity": 120
+  },
+  {
+    "id": 318,
+    "parentId": 80,
+    "name": "of Counselor Education 401",
+    "childQuantity": 1,
+    "descendantQuantity": 18
+  },
+  {
+    "id": 319,
+    "parentId": 80,
+    "name": "of Counselor Education 102",
+    "childQuantity": 5,
+    "descendantQuantity": 149
+  },
+  {
+    "id": 320,
+    "parentId": 80,
+    "name": "of Counselor Education 301",
+    "childQuantity": 1,
+    "descendantQuantity": 24
+  },
+  {
+    "id": 321,
+    "parentId": 80,
+    "name": "of Counselor Education 301",
+    "childQuantity": 3,
+    "descendantQuantity": 67
+  },
+  {
+    "id": 322,
+    "parentId": 81,
+    "name": "in Counselor Education 401",
+    "childQuantity": 2,
+    "descendantQuantity": 33
+  },
+  {
+    "id": 323,
+    "parentId": 81,
+    "name": "in Counselor Education 450",
+    "childQuantity": 2,
+    "descendantQuantity": 40
+  },
+  {
+    "id": 324,
+    "parentId": 81,
+    "name": "in Counselor Education 301",
+    "childQuantity": 2,
+    "descendantQuantity": 42
+  },
+  {
+    "id": 325,
+    "parentId": 81,
+    "name": "in Counselor Education 201",
+    "childQuantity": 2,
+    "descendantQuantity": 58
+  },
+  {
+    "id": 326,
+    "parentId": 81,
+    "name": "in Counselor Education 202",
+    "childQuantity": 1,
+    "descendantQuantity": 26
+  },
+  {
+    "id": 327,
+    "parentId": 82,
+    "name": "of Counselor Education 450",
+    "childQuantity": 1,
+    "descendantQuantity": 15
+  },
+  {
+    "id": 328,
+    "parentId": 82,
+    "name": "of Counselor Education 201",
+    "childQuantity": 2,
+    "descendantQuantity": 56
+  },
+  {
+    "id": 329,
+    "parentId": 82,
+    "name": "of Counselor Education 301",
+    "childQuantity": 2,
+    "descendantQuantity": 46
+  },
+  {
+    "id": 330,
+    "parentId": 82,
+    "name": "of Counselor Education 450",
+    "childQuantity": 2,
+    "descendantQuantity": 40
+  },
+  {
+    "id": 331,
+    "parentId": 82,
+    "name": "of Counselor Education 101",
+    "childQuantity": 6,
+    "descendantQuantity": 178
+  },
+  {
+    "id": 332,
+    "parentId": 83,
+    "name": "of Dance 301",
+    "childQuantity": 1,
+    "descendantQuantity": 20
+  },
+  {
+    "id": 333,
+    "parentId": 83,
+    "name": "of Dance 202",
+    "childQuantity": 3,
+    "descendantQuantity": 84
+  },
+  {
+    "id": 334,
+    "parentId": 83,
+    "name": "of Dance 450",
+    "childQuantity": 2,
+    "descendantQuantity": 42
+  },
+  {
+    "id": 335,
+    "parentId": 83,
+    "name": "of Dance 401",
+    "childQuantity": 1,
+    "descendantQuantity": 15
+  },
+  {
+    "id": 336,
+    "parentId": 84,
+    "name": "of Dance 498",
+    "childQuantity": 2,
+    "descendantQuantity": 37
+  },
+  {
+    "id": 337,
+    "parentId": 84,
+    "name": "of Dance 498",
+    "childQuantity": 2,
+    "descendantQuantity": 42
+  },
+  {
+    "id": 338,
+    "parentId": 84,
+    "name": "of Dance 202",
+    "childQuantity": 1,
+    "descendantQuantity": 26
+  },
+  {
+    "id": 339,
+    "parentId": 84,
+    "name": "of Dance 498",
+    "childQuantity": 2,
+    "descendantQuantity": 30
+  },
+  {
+    "id": 340,
+    "parentId": 84,
+    "name": "of Dance 201",
+    "childQuantity": 2,
+    "descendantQuantity": 53
+  },
+  {
+    "id": 341,
+    "parentId": 85,
+    "name": "in Visual Arts 301",
+    "childQuantity": 1,
+    "descendantQuantity": 24
+  },
+  {
+    "id": 342,
+    "parentId": 85,
+    "name": "in Visual Arts 401",
+    "childQuantity": 2,
+    "descendantQuantity": 35
+  },
+  {
+    "id": 343,
+    "parentId": 86,
+    "name": "of Visual Arts 202",
+    "childQuantity": 1,
+    "descendantQuantity": 28
+  },
+  {
+    "id": 344,
+    "parentId": 86,
+    "name": "of Visual Arts 301",
+    "childQuantity": 3,
+    "descendantQuantity": 69
+  },
+  {
+    "id": 345,
+    "parentId": 87,
+    "name": "in Visual Arts 202",
+    "childQuantity": 4,
+    "descendantQuantity": 116
+  },
+  {
+    "id": 346,
+    "parentId": 87,
+    "name": "in Visual Arts 201",
+    "childQuantity": 3,
+    "descendantQuantity": 78
+  },
+  {
+    "id": 347,
+    "parentId": 87,
+    "name": "in Visual Arts 101",
+    "childQuantity": 5,
+    "descendantQuantity": 149
+  },
+  {
+    "id": 348,
+    "parentId": 88,
+    "name": "in Theatre 202",
+    "childQuantity": 4,
+    "descendantQuantity": 113
+  },
+  {
+    "id": 349,
+    "parentId": 88,
+    "name": "in Theatre 498",
+    "childQuantity": 1,
+    "descendantQuantity": 22
+  },
+  {
+    "id": 350,
+    "parentId": 89,
+    "name": "in Theatre 102",
+    "childQuantity": 2,
+    "descendantQuantity": 59
+  },
+  {
+    "id": 351,
+    "parentId": 89,
+    "name": "in Theatre 498",
+    "childQuantity": 2,
+    "descendantQuantity": 35
+  },
+  {
+    "id": 352,
+    "parentId": 89,
+    "name": "in Theatre 450",
+    "childQuantity": 2,
+    "descendantQuantity": 33
+  },
+  {
+    "id": 353,
+    "parentId": 89,
+    "name": "in Theatre 202",
+    "childQuantity": 4,
+    "descendantQuantity": 113
+  },
+  {
+    "id": 354,
+    "parentId": 89,
+    "name": "in Theatre 450",
+    "childQuantity": 2,
+    "descendantQuantity": 40
+  },
+  {
+    "id": 355,
+    "parentId": 89,
+    "name": "in Theatre 498",
+    "childQuantity": 1,
+    "descendantQuantity": 20
+  },
+  {
+    "id": 356,
+    "parentId": 90,
+    "name": "of Theatre 202",
+    "childQuantity": 2,
+    "descendantQuantity": 55
+  },
+  {
+    "id": 357,
+    "parentId": 90,
+    "name": "of Theatre 201",
+    "childQuantity": 1,
+    "descendantQuantity": 30
+  },
+  {
+    "id": 358,
+    "parentId": 90,
+    "name": "of Theatre 101",
+    "childQuantity": 6,
+    "descendantQuantity": 188
+  },
+  {
+    "id": 359,
+    "parentId": 90,
+    "name": "of Theatre 102",
+    "childQuantity": 3,
+    "descendantQuantity": 87
+  },
+  {
+    "id": 360,
+    "parentId": 90,
+    "name": "of Theatre 450",
+    "childQuantity": 1,
+    "descendantQuantity": 18
+  },
+  {
+    "id": 361,
+    "parentId": 91,
+    "name": "of Theatre 201",
+    "childQuantity": 2,
+    "descendantQuantity": 51
+  },
+  {
+    "id": 362,
+    "parentId": 91,
+    "name": "of Theatre 498",
+    "childQuantity": 2,
+    "descendantQuantity": 44
+  },
+  {
+    "id": 363,
+    "parentId": 91,
+    "name": "of Theatre 101",
+    "childQuantity": 6,
+    "descendantQuantity": 197
+  },
+  {
+    "id": 364,
+    "parentId": 92,
+    "name": "in Theatre 202",
+    "childQuantity": 2,
+    "descendantQuantity": 53
+  },
+  {
+    "id": 365,
+    "parentId": 92,
+    "name": "in Theatre 102",
+    "childQuantity": 5,
+    "descendantQuantity": 158
+  },
+  {
+    "id": 366,
+    "parentId": 92,
+    "name": "in Theatre 498",
+    "childQuantity": 1,
+    "descendantQuantity": 20
+  },
+  {
+    "id": 367,
+    "parentId": 92,
+    "name": "in Theatre 201",
+    "childQuantity": 1,
+    "descendantQuantity": 27
+  },
+  {
+    "id": 368,
+    "parentId": 92,
+    "name": "in Theatre 498",
+    "childQuantity": 2,
+    "descendantQuantity": 37
+  },
+  {
+    "id": 369,
+    "parentId": 92,
+    "name": "in Theatre 401",
+    "childQuantity": 1,
+    "descendantQuantity": 20
+  },
+  {
+    "id": 370,
+    "parentId": 93,
+    "name": "of Mathematics 102 - Section 001",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 371,
+    "parentId": 93,
+    "name": "of Mathematics 102 - Section 002",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 372,
+    "parentId": 93,
+    "name": "of Mathematics 102 - Section 003",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 373,
+    "parentId": 93,
+    "name": "of Mathematics 102 - Section 004",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 374,
+    "parentId": 93,
+    "name": "of Mathematics 102 - Section 005",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 375,
+    "parentId": 94,
+    "name": "of Mathematics 301 - Section 001",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 376,
+    "parentId": 94,
+    "name": "of Mathematics 301 - Section 002",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 377,
+    "parentId": 95,
+    "name": "of Mathematics 450 - Section 001",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 378,
+    "parentId": 95,
+    "name": "of Mathematics 450 - Section 002",
+    "childQuantity": 18,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 379,
+    "parentId": 96,
+    "name": "of Mathematics 201 - Section 001",
     "childQuantity": 30,
     "descendantQuantity": 0
   },
   {
-    "id": 308,
-    "parentId": 164,
-    "name": "Nutrition 201 - Section 001",
+    "id": 380,
+    "parentId": 96,
+    "name": "of Mathematics 201 - Section 002",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 381,
+    "parentId": 96,
+    "name": "of Mathematics 201 - Section 003",
+    "childQuantity": 26,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 382,
+    "parentId": 97,
+    "name": "in Mathematics 101 - Section 001",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 383,
+    "parentId": 97,
+    "name": "in Mathematics 101 - Section 002",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 384,
+    "parentId": 97,
+    "name": "in Mathematics 101 - Section 003",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 385,
+    "parentId": 97,
+    "name": "in Mathematics 101 - Section 004",
     "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 386,
+    "parentId": 98,
+    "name": "in Mathematics 301 - Section 001",
+    "childQuantity": 24,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 387,
+    "parentId": 99,
+    "name": "in Mathematics 201 - Section 001",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 388,
+    "parentId": 99,
+    "name": "in Mathematics 201 - Section 002",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 389,
+    "parentId": 99,
+    "name": "in Mathematics 201 - Section 003",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 390,
+    "parentId": 100,
+    "name": "in Mathematics 102 - Section 001",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 391,
+    "parentId": 100,
+    "name": "in Mathematics 102 - Section 002",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 392,
+    "parentId": 100,
+    "name": "in Mathematics 102 - Section 003",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 393,
+    "parentId": 101,
+    "name": "in Mathematics 301 - Section 001",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 394,
+    "parentId": 101,
+    "name": "in Mathematics 301 - Section 002",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 395,
+    "parentId": 101,
+    "name": "in Mathematics 301 - Section 003",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 396,
+    "parentId": 102,
+    "name": "in History 202 - Section 001",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 397,
+    "parentId": 102,
+    "name": "in History 202 - Section 002",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 398,
+    "parentId": 102,
+    "name": "in History 202 - Section 003",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 399,
+    "parentId": 102,
+    "name": "in History 202 - Section 004",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 400,
+    "parentId": 103,
+    "name": "in History 201 - Section 001",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 401,
+    "parentId": 103,
+    "name": "in History 201 - Section 002",
+    "childQuantity": 26,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 402,
+    "parentId": 103,
+    "name": "in History 201 - Section 003",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 403,
+    "parentId": 103,
+    "name": "in History 201 - Section 004",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 404,
+    "parentId": 104,
+    "name": "in History 401 - Section 001",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 405,
+    "parentId": 105,
+    "name": "in History 201 - Section 001",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 406,
+    "parentId": 105,
+    "name": "in History 201 - Section 002",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 407,
+    "parentId": 105,
+    "name": "in History 201 - Section 003",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 408,
+    "parentId": 105,
+    "name": "in History 201 - Section 004",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 409,
+    "parentId": 106,
+    "name": "in History 101 - Section 001",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 410,
+    "parentId": 106,
+    "name": "in History 101 - Section 002",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 411,
+    "parentId": 106,
+    "name": "in History 101 - Section 003",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 412,
+    "parentId": 106,
+    "name": "in History 101 - Section 004",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 413,
+    "parentId": 106,
+    "name": "in History 101 - Section 005",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 414,
+    "parentId": 107,
+    "name": "in History 401 - Section 001",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 415,
+    "parentId": 108,
+    "name": "of History 101 - Section 001",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 416,
+    "parentId": 108,
+    "name": "of History 101 - Section 002",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 417,
+    "parentId": 108,
+    "name": "of History 101 - Section 003",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 418,
+    "parentId": 109,
+    "name": "of History 102 - Section 001",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 419,
+    "parentId": 109,
+    "name": "of History 102 - Section 002",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 420,
+    "parentId": 110,
+    "name": "of History 401 - Section 001",
+    "childQuantity": 18,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 421,
+    "parentId": 110,
+    "name": "of History 401 - Section 002",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 422,
+    "parentId": 111,
+    "name": "of History 301 - Section 001",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 423,
+    "parentId": 112,
+    "name": "of History 202 - Section 001",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 424,
+    "parentId": 112,
+    "name": "of History 202 - Section 002",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 425,
+    "parentId": 112,
+    "name": "of History 202 - Section 003",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 426,
+    "parentId": 112,
+    "name": "of History 202 - Section 004",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 427,
+    "parentId": 113,
+    "name": "of History 202 - Section 001",
+    "childQuantity": 26,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 428,
+    "parentId": 113,
+    "name": "of History 202 - Section 002",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 429,
+    "parentId": 113,
+    "name": "of History 202 - Section 003",
+    "childQuantity": 26,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 430,
+    "parentId": 113,
+    "name": "of History 202 - Section 004",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 431,
+    "parentId": 114,
+    "name": "of History 102 - Section 001",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 432,
+    "parentId": 114,
+    "name": "of History 102 - Section 002",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 433,
+    "parentId": 114,
+    "name": "of History 102 - Section 003",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 434,
+    "parentId": 114,
+    "name": "of History 102 - Section 004",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 435,
+    "parentId": 115,
+    "name": "in History 498 - Section 001",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 436,
+    "parentId": 115,
+    "name": "in History 498 - Section 002",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 437,
+    "parentId": 116,
+    "name": "in History 102 - Section 001",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 438,
+    "parentId": 116,
+    "name": "in History 102 - Section 002",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 439,
+    "parentId": 116,
+    "name": "in History 102 - Section 003",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 440,
+    "parentId": 116,
+    "name": "in History 102 - Section 004",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 441,
+    "parentId": 117,
+    "name": "of Biology 201 - Section 001",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 442,
+    "parentId": 118,
+    "name": "of Biology 201 - Section 001",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 443,
+    "parentId": 119,
+    "name": "of Biology 498 - Section 001",
+    "childQuantity": 15,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 444,
+    "parentId": 120,
+    "name": "of Biology 201 - Section 001",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 445,
+    "parentId": 121,
+    "name": "of Biology 301 - Section 001",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 446,
+    "parentId": 122,
+    "name": "of Biology 450 - Section 001",
+    "childQuantity": 18,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 447,
+    "parentId": 123,
+    "name": "in Biology 202 - Section 001",
+    "childQuantity": 26,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 448,
+    "parentId": 123,
+    "name": "in Biology 202 - Section 002",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 449,
+    "parentId": 124,
+    "name": "in Biology 301 - Section 001",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 450,
+    "parentId": 124,
+    "name": "in Biology 301 - Section 002",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 451,
+    "parentId": 124,
+    "name": "in Biology 301 - Section 003",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 452,
+    "parentId": 125,
+    "name": "in Biology 450 - Section 001",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 453,
+    "parentId": 125,
+    "name": "in Biology 450 - Section 002",
+    "childQuantity": 18,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 454,
+    "parentId": 126,
+    "name": "in Electrical Engineering 498 - Section 001",
+    "childQuantity": 18,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 455,
+    "parentId": 127,
+    "name": "in Electrical Engineering 498 - Section 001",
+    "childQuantity": 15,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 456,
+    "parentId": 127,
+    "name": "in Electrical Engineering 498 - Section 002",
+    "childQuantity": 15,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 457,
+    "parentId": 128,
+    "name": "in Electrical Engineering 102 - Section 001",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 458,
+    "parentId": 128,
+    "name": "in Electrical Engineering 102 - Section 002",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 459,
+    "parentId": 128,
+    "name": "in Electrical Engineering 102 - Section 003",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 460,
+    "parentId": 128,
+    "name": "in Electrical Engineering 102 - Section 004",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 461,
+    "parentId": 129,
+    "name": "in Electrical Engineering 202 - Section 001",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 462,
+    "parentId": 129,
+    "name": "in Electrical Engineering 202 - Section 002",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 463,
+    "parentId": 130,
+    "name": "in Electrical Engineering 102 - Section 001",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 464,
+    "parentId": 130,
+    "name": "in Electrical Engineering 102 - Section 002",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 465,
+    "parentId": 130,
+    "name": "in Electrical Engineering 102 - Section 003",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 466,
+    "parentId": 131,
+    "name": "in Electrical Engineering 401 - Section 001",
+    "childQuantity": 15,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 467,
+    "parentId": 132,
+    "name": "in Electrical Engineering 101 - Section 001",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 468,
+    "parentId": 132,
+    "name": "in Electrical Engineering 101 - Section 002",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 469,
+    "parentId": 132,
+    "name": "in Electrical Engineering 101 - Section 003",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 470,
+    "parentId": 132,
+    "name": "in Electrical Engineering 101 - Section 004",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 471,
+    "parentId": 133,
+    "name": "of Computer Science 202 - Section 001",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 472,
+    "parentId": 134,
+    "name": "of Computer Science 202 - Section 001",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 473,
+    "parentId": 134,
+    "name": "of Computer Science 202 - Section 002",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 474,
+    "parentId": 134,
+    "name": "of Computer Science 202 - Section 003",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 475,
+    "parentId": 135,
+    "name": "of Computer Science 101 - Section 001",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 476,
+    "parentId": 135,
+    "name": "of Computer Science 101 - Section 002",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 477,
+    "parentId": 136,
+    "name": "of Computer Science 102 - Section 001",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 478,
+    "parentId": 136,
+    "name": "of Computer Science 102 - Section 002",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 479,
+    "parentId": 136,
+    "name": "of Computer Science 102 - Section 003",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 480,
+    "parentId": 136,
+    "name": "of Computer Science 102 - Section 004",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 481,
+    "parentId": 136,
+    "name": "of Computer Science 102 - Section 005",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 482,
+    "parentId": 137,
+    "name": "of Computer Science 101 - Section 001",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 483,
+    "parentId": 137,
+    "name": "of Computer Science 101 - Section 002",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 484,
+    "parentId": 137,
+    "name": "of Computer Science 101 - Section 003",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 485,
+    "parentId": 137,
+    "name": "of Computer Science 101 - Section 004",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 486,
+    "parentId": 137,
+    "name": "of Computer Science 101 - Section 005",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 487,
+    "parentId": 137,
+    "name": "of Computer Science 101 - Section 006",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 488,
+    "parentId": 138,
+    "name": "of Computer Science 202 - Section 001",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 489,
+    "parentId": 138,
+    "name": "of Computer Science 202 - Section 002",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 490,
+    "parentId": 138,
+    "name": "of Computer Science 202 - Section 003",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 491,
+    "parentId": 138,
+    "name": "of Computer Science 202 - Section 004",
+    "childQuantity": 26,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 492,
+    "parentId": 139,
+    "name": "in Computer Science 101 - Section 001",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 493,
+    "parentId": 139,
+    "name": "in Computer Science 101 - Section 002",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 494,
+    "parentId": 140,
+    "name": "in Computer Science 401 - Section 001",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 495,
+    "parentId": 141,
+    "name": "of Computer Science 202 - Section 001",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 496,
+    "parentId": 141,
+    "name": "of Computer Science 202 - Section 002",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 497,
+    "parentId": 141,
+    "name": "of Computer Science 202 - Section 003",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 498,
+    "parentId": 141,
+    "name": "of Computer Science 202 - Section 004",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 499,
+    "parentId": 142,
+    "name": "of Computer Science 301 - Section 001",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 500,
+    "parentId": 143,
+    "name": "in Computer Science 202 - Section 001",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 501,
+    "parentId": 143,
+    "name": "in Computer Science 202 - Section 002",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 502,
+    "parentId": 144,
+    "name": "in Computer Science 201 - Section 001",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 503,
+    "parentId": 144,
+    "name": "in Computer Science 201 - Section 002",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 504,
+    "parentId": 144,
+    "name": "in Computer Science 201 - Section 003",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 505,
+    "parentId": 145,
+    "name": "in Computer Science 498 - Section 001",
+    "childQuantity": 18,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 506,
+    "parentId": 146,
+    "name": "in Computer Science 202 - Section 001",
+    "childQuantity": 26,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 507,
+    "parentId": 147,
+    "name": "in Computer Science 498 - Section 001",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 508,
+    "parentId": 147,
+    "name": "in Computer Science 498 - Section 002",
+    "childQuantity": 18,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 509,
+    "parentId": 148,
+    "name": "in Mechanical Engineering 202 - Section 001",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 510,
+    "parentId": 148,
+    "name": "in Mechanical Engineering 202 - Section 002",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 511,
+    "parentId": 148,
+    "name": "in Mechanical Engineering 202 - Section 003",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 512,
+    "parentId": 148,
+    "name": "in Mechanical Engineering 202 - Section 004",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 513,
+    "parentId": 149,
+    "name": "in Mechanical Engineering 102 - Section 001",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 514,
+    "parentId": 149,
+    "name": "in Mechanical Engineering 102 - Section 002",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 515,
+    "parentId": 149,
+    "name": "in Mechanical Engineering 102 - Section 003",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 516,
+    "parentId": 149,
+    "name": "in Mechanical Engineering 102 - Section 004",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 517,
+    "parentId": 150,
+    "name": "in Mechanical Engineering 102 - Section 001",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 518,
+    "parentId": 150,
+    "name": "in Mechanical Engineering 102 - Section 002",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 519,
+    "parentId": 150,
+    "name": "in Mechanical Engineering 102 - Section 003",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 520,
+    "parentId": 150,
+    "name": "in Mechanical Engineering 102 - Section 004",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 521,
+    "parentId": 151,
+    "name": "in Mechanical Engineering 450 - Section 001",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 522,
+    "parentId": 151,
+    "name": "in Mechanical Engineering 450 - Section 002",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 523,
+    "parentId": 152,
+    "name": "in Mechanical Engineering 401 - Section 001",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 524,
+    "parentId": 152,
+    "name": "in Mechanical Engineering 401 - Section 002",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 525,
+    "parentId": 153,
+    "name": "in Mechanical Engineering 450 - Section 001",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 526,
+    "parentId": 153,
+    "name": "in Mechanical Engineering 450 - Section 002",
+    "childQuantity": 18,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 527,
+    "parentId": 154,
+    "name": "in Mechanical Engineering 498 - Section 001",
+    "childQuantity": 18,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 528,
+    "parentId": 155,
+    "name": "in Mechanical Engineering 101 - Section 001",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 529,
+    "parentId": 155,
+    "name": "in Mechanical Engineering 101 - Section 002",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 530,
+    "parentId": 155,
+    "name": "in Mechanical Engineering 101 - Section 003",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 531,
+    "parentId": 155,
+    "name": "in Mechanical Engineering 101 - Section 004",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 532,
+    "parentId": 156,
+    "name": "in Mechanical Engineering 102 - Section 001",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 533,
+    "parentId": 156,
+    "name": "in Mechanical Engineering 102 - Section 002",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 534,
+    "parentId": 156,
+    "name": "in Mechanical Engineering 102 - Section 003",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 535,
+    "parentId": 157,
+    "name": "in Mechanical Engineering 101 - Section 001",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 536,
+    "parentId": 157,
+    "name": "in Mechanical Engineering 101 - Section 002",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 537,
+    "parentId": 157,
+    "name": "in Mechanical Engineering 101 - Section 003",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 538,
+    "parentId": 157,
+    "name": "in Mechanical Engineering 101 - Section 004",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 539,
+    "parentId": 157,
+    "name": "in Mechanical Engineering 101 - Section 005",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 540,
+    "parentId": 158,
+    "name": "of Information Systems 401 - Section 001",
+    "childQuantity": 15,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 541,
+    "parentId": 158,
+    "name": "of Information Systems 401 - Section 002",
+    "childQuantity": 18,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 542,
+    "parentId": 159,
+    "name": "of Information Systems 102 - Section 001",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 543,
+    "parentId": 159,
+    "name": "of Information Systems 102 - Section 002",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 544,
+    "parentId": 159,
+    "name": "of Information Systems 102 - Section 003",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 545,
+    "parentId": 159,
+    "name": "of Information Systems 102 - Section 004",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 546,
+    "parentId": 160,
+    "name": "of Information Systems 202 - Section 001",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 547,
+    "parentId": 161,
+    "name": "of Information Systems 202 - Section 001",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 548,
+    "parentId": 161,
+    "name": "of Information Systems 202 - Section 002",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 549,
+    "parentId": 162,
+    "name": "of Information Systems 202 - Section 001",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 550,
+    "parentId": 163,
+    "name": "of Information Systems 498 - Section 001",
+    "childQuantity": 18,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 551,
+    "parentId": 163,
+    "name": "of Information Systems 498 - Section 002",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 552,
+    "parentId": 164,
+    "name": "of Information Systems 201 - Section 001",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 553,
+    "parentId": 165,
+    "name": "of Information Systems 450 - Section 001",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 554,
+    "parentId": 165,
+    "name": "of Information Systems 450 - Section 002",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 555,
+    "parentId": 166,
+    "name": "of Information Systems 201 - Section 001",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 556,
+    "parentId": 166,
+    "name": "of Information Systems 201 - Section 002",
+    "childQuantity": 26,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 557,
+    "parentId": 166,
+    "name": "of Information Systems 201 - Section 003",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 558,
+    "parentId": 166,
+    "name": "of Information Systems 201 - Section 004",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 559,
+    "parentId": 167,
+    "name": "of Information Systems 301 - Section 001",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 560,
+    "parentId": 167,
+    "name": "of Information Systems 301 - Section 002",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 561,
+    "parentId": 168,
+    "name": "of Information Systems 498 - Section 001",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 562,
+    "parentId": 168,
+    "name": "of Information Systems 498 - Section 002",
+    "childQuantity": 15,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 563,
+    "parentId": 169,
+    "name": "of Information Systems 102 - Section 001",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 564,
+    "parentId": 169,
+    "name": "of Information Systems 102 - Section 002",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 565,
+    "parentId": 169,
+    "name": "of Information Systems 102 - Section 003",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 566,
+    "parentId": 169,
+    "name": "of Information Systems 102 - Section 004",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 567,
+    "parentId": 169,
+    "name": "of Information Systems 102 - Section 005",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 568,
+    "parentId": 169,
+    "name": "of Information Systems 102 - Section 006",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 569,
+    "parentId": 170,
+    "name": "of Information Systems 498 - Section 001",
+    "childQuantity": 15,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 570,
+    "parentId": 170,
+    "name": "of Information Systems 498 - Section 002",
+    "childQuantity": 18,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 571,
+    "parentId": 171,
+    "name": "of Information Systems 102 - Section 001",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 572,
+    "parentId": 171,
+    "name": "of Information Systems 102 - Section 002",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 573,
+    "parentId": 172,
+    "name": "of Accounting 101 - Section 001",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 574,
+    "parentId": 172,
+    "name": "of Accounting 101 - Section 002",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 575,
+    "parentId": 172,
+    "name": "of Accounting 101 - Section 003",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 576,
+    "parentId": 172,
+    "name": "of Accounting 101 - Section 004",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 577,
+    "parentId": 172,
+    "name": "of Accounting 101 - Section 005",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 578,
+    "parentId": 172,
+    "name": "of Accounting 101 - Section 006",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 579,
+    "parentId": 173,
+    "name": "of Accounting 102 - Section 001",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 580,
+    "parentId": 173,
+    "name": "of Accounting 102 - Section 002",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 581,
+    "parentId": 173,
+    "name": "of Accounting 102 - Section 003",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 582,
+    "parentId": 173,
+    "name": "of Accounting 102 - Section 004",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 583,
+    "parentId": 173,
+    "name": "of Accounting 102 - Section 005",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 584,
+    "parentId": 174,
+    "name": "of Accounting 201 - Section 001",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 585,
+    "parentId": 175,
+    "name": "of Accounting 450 - Section 001",
+    "childQuantity": 18,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 586,
+    "parentId": 176,
+    "name": "of Accounting 498 - Section 001",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 587,
+    "parentId": 177,
+    "name": "of Accounting 202 - Section 001",
+    "childQuantity": 26,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 588,
+    "parentId": 178,
+    "name": "of Accounting 450 - Section 001",
+    "childQuantity": 18,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 589,
+    "parentId": 179,
+    "name": "of Accounting 101 - Section 001",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 590,
+    "parentId": 179,
+    "name": "of Accounting 101 - Section 002",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 591,
+    "parentId": 179,
+    "name": "of Accounting 101 - Section 003",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 592,
+    "parentId": 179,
+    "name": "of Accounting 101 - Section 004",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 593,
+    "parentId": 179,
+    "name": "of Accounting 101 - Section 005",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 594,
+    "parentId": 179,
+    "name": "of Accounting 101 - Section 006",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 595,
+    "parentId": 180,
+    "name": "of Accounting 201 - Section 001",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 596,
+    "parentId": 180,
+    "name": "of Accounting 201 - Section 002",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 597,
+    "parentId": 180,
+    "name": "of Accounting 201 - Section 003",
+    "childQuantity": 26,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 598,
+    "parentId": 180,
+    "name": "of Accounting 201 - Section 004",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 599,
+    "parentId": 181,
+    "name": "of Accounting 450 - Section 001",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 600,
+    "parentId": 181,
+    "name": "of Accounting 450 - Section 002",
+    "childQuantity": 15,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 601,
+    "parentId": 182,
+    "name": "in Accounting 450 - Section 001",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 602,
+    "parentId": 183,
+    "name": "in Accounting 301 - Section 001",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 603,
+    "parentId": 183,
+    "name": "in Accounting 301 - Section 002",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 604,
+    "parentId": 183,
+    "name": "in Accounting 301 - Section 003",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 605,
+    "parentId": 184,
+    "name": "in Marketing 301 - Section 001",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 606,
+    "parentId": 184,
+    "name": "in Marketing 301 - Section 002",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 607,
+    "parentId": 184,
+    "name": "in Marketing 301 - Section 003",
+    "childQuantity": 24,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 608,
+    "parentId": 185,
+    "name": "in Marketing 450 - Section 001",
+    "childQuantity": 15,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 609,
+    "parentId": 186,
+    "name": "in Marketing 498 - Section 001",
+    "childQuantity": 18,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 610,
+    "parentId": 187,
+    "name": "in Marketing 201 - Section 001",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 611,
+    "parentId": 187,
+    "name": "in Marketing 201 - Section 002",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 612,
+    "parentId": 187,
+    "name": "in Marketing 201 - Section 003",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 613,
+    "parentId": 188,
+    "name": "in Marketing 202 - Section 001",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 614,
+    "parentId": 188,
+    "name": "in Marketing 202 - Section 002",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 615,
+    "parentId": 188,
+    "name": "in Marketing 202 - Section 003",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 616,
+    "parentId": 188,
+    "name": "in Marketing 202 - Section 004",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 617,
+    "parentId": 189,
+    "name": "in Marketing 202 - Section 001",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 618,
+    "parentId": 189,
+    "name": "in Marketing 202 - Section 002",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 619,
+    "parentId": 189,
+    "name": "in Marketing 202 - Section 003",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 620,
+    "parentId": 190,
+    "name": "in Marketing 101 - Section 001",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 621,
+    "parentId": 190,
+    "name": "in Marketing 101 - Section 002",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 622,
+    "parentId": 190,
+    "name": "in Marketing 101 - Section 003",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 623,
+    "parentId": 190,
+    "name": "in Marketing 101 - Section 004",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 624,
+    "parentId": 190,
+    "name": "in Marketing 101 - Section 005",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 625,
+    "parentId": 191,
+    "name": "in Marketing 101 - Section 001",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 626,
+    "parentId": 191,
+    "name": "in Marketing 101 - Section 002",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 627,
+    "parentId": 191,
+    "name": "in Marketing 101 - Section 003",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 628,
+    "parentId": 191,
+    "name": "in Marketing 101 - Section 004",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 629,
+    "parentId": 192,
+    "name": "in Marketing 401 - Section 001",
+    "childQuantity": 15,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 630,
+    "parentId": 193,
+    "name": "of Marketing 101 - Section 001",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 631,
+    "parentId": 193,
+    "name": "of Marketing 101 - Section 002",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 632,
+    "parentId": 193,
+    "name": "of Marketing 101 - Section 003",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 633,
+    "parentId": 193,
+    "name": "of Marketing 101 - Section 004",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 634,
+    "parentId": 194,
+    "name": "of Marketing 498 - Section 001",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 635,
+    "parentId": 194,
+    "name": "of Marketing 498 - Section 002",
+    "childQuantity": 18,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 636,
+    "parentId": 195,
+    "name": "in Marketing 201 - Section 001",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 637,
+    "parentId": 195,
+    "name": "in Marketing 201 - Section 002",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 638,
+    "parentId": 195,
+    "name": "in Marketing 201 - Section 003",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 639,
+    "parentId": 195,
+    "name": "in Marketing 201 - Section 004",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 640,
+    "parentId": 196,
+    "name": "in Marketing 101 - Section 001",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 641,
+    "parentId": 196,
+    "name": "in Marketing 101 - Section 002",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 642,
+    "parentId": 196,
+    "name": "in Marketing 101 - Section 003",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 643,
+    "parentId": 196,
+    "name": "in Marketing 101 - Section 004",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 644,
+    "parentId": 196,
+    "name": "in Marketing 101 - Section 005",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 645,
+    "parentId": 197,
+    "name": "in Marketing 102 - Section 001",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 646,
+    "parentId": 197,
+    "name": "in Marketing 102 - Section 002",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 647,
+    "parentId": 197,
+    "name": "in Marketing 102 - Section 003",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 648,
+    "parentId": 197,
+    "name": "in Marketing 102 - Section 004",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 649,
+    "parentId": 198,
+    "name": "in Marketing 201 - Section 001",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 650,
+    "parentId": 198,
+    "name": "in Marketing 201 - Section 002",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 651,
+    "parentId": 198,
+    "name": "in Marketing 201 - Section 003",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 652,
+    "parentId": 198,
+    "name": "in Marketing 201 - Section 004",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 653,
+    "parentId": 199,
+    "name": "in Marketing 102 - Section 001",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 654,
+    "parentId": 199,
+    "name": "in Marketing 102 - Section 002",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 655,
+    "parentId": 199,
+    "name": "in Marketing 102 - Section 003",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 656,
+    "parentId": 199,
+    "name": "in Marketing 102 - Section 004",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 657,
+    "parentId": 200,
+    "name": "in Marketing 102 - Section 001",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 658,
+    "parentId": 200,
+    "name": "in Marketing 102 - Section 002",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 659,
+    "parentId": 200,
+    "name": "in Marketing 102 - Section 003",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 660,
+    "parentId": 200,
+    "name": "in Marketing 102 - Section 004",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 661,
+    "parentId": 200,
+    "name": "in Marketing 102 - Section 005",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 662,
+    "parentId": 200,
+    "name": "in Marketing 102 - Section 006",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 663,
+    "parentId": 201,
+    "name": "of Finance 450 - Section 001",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 664,
+    "parentId": 202,
+    "name": "of Finance 102 - Section 001",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 665,
+    "parentId": 202,
+    "name": "of Finance 102 - Section 002",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 666,
+    "parentId": 202,
+    "name": "of Finance 102 - Section 003",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 667,
+    "parentId": 202,
+    "name": "of Finance 102 - Section 004",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 668,
+    "parentId": 202,
+    "name": "of Finance 102 - Section 005",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 669,
+    "parentId": 202,
+    "name": "of Finance 102 - Section 006",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 670,
+    "parentId": 203,
+    "name": "of Finance 202 - Section 001",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 671,
+    "parentId": 203,
+    "name": "of Finance 202 - Section 002",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 672,
+    "parentId": 204,
+    "name": "in Finance 101 - Section 001",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 673,
+    "parentId": 204,
+    "name": "in Finance 101 - Section 002",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 674,
+    "parentId": 204,
+    "name": "in Finance 101 - Section 003",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 675,
+    "parentId": 204,
+    "name": "in Finance 101 - Section 004",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 676,
+    "parentId": 204,
+    "name": "in Finance 101 - Section 005",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 677,
+    "parentId": 205,
+    "name": "in Finance 102 - Section 001",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 678,
+    "parentId": 205,
+    "name": "in Finance 102 - Section 002",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 679,
+    "parentId": 205,
+    "name": "in Finance 102 - Section 003",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 680,
+    "parentId": 206,
+    "name": "in Finance 450 - Section 001",
+    "childQuantity": 15,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 681,
+    "parentId": 206,
+    "name": "in Finance 450 - Section 002",
+    "childQuantity": 18,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 682,
+    "parentId": 207,
+    "name": "in Finance 401 - Section 001",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 683,
+    "parentId": 208,
+    "name": "in Finance 301 - Section 001",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 684,
+    "parentId": 209,
+    "name": "in Finance 202 - Section 001",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 685,
+    "parentId": 209,
+    "name": "in Finance 202 - Section 002",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 686,
+    "parentId": 209,
+    "name": "in Finance 202 - Section 003",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 687,
+    "parentId": 209,
+    "name": "in Finance 202 - Section 004",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 688,
+    "parentId": 210,
+    "name": "of Finance 202 - Section 001",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 689,
+    "parentId": 210,
+    "name": "of Finance 202 - Section 002",
+    "childQuantity": 26,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 690,
+    "parentId": 210,
+    "name": "of Finance 202 - Section 003",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 691,
+    "parentId": 210,
+    "name": "of Finance 202 - Section 004",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 692,
+    "parentId": 211,
+    "name": "of Finance 301 - Section 001",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 693,
+    "parentId": 212,
+    "name": "of Finance 450 - Section 001",
+    "childQuantity": 18,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 694,
+    "parentId": 213,
+    "name": "of Finance 201 - Section 001",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 695,
+    "parentId": 214,
+    "name": "of Finance 498 - Section 001",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 696,
+    "parentId": 214,
+    "name": "of Finance 498 - Section 002",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 697,
+    "parentId": 215,
+    "name": "of Finance 401 - Section 001",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 698,
+    "parentId": 216,
+    "name": "of Finance 102 - Section 001",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 699,
+    "parentId": 216,
+    "name": "of Finance 102 - Section 002",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 700,
+    "parentId": 216,
+    "name": "of Finance 102 - Section 003",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 701,
+    "parentId": 216,
+    "name": "of Finance 102 - Section 004",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 702,
+    "parentId": 217,
+    "name": "of Finance 101 - Section 001",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 703,
+    "parentId": 217,
+    "name": "of Finance 101 - Section 002",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 704,
+    "parentId": 217,
+    "name": "of Finance 101 - Section 003",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 705,
+    "parentId": 218,
+    "name": "of Management 102 - Section 001",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 706,
+    "parentId": 218,
+    "name": "of Management 102 - Section 002",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 707,
+    "parentId": 218,
+    "name": "of Management 102 - Section 003",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 708,
+    "parentId": 218,
+    "name": "of Management 102 - Section 004",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 709,
+    "parentId": 219,
+    "name": "of Management 102 - Section 001",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 710,
+    "parentId": 219,
+    "name": "of Management 102 - Section 002",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 711,
+    "parentId": 219,
+    "name": "of Management 102 - Section 003",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 712,
+    "parentId": 219,
+    "name": "of Management 102 - Section 004",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 713,
+    "parentId": 219,
+    "name": "of Management 102 - Section 005",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 714,
+    "parentId": 220,
+    "name": "of Management 202 - Section 001",
+    "childQuantity": 26,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 715,
+    "parentId": 220,
+    "name": "of Management 202 - Section 002",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 716,
+    "parentId": 220,
+    "name": "of Management 202 - Section 003",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 717,
+    "parentId": 220,
+    "name": "of Management 202 - Section 004",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 718,
+    "parentId": 221,
+    "name": "of Management 301 - Section 001",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 719,
+    "parentId": 221,
+    "name": "of Management 301 - Section 002",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 720,
+    "parentId": 221,
+    "name": "of Management 301 - Section 003",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 721,
+    "parentId": 222,
+    "name": "of Management 201 - Section 001",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 722,
+    "parentId": 222,
+    "name": "of Management 201 - Section 002",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 723,
+    "parentId": 223,
+    "name": "in Management 102 - Section 001",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 724,
+    "parentId": 223,
+    "name": "in Management 102 - Section 002",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 725,
+    "parentId": 223,
+    "name": "in Management 102 - Section 003",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 726,
+    "parentId": 224,
+    "name": "in Management 202 - Section 001",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 727,
+    "parentId": 225,
+    "name": "in Management 401 - Section 001",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 728,
+    "parentId": 226,
+    "name": "in Management 301 - Section 001",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 729,
+    "parentId": 227,
+    "name": "in Management 498 - Section 001",
+    "childQuantity": 18,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 730,
+    "parentId": 227,
+    "name": "in Management 498 - Section 002",
+    "childQuantity": 15,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 731,
+    "parentId": 228,
+    "name": "in Management 301 - Section 001",
+    "childQuantity": 24,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 732,
+    "parentId": 228,
+    "name": "in Management 301 - Section 002",
+    "childQuantity": 24,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 733,
+    "parentId": 229,
+    "name": "in Management 101 - Section 001",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 734,
+    "parentId": 229,
+    "name": "in Management 101 - Section 002",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 735,
+    "parentId": 229,
+    "name": "in Management 101 - Section 003",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 736,
+    "parentId": 229,
+    "name": "in Management 101 - Section 004",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 737,
+    "parentId": 229,
+    "name": "in Management 101 - Section 005",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 738,
+    "parentId": 229,
+    "name": "in Management 101 - Section 006",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 739,
+    "parentId": 230,
+    "name": "of Nursing 301 - Section 001",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 740,
+    "parentId": 230,
+    "name": "of Nursing 301 - Section 002",
+    "childQuantity": 24,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 741,
+    "parentId": 230,
+    "name": "of Nursing 301 - Section 003",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 742,
+    "parentId": 231,
+    "name": "of Nursing 102 - Section 001",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 743,
+    "parentId": 231,
+    "name": "of Nursing 102 - Section 002",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 744,
+    "parentId": 231,
+    "name": "of Nursing 102 - Section 003",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 745,
+    "parentId": 231,
+    "name": "of Nursing 102 - Section 004",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 746,
+    "parentId": 231,
+    "name": "of Nursing 102 - Section 005",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 747,
+    "parentId": 231,
+    "name": "of Nursing 102 - Section 006",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 748,
+    "parentId": 232,
+    "name": "of Nursing 201 - Section 001",
+    "childQuantity": 26,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 749,
+    "parentId": 232,
+    "name": "of Nursing 201 - Section 002",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 750,
+    "parentId": 232,
+    "name": "of Nursing 201 - Section 003",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 751,
+    "parentId": 233,
+    "name": "of Nursing 301 - Section 001",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 752,
+    "parentId": 234,
+    "name": "of Nursing 102 - Section 001",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 753,
+    "parentId": 234,
+    "name": "of Nursing 102 - Section 002",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 754,
+    "parentId": 234,
+    "name": "of Nursing 102 - Section 003",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 755,
+    "parentId": 234,
+    "name": "of Nursing 102 - Section 004",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 756,
+    "parentId": 234,
+    "name": "of Nursing 102 - Section 005",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 757,
+    "parentId": 235,
+    "name": "of Nursing 102 - Section 001",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 758,
+    "parentId": 235,
+    "name": "of Nursing 102 - Section 002",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 759,
+    "parentId": 235,
+    "name": "of Nursing 102 - Section 003",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 760,
+    "parentId": 235,
+    "name": "of Nursing 102 - Section 004",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 761,
+    "parentId": 236,
+    "name": "in Nursing 201 - Section 001",
+    "childQuantity": 26,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 762,
+    "parentId": 236,
+    "name": "in Nursing 201 - Section 002",
+    "childQuantity": 26,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 763,
+    "parentId": 236,
+    "name": "in Nursing 201 - Section 003",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 764,
+    "parentId": 236,
+    "name": "in Nursing 201 - Section 004",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 765,
+    "parentId": 237,
+    "name": "in Nursing 301 - Section 001",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 766,
+    "parentId": 237,
+    "name": "in Nursing 301 - Section 002",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 767,
+    "parentId": 237,
+    "name": "in Nursing 301 - Section 003",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 768,
+    "parentId": 238,
+    "name": "in Nursing 301 - Section 001",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 769,
+    "parentId": 239,
+    "name": "in Nursing 202 - Section 001",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 770,
+    "parentId": 239,
+    "name": "in Nursing 202 - Section 002",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 771,
+    "parentId": 240,
+    "name": "in Nursing 401 - Section 001",
+    "childQuantity": 18,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 772,
+    "parentId": 241,
+    "name": "in Nursing 202 - Section 001",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 773,
+    "parentId": 241,
+    "name": "in Nursing 202 - Section 002",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 774,
+    "parentId": 241,
+    "name": "in Nursing 202 - Section 003",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 775,
+    "parentId": 241,
+    "name": "in Nursing 202 - Section 004",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 776,
+    "parentId": 242,
+    "name": "of Nursing 498 - Section 001",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 777,
+    "parentId": 242,
+    "name": "of Nursing 498 - Section 002",
+    "childQuantity": 18,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 778,
+    "parentId": 243,
+    "name": "of Nursing 301 - Section 001",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 779,
+    "parentId": 244,
+    "name": "of Nursing 101 - Section 001",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 780,
+    "parentId": 244,
+    "name": "of Nursing 101 - Section 002",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 781,
+    "parentId": 244,
+    "name": "of Nursing 101 - Section 003",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 782,
+    "parentId": 244,
+    "name": "of Nursing 101 - Section 004",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 783,
+    "parentId": 245,
+    "name": "of Nursing 102 - Section 001",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 784,
+    "parentId": 245,
+    "name": "of Nursing 102 - Section 002",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 785,
+    "parentId": 245,
+    "name": "of Nursing 102 - Section 003",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 786,
+    "parentId": 245,
+    "name": "of Nursing 102 - Section 004",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 787,
+    "parentId": 246,
+    "name": "of Nursing 301 - Section 001",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 788,
+    "parentId": 246,
+    "name": "of Nursing 301 - Section 002",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 789,
+    "parentId": 247,
+    "name": "of Nursing 101 - Section 001",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 790,
+    "parentId": 247,
+    "name": "of Nursing 101 - Section 002",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 791,
+    "parentId": 247,
+    "name": "of Nursing 101 - Section 003",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 792,
+    "parentId": 247,
+    "name": "of Nursing 101 - Section 004",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 793,
+    "parentId": 247,
+    "name": "of Nursing 101 - Section 005",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 794,
+    "parentId": 248,
+    "name": "of Nursing 101 - Section 001",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 795,
+    "parentId": 248,
+    "name": "of Nursing 101 - Section 002",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 796,
+    "parentId": 248,
+    "name": "of Nursing 101 - Section 003",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 797,
+    "parentId": 248,
+    "name": "of Nursing 101 - Section 004",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 798,
+    "parentId": 249,
+    "name": "of Nursing 401 - Section 001",
+    "childQuantity": 15,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 799,
+    "parentId": 250,
+    "name": "of Nursing 201 - Section 001",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 800,
+    "parentId": 250,
+    "name": "of Nursing 201 - Section 002",
+    "childQuantity": 26,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 801,
+    "parentId": 250,
+    "name": "of Nursing 201 - Section 003",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 802,
+    "parentId": 250,
+    "name": "of Nursing 201 - Section 004",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 803,
+    "parentId": 251,
+    "name": "in Public Health 201 - Section 001",
+    "childQuantity": 26,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 804,
+    "parentId": 251,
+    "name": "in Public Health 201 - Section 002",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 805,
+    "parentId": 252,
+    "name": "in Public Health 498 - Section 001",
+    "childQuantity": 18,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 806,
+    "parentId": 252,
+    "name": "in Public Health 498 - Section 002",
+    "childQuantity": 15,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 807,
+    "parentId": 253,
+    "name": "in Public Health 450 - Section 001",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 808,
+    "parentId": 254,
+    "name": "in Public Health 101 - Section 001",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 809,
+    "parentId": 254,
+    "name": "in Public Health 101 - Section 002",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 810,
+    "parentId": 254,
+    "name": "in Public Health 101 - Section 003",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 811,
+    "parentId": 254,
+    "name": "in Public Health 101 - Section 004",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 812,
+    "parentId": 254,
+    "name": "in Public Health 101 - Section 005",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 813,
+    "parentId": 255,
+    "name": "in Public Health 102 - Section 001",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 814,
+    "parentId": 255,
+    "name": "in Public Health 102 - Section 002",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 815,
+    "parentId": 256,
+    "name": "in Public Health 201 - Section 001",
+    "childQuantity": 26,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 816,
+    "parentId": 256,
+    "name": "in Public Health 201 - Section 002",
+    "childQuantity": 26,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 817,
+    "parentId": 256,
+    "name": "in Public Health 201 - Section 003",
+    "childQuantity": 26,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 818,
+    "parentId": 256,
+    "name": "in Public Health 201 - Section 004",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 819,
+    "parentId": 257,
+    "name": "of Kinesiology 101 - Section 001",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 820,
+    "parentId": 257,
+    "name": "of Kinesiology 101 - Section 002",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 821,
+    "parentId": 257,
+    "name": "of Kinesiology 101 - Section 003",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 822,
+    "parentId": 257,
+    "name": "of Kinesiology 101 - Section 004",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 823,
+    "parentId": 258,
+    "name": "of Kinesiology 401 - Section 001",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 824,
+    "parentId": 258,
+    "name": "of Kinesiology 401 - Section 002",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 825,
+    "parentId": 259,
+    "name": "of Kinesiology 201 - Section 001",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 826,
+    "parentId": 259,
+    "name": "of Kinesiology 201 - Section 002",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 827,
+    "parentId": 259,
+    "name": "of Kinesiology 201 - Section 003",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 828,
+    "parentId": 260,
+    "name": "of Kinesiology 450 - Section 001",
+    "childQuantity": 18,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 829,
+    "parentId": 261,
+    "name": "of Kinesiology 201 - Section 001",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 830,
+    "parentId": 261,
+    "name": "of Kinesiology 201 - Section 002",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 831,
+    "parentId": 261,
+    "name": "of Kinesiology 201 - Section 003",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 832,
+    "parentId": 261,
+    "name": "of Kinesiology 201 - Section 004",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 833,
+    "parentId": 262,
+    "name": "of Kinesiology 101 - Section 001",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 834,
+    "parentId": 262,
+    "name": "of Kinesiology 101 - Section 002",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 835,
+    "parentId": 263,
+    "name": "of Kinesiology 401 - Section 001",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 836,
+    "parentId": 264,
+    "name": "of Kinesiology 101 - Section 001",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 837,
+    "parentId": 264,
+    "name": "of Kinesiology 101 - Section 002",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 838,
+    "parentId": 264,
+    "name": "of Kinesiology 101 - Section 003",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 839,
+    "parentId": 264,
+    "name": "of Kinesiology 101 - Section 004",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 840,
+    "parentId": 265,
+    "name": "of Kinesiology 401 - Section 001",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 841,
+    "parentId": 265,
+    "name": "of Kinesiology 401 - Section 002",
+    "childQuantity": 15,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 842,
+    "parentId": 266,
+    "name": "of Kinesiology 202 - Section 001",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 843,
+    "parentId": 266,
+    "name": "of Kinesiology 202 - Section 002",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 844,
+    "parentId": 267,
+    "name": "in Kinesiology 102 - Section 001",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 845,
+    "parentId": 267,
+    "name": "in Kinesiology 102 - Section 002",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 846,
+    "parentId": 267,
+    "name": "in Kinesiology 102 - Section 003",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 847,
+    "parentId": 267,
+    "name": "in Kinesiology 102 - Section 004",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 848,
+    "parentId": 267,
+    "name": "in Kinesiology 102 - Section 005",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 849,
+    "parentId": 267,
+    "name": "in Kinesiology 102 - Section 006",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 850,
+    "parentId": 268,
+    "name": "in Kinesiology 401 - Section 001",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 851,
+    "parentId": 268,
+    "name": "in Kinesiology 401 - Section 002",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 852,
+    "parentId": 269,
+    "name": "in Kinesiology 450 - Section 001",
+    "childQuantity": 18,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 853,
+    "parentId": 270,
+    "name": "of Kinesiology 201 - Section 001",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 854,
+    "parentId": 271,
+    "name": "of Kinesiology 202 - Section 001",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 855,
+    "parentId": 271,
+    "name": "of Kinesiology 202 - Section 002",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 856,
+    "parentId": 271,
+    "name": "of Kinesiology 202 - Section 003",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 857,
+    "parentId": 272,
+    "name": "of Kinesiology 201 - Section 001",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 858,
+    "parentId": 272,
+    "name": "of Kinesiology 201 - Section 002",
+    "childQuantity": 26,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 859,
+    "parentId": 273,
+    "name": "of Kinesiology 201 - Section 001",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 860,
+    "parentId": 273,
+    "name": "of Kinesiology 201 - Section 002",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 861,
+    "parentId": 273,
+    "name": "of Kinesiology 201 - Section 003",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 862,
+    "parentId": 273,
+    "name": "of Kinesiology 201 - Section 004",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 863,
+    "parentId": 274,
+    "name": "of Kinesiology 450 - Section 001",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 864,
+    "parentId": 275,
+    "name": "of Kinesiology 101 - Section 001",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 865,
+    "parentId": 275,
+    "name": "of Kinesiology 101 - Section 002",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 866,
+    "parentId": 276,
+    "name": "in Special Education 401 - Section 001",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 867,
+    "parentId": 276,
+    "name": "in Special Education 401 - Section 002",
+    "childQuantity": 15,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 868,
+    "parentId": 277,
+    "name": "in Special Education 450 - Section 001",
+    "childQuantity": 18,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 869,
+    "parentId": 277,
+    "name": "in Special Education 450 - Section 002",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 870,
+    "parentId": 278,
+    "name": "in Special Education 202 - Section 001",
+    "childQuantity": 26,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 871,
+    "parentId": 278,
+    "name": "in Special Education 202 - Section 002",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 872,
+    "parentId": 278,
+    "name": "in Special Education 202 - Section 003",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 873,
+    "parentId": 278,
+    "name": "in Special Education 202 - Section 004",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 874,
+    "parentId": 279,
+    "name": "in Special Education 201 - Section 001",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 875,
+    "parentId": 279,
+    "name": "in Special Education 201 - Section 002",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 876,
+    "parentId": 279,
+    "name": "in Special Education 201 - Section 003",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 877,
+    "parentId": 280,
+    "name": "in Special Education 102 - Section 001",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 878,
+    "parentId": 280,
+    "name": "in Special Education 102 - Section 002",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 879,
+    "parentId": 280,
+    "name": "in Special Education 102 - Section 003",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 880,
+    "parentId": 281,
+    "name": "in Special Education 450 - Section 001",
+    "childQuantity": 15,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 881,
+    "parentId": 282,
+    "name": "in Special Education 101 - Section 001",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 882,
+    "parentId": 282,
+    "name": "in Special Education 101 - Section 002",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 883,
+    "parentId": 283,
+    "name": "of Special Education 202 - Section 001",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 884,
+    "parentId": 283,
+    "name": "of Special Education 202 - Section 002",
+    "childQuantity": 26,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 885,
+    "parentId": 284,
+    "name": "of Special Education 202 - Section 001",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 886,
+    "parentId": 285,
+    "name": "of Special Education 498 - Section 001",
+    "childQuantity": 18,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 887,
+    "parentId": 286,
+    "name": "of Special Education 401 - Section 001",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 888,
+    "parentId": 287,
+    "name": "of Special Education 301 - Section 001",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 889,
+    "parentId": 288,
+    "name": "in Special Education 202 - Section 001",
+    "childQuantity": 26,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 890,
+    "parentId": 288,
+    "name": "in Special Education 202 - Section 002",
+    "childQuantity": 26,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 891,
+    "parentId": 288,
+    "name": "in Special Education 202 - Section 003",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 892,
+    "parentId": 289,
+    "name": "in Special Education 101 - Section 001",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 893,
+    "parentId": 289,
+    "name": "in Special Education 101 - Section 002",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 894,
+    "parentId": 289,
+    "name": "in Special Education 101 - Section 003",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 895,
+    "parentId": 289,
+    "name": "in Special Education 101 - Section 004",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 896,
+    "parentId": 290,
+    "name": "in Special Education 202 - Section 001",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 897,
+    "parentId": 290,
+    "name": "in Special Education 202 - Section 002",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 898,
+    "parentId": 291,
+    "name": "of Special Education 401 - Section 001",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 899,
+    "parentId": 292,
+    "name": "of Special Education 301 - Section 001",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 900,
+    "parentId": 293,
+    "name": "of Special Education 102 - Section 001",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 901,
+    "parentId": 293,
+    "name": "of Special Education 102 - Section 002",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 902,
+    "parentId": 293,
+    "name": "of Special Education 102 - Section 003",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 903,
+    "parentId": 293,
+    "name": "of Special Education 102 - Section 004",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 904,
+    "parentId": 294,
+    "name": "of Special Education 301 - Section 001",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 905,
+    "parentId": 294,
+    "name": "of Special Education 301 - Section 002",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 906,
+    "parentId": 294,
+    "name": "of Special Education 301 - Section 003",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 907,
+    "parentId": 295,
+    "name": "of Special Education 401 - Section 001",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 908,
+    "parentId": 295,
+    "name": "of Special Education 401 - Section 002",
+    "childQuantity": 15,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 909,
+    "parentId": 296,
+    "name": "in Educational Leadership 450 - Section 001",
+    "childQuantity": 18,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 910,
+    "parentId": 296,
+    "name": "in Educational Leadership 450 - Section 002",
+    "childQuantity": 15,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 911,
+    "parentId": 297,
+    "name": "in Educational Leadership 401 - Section 001",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 912,
+    "parentId": 297,
+    "name": "in Educational Leadership 401 - Section 002",
+    "childQuantity": 15,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 913,
+    "parentId": 298,
+    "name": "in Educational Leadership 101 - Section 001",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 914,
+    "parentId": 298,
+    "name": "in Educational Leadership 101 - Section 002",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 915,
+    "parentId": 299,
+    "name": "in Educational Leadership 102 - Section 001",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 916,
+    "parentId": 299,
+    "name": "in Educational Leadership 102 - Section 002",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 917,
+    "parentId": 299,
+    "name": "in Educational Leadership 102 - Section 003",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 918,
+    "parentId": 299,
+    "name": "in Educational Leadership 102 - Section 004",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 919,
+    "parentId": 299,
+    "name": "in Educational Leadership 102 - Section 005",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 920,
+    "parentId": 300,
+    "name": "in Educational Leadership 301 - Section 001",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 921,
+    "parentId": 301,
+    "name": "in Educational Leadership 201 - Section 001",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 922,
+    "parentId": 301,
+    "name": "in Educational Leadership 201 - Section 002",
+    "childQuantity": 26,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 923,
+    "parentId": 301,
+    "name": "in Educational Leadership 201 - Section 003",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 924,
+    "parentId": 302,
+    "name": "in Educational Leadership 301 - Section 001",
+    "childQuantity": 24,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 925,
+    "parentId": 303,
+    "name": "in Educational Leadership 101 - Section 001",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 926,
+    "parentId": 303,
+    "name": "in Educational Leadership 101 - Section 002",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 927,
+    "parentId": 303,
+    "name": "in Educational Leadership 101 - Section 003",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 928,
+    "parentId": 303,
+    "name": "in Educational Leadership 101 - Section 004",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 929,
+    "parentId": 303,
+    "name": "in Educational Leadership 101 - Section 005",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 930,
+    "parentId": 303,
+    "name": "in Educational Leadership 101 - Section 006",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 931,
+    "parentId": 304,
+    "name": "in Educational Leadership 102 - Section 001",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 932,
+    "parentId": 304,
+    "name": "in Educational Leadership 102 - Section 002",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 933,
+    "parentId": 304,
+    "name": "in Educational Leadership 102 - Section 003",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 934,
+    "parentId": 304,
+    "name": "in Educational Leadership 102 - Section 004",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 935,
+    "parentId": 304,
+    "name": "in Educational Leadership 102 - Section 005",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 936,
+    "parentId": 304,
+    "name": "in Educational Leadership 102 - Section 006",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 937,
+    "parentId": 305,
+    "name": "in Educational Leadership 450 - Section 001",
+    "childQuantity": 15,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 938,
+    "parentId": 306,
+    "name": "in Educational Leadership 401 - Section 001",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 939,
+    "parentId": 307,
+    "name": "in Educational Leadership 401 - Section 001",
+    "childQuantity": 18,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 940,
+    "parentId": 307,
+    "name": "in Educational Leadership 401 - Section 002",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 941,
+    "parentId": 308,
+    "name": "in Educational Leadership 102 - Section 001",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 942,
+    "parentId": 308,
+    "name": "in Educational Leadership 102 - Section 002",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 943,
+    "parentId": 308,
+    "name": "in Educational Leadership 102 - Section 003",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 944,
+    "parentId": 308,
+    "name": "in Educational Leadership 102 - Section 004",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 945,
+    "parentId": 309,
+    "name": "in Educational Leadership 450 - Section 001",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 946,
+    "parentId": 310,
+    "name": "in Educational Leadership 202 - Section 001",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 947,
+    "parentId": 310,
+    "name": "in Educational Leadership 202 - Section 002",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 948,
+    "parentId": 310,
+    "name": "in Educational Leadership 202 - Section 003",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 949,
+    "parentId": 310,
+    "name": "in Educational Leadership 202 - Section 004",
+    "childQuantity": 26,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 950,
+    "parentId": 311,
+    "name": "in Educational Leadership 301 - Section 001",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 951,
+    "parentId": 311,
+    "name": "in Educational Leadership 301 - Section 002",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 952,
+    "parentId": 311,
+    "name": "in Educational Leadership 301 - Section 003",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 953,
+    "parentId": 312,
+    "name": "in Educational Leadership 101 - Section 001",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 954,
+    "parentId": 312,
+    "name": "in Educational Leadership 101 - Section 002",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 955,
+    "parentId": 313,
+    "name": "of Counselor Education 101 - Section 001",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 956,
+    "parentId": 313,
+    "name": "of Counselor Education 101 - Section 002",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 957,
+    "parentId": 314,
+    "name": "of Counselor Education 202 - Section 001",
+    "childQuantity": 26,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 958,
+    "parentId": 314,
+    "name": "of Counselor Education 202 - Section 002",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 959,
+    "parentId": 314,
+    "name": "of Counselor Education 202 - Section 003",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 960,
+    "parentId": 315,
+    "name": "of Counselor Education 401 - Section 001",
+    "childQuantity": 15,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 961,
+    "parentId": 315,
+    "name": "of Counselor Education 401 - Section 002",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 962,
+    "parentId": 316,
+    "name": "of Counselor Education 450 - Section 001",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 963,
+    "parentId": 316,
+    "name": "of Counselor Education 450 - Section 002",
+    "childQuantity": 15,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 964,
+    "parentId": 317,
+    "name": "of Counselor Education 102 - Section 001",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 965,
+    "parentId": 317,
+    "name": "of Counselor Education 102 - Section 002",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 966,
+    "parentId": 317,
+    "name": "of Counselor Education 102 - Section 003",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 967,
+    "parentId": 317,
+    "name": "of Counselor Education 102 - Section 004",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 968,
+    "parentId": 318,
+    "name": "of Counselor Education 401 - Section 001",
+    "childQuantity": 18,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 969,
+    "parentId": 319,
+    "name": "of Counselor Education 102 - Section 001",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 970,
+    "parentId": 319,
+    "name": "of Counselor Education 102 - Section 002",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 971,
+    "parentId": 319,
+    "name": "of Counselor Education 102 - Section 003",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 972,
+    "parentId": 319,
+    "name": "of Counselor Education 102 - Section 004",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 973,
+    "parentId": 319,
+    "name": "of Counselor Education 102 - Section 005",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 974,
+    "parentId": 320,
+    "name": "of Counselor Education 301 - Section 001",
+    "childQuantity": 24,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 975,
+    "parentId": 321,
+    "name": "of Counselor Education 301 - Section 001",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 976,
+    "parentId": 321,
+    "name": "of Counselor Education 301 - Section 002",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 977,
+    "parentId": 321,
+    "name": "of Counselor Education 301 - Section 003",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 978,
+    "parentId": 322,
+    "name": "in Counselor Education 401 - Section 001",
+    "childQuantity": 15,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 979,
+    "parentId": 322,
+    "name": "in Counselor Education 401 - Section 002",
+    "childQuantity": 18,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 980,
+    "parentId": 323,
+    "name": "in Counselor Education 450 - Section 001",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 981,
+    "parentId": 323,
+    "name": "in Counselor Education 450 - Section 002",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 982,
+    "parentId": 324,
+    "name": "in Counselor Education 301 - Section 001",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 983,
+    "parentId": 324,
+    "name": "in Counselor Education 301 - Section 002",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 984,
+    "parentId": 325,
+    "name": "in Counselor Education 201 - Section 001",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 985,
+    "parentId": 325,
+    "name": "in Counselor Education 201 - Section 002",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 986,
+    "parentId": 326,
+    "name": "in Counselor Education 202 - Section 001",
+    "childQuantity": 26,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 987,
+    "parentId": 327,
+    "name": "of Counselor Education 450 - Section 001",
+    "childQuantity": 15,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 988,
+    "parentId": 328,
+    "name": "of Counselor Education 201 - Section 001",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 989,
+    "parentId": 328,
+    "name": "of Counselor Education 201 - Section 002",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 990,
+    "parentId": 329,
+    "name": "of Counselor Education 301 - Section 001",
+    "childQuantity": 24,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 991,
+    "parentId": 329,
+    "name": "of Counselor Education 301 - Section 002",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 992,
+    "parentId": 330,
+    "name": "of Counselor Education 450 - Section 001",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 993,
+    "parentId": 330,
+    "name": "of Counselor Education 450 - Section 002",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 994,
+    "parentId": 331,
+    "name": "of Counselor Education 101 - Section 001",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 995,
+    "parentId": 331,
+    "name": "of Counselor Education 101 - Section 002",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 996,
+    "parentId": 331,
+    "name": "of Counselor Education 101 - Section 003",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 997,
+    "parentId": 331,
+    "name": "of Counselor Education 101 - Section 004",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 998,
+    "parentId": 331,
+    "name": "of Counselor Education 101 - Section 005",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 999,
+    "parentId": 331,
+    "name": "of Counselor Education 101 - Section 006",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1000,
+    "parentId": 332,
+    "name": "of Dance 301 - Section 001",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1001,
+    "parentId": 333,
+    "name": "of Dance 202 - Section 001",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1002,
+    "parentId": 333,
+    "name": "of Dance 202 - Section 002",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1003,
+    "parentId": 333,
+    "name": "of Dance 202 - Section 003",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1004,
+    "parentId": 334,
+    "name": "of Dance 450 - Section 001",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1005,
+    "parentId": 334,
+    "name": "of Dance 450 - Section 002",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1006,
+    "parentId": 335,
+    "name": "of Dance 401 - Section 001",
+    "childQuantity": 15,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1007,
+    "parentId": 336,
+    "name": "of Dance 498 - Section 001",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1008,
+    "parentId": 336,
+    "name": "of Dance 498 - Section 002",
+    "childQuantity": 15,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1009,
+    "parentId": 337,
+    "name": "of Dance 498 - Section 001",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1010,
+    "parentId": 337,
+    "name": "of Dance 498 - Section 002",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1011,
+    "parentId": 338,
+    "name": "of Dance 202 - Section 001",
+    "childQuantity": 26,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1012,
+    "parentId": 339,
+    "name": "of Dance 498 - Section 001",
+    "childQuantity": 15,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1013,
+    "parentId": 339,
+    "name": "of Dance 498 - Section 002",
+    "childQuantity": 15,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1014,
+    "parentId": 340,
+    "name": "of Dance 201 - Section 001",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1015,
+    "parentId": 340,
+    "name": "of Dance 201 - Section 002",
+    "childQuantity": 26,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1016,
+    "parentId": 341,
+    "name": "in Visual Arts 301 - Section 001",
+    "childQuantity": 24,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1017,
+    "parentId": 342,
+    "name": "in Visual Arts 401 - Section 001",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1018,
+    "parentId": 342,
+    "name": "in Visual Arts 401 - Section 002",
+    "childQuantity": 15,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1019,
+    "parentId": 343,
+    "name": "of Visual Arts 202 - Section 001",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1020,
+    "parentId": 344,
+    "name": "of Visual Arts 301 - Section 001",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1021,
+    "parentId": 344,
+    "name": "of Visual Arts 301 - Section 002",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1022,
+    "parentId": 344,
+    "name": "of Visual Arts 301 - Section 003",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1023,
+    "parentId": 345,
+    "name": "in Visual Arts 202 - Section 001",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1024,
+    "parentId": 345,
+    "name": "in Visual Arts 202 - Section 002",
+    "childQuantity": 26,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1025,
+    "parentId": 345,
+    "name": "in Visual Arts 202 - Section 003",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1026,
+    "parentId": 345,
+    "name": "in Visual Arts 202 - Section 004",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1027,
+    "parentId": 346,
+    "name": "in Visual Arts 201 - Section 001",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1028,
+    "parentId": 346,
+    "name": "in Visual Arts 201 - Section 002",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1029,
+    "parentId": 346,
+    "name": "in Visual Arts 201 - Section 003",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1030,
+    "parentId": 347,
+    "name": "in Visual Arts 101 - Section 001",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1031,
+    "parentId": 347,
+    "name": "in Visual Arts 101 - Section 002",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1032,
+    "parentId": 347,
+    "name": "in Visual Arts 101 - Section 003",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1033,
+    "parentId": 347,
+    "name": "in Visual Arts 101 - Section 004",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1034,
+    "parentId": 347,
+    "name": "in Visual Arts 101 - Section 005",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1035,
+    "parentId": 348,
+    "name": "in Theatre 202 - Section 001",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1036,
+    "parentId": 348,
+    "name": "in Theatre 202 - Section 002",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1037,
+    "parentId": 348,
+    "name": "in Theatre 202 - Section 003",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1038,
+    "parentId": 348,
+    "name": "in Theatre 202 - Section 004",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1039,
+    "parentId": 349,
+    "name": "in Theatre 498 - Section 001",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1040,
+    "parentId": 350,
+    "name": "in Theatre 102 - Section 001",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1041,
+    "parentId": 350,
+    "name": "in Theatre 102 - Section 002",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1042,
+    "parentId": 351,
+    "name": "in Theatre 498 - Section 001",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1043,
+    "parentId": 351,
+    "name": "in Theatre 498 - Section 002",
+    "childQuantity": 15,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1044,
+    "parentId": 352,
+    "name": "in Theatre 450 - Section 001",
+    "childQuantity": 15,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1045,
+    "parentId": 352,
+    "name": "in Theatre 450 - Section 002",
+    "childQuantity": 18,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1046,
+    "parentId": 353,
+    "name": "in Theatre 202 - Section 001",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1047,
+    "parentId": 353,
+    "name": "in Theatre 202 - Section 002",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1048,
+    "parentId": 353,
+    "name": "in Theatre 202 - Section 003",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1049,
+    "parentId": 353,
+    "name": "in Theatre 202 - Section 004",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1050,
+    "parentId": 354,
+    "name": "in Theatre 450 - Section 001",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1051,
+    "parentId": 354,
+    "name": "in Theatre 450 - Section 002",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1052,
+    "parentId": 355,
+    "name": "in Theatre 498 - Section 001",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1053,
+    "parentId": 356,
+    "name": "of Theatre 202 - Section 001",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1054,
+    "parentId": 356,
+    "name": "of Theatre 202 - Section 002",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1055,
+    "parentId": 357,
+    "name": "of Theatre 201 - Section 001",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1056,
+    "parentId": 358,
+    "name": "of Theatre 101 - Section 001",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1057,
+    "parentId": 358,
+    "name": "of Theatre 101 - Section 002",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1058,
+    "parentId": 358,
+    "name": "of Theatre 101 - Section 003",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1059,
+    "parentId": 358,
+    "name": "of Theatre 101 - Section 004",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1060,
+    "parentId": 358,
+    "name": "of Theatre 101 - Section 005",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1061,
+    "parentId": 358,
+    "name": "of Theatre 101 - Section 006",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1062,
+    "parentId": 359,
+    "name": "of Theatre 102 - Section 001",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1063,
+    "parentId": 359,
+    "name": "of Theatre 102 - Section 002",
+    "childQuantity": 29,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1064,
+    "parentId": 359,
+    "name": "of Theatre 102 - Section 003",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1065,
+    "parentId": 360,
+    "name": "of Theatre 450 - Section 001",
+    "childQuantity": 18,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1066,
+    "parentId": 361,
+    "name": "of Theatre 201 - Section 001",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1067,
+    "parentId": 361,
+    "name": "of Theatre 201 - Section 002",
+    "childQuantity": 26,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1068,
+    "parentId": 362,
+    "name": "of Theatre 498 - Section 001",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1069,
+    "parentId": 362,
+    "name": "of Theatre 498 - Section 002",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1070,
+    "parentId": 363,
+    "name": "of Theatre 101 - Section 001",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1071,
+    "parentId": 363,
+    "name": "of Theatre 101 - Section 002",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1072,
+    "parentId": 363,
+    "name": "of Theatre 101 - Section 003",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1073,
+    "parentId": 363,
+    "name": "of Theatre 101 - Section 004",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1074,
+    "parentId": 363,
+    "name": "of Theatre 101 - Section 005",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1075,
+    "parentId": 363,
+    "name": "of Theatre 101 - Section 006",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1076,
+    "parentId": 364,
+    "name": "in Theatre 202 - Section 001",
+    "childQuantity": 28,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1077,
+    "parentId": 364,
+    "name": "in Theatre 202 - Section 002",
+    "childQuantity": 25,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1078,
+    "parentId": 365,
+    "name": "in Theatre 102 - Section 001",
+    "childQuantity": 31,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1079,
+    "parentId": 365,
+    "name": "in Theatre 102 - Section 002",
+    "childQuantity": 35,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1080,
+    "parentId": 365,
+    "name": "in Theatre 102 - Section 003",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1081,
+    "parentId": 365,
+    "name": "in Theatre 102 - Section 004",
+    "childQuantity": 30,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1082,
+    "parentId": 365,
+    "name": "in Theatre 102 - Section 005",
+    "childQuantity": 32,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1083,
+    "parentId": 366,
+    "name": "in Theatre 498 - Section 001",
+    "childQuantity": 20,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1084,
+    "parentId": 367,
+    "name": "in Theatre 201 - Section 001",
+    "childQuantity": 27,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1085,
+    "parentId": 368,
+    "name": "in Theatre 498 - Section 001",
+    "childQuantity": 22,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1086,
+    "parentId": 368,
+    "name": "in Theatre 498 - Section 002",
+    "childQuantity": 15,
+    "descendantQuantity": 0
+  },
+  {
+    "id": 1087,
+    "parentId": 369,
+    "name": "in Theatre 401 - Section 001",
+    "childQuantity": 20,
     "descendantQuantity": 0
   }
 ]
