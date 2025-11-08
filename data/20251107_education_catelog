@@ -9,280 +9,280 @@
   {
     "id": 1,
     "parentId": 0,
-    "name": "College of Arts & Sciences",
+    "name": "Coll. Arts & Sciences",
     "childQuantity": 6,
     "descendantQuantity": 32006
   },
   {
     "id": 2,
     "parentId": 0,
-    "name": "College of Engineering",
+    "name": "Coll. Engineering",
     "childQuantity": 7,
     "descendantQuantity": 36072
   },
   {
     "id": 3,
     "parentId": 0,
-    "name": "College of Business",
+    "name": "Coll. Business",
     "childQuantity": 5,
     "descendantQuantity": 27276
   },
   {
     "id": 4,
     "parentId": 0,
-    "name": "College of Health & Human Services",
+    "name": "Coll. Health & Human Services",
     "childQuantity": 5,
     "descendantQuantity": 17827
   },
   {
     "id": 5,
     "parentId": 0,
-    "name": "College of Education",
+    "name": "Coll. Education",
     "childQuantity": 6,
     "descendantQuantity": 28705
   },
   {
     "id": 6,
     "parentId": 0,
-    "name": "College of Fine Arts",
+    "name": "Coll. Fine Arts",
     "childQuantity": 5,
     "descendantQuantity": 26027
   },
   {
     "id": 7,
     "parentId": 1,
-    "name": "Department of Sociology",
+    "name": "Dept. Sociology",
     "childQuantity": 5,
     "descendantQuantity": 5840
   },
   {
     "id": 8,
     "parentId": 1,
-    "name": "Department of Psychology",
+    "name": "Dept. Psychology",
     "childQuantity": 6,
     "descendantQuantity": 8486
   },
   {
     "id": 9,
     "parentId": 1,
-    "name": "Department of History",
+    "name": "Dept. History",
     "childQuantity": 3,
     "descendantQuantity": 3818
   },
   {
     "id": 10,
     "parentId": 1,
-    "name": "Department of Chemistry",
+    "name": "Dept. Chemistry",
     "childQuantity": 6,
     "descendantQuantity": 5799
   },
   {
     "id": 11,
     "parentId": 1,
-    "name": "Department of Physics",
+    "name": "Dept. Physics",
     "childQuantity": 4,
     "descendantQuantity": 4394
   },
   {
     "id": 12,
     "parentId": 1,
-    "name": "Department of Biology",
+    "name": "Dept. Biology",
     "childQuantity": 3,
     "descendantQuantity": 3642
   },
   {
     "id": 13,
     "parentId": 2,
-    "name": "Department of Systems Engineering",
+    "name": "Dept. Systems Engineering",
     "childQuantity": 6,
     "descendantQuantity": 6270
   },
   {
     "id": 14,
     "parentId": 2,
-    "name": "Department of Computer Science",
+    "name": "Dept. Computer Science",
     "childQuantity": 5,
     "descendantQuantity": 5757
   },
   {
     "id": 15,
     "parentId": 2,
-    "name": "Department of Civil Engineering",
+    "name": "Dept. Civil Engineering",
     "childQuantity": 4,
     "descendantQuantity": 3435
   },
   {
     "id": 16,
     "parentId": 2,
-    "name": "Department of Industrial Engineering",
+    "name": "Dept. Industrial Engineering",
     "childQuantity": 6,
     "descendantQuantity": 6716
   },
   {
     "id": 17,
     "parentId": 2,
-    "name": "Department of Mechanical Engineering",
+    "name": "Dept. Mechanical Engineering",
     "childQuantity": 3,
     "descendantQuantity": 3088
   },
   {
     "id": 18,
     "parentId": 2,
-    "name": "Department of Electrical Engineering",
+    "name": "Dept. Electrical Engineering",
     "childQuantity": 6,
     "descendantQuantity": 5807
   },
   {
     "id": 19,
     "parentId": 2,
-    "name": "Department of Aerospace Engineering",
+    "name": "Dept. Aerospace Engineering",
     "childQuantity": 4,
     "descendantQuantity": 4965
   },
   {
     "id": 20,
     "parentId": 3,
-    "name": "Department of Business Analytics",
+    "name": "Dept. Business Analytics",
     "childQuantity": 6,
     "descendantQuantity": 6245
   },
   {
     "id": 21,
     "parentId": 3,
-    "name": "Department of Accounting",
+    "name": "Dept. Accounting",
     "childQuantity": 3,
     "descendantQuantity": 4266
   },
   {
     "id": 22,
     "parentId": 3,
-    "name": "Department of Marketing",
+    "name": "Dept. Marketing",
     "childQuantity": 6,
     "descendantQuantity": 6846
   },
   {
     "id": 23,
     "parentId": 3,
-    "name": "Department of Supply Chain",
+    "name": "Dept. Supply Chain",
     "childQuantity": 5,
     "descendantQuantity": 5053
   },
   {
     "id": 24,
     "parentId": 3,
-    "name": "Department of Information Systems",
+    "name": "Dept. Information Systems",
     "childQuantity": 5,
     "descendantQuantity": 4841
   },
   {
     "id": 25,
     "parentId": 4,
-    "name": "Department of Health Informatics",
+    "name": "Dept. Health Informatics",
     "childQuantity": 4,
     "descendantQuantity": 3900
   },
   {
     "id": 26,
     "parentId": 4,
-    "name": "Department of Occupational Therapy",
+    "name": "Dept. Occupational Therapy",
     "childQuantity": 3,
     "descendantQuantity": 3669
   },
   {
     "id": 27,
     "parentId": 4,
-    "name": "Department of Kinesiology",
+    "name": "Dept. Kinesiology",
     "childQuantity": 4,
     "descendantQuantity": 4608
   },
   {
     "id": 28,
     "parentId": 4,
-    "name": "Department of Social Work",
+    "name": "Dept. Social Work",
     "childQuantity": 3,
     "descendantQuantity": 2514
   },
   {
     "id": 29,
     "parentId": 4,
-    "name": "Department of Public Health",
+    "name": "Dept. Public Health",
     "childQuantity": 3,
     "descendantQuantity": 3119
   },
   {
     "id": 30,
     "parentId": 5,
-    "name": "Department of Curriculum & Instruction",
+    "name": "Dept. Curriculum & Instruction",
     "childQuantity": 3,
     "descendantQuantity": 4047
   },
   {
     "id": 31,
     "parentId": 5,
-    "name": "Department of Special Education",
+    "name": "Dept. Special Education",
     "childQuantity": 6,
     "descendantQuantity": 6190
   },
   {
     "id": 32,
     "parentId": 5,
-    "name": "Department of Educational Leadership",
+    "name": "Dept. Educational Leadership",
     "childQuantity": 5,
     "descendantQuantity": 5378
   },
   {
     "id": 33,
     "parentId": 5,
-    "name": "Department of Counselor Education",
+    "name": "Dept. Counselor Education",
     "childQuantity": 5,
     "descendantQuantity": 5260
   },
   {
     "id": 34,
     "parentId": 5,
-    "name": "Department of Ed Tech",
+    "name": "Dept. Ed Tech",
     "childQuantity": 3,
     "descendantQuantity": 3387
   },
   {
     "id": 35,
     "parentId": 5,
-    "name": "Department of Early Childhood",
+    "name": "Dept. Early Childhood",
     "childQuantity": 4,
     "descendantQuantity": 4417
   },
   {
     "id": 36,
     "parentId": 6,
-    "name": "Department of Visual Arts",
+    "name": "Dept. Visual Arts",
     "childQuantity": 3,
     "descendantQuantity": 2917
   },
   {
     "id": 37,
     "parentId": 6,
-    "name": "Department of Design",
+    "name": "Dept. Design",
     "childQuantity": 6,
     "descendantQuantity": 6081
   },
   {
     "id": 38,
     "parentId": 6,
-    "name": "Department of Theatre",
+    "name": "Dept. Theatre",
     "childQuantity": 6,
     "descendantQuantity": 7347
   },
   {
     "id": 39,
     "parentId": 6,
-    "name": "Department of Film & Media",
+    "name": "Dept. Film & Media",
     "childQuantity": 3,
     "descendantQuantity": 2762
   },
   {
     "id": 40,
     "parentId": 6,
-    "name": "Department of Music",
+    "name": "Dept. Music",
     "childQuantity": 6,
     "descendantQuantity": 6896
   },
